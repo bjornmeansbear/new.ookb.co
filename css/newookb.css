@@ -65,6 +65,8 @@ header #logo {
   z-index: 999;
 }
 
+/* header #logo img { box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.5) } */
+
 header nav {
   background: rgba(96,103,103,1);
   border-bottom: 2px solid rgba(47,41,38,1);
@@ -106,13 +108,16 @@ footer {
 .leftside {text-align: right;}
 .rightside {text-align: left;}
 
-header h1 {
-  text-transform: uppercase;
+header h1 { display: none; }
+
+.home header h1 {
+  display: block;
   font-size: 72px;
   letter-spacing: 5px;
   line-height: 96px;
   font-weight: 800;
   text-align: center;
+  text-transform: uppercase;
   /**/
   position: relative;
   top: 72px;
@@ -128,16 +133,18 @@ header h1 em {
   letter-spacing: -5px;
 }
 
-header h1 em, header h1 span {
+header h1 em, header span {
   display:block;
   margin:0;
   padding:0;
-  /**/
+}
+
+header h1 .text {
   transform:rotate(-22.5deg);
-  -ms-transform:rotate(-22.5deg); /* IE 9 */
-  -moz-transform:rotate(-22.5deg); /* Firefox */
-  -webkit-transform:rotate(-22.5deg); /* Safari and Chrome */
-  -o-transform:rotate(-22.5deg); /* Opera */
+  -ms-transform:rotate(-22.5deg); 
+  -moz-transform:rotate(-22.5deg);
+  -webkit-transform:rotate(-22.5deg);
+  -o-transform:rotate(-22.5deg);
 }
 
 header h1 .one   { text-indent: -432px; }
@@ -166,7 +173,7 @@ header nav h2 em {
 /* =================================================================== */
 
 .ss, .slideshow         { min-height: 620px;}
-.placeholder            { height: 600px; }
+.home .placeholder       { height: 600px; }
 .placeholder.red        { background: rgba(183,80,81,1); }
 .placeholder.orange     { background: rgba(195,115,99,1); }
 .placeholder.yellow     { background: rgba(197,192,101,1); }
@@ -245,3 +252,27 @@ header nav ul.rightside li a {
   list-style: none;
 }
 
+
+
+
+/* 6. Masonry stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+.work #main {
+  margin-top:100px;
+}
+
+#masonry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#masonry li {
+  margin: 0 0 30px 30px;
+}
+
+#masonry .placeholder       {height:150px;}
+#masonry .placeholder.short {height:75px;}
+#masonry .placeholder.tall  {height:300px;}

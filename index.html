@@ -32,24 +32,24 @@
   
   </head>
   
-  <body>
+  <body class="home">
   
     <header class="container">
       <div class="row">
         <figure id="logo" class="span2 offset5"><img src="img/ookblogo.png" /></figure><!-- END LOGO -->
-        <h1 class="span12"><em class="gentium one">The</em> <span class="two">Office</span> <em class="gentium three">of</em> <span class="four">Kristian</span> <span class="five">Bj&oslash;rnard</span></h1><!-- END decorative SITE NAME -->
+        <h1 class="span12"><span class="first"><em class="gentium one text">The</em> <span class="two text">Office</span></span> <span class="middle"><em class="gentium three text">of</em> <span class="four text">Kristian</span></span> <span class="last"><span class="five text">Bj&oslash;rnard</span></span></h1><!-- END decorative SITE NAME -->
         
         <!-- Main Site Navigation -->
         <nav>
           <div class="container">
             <div class="row">
               <ul class="leftside span5">
-                <li><a href=""><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
+                <li><a href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
               </ul>
               <ul class="rightside span5 offset2">
-                <li><a href="">Notes</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -87,8 +87,16 @@
     </div>
 
     <footer class="container">
-      <p>&copy; 2003&ndash;2013 Kristian Bj&oslash;rnard</p>
-      <p>All content on this site (unless otherwise noted) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+      <div class="row">
+        <p class="span4">&copy; 2003&ndash;2013 Kristian Bj&oslash;rnard</p>
+        <p class="span4">All content on this site (unless otherwise noted) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+        <p class="span4">
+          Kristian Bj&oslash;rnard <br/> 
+          Designer / Thinker / Sustainabilitist <br/>
+          (507) 301-8402 <br/>
+          kb@ookb.co <br/>
+        </p>
+      </div>
     </footer>
   
     <!-- Le javascript
@@ -129,7 +137,7 @@
         $("header nav").hide();
       });
       
-      var startY = $('header').position().top + $('header').outerHeight();
+      var startY = $('header').position().top + 80;
       
       $(window).scroll(function(){
           checkY();
@@ -145,6 +153,17 @@
       
       // Do this on load just in case the user starts half way down the page
       checkY();    
+    </script>
+    
+    <!-- Parallax Scrolling for the SiteName -->
+    <script>
+      $(window).scroll(function(){
+        var s = $(window).scrollTop();
+        $("header h1 .first").css("-webkit-transform","translateY(" + (s*-1) + "px)");
+        $("header h1 .middle").css("-webkit-transform","translateY(" + (s*-2.5) + "px)");
+        $("header h1 .last").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
+      });
+      
     </script>
     <!-- end scripts-->
   
