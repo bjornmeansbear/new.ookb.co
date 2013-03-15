@@ -1,0 +1,247 @@
+/* 1. @Font-Face Ñ load my google fonts... */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+
+body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+.gentium { font-family: 'Gentium Book Basic', Georgia, serif; }
+
+/* END @Font-Face */
+
+
+
+
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+/* Color Palette */
+/*
+pink          rgba(236,64,121,1)
+brown         rgba(47,41,38,1)
+gray          rgba(132,132,120,1)
+dark gray     rgba(96,103,103,1)
+light gray    rgba(194,211,186,1)
+
+red           rgba(183,80,81,1)
+orange        rgba(195,115,99,1)
+yellow        rgba(197,192,101,1)
+green         rgba(140,165,115,1)
+blue          rgba(157,178,176,1)
+purple        rgba(174,139,164,1)
+*/
+
+* {}
+
+html {
+  background: rgba(96,103,103,1);
+  min-height: 101%;
+  /**/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: rgba(132,132,120,1);
+  border: 2px solid rgba(47,41,38,1);
+  margin: 20px;
+  min-height: 101% !important;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+header #logo {
+  position: fixed;
+  top:-40px;
+  z-index: 999;
+}
+
+header nav {
+  background: rgba(96,103,103,1);
+  border-bottom: 2px solid rgba(47,41,38,1);
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  /**/
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 989;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul.rightside li {
+  float: left;
+}
+
+#main {}
+
+footer {
+  border-top: 6px solid rgba(47,41,38,1); 
+  margin-top: 72px;
+  margin-bottom: 72px;
+  padding: 24px 0;
+}
+
+
+
+/* 3. TYPOGRAPHY */
+/* =================================================================== */
+/* =================================================================== */
+.leftside {text-align: right;}
+.rightside {text-align: left;}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+  letter-spacing: 5px;
+  line-height: 96px;
+  font-weight: 800;
+  text-align: center;
+  /**/
+  position: relative;
+  top: 72px;
+  left:-72px;
+  z-index: 888;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 em { 
+  text-transform: lowercase;
+  font-weight: 400;
+  letter-spacing: -5px;
+}
+
+header h1 em, header h1 span {
+  display:block;
+  margin:0;
+  padding:0;
+  /**/
+  transform:rotate(-22.5deg);
+  -ms-transform:rotate(-22.5deg); /* IE 9 */
+  -moz-transform:rotate(-22.5deg); /* Firefox */
+  -webkit-transform:rotate(-22.5deg); /* Safari and Chrome */
+  -o-transform:rotate(-22.5deg); /* Opera */
+}
+
+header h1 .one   { text-indent: -432px; }
+header h1 .two   { text-indent: 0; }
+header h1 .three { text-indent: -576px; }
+header h1 .four  { text-indent: 0; }
+header h1 .five  { text-indent: 482px; }
+
+header nav h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+header nav h2 em {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+
+
+/* 4. Slideshow Styles */
+/* =================================================================== */
+/* =================================================================== */
+
+.ss, .slideshow         { min-height: 620px;}
+.placeholder            { height: 600px; }
+.placeholder.red        { background: rgba(183,80,81,1); }
+.placeholder.orange     { background: rgba(195,115,99,1); }
+.placeholder.yellow     { background: rgba(197,192,101,1); }
+.placeholder.green      { background: rgba(140,165,115,1); }
+.placeholder.blue       { background: rgba(157,178,176,1); }
+.placeholder.purple     { background: rgba(174,139,164,1); }
+.placeholder.span10.nm  { margin: 0;}
+
+.ssnav a {
+  display: block;
+  font-size: 100px;
+  height: 349px;
+  line-height: 100px;
+  padding-top: 249px;
+  position: relative;
+  text-align: center;
+  z-index: 889;
+}
+
+
+
+
+/* 5. Description Styles */
+/* =================================================================== */
+/* =================================================================== */
+
+
+
+
+
+/* 6. Links and More */
+/* =================================================================== */
+/* =================================================================== */
+
+a {
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  background: rgba(132,132,120,.1);
+  border-bottom: 1px solid rgba(236,64,121,1);
+  padding: 1px 2px 1px 2px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover { 
+  background: rgba(236,64,121,1);
+  color: white;
+  text-decoration: none;
+  }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::selection {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-shadow: none;
+}
+
+header nav a {
+  background: none;
+  border: none;
+  opacity: 1;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+header nav ul.rightside li a {
+  border-right: 2px solid rgba(47,41,38,1);
+  font-weight: 400;
+  list-style: none;
+}
+
