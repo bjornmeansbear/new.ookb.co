@@ -39,51 +39,66 @@
         <figure id="logo" class="span2 offset5"><img src="img/ookblogo.png" /></figure><!-- END LOGO -->
         <h1 class="span12"><span class="first"><em class="gentium one text">The</em> <span class="two text">Office</span></span> <span class="middle"><em class="gentium three text">of</em> <span class="four text">Kristian</span></span> <span class="last"><span class="five text">Bj&oslash;rnard</span></span></h1><!-- END decorative SITE NAME -->
         
-        <!-- Main Site Navigation -->
-        <nav>
-          <div class="container">
-            <div class="row">
-              <ul class="leftside span5">
-                <li><a href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
-              </ul>
-              <ul class="rightside span5 offset2">
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- END Main Site Nav -->
+        <!-- Array of images to scroll off the page too -->
+        <ul id="array" class="">
+          <li class="span2 fortyfive"><img src="img/array/1814.jpg" /></li>
+          <li class="span1"><img src="img/array/failure.jpg" /></li>
+          <li class="span3 offset1 eleven"><img src="img/array/greenacres.jpg" /></li>
+          <li class="span1 fortyfive"><img src="img/array/lettersfromthefuture.jpg" /></li>
+          <li class="span2"><img src="img/array/sexylibrarian.jpg" /></li>
+          <li class="span3 fortyfive offset1"><img src="img/array/urb67ideas.jpg" /></li>
+          <li class="span1 offset2 eleven"><img src="img/array/urb80twitter.jpg" /></li>
+          <li class="span2"><img src="img/array/urb98summerreading.jpg" /></li>
+        </ul>
+        <!-- end array of images -->
         
       </div>
+
+      <!-- Main Site Navigation -->
+      <nav>
+        <div class="container">
+          <div class="row">
+            <ul class="leftside span5">
+              <li><a href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
+            </ul>
+            <ul class="rightside span5 offset2">
+              <li><a href="notes.html">Notes</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END Main Site Nav -->
+        
     </header>
 
     <div id="main" role="main" class="container">
+
       <!-- main homepage slideshow -->
       <article class="row ss">
         <nav class="ssnav span1">
           <a href="" class="prev">&laquo;</a>
         </nav>
         <section class="slideshow span10">
-          <div class="placeholder span10 nm red"></div>
-          <div class="placeholder span10 nm yellow"></div>
-          <div class="placeholder span10 nm green"></div>
-          <div class="placeholder span10 nm blue"></div>
-          <div class="placeholder span10 nm purple"></div>
+          <div class="placeholder span10 nm red"><img src="img/ex/arstack.jpg" /></div>
+          <div class="placeholder span10 nm yellow"><img src="img/ex/honda450.jpg" /></div>
+          <div class="placeholder span10 nm green"><img src="img/ex/ssc-catalog-1.jpg" /></div>
+          <div class="placeholder span10 nm blue"><img src="img/ex/ssc-web-1.png" /></div>
+          <div class="placeholder span10 nm purple"><img src="img/ex/thesis-hello-all-end.jpg" /></div>
         </section>
         <nav class="ssnav span1">
           <a href="" class="next">&raquo;</a>
         </nav>
       </article>
       <!-- end slideshow -->
-      
+            
       <!-- main homepage description -->
       <article class="description row">
         <p class="span10 offset1"><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> is a boutique design studio in Baltimore, MD specializing in publishing in all its forms.</p>
       </article>
       <!-- End Description -->
-      
+
     </div>
 
     <footer class="container">
@@ -123,48 +138,68 @@
 
     <!-- Slideshow Controls -->
     <script>
-      $('#main .slideshow').cycle({ 
-        fx:    'fade',
-        speed: 500,
-        timeout: 0,
-        next: '#main .ssnav .next',
-        prev: '#main .ssnav .prev'
+      $('#main .slideshow')
+        .after(function(){$(this).parent().after('<div id="pager">') })
+        .cycle({ 
+          fx:    'fade',
+          speed: 500,
+          timeout: 0,
+          next: '#main .ssnav .next',
+          prev: '#main .ssnav .prev',
+          pager: '#pager' 
       });
     </script>  
 
+    <!-- HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS -->
     <script>
       $(document).ready(function(){
         $("header nav").hide();
+        $("#main article").hide();
+        $("#pager").hide();
       });
-      
-      var startY = $('header').position().top + 80;
+
+      //set width of the nav element at the top
+      var w = $(window).width()
+      $('header nav').css("width", w-40 + "px" ); 
+
+      // set position for stuff to come in at
+      var startY = $('header').position().top + 60;
       
       $(window).scroll(function(){
           checkY();
       });
       
       function checkY(){
-          if( $(window).scrollTop() > startY ){
-              $('header nav').slideDown();
-          }else{
-              $('header nav').slideUp();
-          }
+        if( $(window).scrollTop() > startY ){
+            $('header nav').slideDown(500);
+            $("#main article").fadeIn(750);
+            $("#pager").fadeIn(750);
+        }else{
+            $('header nav').slideUp(500);
+            $("#main article").fadeOut(750);
+            $("#pager").fadeOut(750);
+        }
       }
-      
       // Do this on load just in case the user starts half way down the page
-      checkY();    
+      checkY();
     </script>
     
     <!-- Parallax Scrolling for the SiteName -->
     <script>
       $(window).scroll(function(){
         var s = $(window).scrollTop();
-        $("header h1 .first").css("-webkit-transform","translateY(" + (s*-1) + "px)");
+        $("header h1 .first").css("-webkit-transform","translateY(" + (s*-1.11) + "px)");
         $("header h1 .middle").css("-webkit-transform","translateY(" + (s*-2.5) + "px)");
         $("header h1 .last").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
+        $("#array li:nth-child(odd)").css("-webkit-transform","translateY(" + (s*-2.25) + "px)");
+        $("#array li:nth-child(2)").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
+        $("#array li:nth-child(4)").css("-webkit-transform","translateY(" + (s*-4) + "px)");
+        $("#array li:nth-child(6)").css("-webkit-transform","translateY(" + (s*-3) + "px)");
+        $("#array li:nth-child(8)").css("-webkit-transform","translateY(" + (s*-3.75) + "px)");
       });
-      
     </script>
+    
+
     <!-- end scripts-->
   
   </body>

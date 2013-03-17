@@ -159,6 +159,11 @@
     <script src="js/jquery.masonry.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+      //set width of the nav element at the top
+      var w = $(window).width()
+      $('header nav').css("width", w-40 + "px" ); 
+    </script>
     <!-- Masonry Layouts -->
     <script>
       $('#masonry').masonry({

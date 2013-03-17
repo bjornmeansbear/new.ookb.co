@@ -35,6 +35,7 @@ purple        rgba(174,139,164,1)
 
 html {
   background: rgba(96,103,103,1);
+  color: rgba(47,41,38,1) !important;
   min-height: 101%;
   /**/
   text-rendering: optimizeLegibility;
@@ -44,6 +45,7 @@ html {
 body {
   background: rgba(132,132,120,1);
   border: 2px solid rgba(47,41,38,1);
+  color: rgba(47,41,38,1) !important;
   margin: 20px;
   min-height: 101% !important;
   padding: 0;
@@ -76,8 +78,7 @@ header nav {
   /**/
   position: fixed;
   top:0;
-  left:0;
-  width: 100%;
+  left:20px;
   z-index: 989;
 }
 
@@ -99,6 +100,49 @@ footer {
   margin-bottom: 72px;
   padding: 24px 0;
 }
+
+/* Array of images on the homepage that scroll with text */
+#array {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  z-index: 777;
+  opacity: .22;
+}
+
+#array li img {
+  transform:rotate(-22.5deg);
+  -ms-transform:rotate(-22.5deg); 
+  -moz-transform:rotate(-22.5deg);
+  -webkit-transform:rotate(-22.5deg);
+  -o-transform:rotate(-22.5deg);
+}
+
+#array li.eleven img {
+  transform:rotate(11.25deg);
+  -ms-transform:rotate(11.25deg); 
+  -moz-transform:rotate(11.25deg);
+  -webkit-transform:rotate(11.25deg);
+  -o-transform:rotate(11.25deg);
+}
+
+#array li.fortyfive img {
+  transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg); 
+  -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+}
+
+#array li:nth-child(1) { margin-top:  30px; }
+#array li:nth-child(2) { margin-top:  -5px; }
+#array li:nth-child(3) { margin-top: 150px; }
+#array li:nth-child(4) { margin-top:  20px; }
+#array li:nth-child(5) { margin-top:  50px; }
+#array li:nth-child(6) { margin-top: -25px; }
+
 
 
 
@@ -172,8 +216,10 @@ header nav h2 em {
 /* =================================================================== */
 /* =================================================================== */
 
+.home #main {min-height: 620px; }
+
 .ss, .slideshow         { min-height: 620px;}
-.home .placeholder       { height: 600px; }
+.home .placeholder      { height: 600px; overflow: hidden; }
 .placeholder.red        { background: rgba(183,80,81,1); }
 .placeholder.orange     { background: rgba(195,115,99,1); }
 .placeholder.yellow     { background: rgba(197,192,101,1); }
@@ -193,7 +239,52 @@ header nav h2 em {
   z-index: 889;
 }
 
+#pager {
+  margin: 0 0 15px 0;
+  position: relative;
+  text-align: center;
+  z-index: 9;
+  width: 100%;
+}
 
+#pager a {
+  background: rgba(96,103,103,1);
+  border: none;
+  display: inline-block;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  width: 20px;
+  text-indent: -9999999px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+
+#pager a.activeSlide { background: rgba(47,41,38,1); }
+#pager a:hover { background: rgba(194,211,186,1); }
+
+
+/* image styling awesomeness */
+/* Grayscale and then colorize! */
+.slideshow img {
+  opacity: .5;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
+  filter: gray;
+  -webkit-filter: saturate(0%);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.slideshow img:hover {
+  opacity: 1;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: saturate(100%);
+}
 
 
 /* 5. Description Styles */
