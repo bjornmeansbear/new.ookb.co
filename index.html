@@ -52,6 +52,8 @@
         </ul>
         <!-- end array of images -->
         
+        <a class="scroll" id="pagedown" href="#main">&#9660;</a>
+        
       </div>
 
       <!-- Main Site Navigation -->
@@ -62,7 +64,7 @@
               <li><a href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
             </ul>
             <ul class="rightside span5 offset2">
-              <li><a href="notes.html">Notes</a></li>
+              <li><a href="http://www.ookb.co/">Notes</a></li>
               <li><a href="work.html">Work</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -81,6 +83,15 @@
           <a href="" class="prev">&laquo;</a>
         </nav>
         <section class="slideshow span10">
+          <div class="placeholder span10 nm gray">
+            <!-- main homepage description -->
+            <article class="description">
+              <div class="">
+                <p><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> is a boutique design studio in Baltimore, MD specializing in publishing in all its forms.</p>
+              </div>
+            </article>
+            <!-- End Description -->
+          </div>
           <div class="placeholder span10 nm red"><img src="img/ex/arstack.jpg" /></div>
           <div class="placeholder span10 nm yellow"><img src="img/ex/honda450.jpg" /></div>
           <div class="placeholder span10 nm green"><img src="img/ex/ssc-catalog-1.jpg" /></div>
@@ -93,12 +104,6 @@
       </article>
       <!-- end slideshow -->
             
-      <!-- main homepage description -->
-      <article class="description row">
-        <p class="span10 offset1"><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> is a boutique design studio in Baltimore, MD specializing in publishing in all its forms.</p>
-      </article>
-      <!-- End Description -->
-
     </div>
 
     <footer class="container">
@@ -174,14 +179,22 @@
             $('header nav').slideDown(500);
             $("#main article").fadeIn(750);
             $("#pager").fadeIn(750);
+            $("#pagedown").fadeOut(250);
         }else{
             $('header nav').slideUp(500);
             $("#main article").fadeOut(750);
             $("#pager").fadeOut(750);
+            $("#pagedown").fadeIn(250);
         }
       }
       // Do this on load just in case the user starts half way down the page
       checkY();
+      
+      $("#pagedown").click(function() {
+        $(this).fadeOut(750);
+      });
+
+      
     </script>
     
     <!-- Parallax Scrolling for the SiteName -->
@@ -199,6 +212,15 @@
       });
     </script>
     
+    <!-- scroll page down to elements and IDs -->
+    <script>
+      // Some Custom JS for the site
+      // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
+      $(".scroll").click(function(event){    
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+      });
+    </script>
 
     <!-- end scripts-->
   

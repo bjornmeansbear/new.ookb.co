@@ -210,13 +210,30 @@ header nav h2 em {
   font-weight: 400;
 }
 
-
+header #pagedown {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  /**/
+  background: none;
+  border: none;
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0;
+  margin-left: -36px;
+  opacity: .66;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 72px;
+  z-index: 999;
+}
 
 /* 4. Slideshow Styles */
 /* =================================================================== */
 /* =================================================================== */
 
-.home #main {min-height: 620px; }
+.home #main {min-height: 620px; padding-top: 90px;}
 
 .ss, .slideshow         { min-height: 620px;}
 .home .placeholder      { height: 600px; overflow: hidden; }
@@ -226,6 +243,7 @@ header nav h2 em {
 .placeholder.green      { background: rgba(140,165,115,1); }
 .placeholder.blue       { background: rgba(157,178,176,1); }
 .placeholder.purple     { background: rgba(174,139,164,1); }
+.placeholder.gray       { background: rgba(132,132,120,1); }
 .placeholder.span10.nm  { margin: 0;}
 
 .ssnav a {
@@ -240,7 +258,7 @@ header nav h2 em {
 }
 
 #pager {
-  margin: 0 0 15px 0;
+  margin: 0 0 x15px 0;
   position: relative;
   text-align: center;
   z-index: 9;
@@ -267,6 +285,18 @@ header nav h2 em {
 #pager a.activeSlide { background: rgba(47,41,38,1); }
 #pager a:hover { background: rgba(194,211,186,1); }
 
+.placeholder article.description {display: table; vertical-align: middle;}
+.placeholder article.description div {display: table-cell; vertical-align: middle;}
+.placeholder article.description, .placeholder article.description div {
+  height: 100%;
+  width: 100%;
+}
+
+.placeholder article.description div p {
+  padding: 30px;
+  font-size: 45px;
+  line-height: 60px;
+}
 
 /* image styling awesomeness */
 /* Grayscale and then colorize! */
