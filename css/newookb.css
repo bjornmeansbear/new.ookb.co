@@ -8,8 +8,13 @@ body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
 /* END @Font-Face */
 
-
-
+/* SETUP media query stuff */
+@media (max-width: 480px) {}
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 979px) {}
+@media (max-width: 979px) {}
+@media (min-width: 980px) {}
+@media (min-width: 1200px) {}
 
 /* 2. General Layout / Design Stuff */
 /* =================================================================== */
@@ -67,31 +72,6 @@ header #logo {
   z-index: 999;
 }
 
-/* header #logo img { box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.5) } */
-
-header nav {
-  background: rgba(96,103,103,1);
-  border-bottom: 2px solid rgba(47,41,38,1);
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  /**/
-  position: fixed;
-  top:0;
-  left:20px;
-  z-index: 989;
-}
-
-header nav ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul.rightside li {
-  float: left;
-}
-
 #main {}
 
 footer {
@@ -101,7 +81,70 @@ footer {
   padding: 24px 0;
 }
 
+/* MAIN TOP NAV STYLES                                   */
+/* ===================================================== */
+
+nav.navbar.mainnav {
+  background: rgba(96,103,103,1) !important;
+  border-bottom: 2px solid rgba(47,41,38,1) !important;
+  color: rgb(47, 41, 38);
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  left:20px;
+  z-index: 989;
+}
+
+nav.navbar.mainnav .navbar-inner {
+  background: transparent;
+  background-image: none;
+  border: none;
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+nav.navbar.mainnav h2 {
+  color: rgb(47, 41, 38);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+nav.navbar.mainnav h2 em {
+  color: rgb(47, 41, 38);
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+nav.navbar.mainnav a.brand,
+nav.navbar.mainnav ul.nav a {
+  color: rgb(47, 41, 38);
+  background: none;
+  border: none;
+  opacity: 1;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav.navbar.mainnav a.brand,
+nav.navbar.mainnav a.brand h2 {
+  text-align: right;
+  float: none;
+}
+
+nav.navbar.mainnav .rightside ul.nav li a {
+  border-right: 2px solid rgba(47,41,38,1);
+  font-weight: 400;
+  list-style: none;
+}
+
+
 /* Array of images on the homepage that scroll with text */
+/* ===================================================== */
 #array {
   list-style: none;
   margin: 0;
@@ -152,6 +195,40 @@ footer {
 .leftside {text-align: right;}
 .rightside {text-align: left;}
 
+/* Links and More */
+/* =================================================================== */
+
+a {
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  background: rgba(132,132,120,.1);
+  border-bottom: 1px solid rgba(236,64,121,1);
+  padding: 1px 2px 1px 2px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover,
+nav.navbar.mainnav a.brand:hover,
+nav.navbar.mainnav ul.nav a:hover { 
+  background: rgba(236,64,121,1);
+  color: white;
+  text-decoration: none;
+  }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::selection {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-shadow: none;
+}
+
 header h1 { display: none; }
 
 .home header h1 {
@@ -196,19 +273,6 @@ header h1 .two   { text-indent: 0; }
 header h1 .three { text-indent: -576px; }
 header h1 .four  { text-indent: 0; }
 header h1 .five  { text-indent: 482px; }
-
-header nav h2 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-
-header nav h2 em {
-  text-transform: lowercase;
-  font-weight: 400;
-}
 
 header #pagedown {
   position: fixed;
@@ -321,57 +385,6 @@ header #pagedown {
   line-height: 60px;
 }
 
-
-
-
-
-/* 6. Links and More */
-/* =================================================================== */
-/* =================================================================== */
-
-a {
-  color: rgba(47,41,38,1);
-  text-decoration: none;
-  background: rgba(132,132,120,.1);
-  border-bottom: 1px solid rgba(236,64,121,1);
-  padding: 1px 2px 1px 2px;
-  transition: all 500ms;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-}
-
-a:hover { 
-  background: rgba(236,64,121,1);
-  color: white;
-  text-decoration: none;
-  }
-
-a:link {
-  -webkit-tap-highlight-color: #FF5E99;
-}
-
-::selection {
-  background: rgba(236,64,121,1);
-  color: white;
-  text-shadow: none;
-}
-
-header nav a {
-  background: none;
-  border: none;
-  opacity: 1;
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-}
-
-header nav ul.rightside li a {
-  border-right: 2px solid rgba(47,41,38,1);
-  font-weight: 400;
-  list-style: none;
-}
 
 
 

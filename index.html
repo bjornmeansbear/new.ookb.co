@@ -34,6 +34,32 @@
   
   <body class="home">
   
+    <!-- Nav!
+    ================================================== -->
+    <nav class="navbar navbar-inverse navbar-fixed-top mainnav">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="row">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="span5"><a class="brand" href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></div>
+            <div class="nav-collapse collapse span5 offset2 rightside">
+              <ul class="nav">
+                <li><a href="http://www.ookb.co/">Notes</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header!
+    ================================================== -->
     <header class="container">
       <div class="row">
         <figure id="logo" class="span2 offset5"><img src="img/ookblogo.png" /></figure><!-- END LOGO -->
@@ -55,23 +81,6 @@
         <a class="scroll" id="pagedown" href="#main">&#9660;</a><!-- Pagedown button for auto scroll to content -->
         
       </div>
-
-      <!-- Main Site Navigation -->
-      <nav>
-        <div class="container">
-          <div class="row">
-            <ul class="leftside span5">
-              <li><a href="#home" class="scroll"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></li>
-            </ul>
-            <ul class="rightside span5 offset2">
-              <li><a href="http://www.ookb.co/">Notes</a></li>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- END Main Site Nav -->
         
     </header>
 
@@ -148,14 +157,15 @@
     <!-- HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS -->
     <script>
       $(document).ready(function(){
-        $("header nav").hide();
+        $("nav.mainnav").hide();
         $("#main article").hide();
         $("#pager").hide();
       });
 
       //set width of the nav element at the top
       var w = $(window).width()
-      $('header nav').css("width", w-40 + "px" ); 
+
+      $("nav.mainnav").css("width", w-40 + "px" ); 
 
       // set position for stuff to come in at
       var startY = $('header').position().top + 60;
@@ -166,12 +176,12 @@
       
       function checkY(){
         if( $(window).scrollTop() > startY ){
-            $('header nav').slideDown(500);
+            $("nav.mainnav").slideDown(500);
             $("#main article").fadeIn(750);
             $("#pager").fadeIn(750);
             $("#pagedown").fadeOut(250);
         }else{
-            $('header nav').slideUp(500);
+            $("nav.mainnav").slideUp(500);
             $("#main article").fadeOut(750);
             $("#pager").fadeOut(750);
             $("#pagedown").fadeIn(250);
