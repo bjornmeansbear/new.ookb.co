@@ -68,9 +68,11 @@
     </header>
 
     <div id="main" role="main" class="container">
+
       <ul class="tags categories sortlist">
         <li>Tags will be going here</li>
       </ul>
+
       <!-- main array of masonry-ed thumbnails -->
       <div class="row">
         <ul id="masonry">
@@ -182,14 +184,41 @@
 <!--     <script src="http://malsup.github.com/jquery.cycle.all.js"></script> -->
     <script src="js/jquery.cycle.all.js"></script>
     <script src="js/jquery.masonry.js"></script>
-    <script src="js/jquery.isotope.js"></script>
-    
+
     <!-- CUSTOM JS CAN GO IN HERE -->
+    <!-- Slideshow Controls -->
     <script>
+      $('#main .slideshow')
+        .after(function(){$(this).parent().after('<div id="pager">') })
+        .cycle({ 
+          fx:    'fade',
+          speed: 500,
+          timeout: 0,
+          next: '#main .ssnav .next',
+          prev: '#main .ssnav .prev',
+          pager: '#pager' 
+      });
+    </script>  
+
+    <!-- HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS -->
+    <script>
+
       //set width of the nav element at the top
       var w = $(window).width()
-      $('header nav').css("width", w-40 + "px" ); 
+      $("nav.mainnav").css("width", w-40 + "px" ); 
+
     </script>
+    
+    <!-- scroll page down to elements and IDs -->
+    <script>
+      // Some Custom JS for the site
+      // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
+      $(".scroll").click(function(event){    
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+      });
+    </script>
+
     <!-- Masonry Layouts -->
     <script>
       $('#masonry').masonry({
