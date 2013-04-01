@@ -411,6 +411,31 @@ header #pagedown {
 #masonry .placeholder.short {height:75px;}
 #masonry .placeholder.tall  {height:300px;}
 
+/**/
+.overlaidtext {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.overlaidtext p {
+  background: rgba(132,132,120,1);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-top: -84px;
+  padding: 20px;
+  position: absolute;
+  top:50%;
+  left: 140px;
+  text-transform: uppercase;
+  z-index: 99;
+}
+
+.overlaidtext p em {
+  font-weight: 400;
+  font-style: italic;
+  text-transform: lowercase;
+}
 
 /**** Isotope Filtering ****/
 
