@@ -346,6 +346,11 @@ header #pagedown {
   -webkit-filter: saturate(100%);
 }
 
+.slideshow a {
+  display: block;
+  background: none;
+  border: none;
+}
 
 /* 5. Description Styles */
 /* =================================================================== */
