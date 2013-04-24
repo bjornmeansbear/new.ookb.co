@@ -10,38 +10,38 @@ $('#main .slideshow')
 });
 
 // HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS
-$(document).ready(function(){
-  $(".home nav.mainnav").hide();
-  $(".home #main article").hide();
-  $(".home #pager").hide();
-});
-
-//set width of the nav element at the top
-var w = $(window).width()
-$("nav.mainnav").css("width", w-40 + "px" ); 
-
-// set position for stuff to come in at
-var startY = $('header').position().top + 60;
-
-$(window).scroll(function(){
+    $(document).ready(function(){
+      $(".home nav.mainnav").hide();
+      $(".home #main article").hide();
+      $(".home #pager").hide();
+    });
+    
+    //set width of the nav element at the top
+    var w = $(window).width()
+    $("nav.mainnav").css("width", w-40 + "px" ); 
+    
+    // set position for stuff to come in at
+    var startY = $('header').position().top + 60;
+    
+    $(window).scroll(function(){
+        checkY();
+    });
+    
+    function checkY(){
+      if($(window).scrollTop() > startY ){
+         $("nav.mainnav").slideDown(500);
+         $("#main article").fadeIn(750);
+         $("#pager").fadeIn(750);
+         $("#pagedown").fadeOut(250);
+      }
+    }
+    // Do this on load just in case the user starts half way down the page
     checkY();
-});
-
-function checkY(){
-  if($(window).scrollTop() > startY ){
-     $("nav.mainnav").slideDown(500);
-     $("#main article").fadeIn(750);
-     $("#pager").fadeIn(750);
-     $("#pagedown").fadeOut(250);
-  }
-}
-// Do this on load just in case the user starts half way down the page
-checkY();
-
-$("#pagedown").click(function() {
-  $(this).fadeOut(750);
-});
-
+    
+    $("#pagedown").click(function() {
+      $(this).fadeOut(750);
+    });
+// END HIDING/SHOWING NAV    
 
 // Parallax Scrolling for the SiteName -->
 $(window).scroll(function(){
