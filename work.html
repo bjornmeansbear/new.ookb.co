@@ -69,12 +69,34 @@
 
     <div id="main" role="main" class="container">
 
+      <article class="pile">
+        <section class="stack span6 offset3 dragme">
+          <img src="http://farm5.staticflickr.com/4036/4234821800_5ebbb8a093_o.jpg" alt="Happy New Year É" />
+          <img src="http://farm3.staticflickr.com/2689/4242018674_db778d6db2_b.jpg" alt="The Suburbs É" />
+          <img src="http://farm5.staticflickr.com/4057/4348324220_2214e82f86_b.jpg" alt="Simplicity / Sustainability" />
+          <img src="http://farm3.staticflickr.com/2707/4350831436_e3dd982b1c_b.jpg" alt="The Future may take a little while" />
+          <img src="http://farm5.staticflickr.com/4039/4395351303_72532a883f_b.jpg" alt="What makes this work as progressive as my beliefs?" />
+          <img src="http://farm3.staticflickr.com/2681/4496005224_1e09a7ba24_o.jpg" alt="Towers" />
+          <img src="http://farm5.staticflickr.com/4146/5032166482_8c0fd72dd3_b.jpg" alt="Owl Idea -- for lindsey" />
+          <img src="http://farm5.staticflickr.com/4027/4275905564_322b96d678_b.jpg" alt="Hip 2 be Triangle Square Circle" />
+          <img src="http://farm5.staticflickr.com/4099/4880996159_46c21f2fb0_o.jpg" alt="Neue Luxury" />
+          <img src="http://farm5.staticflickr.com/4060/4680634219_18c1d9633c_b.jpg" alt="A Worthwhile Aphorism" />
+          <img src="http://farm2.staticflickr.com/1276/4704827337_363d27506d_b.jpg" alt="too little" />
+          <img src="http://farm5.staticflickr.com/4022/5124600553_d132410dc5_b.jpg" alt="Simplicity is the key to successful living" />
+          <img src="http://farm5.staticflickr.com/4130/5091541464_b93c274f87_b.jpg" alt="Original Vs Good" />
+          <img src="http://farm5.staticflickr.com/4110/5056934607_8469f222ab_b.jpg" alt="Design Envangelism" />
+          <img src="http://farm5.staticflickr.com/4105/5019432080_7044590e3c_o.jpg" alt="Drunk + Disorderly" />
+        </section>
+      </article>
+      
+      <!--
       <div class="row">
         <div class="span12 overlaidtext">
           <p>Coming soon &mdash; <br/>New Work! <br/><em>(Until then enjoy some <br/>colored blocks.)</em></p>
           <img src="img/pfolio/bookcollection.jpg" />
         </div>
       </div>
+      -->
 
 <!--
       <ul class="tags categories sortlist">
@@ -83,6 +105,7 @@
 -->
 
       <!-- main array of masonry-ed thumbnails -->
+      <!--
       <div class="row">
         <ul id="masonry">
           <li class="span1"><div class="placeholder"><a href="http://kristian.bjornard.com">Or, try <em>The Archives</em>...</a></div></li>
@@ -164,6 +187,7 @@
           <li class="span2"><div class="placeholder purple"></div></li>
           <li class="span1"><div class="placeholder"><a href="http://kristian.bjornard.com">Or, try <em>The Archives</em>...</a></div></li>
         </ul>
+        -->
       <!-- end Masonry-ed bits -->
       </div>
     </div>
@@ -201,44 +225,15 @@
     
 <!--     <script src="http://code.jquery.com/jquery-latest.js"></script> -->
     <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/ui/jquery-ui.js"></script>
+    <script src="js/ui/jquery.ui.draggable.js"></script>
     <script src="js/bootstrap.js"></script>
 <!--     <script src="http://malsup.github.com/jquery.cycle.all.js"></script> -->
     <script src="js/jquery.cycle.all.js"></script>
     <script src="js/jquery.masonry.js"></script>
-
+    <script src="js/newookb.js"></script>
+  
     <!-- CUSTOM JS CAN GO IN HERE -->
-    <!-- Slideshow Controls -->
-    <script>
-      $('#main .slideshow')
-        .after(function(){$(this).parent().after('<div id="pager">') })
-        .cycle({ 
-          fx:    'fade',
-          speed: 500,
-          timeout: 0,
-          next: '#main .ssnav .next',
-          prev: '#main .ssnav .prev',
-          pager: '#pager' 
-      });
-    </script>  
-
-    <!-- HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS -->
-    <script>
-
-      //set width of the nav element at the top
-      var w = $(window).width()
-      $("nav.mainnav").css("width", w-40 + "px" ); 
-
-    </script>
-    
-    <!-- scroll page down to elements and IDs -->
-    <script>
-      // Some Custom JS for the site
-      // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
-      $(".scroll").click(function(event){    
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-      });
-    </script>
 
     <!-- Masonry Layouts -->
     <script>

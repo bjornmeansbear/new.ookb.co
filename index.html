@@ -115,26 +115,6 @@
       </article>
       <!-- end slideshow -->
             
-      <article class="pile">
-        <section class="stack span6 offset3 dragme">
-          <img src="http://farm5.staticflickr.com/4036/4234821800_5ebbb8a093_o.jpg" alt="Happy New Year …" />
-          <img src="http://farm3.staticflickr.com/2689/4242018674_db778d6db2_b.jpg" alt="The Suburbs …" />
-          <img src="http://farm5.staticflickr.com/4057/4348324220_2214e82f86_b.jpg" alt="Simplicity / Sustainability" />
-          <img src="http://farm3.staticflickr.com/2707/4350831436_e3dd982b1c_b.jpg" alt="The Future may take a little while" />
-          <img src="http://farm5.staticflickr.com/4039/4395351303_72532a883f_b.jpg" alt="What makes this work as progressive as my beliefs?" />
-          <img src="http://farm3.staticflickr.com/2681/4496005224_1e09a7ba24_o.jpg" alt="Towers" />
-          <img src="http://farm5.staticflickr.com/4146/5032166482_8c0fd72dd3_b.jpg" alt="Owl Idea -- for lindsey" />
-          <img src="http://farm5.staticflickr.com/4027/4275905564_322b96d678_b.jpg" alt="Hip 2 be Triangle Square Circle" />
-          <img src="http://farm5.staticflickr.com/4099/4880996159_46c21f2fb0_o.jpg" alt="Neue Luxury" />
-          <img src="http://farm5.staticflickr.com/4060/4680634219_18c1d9633c_b.jpg" alt="A Worthwhile Aphorism" />
-          <img src="http://farm2.staticflickr.com/1276/4704827337_363d27506d_b.jpg" alt="too little" />
-          <img src="http://farm5.staticflickr.com/4022/5124600553_d132410dc5_b.jpg" alt="Simplicity is the key to successful living" />
-          <img src="http://farm5.staticflickr.com/4130/5091541464_b93c274f87_b.jpg" alt="Original Vs Good" />
-          <img src="http://farm5.staticflickr.com/4110/5056934607_8469f222ab_b.jpg" alt="Design Envangelism" />
-          <img src="http://farm5.staticflickr.com/4105/5019432080_7044590e3c_o.jpg" alt="Drunk + Disorderly" />
-        </section>
-      </article>
-      
     </div>
 
     <footer class="container">
@@ -174,106 +154,11 @@
 <!--     <script src="http://malsup.github.com/jquery.cycle.all.js"></script> -->
     <script src="js/jquery.cycle.all.js"></script>
     <script src="js/jquery.masonry.js"></script>
+    <script src="js/newookb.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
-    <!-- Slideshow Controls -->
     <script>
-      $('#main .slideshow')
-        .after(function(){$(this).parent().after('<div id="pager">') })
-        .cycle({ 
-          fx:    'fade',
-          speed: 500,
-          timeout: 0,
-          next: '#main .ssnav .next',
-          prev: '#main .ssnav .prev',
-          pager: '#pager' 
-      });
-
-    // HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS
-      $(document).ready(function(){
-        $("nav.mainnav").hide();
-        $("#main article").hide();
-        $("#pager").hide();
-      });
-
-      //set width of the nav element at the top
-      var w = $(window).width()
-
-      $("nav.mainnav").css("width", w-40 + "px" ); 
-
-      // set position for stuff to come in at
-      var startY = $('header').position().top + 60;
-      
-      $(window).scroll(function(){
-          checkY();
-      });
-      
-      function checkY(){
-        if($(window).scrollTop() > startY ){
-           $("nav.mainnav").slideDown(500);
-           $("#main article").fadeIn(750);
-           $("#pager").fadeIn(750);
-           $("#pagedown").fadeOut(250);
-        }
-      }
-      // Do this on load just in case the user starts half way down the page
-      checkY();
-      
-      $("#pagedown").click(function() {
-        $(this).fadeOut(750);
-      });
-
-      
-    // Parallax Scrolling for the SiteName -->
-      $(window).scroll(function(){
-        var s = $(window).scrollTop();
-        $("header h1 .first").css("-webkit-transform","translateY(" + (s*-1.11) + "px)").css("-moz-transform","translateY(" + (s*-1.11) + "px)").css("transform","translateY(" + (s*-1.11) + "px)");
-        $("header h1 .middle").css("-webkit-transform","translateY(" + (s*-2.5) + "px)");
-        $("header h1 .last").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
-        $("#array li:nth-child(odd)").css("-webkit-transform","translateY(" + (s*-2.25) + "px)");
-        $("#array li:nth-child(2)").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
-        $("#array li:nth-child(4)").css("-webkit-transform","translateY(" + (s*-4) + "px)");
-        $("#array li:nth-child(6)").css("-webkit-transform","translateY(" + (s*-3) + "px)");
-        $("#array li:nth-child(8)").css("-webkit-transform","translateY(" + (s*-3.75) + "px)");
-      });
-
-      // Some Custom JS for the site
-      // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
-      $(".scroll").click(function(event){    
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-      });
-
-      $(document).ready(function() {
-        $('#array li img').each(function() {
-          var numRand    = Math.random()*99;
-          var multiplier = Math.round(Math.random())*2-1;
-          $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
-        });
-      });
-
-      //randomly assign some position values
-      $(document).ready(function() {
-        $('.stack img').each(function() {
-          var numRand    = Math.random()*33;
-          var multiplier = Math.round(Math.random())*2-1;
-          $(this).css('top', numRand );
-          $(this).css('left', numRand*multiplier );
-          $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
-        });
-      });
-  
-      $(function() {
-        $( ".dragme img" ).draggable();
-      });
-  
-      // attempt to size the height of the draggable area correctly for now...
-      $(document).ready(function() {
-        $("article.pile").height(867);
-      });
-  
     </script>
-
     <!-- end scripts-->
   
   </body>
