@@ -76,7 +76,7 @@ $(document).ready(function() {
   $('.stack img').each(function() {
     var numRand    = Math.random()*33;
     var multiplier = Math.round(Math.random())*2-1;
-    $(this).css('top', numRand );
+    $(this).css('top', numRand*multiplier );
     $(this).css('left', numRand*multiplier );
     $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
   });
