@@ -51,10 +51,9 @@
             <div class="span5"><a class="brand" href="index.html"><h2><em class="gentium">The</em> Office <em class="gentium">of</em> Kristian Bj&oslash;rnard</h2></a></div>
             <div class="nav-collapse collapse span5 offset2 rightside">
               <ul class="nav">
-                <li><a href="#profile" class="profilelink">Profile</a></li>
                 <li><a href="http://notes.ookb.co/">Notes</a></li>
-                <li><a href="http://library.ookb.co">Library</a></li>
-                <li><a href="http://kristian.bjornard.com">Archives</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="http://ookb.wufoo.com/forms/z7x3p3/" onclick="window.open(this.href,  null, 'height=517, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">Contact</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -68,40 +67,69 @@
       <div class="row">
         <figure id="logo" class="span2 offset5"><img src="img/ookblogo.png" /></figure><!-- END LOGO -->
         <h1 class="span12"><span class="first"><em class="gentium one text">The</em> <span class="two text">Office</span></span> <span class="middle"><em class="gentium three text">of</em> <span class="four text">Kristian</span></span> <span class="last"><span class="five text">Bj&oslash;rnard</span></span></h1><!-- END decorative SITE NAME -->
+        
+        <!-- Array of images upon loading -->
+        <ul id="array" class="">
+          <li class="span2"><img src="img/array/1814.jpg" /></li>
+          <li class="span1"><img src="img/array/failure.jpg" /></li>
+          <li class="span3 offset1"><img src="img/array/greenacres.jpg" /></li>
+          <li class="span1"><img src="img/array/lettersfromthefuture.jpg" /></li>
+          <li class="span2"><img src="img/array/sexylibrarian.jpg" /></li>
+          <li class="span3 offset1"><img src="img/array/urb67ideas.jpg" /></li>
+          <li class="span1 offset2"><img src="img/array/urb80twitter.jpg" /></li>
+          <li class="span2"><img src="img/array/urb98summerreading.jpg" /></li>
+        </ul>
+        <!-- end array of images -->
+        
+        <a class="scroll" id="pagedown" href="#main">&#9660;</a><!-- Pagedown button for auto scroll to content -->
+        
+      </div>
+        
     </header>
 
     <div id="main" role="main" class="container">
-      <div class="row">
-        <article class="pile">
-          <section class="stack span6 offset3 dragme">
-            <img src="http://farm5.staticflickr.com/4036/4234821800_5ebbb8a093_o.jpg" alt="Happy New Year …" />
-            <img src="http://farm3.staticflickr.com/2689/4242018674_db778d6db2_b.jpg" alt="The Suburbs …" />
-            <img src="http://farm5.staticflickr.com/4057/4348324220_2214e82f86_b.jpg" alt="Simplicity / Sustainability" />
-            <img src="http://farm3.staticflickr.com/2707/4350831436_e3dd982b1c_b.jpg" alt="The Future may take a little while" />
-            <img src="http://farm5.staticflickr.com/4039/4395351303_72532a883f_b.jpg" alt="What makes this work as progressive as my beliefs?" />
-            <img src="http://farm3.staticflickr.com/2681/4496005224_1e09a7ba24_o.jpg" alt="Towers" />
-            <img src="http://farm5.staticflickr.com/4146/5032166482_8c0fd72dd3_b.jpg" alt="Owl Idea -- for lindsey" />
-            <img src="http://farm5.staticflickr.com/4027/4275905564_322b96d678_b.jpg" alt="Hip 2 be Triangle Square Circle" />
-            <img src="http://farm5.staticflickr.com/4099/4880996159_46c21f2fb0_o.jpg" alt="Neue Luxury" />
-            <img src="http://farm5.staticflickr.com/4060/4680634219_18c1d9633c_b.jpg" alt="A Worthwhile Aphorism" />
-            <img src="http://farm2.staticflickr.com/1276/4704827337_363d27506d_b.jpg" alt="too little" />
-            <img src="http://farm5.staticflickr.com/4022/5124600553_d132410dc5_b.jpg" alt="Simplicity is the key to successful living" />
-            <img src="http://farm5.staticflickr.com/4130/5091541464_b93c274f87_b.jpg" alt="Original Vs Good" />
-            <img src="http://farm5.staticflickr.com/4110/5056934607_8469f222ab_b.jpg" alt="Design Envangelism" />
-            <img src="http://farm5.staticflickr.com/4105/5019432080_7044590e3c_o.jpg" alt="Drunk + Disorderly" />
-            <img src="img/ex/thesis-hello-all-end.jpg" alt="hello... my name is sustainability" />
-            <img src="img/ex/lhudson.jpg" alt="Laura Hudson portfolio website"/>
-            <img src="img/ex/mwood.jpg" alt="Magliacane Woodworking Businesscards"/>
-            <img src="img/ex/sust.jpg" alt="The Sustainabilitist" />
-            <img src="img/ex/greenacres.jpg" alt="Green Acres Book" />
-          </section>
-        </article>
-      </div>
+
+      <!-- main homepage slideshow -->
+      <article class="row ss">
+        <nav class="ssnav span1">
+          <a href="" class="prev">&laquo;</a>
+        </nav>
+        <section class="slideshow span10">
+          <div class="placeholder span10 nm gray">
+            <!-- main homepage description -->
+            <article class="description">
+              <div class="">
+                <p><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> is a boutique design studio in Baltimore, MD specializing in publishing in all its forms.</p>
+              </div>
+            </article>
+            <!-- End Description -->
+          </div>
+          <div class="placeholder span10 nm yellow"><img src="img/ex/greenacres.jpg" /></div>
+          <div class="placeholder span10 nm green"><a href="http://www.thesustainabilitist.com"><img src="img/ex/sust.jpg" /></a></div>
+          <div class="placeholder span10 nm gray">
+            <!-- main homepage description -->
+            <article class="description">
+              <div class="">
+                <p><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> is currently fully committed through the summer of 2013. If you have a project that you think is perfect for us to collaborate with you on, please contact us and we’ll try to arrange a way to make it happen.</p>
+              </div>
+            </article>
+            <!-- End Description -->
+          </div>
+          <div class="placeholder span10 nm blue"><img src="img/ex/mwood.jpg" /></div>
+          <div class="placeholder span10 nm purple"><a href="http://www.laurahudson.net"><img src="img/ex/lhudson.jpg" /></a></div>
+          <div class="placeholder span10 nm red"><img src="img/ex/thesis-hello-all-end.jpg" /></div>
+        </section>
+        <nav class="ssnav span1">
+          <a href="" class="next">&raquo;</a>
+        </nav>
+      </article>
+      <!-- end slideshow -->
+            
     </div>
 
     <footer class="container">
       <div class="row">
-        <p class="span3">&copy; 2003&ndash;<span class="currentyear">2013</span> Kristian Bj&oslash;rnard</p>
+        <p class="span3">&copy; 2003&ndash;2013 Kristian Bj&oslash;rnard</p>
         <p class="span3">All content on this site (unless otherwise noted) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
         <p class="span3 referencelinks">
           <a href="http://www.thesustainabilitist.com">The Sustainabilitist</a><br />
@@ -123,24 +151,7 @@
         </p>
       </div>
     </footer>
-
-
-    <article id="profile">
-      <div class="outer-container">
-        <div class="inner-container">
-          <div class="holder">
-            <section class="description">
-              <p><strong><em>The</em> Office <em>of</em> Kristian Bj&oslash;rnard</strong> (OOKB) is a boutique design studio in Baltimore, MD specializing in publishing in all its forms.</p>
-              <p>OOKB is working on a number of web-powered tools with our partners <a href="http://sundaysenergy.org/">SundaysEnergy</a>. Between these new apps and our current clients we are fully committed. With this in mind, OOKB is not taking on new projects until 2014. If you think your project is perfect for us to collaborate on, please do still contact us and we’ll discuss ways we might still be able to make it happen.</p>
-              <p><em class="fineprint">Kristian Bjørnard will still be available for workshops, speaking engagements, and meetings.</em></p>
-            </section>
-          </div>
-          <p class="ex">&times;</p>
-        </div>
-      </div>
-    </article>
-
-
+  
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
