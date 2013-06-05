@@ -1,6 +1,8 @@
 Kristian Bjørnard is a designer, thinker, educator, and sustainabilitist. He is the director of “The Office of Kristian Bjørnard,” a boutique design studio focused on publishing in all its forms. Kristian holds an MFA in Graphic Design from MICA and a BA in Studio Art from Kalamazoo College. 
 
-Having explored physics and mathematics before funneling his time into painting, Kristian holds an interest in the underlying function of things. Filtered through the lens of the visual, this interest led him to design. Kristian brings his background into the classroom, drawing ties between the sciences and philosophy to the discipline and practice of design.
+While Kristian received his Bachelor’s degree in Art, he nearly became an engineer. The exploration of physics and mathematics once filtered through the lens of the visual eventually led Kristian to design. 
+
+? … interest in the underlying function of things. He brings this into the classroom, drawing ties between the sciences and philosophy to the discipline and practice of design. 
 
 Current design research includes “sustainable graphic design” and new tools for publishing. This has resulted in a more purposeful interest into what systems mean when integrated into design, a focus on rules-based design concepts and reusable processes, the generation of personal “sustainable” aesthetic exercises, and investigating what we can learn from vernacular design methodologies. 
 
