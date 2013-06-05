@@ -1,4 +1,4 @@
-Kristian Bjørnard is a designer, thinker, and sustainabilitist. In addition to his professorial role, he is the director of “The Office of Kristian Bjørnard,” a design studio focused on publishing in all its forms. 
+Kristian Bjørnard is a designer, thinker, and sustainabilitist who lives in an old stone house with his partner Nancy. He is the director of “The Office of Kristian Bjørnard,” a design studio focused on publishing in all its forms. 
 
 Kristian holds an MFA in Graphic Design from MICA and a BA in Studio Art from Kalamazoo College. While Kristian holds his Bachelor’s degree in Art, he nearly became an engineer. His exploration of physics and mathematics filtered through the lenses of painting and drawing led Kristian to graphic design.  
 
