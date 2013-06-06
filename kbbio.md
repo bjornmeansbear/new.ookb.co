@@ -4,4 +4,4 @@ Kristian holds an MFA in Graphic Design from MICA and a BA in Studio Art from Ka
 
 Current research includes “sustainable graphic design” and new publishing utilities. This has resulted in various “sustainable” aesthetic exercises, a more purposeful interest into systems, exploring reusable processes, a focus on rules-based design concepts, and investigating vernacular design methodologies. 
 
-Kristian keeps abreast of current web trends, standards, and technologies, and probes the aspects time and motion as they relate to graphic design. These myriad interests make for interesting insights and connections between science, philosophy, and the practice of design — both in the classroom and in his professional practice.
+Kristian keeps abreast of current web trends, standards, and technologies, and explores time and motion in both digital and print media. These myriad interests make for interesting insights and connections among science, philosophy, and the practice of design — both in the classroom and in his professional practice.
