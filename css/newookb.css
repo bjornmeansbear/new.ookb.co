@@ -146,11 +146,6 @@ nav.navbar #logo {
   margin-top: -20px;
 }
 
-nav.navbar ul.nav li.active{
-  background: rgba(47,41,38,1);
-  color: white;
-}
-
 /* Array of images on the homepage that scroll with text */
 /* ===================================================== */
 #array {
