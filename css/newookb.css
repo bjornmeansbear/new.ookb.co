@@ -142,14 +142,13 @@ nav.navbar ul.nav li:first-child a {
 }
 
 nav.navbar #logo {
-  margin-top: 40px;
+  margin-top: 34px;
 }
 
 nav.navbar #logo, nav.navbar #logo img {
   background: none;
   border: none;
   height: auto;
-  margin: 0;
   padding: 0;
   text-decoration: none;
   width: 170px;
