@@ -8,25 +8,6 @@ body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
 /* END @Font-Face */
 
-/* SETUP media query stuff */
-/*.navbar mediaqueries */
-
-@media (max-width: 979px) {
-  .navbar {
-    width: auto;
-  }
-}
-@media (min-width: 980px) {
-  .navbar {
-    width: 940px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar {
-    width: 1170px;
-  }
-}
-
 /* 2. General Layout / Design Stuff */
 /* =================================================================== */
 /* =================================================================== */
@@ -161,6 +142,28 @@ nav.navbar #logo:hover {background: none;}
 
 nav.navbar #logo {
   margin-top: 40px;
+}
+
+#logo, .nav-collapse {
+  position: relative;
+  z-index: 99999;
+}
+
+/*.navbar mediaqueries */
+@media (max-width: 979px) {
+  .navbar {
+    width: auto;
+  }
+}
+@media (min-width: 980px) {
+  .navbar {
+    width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    width: 1170px;
+  }
 }
 
 /* Array of images on the homepage that scroll with text */
