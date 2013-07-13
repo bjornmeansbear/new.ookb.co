@@ -471,6 +471,10 @@ blockquote {
     clear:both;
     margin: 0 10px;
   }
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 980px) {
