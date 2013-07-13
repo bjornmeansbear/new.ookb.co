@@ -111,7 +111,7 @@ nav.navbar {
 nav.navbar ul.nav {
   list-style: none;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 0;
 }
 
@@ -143,7 +143,7 @@ nav.navbar #logo, nav.navbar #logo img {
 nav.navbar #logo:hover {background: none;}
 
 nav.navbar #logo {
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 /* Array of images on the homepage that scroll with text */
