@@ -9,38 +9,11 @@ $('#main .slideshow')
     pager: '#pager' 
 });
 
-// HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS
-    $(document).ready(function(){
-      $(".home nav.mainnav").hide();
-      $(".home #main article").hide();
-      $(".home #pager").hide();
-    });
-    
     //set width of the nav element at the top
     var w = $(window).width()
     $("nav.mainnav").css("width", w-40 + "px" ); 
     
-    // set position for stuff to come in at
-    var startY = $('header').position().top + 60;
-    
-    $(window).scroll(function(){
-        checkY();
-    });
-    
-    function checkY(){
-      if($(window).scrollTop() > startY ){
-         $("nav.mainnav").slideDown(500);
-         $("#main article").fadeIn(750);
-         $("#pager").fadeIn(750);
-         $("#pagedown").fadeOut(250);
-      }
-    }
-    // Do this on load just in case the user starts half way down the page
-    checkY();
-    
-    $("#pagedown").click(function() {
-      $(this).fadeOut(750);
-    });
+
 // END HIDING/SHOWING NAV    
 
 // Parallax Scrolling for the SiteName -->
@@ -49,11 +22,6 @@ $(window).scroll(function(){
   $("header h1 .first").css("transform","translateY(" + (s*-1.11) + "px)");
   $("header h1 .middle").css("-webkit-transform","translateY(" + (s*-2.5) + "px)");
   $("header h1 .last").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
-  $("#array li:nth-child(odd)").css("-webkit-transform","translateY(" + (s*-2.25) + "px)");
-  $("#array li:nth-child(2)").css("-webkit-transform","translateY(" + (s*-3.25) + "px)");
-  $("#array li:nth-child(4)").css("-webkit-transform","translateY(" + (s*-4) + "px)");
-  $("#array li:nth-child(6)").css("-webkit-transform","translateY(" + (s*-3) + "px)");
-  $("#array li:nth-child(8)").css("-webkit-transform","translateY(" + (s*-3.75) + "px)");
 });
 
 // Some Custom JS for the site
@@ -74,11 +42,17 @@ $(document).ready(function() {
 //randomly assign some position values
 $(document).ready(function() {
   $('.stack img').each(function() {
-    var numRand    = Math.random()*33;
+    var numRand0   = Math.random();
+    var numRand1   = Math.random()*25;
+    var numRand2   = Math.random()*50;
+    var numRand3   = Math.random()*75;
+    var numRand4   = Math.random()*101;
     var multiplier = Math.round(Math.random())*2-1;
-    $(this).css('top', numRand*multiplier );
-    $(this).css('left', numRand*multiplier );
-    $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
+    var ratios1    = numRand3/numRand0;
+    var ratios2    = numRand4/numRand1;
+    $(this).css('top', numRand3*multiplier );
+    $(this).css('left', numRand4*multiplier );
+    $(this).css("-webkit-transform","rotate(" + numRand1*multiplier + "deg)");
   });
 });
 
@@ -87,7 +61,21 @@ $(function() {
 });
 
 // attempt to size the height of the draggable area correctly for now...
+// This needs to be done with a live-querying variable in the future
 $(document).ready(function() {
   $("article.pile").height(867);
 });
+
+
+// Modal Window!!!
+  $(".nav a.profilelink").click(function(event) {
+    event.preventDefault();
+    $('#profile').fadeIn(700);
+  });
+
+  // Some Custom JS for the site
+  $(".ex, #profile").click(function(event) {
+    event.preventDefault();
+    $("#profile").fadeOut(400);
+  });
 
