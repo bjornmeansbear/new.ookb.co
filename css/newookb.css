@@ -80,13 +80,14 @@ article.jumbotron section {
 }
 
 article.jumbotron p {
-  font-size: 300%;
+  font-size: 600%;
   line-height: 1.1;
   font-weight: 700;
 }
 
 footer {
-  border-top: 6px solid rgba(47,41,38,1); 
+  border-top: 6px solid rgba(47,41,38,1);
+  margin-top: 40px;
   margin-bottom: 72px;
   padding: 24px 0;
 }
