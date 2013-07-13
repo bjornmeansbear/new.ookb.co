@@ -1,48 +1,3 @@
-$('#main .slideshow')
-  .after(function(){$(this).parent().after('<div id="pager">') })
-  .cycle({ 
-    fx:    'fade',
-    speed: 500,
-    timeout: 0,
-    next: '#main .ssnav .next',
-    prev: '#main .ssnav .prev',
-    pager: '#pager' 
-});
-
-// HIDE AND SHOW NAV AND MAIN CONTENT FOR LARGER DISPLAYS
-    $(document).ready(function(){
-      $(".home nav.mainnav").hide();
-      $(".home #main article").hide();
-      $(".home #pager").hide();
-    });
-    
-    //set width of the nav element at the top
-    var w = $(window).width()
-    $("nav.mainnav").css("width", w-40 + "px" ); 
-    
-    // set position for stuff to come in at
-    var startY = $('header').position().top + 60;
-    
-    $(window).scroll(function(){
-        checkY();
-    });
-    
-    function checkY(){
-      if($(window).scrollTop() > startY ){
-         $("nav.mainnav").slideDown(500);
-         $("#main article").fadeIn(750);
-         $("#pager").fadeIn(750);
-         $("#pagedown").fadeOut(250);
-      }
-    }
-    // Do this on load just in case the user starts half way down the page
-    checkY();
-    
-    $("#pagedown").click(function() {
-      $(this).fadeOut(750);
-    });
-// END HIDING/SHOWING NAV    
-
 // Parallax Scrolling for the SiteName -->
 $(window).scroll(function(){
   var s = $(window).scrollTop();
@@ -76,14 +31,5 @@ $(document).ready(function() {
     $(this).css('left', numRand*multiplier );
     $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
   });
-});
-
-$(function() {
-  $( ".dragme img" ).draggable();
-});
-
-// attempt to size the height of the draggable area correctly for now...
-$(document).ready(function() {
-  $("article.pile").height(867);
 });
 
