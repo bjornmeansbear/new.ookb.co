@@ -127,10 +127,6 @@ nav.navbar ul.nav a {
   text-decoration: none;
 }
 
-nav.navbar ul.nav li:first-child a {
-  border-right: none;
-}
-
 nav.navbar #logo, nav.navbar #logo img {
   background: none;
   border: none;
@@ -140,6 +136,16 @@ nav.navbar #logo, nav.navbar #logo img {
 
 nav.navbar #logo:hover {background: none;}
 
+.navbar .btn, .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled], .navbar .btn.btn-navbar {
+  background-color: rgba(96,103,103,1);
+  border-color: rgba(47,41,38,1);
+}
+
+.navbar .btn.btn-navbar .icon-bar {
+  background-color: rgba(47,41,38,1);
+  border-color: rgba(96,103,103,1);
+}
+
 /*.navbar mediaqueries */
 @media (max-width: 979px) {
   nav.navbar {
@@ -148,11 +154,17 @@ nav.navbar #logo:hover {background: none;}
   nav.navbar #logo {
     float:left;
     text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
     }
     
   nav.navbar #logo img {
     height: auto;
     width: 100px;
+  }
+  .nav-collapse {
+    margin-top: -70px;
+    margin-right: 5px;
   }
 }
 
@@ -177,6 +189,10 @@ nav.navbar #logo:hover {background: none;}
     margin: 22px 0 0 0;
     top:76px;
   }
+  nav.navbar ul.nav li:first-child a {
+    border-right: none;
+  }
+  
 }
 
 @media (min-width: 1200px) {
