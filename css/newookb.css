@@ -145,7 +145,7 @@ nav.navbar #logo {
 }
 
 #logo, .nav-collapse {
-  position: relative;
+  position: fixed;
   z-index: 99999;
 }
 
