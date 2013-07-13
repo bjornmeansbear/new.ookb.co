@@ -270,8 +270,6 @@ header #pagedown {
 /* =================================================================== */
 /* =================================================================== */
 
-.home #main {min-height: 620px; padding-top: 90px;}
-
 .ss, .slideshow         { min-height: 620px;}
 .home .placeholder      { height: 600px; overflow: hidden; }
 .placeholder.red        { background: rgba(183,80,81,1); }
