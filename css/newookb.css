@@ -70,11 +70,6 @@ header {
   position: relative;
 }
 
-#logo {
-  width: 170px;
-  height: auto;
-}
-
 footer {
   border-top: 6px solid rgba(47,41,38,1); 
   margin-top: 72px;
@@ -85,64 +80,45 @@ footer {
 /* MAIN TOP NAV STYLES                                   */
 /* ===================================================== */
 
-nav.navbar.mainnav {
-  background: rgba(96,103,103,1) !important;
-  border-bottom: 2px solid rgba(47,41,38,1) !important;
-  color: rgb(47, 41, 38);
-  height: 50px;
+nav.navbar {
   line-height: 50px;
   font-size: 16px;
-  left:20px;
-  z-index: 989;
 }
 
-nav.navbar.mainnav .navbar-inner {
-  background: transparent;
-  background-image: none;
-  border: none;
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+nav.navbar ul.nav {
+  margin-top: 40px;
 }
 
-nav.navbar.mainnav h2 {
+nav.navbar ul.nav a {
+  background: rgba(96,103,103,1);
+  border: 1px solid rgba(47,41,38,1);
   color: rgb(47, 41, 38);
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-
-nav.navbar.mainnav h2 em {
-  color: rgb(47, 41, 38);
-  text-transform: lowercase;
-  font-weight: 400;
-}
-
-nav.navbar.mainnav a.brand,
-nav.navbar.mainnav ul.nav a {
-  color: rgb(47, 41, 38);
-  background: none;
-  border: none;
-  opacity: 1;
   display: block;
-  padding: 15px;
+  font-weight: 400;
+  opacity: 1;
+  padding: 10px 30px 10px;
   text-decoration: none;
 }
 
-nav.navbar.mainnav a.brand,
-nav.navbar.mainnav a.brand h2 {
-  text-align: right;
-  float: none;
+nav.navbar ul.nav li:first-child a {
+  border-right: none;
 }
 
-nav.navbar.mainnav .rightside ul.nav li a {
-  border-right: 2px solid rgba(47,41,38,1);
-  font-weight: 400;
-  list-style: none;
+
+nav.navbar #logo, nav.navbar #logo img {
+  border: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  width: 170px;
 }
 
+nav.navbar #logo:hover {background: transparent;}
+
+nav.navbar #logo {
+  margin-top: -20px;
+}
 
 /* Array of images on the homepage that scroll with text */
 /* ===================================================== */
@@ -188,8 +164,7 @@ a {
 }
 
 a:hover,
-nav.navbar.mainnav a.brand:hover,
-nav.navbar.mainnav ul.nav a:hover { 
+nav.navbar ul.nav a:hover { 
   background: rgba(236,64,121,1);
   color: white;
   text-decoration: none;
