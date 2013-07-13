@@ -344,10 +344,9 @@ header #pagedown {
   -webkit-filter: saturate(100%);
 }
 
-/* 5. Description Styles */
+/* + Description Styles */
 /* =================================================================== */
 /* =================================================================== */
-
 .placeholder article.description {display: table; vertical-align: middle;}
 .placeholder article.description div {display: table-cell; vertical-align: middle;}
 .placeholder article.description, .placeholder article.description div {
@@ -361,7 +360,6 @@ header #pagedown {
   line-height: 60px;
 }
 
-
 /* Goofy Stack Styles */
 /* =================================================================== */
 /* =================================================================== */
@@ -370,6 +368,7 @@ header #pagedown {
 .stack img { position: absolute; z-index: 99; box-shadow: 3px 3px 10px rgba(47,41,38,.8); }
 .stack img:hover,
 .stack img:active { z-index: 100; }
+
 
 /*=======================================*/
 /*=======================================*/
@@ -446,6 +445,82 @@ header #pagedown {
 
 #profile .fineprint { font-size: 50%; }
 
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+
+/* Full Page Loading Screen v2 */
+#loader {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(55,46,42,1);
+  color: rgba(132,132,120,1);
+  z-index: 1000000;
+}
+
+#loader .outer-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  display: table;
+  top: 0;
+  right: 0;
+}
+
+#loader .outer-container .inner-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#loader .outer-container .inner-container div {
+  width: 97.91667%;
+  float: left;
+  margin: 0 1.04167%;
+  font-size: 2.25em;
+  line-height: 1.33333em;
+  text-align: center;
+}
+
+#loader .outer-container .inner-container div img {
+  display: block;
+  margin: 0 auto;
+  }
+
+#loader .outer-container .inner-container div h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+#loader .outer-container .inner-container div p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 80%;
+}
+
+#loader .outer-container .inner-container p.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000001;
+}
+
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+
+
+
+
+
+
+
+
+
 
 /* 6. Masonry stuff */
 /* =================================================================== */
@@ -496,6 +571,12 @@ header #pagedown {
 }
 
 
+
+
+
+
+
+
 /* + Notes.ookb.co stuff */
 /* =================================================================== */
 /* =================================================================== */
@@ -532,8 +613,7 @@ article ol {
 #post p {
   font-size: 16px;
   line-height: 26px;
-  margin: 0;
-  text-indent: 32.5px;
+  margin: 0 0 1em;
 }
 
 #post p:nth-child(3) {
@@ -596,69 +676,4 @@ aside#related {
   padding-top: 19.5px;
 }
 
-/*=======================================*/
-/*=======================================*/
-/*=======================================*/
-/*=======================================*/
-/*=======================================*/
-/*=======================================*/
-
-/* Full Page Loading Screen */
-#loader {
-  width: 100% !important;
-  height: 100% !important;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: rgba(55,46,42,1);
-  color: rgba(132,132,120,1);
-  z-index: 1000000;
-}
-
-#loader .outer-container {
-  width: 100% !important;
-  height: 100% !important;
-  position: fixed;
-  display: table;
-  top: 0;
-  right: 0;
-}
-
-#loader .outer-container .inner-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#loader .outer-container .inner-container div {
-  width: 97.91667%;
-  float: left;
-  margin: 0 1.04167%;
-  font-size: 2.25em;
-  line-height: 1.33333em;
-  text-align: center;
-}
-
-#loader .outer-container .inner-container div img {
-  display: block;
-  margin: 0 auto;
-  }
-
-#loader .outer-container .inner-container div h1 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  }
-
-#loader .outer-container .inner-container div p {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 80%;
-}
-
-#loader .outer-container .inner-container p.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1000001;
-}
+/* ========================= */
