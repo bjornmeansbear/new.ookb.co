@@ -70,13 +70,10 @@ header {
   position: relative;
 }
 
-header #logo {
-  position: fixed;
-  top:-40px;
-  z-index: 999;
+#logo {
+  width: 170px;
+  height: auto;
 }
-
-#main {}
 
 footer {
   border-top: 6px solid rgba(47,41,38,1); 
