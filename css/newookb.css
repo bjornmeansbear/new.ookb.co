@@ -75,14 +75,26 @@ article.jumbotron.stripe {
 article.jumbotron section {
   border-top: 2px solid;
   border-bottom: 2px solid;
-  padding: 88px;
-  margin: 0 20px;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 article.jumbotron p {
-  font-size: 600%;
+  font-size: 200%;
   line-height: 1.1;
   font-weight: 700;
+}
+
+@media (min-width: 980px) {
+  article.jumbotron section {
+    padding: 88px;
+    margin: 0 20px;
+  }
+  article.jumbotron p {
+    font-size: 600%;
+    line-height: 1.1;
+    font-weight: 700;
+  }
 }
 
 footer {
@@ -96,36 +108,13 @@ footer {
 /* ===================================================== */
 
 nav.navbar {
-  line-height: 50px;
-  font-size: 16px;
   margin-right: auto;
   margin-left: auto;
-  height: 1px;
-  overflow: visible;
-}
-
-/*.navbar mediaqueries */
-@media (max-width: 979px) {
-  nav.navbar {
-    width: auto;
-  }
-}
-@media (min-width: 980px) {
-  nav.navbar {
-    width: 940px;
-  }
-}
-@media (min-width: 1200px) {
-  nav.navbar {
-    width: 1170px;
-  }
 }
 
 nav.navbar ul.nav {
   list-style: none;
-  margin: 22px 0 0 0;
   padding: 0;
-  top:76px;
 }
 
 nav.navbar ul.nav a {
@@ -142,20 +131,59 @@ nav.navbar ul.nav li:first-child a {
   border-right: none;
 }
 
-nav.navbar #logo {
-  margin-top: 34px;
-}
-
 nav.navbar #logo, nav.navbar #logo img {
   background: none;
   border: none;
-  height: auto;
   padding: 0;
   text-decoration: none;
-  width: 170px;
 }
 
 nav.navbar #logo:hover {background: none;}
+
+/*.navbar mediaqueries */
+@media (max-width: 979px) {
+  nav.navbar {
+    width: auto;
+  }
+  nav.navbar #logo {
+    float:left;
+    text-align: center;
+    }
+    
+  nav.navbar #logo img {
+    height: auto;
+    width: 100px;
+  }
+}
+
+@media (min-width: 980px) {
+  nav.navbar {
+    width: 940px;
+  }
+  nav.navbar {
+    line-height: 50px;
+    font-size: 16px;
+    height: 1px;
+    overflow: visible;
+  }
+  nav.navbar #logo {
+    margin-top: 34px;
+  }
+  nav.navbar #logo, nav.navbar #logo img {
+    height: auto;
+    width: 170px;
+  }
+  nav.navbar ul.nav {
+    margin: 22px 0 0 0;
+    top:76px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav.navbar {
+    width: 1170px;
+  }
+}
 
 /* Array of images on the homepage that scroll with text */
 /* ===================================================== */
@@ -262,124 +290,10 @@ header h1 .three { text-indent: -576px; }
 header h1 .four  { text-indent: 0; }
 header h1 .five  { text-indent: 482px; }
 
-header #pagedown {
-  position: fixed;
-  bottom: 36px;
-  left: 50%;
-  /**/
-  background: none;
-  border: none;
-  font-size: 72px;
-  line-height: 72px;
-  margin: 0;
-  margin-left: -36px;
-  opacity: .66;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  width: 72px;
-  z-index: 999;
-}
-
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 3px solid rgba(96,103,103,1);
-}
-
-
-/* 4. Slideshow Styles */
-/* =================================================================== */
-/* =================================================================== */
-
-.ss, .slideshow         { min-height: 620px;}
-.home .placeholder      { height: 600px; overflow: hidden; }
-.placeholder.red        { background: rgba(183,80,81,1); }
-.placeholder.orange     { background: rgba(195,115,99,1); }
-.placeholder.yellow     { background: rgba(197,192,101,1); }
-.placeholder.green      { background: rgba(140,165,115,1); }
-.placeholder.blue       { background: rgba(157,178,176,1); }
-.placeholder.purple     { background: rgba(174,139,164,1); }
-.placeholder.gray       { background: rgba(132,132,120,1); }
-.placeholder.span10.nm  { margin: 0;}
-
-.ssnav a {
-  display: block;
-  font-size: 100px;
-  height: 349px;
-  line-height: 100px;
-  padding-top: 249px;
-  position: relative;
-  text-align: center;
-  z-index: 889;
-}
-
-#pager {
-  margin: 0 0 x15px 0;
-  position: relative;
-  text-align: center;
-  z-index: 9;
-  width: 100%;
-}
-
-#pager a {
-  background: rgba(96,103,103,1);
-  border: none;
-  display: inline-block;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  width: 20px;
-  text-indent: -9999999px;
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-}
-
-#pager a.activeSlide { background: rgba(47,41,38,1); }
-#pager a:hover { background: rgba(194,211,186,1); }
-
-/* image styling awesomeness */
-/* Grayscale and then colorize! */
-.slideshow a {
-  display: block;
-  background: none;
-  border: none;
-}
-
-.slideshow img {
-  opacity: .5;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
-  filter: gray;
-  -webkit-filter: saturate(0%);
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.slideshow img:hover {
-  opacity: 1;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: saturate(100%);
-}
-
-/* + Description Styles */
-/* =================================================================== */
-/* =================================================================== */
-.placeholder article.description {display: table; vertical-align: middle;}
-.placeholder article.description div {display: table-cell; vertical-align: middle;}
-.placeholder article.description, .placeholder article.description div {
-  height: 100%;
-  width: 100%;
-}
-
-.placeholder article.description div p {
-  padding: 30px;
-  font-size: 45px;
-  line-height: 60px;
 }
 
 /* Goofy Stack Styles */
