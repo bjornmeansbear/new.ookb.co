@@ -106,6 +106,8 @@ footer {
 nav.navbar {
   line-height: 50px;
   font-size: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav.navbar ul.nav {
@@ -128,6 +130,10 @@ nav.navbar ul.nav a {
 
 nav.navbar ul.nav li:first-child a {
   border-right: none;
+}
+
+nav.navbar #logo {
+  float:left;
 }
 
 nav.navbar #logo, nav.navbar #logo img {
