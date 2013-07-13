@@ -65,12 +65,6 @@ body {
 em, cite { font-style: italic; }
 strong { font-weight: 700;}
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   position: relative;
 }
@@ -115,7 +109,10 @@ nav.navbar {
 }
 
 nav.navbar ul.nav {
+  list-style: none;
+  margin: 0;
   margin-top: 40px;
+  padding: 0;
 }
 
 nav.navbar ul.nav a {
@@ -149,6 +146,11 @@ nav.navbar #logo {
   margin-top: -20px;
 }
 
+nav.navbar ul.nav li.active{
+  background: rgba(47,41,38,1);
+  color: white;
+}
+
 /* Array of images on the homepage that scroll with text */
 /* ===================================================== */
 #array {
@@ -167,8 +169,6 @@ nav.navbar #logo {
 #array li:nth-child(4) { margin-top:  20px; }
 #array li:nth-child(5) { margin-top:  50px; }
 #array li:nth-child(6) { margin-top: -25px; }
-
-
 
 /* 3. TYPOGRAPHY */
 /* =================================================================== */
