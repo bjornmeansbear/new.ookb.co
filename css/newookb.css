@@ -142,8 +142,7 @@ nav.navbar ul.nav li:first-child a {
 }
 
 nav.navbar #logo {
-  top:12px;
-  left: 0;
+  margin-top: 40px;
 }
 
 nav.navbar #logo, nav.navbar #logo img {
