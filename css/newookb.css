@@ -28,9 +28,6 @@ blue          rgba(157,178,176,1)
 purple        rgba(174,139,164,1)
 */
 
-* {
-}
-
 html {
   background: rgba(96,103,103,1);
   color: rgba(47,41,38,1) !important;
@@ -61,8 +58,16 @@ header {
   z-index: 0;
 }
 
+footer {
+  border-top: 6px solid rgba(47,41,38,1);
+  margin-top: 40px;
+  margin-bottom: 72px;
+  padding: 24px 0;
+}
+
+/* Big Stripe Across the Middle */
 article.jumbotron {
-  margin-top: 800px;
+  margin-top: 800px; /*going to set by JS, this is just incase... */
   margin-bottom: 40px;
 }
 
@@ -95,13 +100,6 @@ article.jumbotron p {
     line-height: 1.1;
     font-weight: 700;
   }
-}
-
-footer {
-  border-top: 6px solid rgba(47,41,38,1);
-  margin-top: 40px;
-  margin-bottom: 72px;
-  padding: 24px 0;
 }
 
 /* MAIN TOP NAV STYLES                                   */

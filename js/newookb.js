@@ -41,3 +41,9 @@ $(document).ready(function() {
   });
 });
 
+// setting up the cross bar to nicely frame loaded screen 
+
+$(document).ready(function() {
+  var wh = $(window).height();
+  $('.jumbotron').css("margin-top",wh-44);
+});
