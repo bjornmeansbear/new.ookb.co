@@ -37,9 +37,6 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   /**/
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
 }
 
 body {
@@ -64,20 +61,23 @@ html,body,h1,h2,h3,h4,h5,h6,p,span,ul,ol,dl,a {
   line-height: inherit;
 }
 
+h1,h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
 sup {
   vertical-align: super;
 }
 
 em, cite { font-style: italic; }
-h1,h2,h3,h4,h5,h6,strong { font-weight: 700;}
+h1,h2,strong { font-weight: 700;}
 .stricken, del {
   text-decoration: line-through;
 }
 
-
 /* Links and More */
 /* =================================================================== */
-
 a {
   color: rgba(47,41,38,1);
   text-decoration: none;
@@ -122,3 +122,33 @@ blockquote {
   margin: 0 0 20px;
   border-left: 3px solid rgba(96,103,103,1);
 }
+
+/* =================================================================== */
+/* =================================================================== */
+/* LAYOUT */
+/* =================================================================== */
+/* =================================================================== */
+
+body > div.pad {
+  padding: 20px 0px;
+  width: 576px;
+  margin: 0 auto;
+}
+
+header, footer, #blocks section {
+  width: 576px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 300px) {
+  body > div.pad {
+    padding: 20px;
+    width: auto;
+  }
+  
+  header, footer, #blocks section {
+    width: 288px;
+    margin-bottom: 32px;
+  }
+}
+
