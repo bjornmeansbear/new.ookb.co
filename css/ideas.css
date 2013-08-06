@@ -62,7 +62,8 @@ html,body,h1,h2,h3,h4,h5,h6,p,span,ul,ol,dl,a {
 }
 
 h1,h2 {
-  font-size: 24px;
+  font-size: 27px;
+  line-height: 40px;
   margin: 0;
 }
 
@@ -79,11 +80,11 @@ h1,h2,strong { font-weight: 700;}
 /* Links and More */
 /* =================================================================== */
 a {
+  background: rgba(236,64,121,0);
+  border-bottom: 1px solid rgba(96,103,103,1);
   color: rgba(47,41,38,1);
   text-decoration: none;
-  background: rgba(132,132,120,.1);
-  border-bottom: 1px solid rgba(236,64,121,1);
-  padding: 1px 2px 1px 2px;
+  /**/
   transition: all 500ms;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -93,6 +94,7 @@ a {
 
 a:hover { 
   background: rgba(236,64,121,1);
+  border-bottom: none;
   color: white;
   text-decoration: none;
   }
@@ -109,11 +111,11 @@ a:link {
 
 /* Homepage type positioning */
 header h1 .text {
-  transform:rotate(-22.5deg);
-  -ms-transform:rotate(-22.5deg); 
-  -moz-transform:rotate(-22.5deg);
-  -webkit-transform:rotate(-22.5deg);
-  -o-transform:rotate(-22.5deg);
+  transform:rotate(-9deg);
+  -ms-transform:rotate(-9deg); 
+  -moz-transform:rotate(-9deg);
+  -webkit-transform:rotate(-9deg);
+  -o-transform:rotate(-9deg);
 }
 
 /* Quote Style Tweak */
@@ -149,6 +151,68 @@ header, footer, #blocks section {
   header, footer, #blocks section {
     width: 288px;
     margin-bottom: 32px;
+    /**/
+    transform:rotate(-9deg);
+    -ms-transform:rotate(-9deg); 
+    -moz-transform:rotate(-9deg);
+    -webkit-transform:rotate(-9deg);
+    -o-transform:rotate(-9deg);
   }
 }
 
+@media (min-width: 300px) and (max-width: 599px) {
+  * {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 600px) {
+  * {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 759px) {
+
+  body > div.pad {
+    width: 556px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  header {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  #blocks section:nth-child(odd) {
+    margin-left: 222px;
+  }
+
+  #blocks section:nth-child(even) {
+    margin-left: 20px;
+  }
+
+}
+
+
+@media (min-width: 760px) {
+
+  body > div.pad {
+    padding: 20px;
+    width: auto;
+  }
+  
+  header {
+    margin-top: 40px;
+    margin-left: 144px;
+  }
+
+  #intro {
+    margin-top: 40px;
+    margin-left: 144px;
+  }
+
+}
