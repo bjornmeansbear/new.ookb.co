@@ -59,8 +59,10 @@ body {
   line-height: 32px;
 }
 
-.leftside {text-align: right;}
-.rightside {text-align: left;}
+html,body,h1,h2,h3,h4,h5,h6,p,span,ul,ol,dl,a {
+  font-size: 1em;
+  line-height: inherit;
+}
 
 sup {
   vertical-align: super;
