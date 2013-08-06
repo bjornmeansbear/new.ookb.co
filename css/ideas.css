@@ -197,7 +197,6 @@ header, footer, #blocks section {
 
 }
 
-
 @media (min-width: 760px) {
 
   body > div.pad {
@@ -206,13 +205,49 @@ header, footer, #blocks section {
   }
   
   header {
-    margin-top: 40px;
+    margin-top: 48px;
     margin-left: 144px;
   }
 
   #intro {
-    margin-top: 40px;
+    margin-top: 32px;
+    margin-left: 288px;
+  }
+  
+  #location {
+    margin-top: 24px;
+    margin-left: 432px;
+  }
+
+  #currently {
+    margin-top: -24px;
+  }
+
+  #whatelse {
     margin-left: 144px;
+  }
+  
+  #lectures {
+    margin-top: -48px;
+    margin-left: 432px;
+  }
+  #comma {
+    margin-top: 64px;
+  }
+
+  #bjornmeansbear {
+    margin-top: -48px;
+    margin-left: 360px;
+  }
+
+  #referencelinks {
+    margin-top: -32px;
+    margin-left: 72px;
+  }
+
+  #contact {
+    margin-top: -64px;
+    margin-left: 432px;
   }
 
 }
