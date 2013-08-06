@@ -142,6 +142,8 @@ header, footer, #blocks section {
   margin-bottom: 32px;
 }
 
+#logo { width: 144px; height: auto; }
+
 @media (min-width: 300px) {
   body > div.pad {
     padding: 20px;
@@ -182,6 +184,11 @@ header, footer, #blocks section {
     padding: 0;
   }
 
+  #logo {
+    margin-left: 324px;
+    margin-bottom: -144px;
+  }
+
   header {
     margin-top: 40px;
     margin-left: 20px;
@@ -204,6 +211,13 @@ header, footer, #blocks section {
     width: auto;
   }
   
+  #logo {
+    margin-left: 0;
+    margin-bottom: -144px;
+    position: relative;
+    top:216px;
+  }
+
   header {
     margin-top: 48px;
     margin-left: 144px;
