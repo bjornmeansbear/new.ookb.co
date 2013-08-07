@@ -184,6 +184,11 @@ header, footer, #blocks section {
 }
 
 @media (min-width: 479px) and (max-width: 599px) {
+  body > div.pad {
+    padding: 38px;
+    width: auto;
+  }
+  
   header, footer, #blocks section, #portrait {
     width: 360px;
   }
