@@ -183,9 +183,9 @@ header, footer, #blocks section {
   }
 }
 
-@media (min-width: 479px) {
+@media (min-width: 479px) and (max-width: 599px) {
   header, footer, #blocks section, #portrait {
-    width: 288px;
+    width: 360px;
   }
 }
 
