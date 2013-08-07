@@ -111,11 +111,11 @@ a:link {
 
 /* Homepage type positioning */
 header h1 .text {
-  transform:rotate(-9deg);
-  -ms-transform:rotate(-9deg); 
-  -moz-transform:rotate(-9deg);
-  -webkit-transform:rotate(-9deg);
-  -o-transform:rotate(-9deg);
+  transform:rotate(-7deg);
+  -ms-transform:rotate(-7deg); 
+  -moz-transform:rotate(-7deg);
+  -webkit-transform:rotate(-7deg);
+  -o-transform:rotate(-7deg);
 }
 
 /* Quote Style Tweak */
@@ -142,7 +142,8 @@ header, footer, #blocks section {
   margin-bottom: 32px;
 }
 
-#logo { width: 144px; height: auto; }
+#logo { width: 144px; height: auto; margin-left: 72px; margin-top: -72px; margin-bottom: 24px; }
+#portrait { width: 288px; height: auto; margin-bottom: 24px; }
 
 @media (min-width: 300px) {
   body > div.pad {
@@ -150,15 +151,15 @@ header, footer, #blocks section {
     width: auto;
   }
   
-  header, footer, #blocks section {
+  header, footer, #blocks section, #portrait {
     width: 288px;
     margin-bottom: 32px;
     /**/
-    transform:rotate(-9deg);
-    -ms-transform:rotate(-9deg); 
-    -moz-transform:rotate(-9deg);
-    -webkit-transform:rotate(-9deg);
-    -o-transform:rotate(-9deg);
+    transform:rotate(-7deg);
+    -ms-transform:rotate(-7deg); 
+    -moz-transform:rotate(-7deg);
+    -webkit-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
   }
 }
 
@@ -185,15 +186,21 @@ header, footer, #blocks section {
   }
 
   #logo {
-    margin-left: 324px;
+    margin-top: -144px;
     margin-bottom: -144px;
+    margin-left: 324px;
   }
 
   header {
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 24px;
   }
 
+  #portrait {
+    margin-left: -48px;
+    margin-bottom: -56px;
+  }
+  
   #blocks section:nth-child(odd) {
     margin-left: 222px;
   }
@@ -204,7 +211,84 @@ header, footer, #blocks section {
 
 }
 
-@media (min-width: 760px) {
+@media (min-width: 760px) and (max-width: 979px) {
+
+  body > div.pad {
+    padding: 20px;
+    width: 716px;
+    margin: 0 auto;
+  }
+  
+  #logo {
+    margin-top: 0;
+    margin-bottom: -144px;
+    margin-left: 0;
+    position: relative;
+    top:216px;
+    z-index: 1;
+  }
+
+  header {
+    margin-top: 48px;
+    margin-left: 104px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #portrait {
+    margin-top: 0;
+    margin-bottom: -288px;
+    margin-left: 0;
+    position: relative;
+    top:-288px;
+    left: 400px;
+    z-index: 0;
+  }
+  
+  #intro {
+    margin-top: 32px;
+    margin-left: 288px;
+  }
+  
+  #location {
+    margin-top: 24px;
+    margin-left: 432px;
+  }
+
+  #currently {
+    margin-top: -24px;
+  }
+
+  #whatelse {
+    margin-left: 144px;
+  }
+  
+  #lectures {
+    margin-top: -48px;
+    margin-left: 432px;
+  }
+  #comma {
+    margin-top: 64px;
+  }
+
+  #bjornmeansbear {
+    margin-top: -48px;
+    margin-left: 360px;
+  }
+
+  #referencelinks {
+    margin-top: -32px;
+    margin-left: 72px;
+  }
+
+  #contact {
+    margin-top: -64px;
+    margin-left: 432px;
+  }
+
+}
+
+@media (min-width: 980px) {
 
   body > div.pad {
     padding: 20px;
@@ -212,17 +296,31 @@ header, footer, #blocks section {
   }
   
   #logo {
-    margin-left: 0;
+    margin-top: 0;
     margin-bottom: -144px;
+    margin-left: 0;
     position: relative;
     top:216px;
+    z-index: 1;
   }
 
   header {
     margin-top: 48px;
-    margin-left: 144px;
+    margin-left: 104px;
+    position: relative;
+    z-index: 2;
   }
 
+  #portrait {
+    margin-top: 0;
+    margin-bottom: -288px;
+    margin-left: 0;
+    position: relative;
+    top:-288px;
+    left: 400px;
+    z-index: 0;
+  }
+  
   #intro {
     margin-top: 32px;
     margin-left: 288px;
