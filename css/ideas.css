@@ -142,12 +142,25 @@ header, footer, #blocks section {
   margin-bottom: 32px;
 }
 
-#logo { width: 144px; height: auto; margin-left: 72px; margin-top: -72px; margin-bottom: 24px; }
-#portrait { width: 288px; height: auto; margin-bottom: 24px; }
+#logo { 
+  width: 144px; 
+  height: auto; 
+  margin-top: -72px; 
+  margin-bottom: 24px; 
+  margin-left: -72px; 
+  position: relative; 
+  left: 50%; 
+  }
+#portrait { 
+  display: block;
+  width: 288px; 
+  height: auto;
+  margin: 0 auto 24px auto;
+  }
 
 @media (min-width: 300px) {
   body > div.pad {
-    padding: 20px;
+    padding: 15px;
     width: auto;
   }
   
