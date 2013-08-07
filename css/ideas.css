@@ -152,7 +152,7 @@ header, footer, #blocks section {
   }
   
   header, footer, #blocks section, #portrait {
-    width: 288px;
+    width: 248px;
     margin-bottom: 32px;
     /**/
     transform:rotate(-7deg);
@@ -169,6 +169,13 @@ header, footer, #blocks section {
     line-height: 28px;
   }
 }
+
+@media (min-width: 479px) {
+  header, footer, #blocks section, #portrait {
+    width: 288px;
+  }
+}
+
 
 @media (min-width: 600px) {
   * {
