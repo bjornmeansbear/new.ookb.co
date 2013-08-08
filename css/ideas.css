@@ -167,7 +167,10 @@ header, footer, #blocks section {
   header, footer, #blocks section, #portrait {
     width: 248px;
     margin-bottom: 32px;
-    /**/
+  }
+}
+
+  header, footer p, #blocks section p, #portrait {
     transform:rotate(-7deg);
     -ms-transform:rotate(-7deg); 
     -moz-transform:rotate(-7deg);
@@ -175,6 +178,7 @@ header, footer, #blocks section {
     -o-transform:rotate(-7deg);
   }
 }
+
 
 @media (min-width: 300px) and (max-width: 599px) {
   * {
@@ -199,6 +203,9 @@ header, footer, #blocks section {
   * {
     font-size: 18px;
     line-height: 32px;
+  }
+  header, footer, #blocks section, #portrait {
+    width: 288px;
   }
 }
 
@@ -315,76 +322,100 @@ header, footer, #blocks section {
 
 @media (min-width: 980px) {
 
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    border-top: none;
+    border-bottom: none;
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 0;
+    height: auto;
+  }
+
   body > div.pad {
+    margin: 0 !important;
     padding: 20px;
     width: auto;
   }
   
   #logo {
-    margin-top: 0;
-    margin-bottom: -144px;
-    margin-left: 0;
-    position: relative;
-    top:216px;
-    z-index: 1;
+    margin-top: -72px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -180px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    z-index: 99999999;
   }
 
   header {
-    margin-top: 48px;
-    margin-left: 104px;
-    position: relative;
-    z-index: 2;
+    margin-top: -85px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -16px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    z-index: 99999999;
   }
 
   #portrait {
     margin-top: 0;
-    margin-bottom: -288px;
+    margin-bottom: 0;
     margin-left: 0;
     position: relative;
-    top:-288px;
-    left: 400px;
-    z-index: 0;
+    left: 10%;
   }
   
+  #blocks section {
+    margin: 144px 0;
+    position: relative;
+  }
+
   #intro {
-    margin-top: 32px;
-    margin-left: 288px;
+    left: 20%;
   }
-  
+
+  #intro {
+    left: 66%;
+  }
+
   #location {
-    margin-top: 24px;
-    margin-left: 432px;
+    left: 33%;
   }
 
   #currently {
-    margin-top: -24px;
+    left: 40%;
   }
 
   #whatelse {
-    margin-left: 144px;
+    left: 50%;
   }
-  
+
   #lectures {
-    margin-top: -48px;
-    margin-left: 432px;
+    left: 66%;
   }
+
   #comma {
-    margin-top: 64px;
+    left: 36%;
   }
 
   #bjornmeansbear {
-    margin-top: -48px;
-    margin-left: 360px;
+    left: 75%;
   }
 
   #referencelinks {
-    margin-top: -32px;
-    margin-left: 72px;
+    left: 10%
   }
 
-  #contact {
-    margin-top: -64px;
-    margin-left: 432px;
+  footer {
+    position: relative;
+    left: 77%;
   }
 
 }
