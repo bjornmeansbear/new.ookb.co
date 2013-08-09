@@ -416,6 +416,10 @@ header, footer, #blocks section {
     left: 10%
   }
 
+  #contact {
+    left: 40%
+  }
+
   footer {
     position: relative;
     left: 77%;
