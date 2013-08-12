@@ -8,6 +8,9 @@ body, .opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
 /* END @Font-Face */
 
+#widthcounter {position: fixed; top:40px; left:40px;}
+
+
 /* 2. General Layout / Design Stuff */
 /* =================================================================== */
 /* =================================================================== */
@@ -223,9 +226,10 @@ header, footer, #blocks section {
   }
 
   #logo {
-    margin-top: -144px;
-    margin-bottom: -144px;
-    margin-left: 324px;
+    margin-top: 144px;
+    margin-bottom: -288px;
+    margin-left: 288px;
+    position: static; 
   }
 
   header {
@@ -261,7 +265,8 @@ header, footer, #blocks section {
     margin-bottom: -144px;
     margin-left: 0;
     position: relative;
-    top:216px;
+    top:84px;
+    left: -60px;
     z-index: 1;
   }
 
