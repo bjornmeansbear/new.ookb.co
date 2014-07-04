@@ -1,0 +1,325 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/*
+ROBOTO: font-family: 'Roboto', helvetica, arial, sans-serif;
+PLAYFAIR: font-family: 'Playfair Display', georgia, serif;
+OSWALD: font-family: 'Oswald', helvetica, arial, sans-serif;
+*/
+
+/*
+BLUE:      #00AAE2
+GREEN:     #6EAD3F
+YELLOW:    #C8BA00
+ORANGE:    #F58124
+GRAY:      #808080
+DARK-GRAY: #444444
+PURPLE:    #8469a2
+*/
+
+body {
+  background-image:
+    linear-gradient(
+      22deg, 
+      #6EAD3F, 
+      #00AAE2
+    );
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height: 100%;
+  min-width: 100%;
+  /**/
+  color: #444;
+  font-family: 'Roboto', verdana, helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 72px;
+}
+
+h1, h2, h3, h4, h5, h6, p, em, strong, cite, ul, ol, dl, li, dt, dd, article, section {
+  font-family: 'Roboto', verdana, helvetica, arial, sans-serif;
+}
+
+footer {
+  border-top: 30px solid #C8BA00;
+  border-color: rgba(200,186,0,.5);
+  padding: 40px 0px 72px;
+  margin: 60px 0 0;
+  font-size: 95%;
+  line-height: 1.75;
+  /**/
+  background-color: white;
+  background-color: rgba(255,255,255,0.5);
+}
+
+footer * { line-height: 1.75; }
+
+footer a {
+  color: #444;
+  border-bottom: 1px solid #C8BA00;
+  display: inline-block;
+  transition: all 250ms;
+}
+
+footer a:hover {
+  color: white;
+  border-bottom: 1px solid #C8BA00;
+  background: #C8BA00;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+
+footer ul { list-style: none; margin: 0; padding: 0; }
+
+footer ul li { list-style: none; }
+
+/***** NAVBAR RELATED STUFF *****/
+.navbar-default {
+  background: white;
+}
+
+.navbar-default.navbar-fixed-top {border: none;}
+
+.navbar a {
+  transition: all 400ms; 
+}
+
+.navbar .navbar-brand:hover {
+  color: #00AAE2;  /** green **/
+}
+
+.navbar-fixed-top date {
+  padding: 15px;
+  display: inline-block;
+  color: #00AAE2;
+  line-height: 20px;
+}
+
+.navbar-fixed-top date,
+.navbar-default .navbar-nav>li>a {
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 95%;
+}
+
+/***** /END NAVBAR RELATED STUFF *****/
+
+header img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', georgia, times, serif;
+  color: white;
+  font-size: 7em;
+  font-weight: 900;
+  line-height: 1;
+  /**/
+  margin-left: 230px;
+}
+
+header img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', georgia, times, serif;
+  color: white;
+  font-size: 7em;
+  font-weight: 900;
+  line-height: 1;
+  /**/
+  margin-left: 230px;
+}
+
+.sponsors h2 {
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  color: #8469a2;
+  letter-spacing: 1px; 
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-fixed-top,
+.callout,
+main .map .map-img,
+.sponsors ul > li.logo .outer {
+  -moz-box-shadow:    0 0 4px 2px #808080;
+  -webkit-box-shadow: 0 0 4px 2px #808080;
+  -ms-box-shadow:     0 0 4px 2px #808080;
+  -o-box-shadow:      0 0 4px 2px #808080;
+  box-shadow:         0 0 4px 2px #808080;
+}
+
+main {
+  margin-top: 40px;
+}
+
+main .map {
+  margin-top: 60px;
+  margin-bottom: 72px;
+  position: relative;
+}
+
+.map-img {
+  max-width: 100%;
+}
+
+/*
+.map .address-block {
+  position: absolute;
+  top: 60px;
+  margin-left: 15px;
+}
+
+*/
+.sponsors,
+.sponsors ul {
+  margin-top: 30px;
+}
+
+.sponsors ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.sponsors ul > li.logo {
+  margin-bottom: 30px;
+}
+
+.sponsors ul > li.logo .outer {
+  background: white;
+  padding: 15px;
+  height: 165px;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* http://css-tricks.com/centering-in-the-unknown/ - this is what I used for vertical centering... works like a charm! */
+
+.sponsors ul > li.logo .outer:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  margin: -1%; /* Adjusts for spacing */
+}
+
+.sponsors ul > li.logo img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 99%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+/***************************/
+/***************************/
+/***************************/
+/** Callout related stuff **/
+/***************************/
+/***************************/
+/***************************/
+
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 0px solid #ccc;
+  border-left-width: 30px;
+  border-radius: 0;
+  background: white;
+}
+.map .address-block .callout { margin: 0; }
+.callout button {
+  color: white;
+  width: 100%;
+  display: inline-block;
+}
+
+.callout.blue {
+  border-left-color: #00AAE2;
+}
+.callout.blue h4 {
+  color: #00AAE2;
+}
+button.blue {
+  background: #00AAE2;
+}
+
+.callout.green {
+  border-left-color: #6EAD3F;
+}
+.callout.green h4 {
+  color: #6EAD3F;
+}
+button.green {
+  background: #6EAD3F;
+}
+
+
+.callout.yellow {
+  border-left-color: #C8BA00;
+}
+.callout.yellow h4 {
+  color: #C8BA00;
+}
+button.yellow {
+  background: #C8BA00;
+}
+
+
+.callout.orange {
+  border-left-color: #F58124;
+}
+.callout.orange h4 {
+  color: #F58124;
+}
+button.orange {
+  background: #F58124;
+}
+
+
+.callout.gray {
+  border-left-color: #808080;
+}
+.callout.gray h4 {
+  color: #808080;
+}
+button.gray {
+  background: #808080;
+}
+
+
+.callout.purple {
+  border-left-color: #8469a2;
+}
+.callout.purple h4 {
+  color: #8469a2;
+}
+button.purple {
+  background: #8469a2;
+}
+
+
