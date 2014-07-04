@@ -108,38 +108,23 @@ footer ul li { list-style: none; }
 
 /***** /END NAVBAR RELATED STUFF *****/
 
+header {
+  text-align: center;
+}
+
 header img {
-  float: left;
-  width: 200px;
+  width: 150px;
   height: auto;
-  margin-top: 20px;
+  margin-bottom: 10px; 
 }
 
 header h1 {
   font-family: 'Playfair Display', georgia, times, serif;
   color: white;
-  font-size: 7em;
+  font-size: 3.33em;
   font-weight: 900;
   line-height: 1;
-  /**/
-  margin-left: 230px;
-}
-
-header img {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 20px;
-}
-
-header h1 {
-  font-family: 'Playfair Display', georgia, times, serif;
-  color: white;
-  font-size: 7em;
-  font-weight: 900;
-  line-height: 1;
-  /**/
-  margin-left: 230px;
+  margin-left: 0;
 }
 
 .sponsors h2 {
@@ -154,6 +139,24 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+@media (min-width: 769px) {
+  header { text-align: left; }
+  
+  header img {
+    float: left;
+    width: 200px;
+    margin: 20px 0 0 0;
+  }
+  
+  header h1 {
+    font-size: 7em;
+    margin-left: 230px;
+  }
+  
+}
+
+/******/
 
 .navbar-fixed-top,
 .callout,
