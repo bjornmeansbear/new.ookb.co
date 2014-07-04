@@ -326,3 +326,20 @@ button.purple {
 }
 
 
+.logo.platinum .outer {
+  border: 2px solid #444;
+}
+.logo.gold .outer {
+  border: 2px solid #C8BA00;
+}
+.logo.silver .outer {
+  border: 2px solid #00AAE2;
+}
+.logo.bronze .outer {
+  border: 2px solid #F58124;
+}
+.logo.inkind .outer {
+  border: 2px solid #8469a2;
+}
+
+
