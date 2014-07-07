@@ -19,10 +19,19 @@ PURPLE:    #8469a2
 */
 
 body {
+/*
   background-image:
     linear-gradient(
       22deg, 
       #6EAD3F, 
+      #00AAE2
+    );
+*/
+  background-image:
+    linear-gradient(
+      22deg,
+      #F58124,
+      #8469a2,
       #00AAE2
     );
   background-repeat:no-repeat;
