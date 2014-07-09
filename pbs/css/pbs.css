@@ -30,10 +30,8 @@ body {
   background-image:
     linear-gradient(
       60deg,
-      #C8BA00,
-      #F58124,
-      #8469a2,
-      #00AAE2
+      #54AA26,
+      #FDFAD9
     );
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -112,12 +110,6 @@ header h1 {
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-@media (min-width: 769px) {
-  header h1 {
-    font-size: 7em;
-  }
 }
 
 /******/

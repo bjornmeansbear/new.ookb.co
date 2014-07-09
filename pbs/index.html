@@ -23,7 +23,7 @@
     
     <header>
       <div class="container">
-        <h1>PBS demo for CafeteriaMan showings</h1>
+        <h1>PBS listings demo for CafeteriaMan showings</h1>
       </div>
     </header>
 
@@ -39,6 +39,10 @@
           <p>- DATES ARE SUBJECT TO CHANGE.</p>
         </div>
       </div>
+      <hr>
+      <div class="container">
+        <table id="statistics" width="100%"><!-- filled with some majic JS right now... --></table>
+      </div>
     </main>
     
 
@@ -49,6 +53,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.sheetrock/0.1.3/jquery.sheetrock.min.js"></script>
 
     <script>
 
@@ -62,6 +67,15 @@
       
     </script>
     
+    <script>
+      // Define spreadsheet URL.
+      var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=1oDS6TT7iPQb5ngYQFmd0Sbo89n8IvrwZrleumKUBoA8#gid=0';
+
+      // Load an entire sheet.
+      $('#statistics').sheetrock({
+        url: mySpreadsheet
+      });
+    </script>
 
   </body>
 </html>
