@@ -57,12 +57,12 @@
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
       $('#roman p').each(function() {
-        var lctxt = $(this).text().toLowerCase();
-        var regex = /\b[MDCLXVI]+\b/ig;
-        var testing = lctxt.match(regex);
-        $(this).text(lctxt);
-        console.log(lctxt);
-        console.log(testing);
+        var lctxt    = $(this).text().toLowerCase();
+        var regex    = /\b[MDCLXVI]+\b/ig;
+        var testing  = lctxt.match(regex);
+        var rntxt    = testing[0].toUpperCase();
+        var finished = lctxt.replace(regex, rntxt);
+        $(this).text(finished);
       });
     </script>
     <!-- end scripts-->
