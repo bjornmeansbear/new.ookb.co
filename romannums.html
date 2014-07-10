@@ -1,0 +1,72 @@
+
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en" id="home"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+    <title>Roman Numerals</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  
+    <style>
+      #roman p {
+        text-transform: capitalize;
+      }
+    </style>
+  
+  </head>
+  
+  <body class="home" style="margin-top:60px;">
+
+    <article class="container" id="roman">
+      <section class="row">
+
+        <p>Coda Ii</p>
+        <p>Cream Collection Ii</p>
+        <p>Cross-Hatch Ii</p>
+        <p>VERITAS VINO i</p>
+        <p>VERITAS VINO II</p>
+        <p>Veritas Vino III</p>
+        <p>Veritas Vino IV</p>
+        <p>Veritas Vino V</p>
+        <p>Lorem Ipsum Adis Plicit IV</p>
+        <p>LOREM IPSUM ADIS PLICIT VI</p>
+        <p>Kristian Bjornard III</p>
+        <p>Erik Thor MCM</p>
+
+      </section>
+    </article>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+      $('#roman p').each(function() {
+        var lctxt = $(this).text().toLowerCase();
+        var regex = /\b[MDCLXVI]+\b/ig;
+        var testing = lctxt.match(regex);
+        $(this).text(lctxt);
+        console.log(lctxt);
+        console.log(testing);
+      });
+    </script>
+    <!-- end scripts-->
+  
+  </body>
+
+</html>
