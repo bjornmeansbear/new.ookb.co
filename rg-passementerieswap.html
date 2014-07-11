@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ImageSwap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      html, body { height: 100%; width: 100%; }
+      
+      ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+      ul.passementerie > li.ind-item { padding: 20px 0; position: relative; }
+      #item-colors ul li { display: inline-block; width: 100px; overflow: hidden; }
+      #item-colors ul li img { display: inline-block; width: 1000%; }
+      
+      button.item-colors {
+        position: absolute;
+        right: 10%;
+      }
+      
+      #item-colors {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: #fcfbf8;
+        width: 600px;
+        margin-left: -300px;
+        height: 60px;
+        margin-top: -30px;
+        -webkit-box-shadow: 0 0 9px 0 #b4b4b4;
+        -moz-box-shadow: 0 0 9px 0 #b4b4b4;
+        box-shadow: 0 0 9px 0 #b4b4b4;
+      }
+      
+    </style>
+  </head>
+  
+  <body >
+        
+    <ul class="list passementerie">
+
+      <h1> Passementerie Color Demo </h1>
+
+      <li class="ind-item">
+        <img class="img" src="http://r_g.cape.io/items/P-0170-02/1170.jpg" style="">
+        <button class="item-colors"> Colors </button>
+        <div id="item-colors" class="alert">
+          <button type="button" class="close" ><span aria-hidden="true">&times;</span></button>
+          <ul class="list-inline list" >
+            <li class="related-item" style="">
+              <img src="http://r_g.cape.io/items/P-0170-02/1170.jpg">
+            </li>
+            <li class="related-item" style="">
+              <img src="http://r_g.cape.io/items/P-0170-01/1170.jpg">
+            </li>
+            <li class="related-item" style="">
+              <img src="http://r_g.cape.io/items/P-0170-09/1170.jpg">
+            </li>
+            <li class="related-item" style="">
+              <img src="http://r_g.cape.io/items/P-0170-14/1170.jpg">
+            </li>
+            <li class="related-item" style="">
+              <img src="http://r_g.cape.io/items/P-0170-08/1170.jpg">
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li style="">
+        <img class="img" src="http://r_g.cape.io/items/P-0175-02/1170.jpg" style="">
+      </li>
+
+      <li style="">
+        <img class="img" src="http://r_g.cape.io/items/P-0173-02/1170.jpg" style="">
+      </li>
+
+      <li style="">
+        <img class="img" src="http://r_g.cape.io/items/P-0109-02/1170.jpg" style="">
+      </li>
+
+      <li style="">
+        <img class="img" src="http://r_g.cape.io/items/P-0157-02/1170.jpg" style="">
+      </li>
+
+    </ul>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+    <script>
+    
+      $(document).ready(function() {
+        $('#item-colors').find('img').on('mouseover',function() {
+          var newImg = $(this).attr('src');
+          $(this).parent().parent().parent().siblings('.img').attr('src', newImg);
+        });
+        
+        $('button.item-colors').click(function() {
+          $('#item-colors').toggle();
+        });
+
+        $('.alert button.close').click(function() {
+          $('.alert ').hide();
+        });
+        
+      });
+      
+    </script>
+
+  </body>
+</html>
+
+<!-- this site was programmed by OOKB & is powered by CAPE (ookb.co & cape.io) -->
