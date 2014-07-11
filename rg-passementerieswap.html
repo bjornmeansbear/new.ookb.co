@@ -9,12 +9,15 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      html, body { height: 100%; width: 100%; }
+      
+      * { vertical-align: middle; }
+      
+      html, body { height: 100%; width: 100%; background: white; }
       
       ul { list-style: none; padding: 0; margin: 0; text-align: center; }
-      ul.passementerie > li.ind-item { padding: 20px 0; position: relative; }
+      ul.passementerie > li.ind-item { padding: 20px 0; position: relative; background: white; }
       #item-colors ul li { display: inline-block; width: 100px; overflow: hidden; }
-      #item-colors ul li img { display: inline-block; width: 1000%; }
+      #item-colors ul li img { display: inline-block; width: 1300%; position: relative;}
       
       button.item-colors {
         position: absolute;
@@ -25,7 +28,7 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        background: #fcfbf8;
+        background: white;
         width: 600px;
         margin-left: -300px;
         height: 60px;
@@ -33,6 +36,9 @@
         -webkit-box-shadow: 0 0 9px 0 #b4b4b4;
         -moz-box-shadow: 0 0 9px 0 #b4b4b4;
         box-shadow: 0 0 9px 0 #b4b4b4;
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
       }
       
     </style>
@@ -44,7 +50,7 @@
 
       <h1> Passementerie Color Demo </h1>
 
-      <li class="ind-item">
+      <li class="ind-item" style="height: 91px;">
         <img class="img" src="http://r_g.cape.io/items/P-0170-02/1170.jpg" style="">
         <button class="item-colors"> Colors </button>
         <div id="item-colors" class="alert">
