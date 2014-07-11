@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ImageSwap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+    <style>
+      html, body { height: 100%; width: 100%; }
+      
+      .img-large-container {
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .img-large-container img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .taller .img-large-container img {
+        width: auto;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      
+    </style>
+  </head>
+  
+  <body >
+    
+    <!-- Detailed item view -->
+    <div class="img-large-container">
+      <img src="http://img.rg.cape.io/items/92921-02/640.jpg"/>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+    <script>
+    
+      var imageSwap = function() {
+        var ww = $(window).width();
+        var wh = $(window).height();
+        
+        if ( ww < 641) {
+          $('img').attr( 'src', 'http://img.rg.cape.io/items/92921-02/640.jpg' );
+        }
+
+        if ( ww >= 641 ) {
+          $('img').attr( 'src', 'http://img.rg.cape.io/items/92921-02/1536.jpg' );
+        }
+        
+        if ( ww >= 1537 ) {
+          $('img').attr( 'src', 'http://img.rg.cape.io/items/92921-02/2560.jpg' );
+        }
+
+        if (ww >= wh) {
+          $('body').removeClass('taller').addClass('wider');
+        }
+
+        if (wh > ww) {
+          $('body').removeClass('wider').addClass('taller');
+        }
+
+        else {}
+      }
+    
+      $(document).ready(function() {
+        imageSwap();
+      });
+      
+      $(window).resize(function() {
+        imageSwap();
+      });
+    </script>
+
+  </body>
+</html>
+
+<!-- this site was programmed by OOKB & is powered by CAPE (ookb.co & cape.io) -->
