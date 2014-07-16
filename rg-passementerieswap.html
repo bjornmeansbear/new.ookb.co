@@ -19,6 +19,10 @@
       #item-colors ul li { display: inline-block; width: 100px; overflow: hidden; }
       #item-colors ul li img { display: inline-block; width: 1300%; position: relative;}
       
+      .related-item img {
+        cursor: pointer;
+      }
+      
       button.item-colors {
         position: absolute;
         right: 10%;
@@ -99,7 +103,7 @@
     <script>
     
       $(document).ready(function() {
-        $('#item-colors').find('img').on('mouseover',function() {
+        $('#item-colors').find('img').on('click',function() {
           var newImg = $(this).attr('src');
           $(this).parent().parent().parent().siblings('.img').attr('src', newImg);
         });
