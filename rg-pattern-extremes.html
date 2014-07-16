@@ -164,15 +164,6 @@ width: 100%;
   height: auto;
   margin: 0;
 }
-
-button { 
-  background: rgba(252,251,248,1);
-  color: black;
-}
-button.active { 
-  background: #BAAC96;
-  color: #fcfbf8;
-}
       
     </style>
   </head>
@@ -195,37 +186,20 @@ button.active {
       </tbody>
     </table>
 
-    <div class="toggle-colors">
-      <button class="uppercase">
-        Colors
-      </button>
-    </div>
-
     <div class="toggle-pattern">
       <button class="uppercase">
-        <span>View Pattern</span> <span style="display:none;">View Detail</span>
+        Toggle Tall/Wide example
       </button>
     </div>
 
     <!-- Detailed item view -->
-    <div class="img-large-container">
-      <img src="http://www.rogersandgoffigon.com/items/92527-04/1536.jpg"/>
+    <div class="img-pattern-container alt1">
+      <img src="rgalt1.png"/>
     </div>
 
     <!-- Detailed item view -->
-    <div class="img-pattern-container" style="display:none;">
-      <img src="92527-04_large-pattern.jpg"/>
-    </div>
-
-    <div class="ruler-wrap hidden-xs">
-      <ul class="ruler-toggle">
-        <li class="active"><a href="#" class="ruler-inches uppercase">Inches</a></li>
-        <li><a href="#" class="ruler-cm uppercase">Centimeters</a></li>
-      </ul>
-      <div class="rulers">
-        <img src="detail-ruler-inches-1536.png" class="ruler-inches" alt="" width="" height="">
-        <img src="detail-ruler-cm-1536.png" class="ruler-cm" alt="" width="" height="" style="display:none;">
-      </div>
+    <div class="img-pattern-container alt2" style="display:none;">
+      <img src="rgalt2.png"/>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -281,7 +255,6 @@ button.active {
         $(".img-large-container").toggle();
         $(".img-pattern-container").toggle();
         $(".toggle-pattern span").toggle();
-        $(this).toggleClass("active");
         $('.toggle-colors button').removeClass("active");
         return false;
       });
