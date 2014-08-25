@@ -1,0 +1,155 @@
+/*
+rgba(148,120,189,1)
+rgba(162,187,117,1)
+rgba(126,162,189,1)
+rgba(179,120,135,1)
+rgba(179,122,166,1)
+rgba(182,143,118,1)
+rgba(157,187,117,1)
+rgba(179,188,119,1)
+rgba(126,162,189,1)
+rgba(179,120,131,1)
+rgba(134,187,157,1)
+rgba(121,118,188,1)
+rgba(179,122,166,1)
+rgba(183,146,118,1)
+rgba(179,104,81,1)
+rgba(86,86,86,1)
+rgba(52,111,163,1)
+rgba(232,137,123,1)
+rgba(237,176,123,1)
+rgba(244,217,125,1)
+rgba(238,246,125,1)
+*/
+
+body {
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  margin-bottom: 100px;
+  min-height: 700px
+}
+
+.tab-pane {
+  min-height: 500px;
+}
+
+.tab-pane h3 {
+  margin-top: .3em;
+}
+
+.nav-pills>li>a {
+  border-radius: 4px 0px 0px 4px !important;
+}
+
+.tab-content>.tab-pane {
+  margin: 0 -30px;
+  border: 5px solid;
+  padding: 5px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+/*uno*/
+.nav-pills>li.uno>a,
+.tab-content>.tab-pane.uno h3,
+.tab-content>.tab-pane.uno h4,
+.tab-content>.tab-pane.uno a {
+  color: rgba(126,162,189,1);
+}
+
+.nav-pills>li.active.uno>a,
+.nav-pills>li.active.uno>a:hover,
+.nav-pills>li.active.uno>a:focus {
+  color: white;
+  background-color: rgba(126,162,189,1);
+}
+.tab-content>.tab-pane.uno {
+  border-color: rgba(126,162,189,1);
+}
+
+/*dos*/
+.nav-pills>li.dos>a,
+.tab-content>.tab-pane.dos h3,
+.tab-content>.tab-pane.dos h4,
+.tab-content>.tab-pane.dos a {
+  color: rgba(148,120,189,1);
+}
+.nav-pills>li.active.dos>a,
+.nav-pills>li.active.dos>a:hover,
+.nav-pills>li.active.dos>a:focus {
+  color: white;
+  background-color: rgba(148,120,189,1);
+}
+.tab-content>.tab-pane.dos {
+  border-color: rgba(148,120,189,1);
+}
+
+/*tres*/
+.nav-pills>li.tres>a,
+.tab-content>.tab-pane.tres h3,
+.tab-content>.tab-pane.tres h4,
+.tab-content>.tab-pane.tres a {
+  color: rgba(179,120,135,1);
+}
+
+.nav-pills>li.active.tres>a,
+.nav-pills>li.active.tres>a:hover,
+.nav-pills>li.active.tres>a:focus {
+  color: white;
+  background-color: rgba(179,120,135,1);
+}
+.tab-content>.tab-pane.tres {
+  border-color: rgba(179,120,135,1);
+}
+
+/*quatro*/
+.nav-pills>li.quatro>a,
+.tab-content>.tab-pane.quatro h3,
+.tab-content>.tab-pane.quatro h4,
+.tab-content>.tab-pane.quatro a {
+  color: rgba(183,146,118,1);
+}
+.nav-pills>li.active.quatro>a,
+.nav-pills>li.active.quatro>a:hover,
+.nav-pills>li.active.quatro>a:focus {
+  color: white;
+  background-color: rgba(183,146,118,1);
+}
+.tab-content>.tab-pane.quatro {
+  border-color: rgba(183,146,118,1);
+}
+
+/*cinco*/
+.nav-pills>li.cinco>a,
+.tab-content>.tab-pane.cinco h3,
+.tab-content>.tab-pane.cinco h4,
+.tab-content>.tab-pane.cinco a {
+  color: rgba(237,176,123,1);
+}
+.nav-pills>li.active.cinco>a,
+.nav-pills>li.active.cinco>a:hover,
+.nav-pills>li.active.cinco>a:focus {
+  color: white;
+  background-color: rgba(237,176,123,1);
+}
+.tab-content>.tab-pane.cinco {
+  border-color: rgba(237,176,123,1);
+}
+
+/*seis*/
+.nav-pills>li.seis>a,
+.tab-content>.tab-pane.seis h3,
+.tab-content>.tab-pane.seis h4,
+.tab-content>.tab-pane.seis a {
+  color: rgba(157,187,117,1);
+}
+.nav-pills>li.active.seis>a,
+.nav-pills>li.active.seis>a:hover,
+.nav-pills>li.active.seis>a:focus {
+  color: white;
+  background-color: rgba(157,187,117,1);
+}
+.tab-content>.tab-pane.seis {
+  border-color: rgba(157,187,117,1);
+}

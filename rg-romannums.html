@@ -24,6 +24,9 @@
       #roman p {
         text-transform: capitalize;
       }
+      
+      body {
+      }
     </style>
   
   </head>
@@ -64,6 +67,13 @@
         var finished = lctxt.replace(regex, rntxt);
         $(this).text(finished);
       });
+
+      $('#roman p').each(function() {
+        var lctxt    = $(this).text().toLowerCase();
+        var regex    = /\b[MDCLXVI]+\b/ig;
+        $(this).text(lctxt.replace(regex, lctxt.match(regex)[0].toUpperCase()));
+      });
+
     </script>
     <!-- end scripts-->
   
