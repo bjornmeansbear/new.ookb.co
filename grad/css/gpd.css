@@ -39,11 +39,11 @@ body {
   margin-top: .3em;
 }
 
-.nav-pills>li>a {
+article .nav-pills>li>a {
   border-radius: 4px 0px 0px 4px !important;
 }
 
-.tab-content>.tab-pane {
+article .tab-content>.tab-pane {
   margin: 0 -30px;
   border: 5px solid;
   padding: 5px 20px;
