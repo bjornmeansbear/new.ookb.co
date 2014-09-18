@@ -23,19 +23,27 @@ rgba(238,246,125,1)
 */
 
 body {
+  background: white;
   padding-bottom: 50px;
 }
 
-.wrapper {
-  margin-bottom: 100px;
-  min-height: 700px
+header {
+  margin-bottom: 50px;
 }
 
-.tab-pane {
+footer, footer ul {
+  margin-top: 50px;
+}
+
+main > .tab-content > .tab-pane {
+  padding: 0 15px 30px;
+}
+/** custom tab stuff below **/
+article .tab-pane {
   min-height: 500px;
 }
 
-.tab-pane h3 {
+article .tab-pane h3 {
   margin-top: .3em;
 }
 
@@ -44,10 +52,29 @@ article .nav-pills>li>a {
 }
 
 article .tab-content>.tab-pane {
-  margin: 0 -30px;
+  margin: 0 0 0 -30px;
   border: 5px solid;
   padding: 5px 20px;
   border-radius: 0 10px 10px 0;
+}
+
+article ul.nav { padding-left: 15px; }
+
+.tab-pane.you.active,
+.nav-tabs .you.active > a,
+.nav-tabs .you.active > a:hover {
+  background: #ddd;
+}
+.tab-pane.youplus.active,
+.nav-tabs .youplus.active > a,
+.nav-tabs .youplus.active > a:hover {
+  background: wheat;
+}
+
+/**** override bootstrap *****/
+.nav-tabs.nav-justified>li>a {
+  border: none !important;
+  border-radius: 10px 10px 0 0;
 }
 
 /*uno*/
