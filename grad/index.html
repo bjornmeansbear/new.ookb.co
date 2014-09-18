@@ -20,26 +20,32 @@
     <![endif]-->
   </head>
   <body>
-    <header class="container">
-      <!-- design this up a little more and add their logos instead of their names... -->
-      <h1>Graduate Professional Development Checklist</h1>
-      <p class="lead">MICA</p>
-      <p class="lead">Office of Grad Studies</p>
-      <p class="lead">Career Development</p>
-      <button class="btn btn-default btn-lg btn-block">Download Graduate Professional Development Checklist PDF</button>
+    <header>
+      <div class="container">
+        <ul class="list-inline">
+          <li><img src="img/mica_logo_black.png" alt="MICA - Maryland Institute College of Art Logo" /></li>
+          <li><img src="img/gradstudies-logo.png" alt="MICA Graduate Studies Logo" /></li>
+          <li><img src="img/micacareerdevelopment-logo.png" alt="The Joseph Meyerhoff Center For Career Development Logo" /></li>
+        </ul>
+        <h1>Graduate Professional Development Checklist</h1>
+        <button class="btn btn-default btn-lg btn-block">Download Graduate Professional Development Checklist PDF</button>
+      </div>
     </header>
 
-    <main class="container">
+    <main>
 
       <!-- Nav tabs -->
-      <ul class="nav nav-tabs nav-justified" role="tablist">
-        <li class="active you"><a href="#you" role="tab" data-toggle="tab"><h1>You</h1></a></li>
-        <li class="youplus"><a href="#youplus" role="tab" data-toggle="tab"><h1>You+</h1></a></li>
-      </ul>
+      <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist" id="bigtabs">
+          <li class="active you"><a href="#you" role="tab" data-toggle="tab"><h1>You</h1></a></li>
+          <li class="youplus"><a href="#youplus" role="tab" data-toggle="tab"><h1>You+</h1></a></li>
+        </ul>
+      </div>
 
       <!-- Tab panes -->
-      <div class="tab-content">
+      <div class="tab-content" id="maintabs">
         <div class="tab-pane active you" id="you">
+          <div class="container">
           <!-- YOU! -->
             <article id="you" class="row">
               <h1 class="col-xs-12 hidden">You</h1>
@@ -201,8 +207,11 @@
               </div>
 
             </article>
+          </div>
         </div>
+
         <div class="tab-pane youplus" id="youplus">
+          <div class="container">
           <!-- YOU+ -->
             <article id="youplus" class="row">
               <h1 class="col-xs-12 hidden">You+</h1>
@@ -363,19 +372,22 @@
               </div>
 
             </article>
+          </div>
         </div>
+
+        <footer class="container">
+          <button class="btn btn-default btn-lg btn-block">Download Graduate Professional Development Checklist PDF</button>
+          <ul>
+            <li>MICA</li>
+            <li>MICA Career Development</li>
+            <li>MICA Graduate Studies</li>
+          </ul>
+        </footer>
+
       </div>
 
     </main>
 
-    <footer class="container">
-      <button class="btn btn-default btn-lg btn-block">Download Graduate Professional Development Checklist PDF</button>
-      <ul>
-        <li>MICA</li>
-        <li>MICA Career Development</li>
-        <li>MICA Graduate Studies</li>
-      </ul>
-    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

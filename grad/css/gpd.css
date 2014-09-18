@@ -24,11 +24,12 @@ rgba(238,246,125,1)
 
 body {
   background: white;
-  padding-bottom: 50px;
 }
 
 header {
+  padding-top: 20px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 footer, footer ul {
@@ -38,7 +39,29 @@ footer, footer ul {
 main > .tab-content > .tab-pane {
   padding: 0 15px 30px;
 }
+
+/**** header logo stuff *****/
+
+img { max-width: 100%; }
+
+header .list-inline li {
+  max-width: 15%;
+  margin: 0 5%;
+}
+
+header .list-inline li:nth-child(2) {
+  max-width: 10%;
+}
+
+header h1 {
+  margin-bottom: 40px;
+}
+
 /** custom tab stuff below **/
+
+#maintabs {
+  padding-bottom: 100px;
+}
 article .tab-pane {
   min-height: 500px;
 }
@@ -60,12 +83,12 @@ article .tab-content>.tab-pane {
 
 article ul.nav { padding-left: 15px; }
 
-.tab-pane.you.active,
+.tab-content.you,
 .nav-tabs .you.active > a,
 .nav-tabs .you.active > a:hover {
   background: #ddd;
 }
-.tab-pane.youplus.active,
+.tab-content.youplus,
 .nav-tabs .youplus.active > a,
 .nav-tabs .youplus.active > a:hover {
   background: wheat;
