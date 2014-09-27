@@ -1,0 +1,308 @@
+
+@cd-red:      rgba(237,28,36,1);
+@cd-red-half: rgba(237,28,36,.5);
+@cd-gray:     rgba(110,110,112,1);
+@cd-gray-half:rgba(110,110,112,.5);
+
+body {
+  background: white;
+  color: @cd-gray;
+}
+
+header {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+footer,
+footer p,
+footer ul {
+  margin-top: 50px;
+}
+
+footer { margin-bottom: 50px; }
+
+main > .tab-content > .tab-pane {
+  padding: 0 15px 30px;
+}
+
+/**** header logo stuff *****/
+
+img { max-width: 100%; }
+
+header .list-inline li {
+  max-width: 15%;
+  margin: 0 4%;
+  vertical-align: middle;
+}
+
+header .list-inline li:nth-child(1) {
+  margin: 0 8% 0 0;
+}
+
+header .list-inline li:nth-child(3) {
+  max-width: 10%;
+}
+
+header .list-inline li:nth-child(4) {
+  max-width: 18%;
+  margin-right: 0;
+}
+
+header h1 {
+  margin-bottom: 40px;
+}
+
+header h1 {
+    border-bottom: 2px solid @cd-red;
+    padding-bottom: 20px;
+    border-top: 2px solid @cd-red;
+    padding-top: 20px;
+    color: @cd-red;
+}
+
+header .btn-block,
+footer .btn-block {
+    background: white;
+    color: @cd-red;
+    border-color: @cd-red;
+}
+
+header .btn-block:hover,
+footer .btn-block:hover {
+    background: @cd-red;
+    color: white;
+    border-color: @cd-red;
+}
+
+#bigtabs a { color: @cd-red; }
+#bigtabs .active a { color: black; }
+
+/** custom tab stuff below **/
+
+#maintabs {
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+article > h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: .75em;
+}
+
+article .tab-pane {
+  min-height: 275px;
+  background: white;
+}
+
+article .tab-pane h3 {
+  margin-top: .3em;
+}
+
+article .nav-pills>li>a {
+  border-radius: 4px 0px 0px 4px !important;
+}
+
+article .tab-content>.tab-pane {
+  margin: 0 0 0 -30px;
+  border: 5px solid;
+  padding: 5px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+article ul.nav { padding-left: 15px; }
+
+.tab-content.you,
+.nav-tabs .you.active > a,
+.nav-tabs .you.active > a:hover,
+.tab-content.youplus,
+.nav-tabs .youplus.active > a,
+.nav-tabs .youplus.active > a:hover {
+  background: #fde9e9; //super light red
+}
+
+.tab-pane > ul li {
+  margin: 5px 0;
+}
+
+.tab-pane ul {
+  margin-bottom: 20px;
+}
+
+/**** override bootstrap *****/
+.nav-tabs.nav-justified>li>a {
+  border: none !important;
+  border-radius: 10px 10px 0 0;
+  color: black;
+}
+
+.tab-content>.tab-pane.interior a {
+  color: black;
+  border-bottom: 1px solid;
+  box-shadow: inset 0 -3px 0;
+  text-decoration: none !important;
+}
+
+.tab-content>.tab-pane.interior a:hover {
+  color: black;
+}
+
+.mytabs > li > a {
+  color: black;
+}
+
+.mytabs > li > a:hover {
+  background: white;
+}
+
+/*red*/
+@uno:           rgba(120,9,14,1);
+@uno-half:      rgba(120,9,14,.25);
+/*brown*/
+@dos:           rgba(97,71,51,1);
+@dos-half:      rgba(97,71,51,.33);
+/*dk grn*/
+@tres:          rgba(25,96,54,1);
+@tres-half:     rgba(25,96,54,.33);
+/*dk blue*/
+@quatro:        rgba(5,75,120,1);
+@quatro-half:   rgba(5,75,120,.33);
+/*purple*/
+@cinco:         rgba(70,18,92,1);
+@cinco-half:    rgba(70,18,92,.33);
+/* red again? */
+@seis:          @cd-red;
+@seis-half:     @cd-red-half;
+
+/*uno*/
+.tab-content>.tab-pane.interior.uno a {
+  box-shadow: inset 0 -5px 0 @uno-half;
+  border-color: @uno-half;
+}
+
+/* .nav-pills>li.uno>a, */
+.tab-content>.tab-pane.uno h3,
+.tab-content>.tab-pane.uno h4 {
+  color: @uno;
+}
+
+.nav-pills>li.active.uno>a,
+.nav-pills>li.active.uno>a:hover,
+.nav-pills>li.active.uno>a:focus {
+  color: white;
+  background-color: @uno;
+}
+.tab-content>.tab-pane.uno {
+  border-color: @uno;
+}
+
+/*dos*/
+.tab-content>.tab-pane.interior.dos a {
+  box-shadow: inset 0 -5px 0 @dos-half;
+  border-color: @dos-half;
+}
+
+/* .nav-pills>li.dos>a, */
+.tab-content>.tab-pane.dos h3,
+.tab-content>.tab-pane.dos h4 {
+  color: @dos;
+}
+.nav-pills>li.active.dos>a,
+.nav-pills>li.active.dos>a:hover,
+.nav-pills>li.active.dos>a:focus {
+  color: white;
+  background-color: @dos;
+}
+.tab-content>.tab-pane.dos {
+  border-color: @dos;
+}
+
+/*tres*/
+.tab-content>.tab-pane.interior.tres a {
+  box-shadow: inset 0 -5px 0 @tres-half;
+  border-color: @tres-half;
+}
+
+/* .nav-pills>li.tres>a, */
+.tab-content>.tab-pane.tres h3,
+.tab-content>.tab-pane.tres h4 {
+  color: @tres;
+}
+
+.nav-pills>li.active.tres>a,
+.nav-pills>li.active.tres>a:hover,
+.nav-pills>li.active.tres>a:focus {
+  color: white;
+  background-color: @tres;
+}
+
+.tab-content>.tab-pane.tres {
+  border-color: @tres;
+}
+
+/*quatro*/
+.tab-content>.tab-pane.interior.quatro a {
+  box-shadow: inset 0 -5px 0 @quatro-half;
+  border-color: @quatro-half;
+}
+
+/* .nav-pills>li.quatro>a, */
+.tab-content>.tab-pane.quatro h3,
+.tab-content>.tab-pane.quatro h4 {
+  color: @quatro;
+}
+.nav-pills>li.active.quatro>a,
+.nav-pills>li.active.quatro>a:hover,
+.nav-pills>li.active.quatro>a:focus {
+  color: white;
+  background-color: @quatro;
+}
+.tab-content>.tab-pane.quatro {
+  border-color: @quatro;
+}
+
+/*cinco*/
+.tab-content>.tab-pane.interior.cinco a {
+  box-shadow: inset 0 -5px 0 @cinco-half;
+  border-color: @cinco-half;
+}
+
+/* .nav-pills>li.cinco>a, */
+.tab-content>.tab-pane.cinco h3,
+.tab-content>.tab-pane.cinco h4 {
+  color: @cinco;
+}
+.nav-pills>li.active.cinco>a,
+.nav-pills>li.active.cinco>a:hover,
+.nav-pills>li.active.cinco>a:focus {
+  color: white;
+  background-color: @cinco;
+}
+.tab-content>.tab-pane.cinco {
+  border-color: @cinco;
+}
+
+/*seis*/
+.tab-content>.tab-pane.interior.seis a {
+  box-shadow: inset 0 -5px 0 @seis-half;
+  border-color: @seis-half;
+}
+
+/* .nav-pills>li.seis>a, */
+.tab-content>.tab-pane.seis h3,
+.tab-content>.tab-pane.seis h4 {
+  color: @seis;
+}
+.nav-pills>li.active.seis>a,
+.nav-pills>li.active.seis>a:hover,
+.nav-pills>li.active.seis>a:focus {
+  color: white;
+  background-color: @seis;
+}
+.tab-content>.tab-pane.seis {
+  border-color: @seis;
+}
+
+/****/

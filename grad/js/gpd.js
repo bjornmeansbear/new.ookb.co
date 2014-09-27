@@ -41,6 +41,19 @@ $(document).ready(function() {
       window.scrollTo(0, 0);
       $('.mytabs li a[href="' + hashy + '"]').tab('show');
     }
+    if (hashy === '#entrepreneur' || hashy === '#exhibiting' || hashy === '#writing' || hashy === '#teaching' || hashy === '#curating') {
+      $('#bigtabs .you').removeClass('active');
+      $('#maintabs .you').removeClass('active');
+      $('#bigtabs .youplus').addClass('active');
+      $('#maintabs .youplus').addClass('active');
+    }
+    else {
+      $('#bigtabs .youplus').removeClass('active');
+      $('#maintabs .youplus').removeClass('active');
+      $('#bigtabs .you').addClass('active');
+      $('#maintabs .you').addClass('active');
+    }
+
   });
 
 });
