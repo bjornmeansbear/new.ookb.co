@@ -22,30 +22,58 @@ main > .tab-content > .tab-pane {
 img {
   max-width: 100%;
 }
+header .list-inline {
+  margin-bottom: 40px;
+}
 header .list-inline li {
-  max-width: 15%;
-  margin: 0 4%;
+  max-width: 25%;
+  margin: 0 2%;
   vertical-align: middle;
 }
 header .list-inline li:nth-child(1) {
-  margin: 0 8% 0 0;
-}
-header .list-inline li:nth-child(3) {
-  max-width: 10%;
-}
-header .list-inline li:nth-child(4) {
-  max-width: 18%;
-  margin-right: 0;
+  display: list-item;
+  margin-bottom: 20px;
 }
 header h1 {
   margin-bottom: 40px;
-}
-header h1 {
   border-bottom: 2px solid #ed1c24;
   padding-bottom: 20px;
   border-top: 2px solid #ed1c24;
   padding-top: 20px;
   color: #ed1c24;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  header .list-inline {
+    margin-bottom: 0;
+  }
+  header .list-inline li {
+    max-width: 15%;
+    margin: 0 4%;
+    vertical-align: middle;
+  }
+  header .list-inline li:nth-child(1) {
+    display: inline-block;
+    margin: 0 11% 0 0;
+  }
+  header .list-inline li:nth-child(3) {
+    max-width: 10%;
+  }
+  header .list-inline li:nth-child(4) {
+    max-width: 18%;
+    margin-right: 0;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  header .list-inline li:nth-child(1) {
+    margin: 0 8% 0 0;
+  }
+  header h1 {
+    font-size: 36px;
+  }
 }
 header .btn-block,
 footer .btn-block {
@@ -83,13 +111,24 @@ article .tab-pane h3 {
   margin-top: .3em;
 }
 article .nav-pills > li > a {
-  border-radius: 4px 0px 0px 4px !important;
+  border-radius: 4px !important;
 }
 article .tab-content > .tab-pane {
-  margin: 0 0 0 -30px;
+  margin: 0 -15px;
   border: 5px solid;
   padding: 5px 20px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  article .nav-pills > li > a {
+    border-radius: 4px 0px 0px 4px !important;
+  }
+  article .tab-content > .tab-pane {
+    margin: 0 0 0 -30px;
+    border: 5px solid;
+    padding: 5px 20px;
+    border-radius: 0 10px 10px 0;
+  }
 }
 article ul.nav {
   padding-left: 15px;
@@ -250,3 +289,15 @@ article ul.nav {
   border-color: #ed1c24;
 }
 /****/
+/*** Some Mobile Fixes ***/
+a.btn {
+  white-space: normal;
+}
+.nav-tabs.nav-justified li {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 0;
+}
