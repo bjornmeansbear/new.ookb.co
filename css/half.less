@@ -1,0 +1,121 @@
+/* 1. @Font-Face — load my google fonts... */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+
+.opensans {font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+.gentium { font-family: 'Gentium Book Basic', Georgia, serif; }
+
+/* END @Font-Face */
+
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+/* Color Palette */
+@pink:          rgba(236,64,121,1);
+@brown:         rgba(47,41,38,1);
+@gray:          rgba(132,132,120,1);
+@dark-gray:     rgba(96,103,103,1);
+@light-gray:    rgba(194,211,186,1);
+@red:           rgba(183,80,81,1);
+@orange:        rgba(195,115,99,1);
+@yellow:        rgba(197,192,101,1);
+@green:         rgba(140,165,115,1);
+@blue:          rgba(157,178,176,1);
+@purple:        rgba(174,139,164,1);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: @gray;
+  color: @brown;
+  /**/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /**/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  .opensans;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+#main-nav {
+  background: @brown;
+  position: fixed;
+  top:0;
+  right:50%;
+  bottom: 0;
+  left: 0;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+
+#main-nav .vertical {
+  background: @dark-gray;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.vertical ul li {
+  display: block;
+  height: 20vh;
+  padding-top: 62px;
+  width: 62px;
+  position: relative;
+  border: 1px solid @brown;
+  border-bottom: 0;
+}
+
+.vertical ul li:last-child {
+  border-bottom: 1px solid @brown;
+}
+
+.vertical ul li a {
+  color: @brown;
+  display: block;
+  font-weight: 400;
+  padding: 20px;
+  height: 62px;
+  text-decoration: none;
+  width: 20vh;
+  /**/
+  margin-left: -62px;
+  transform: rotate(-90deg);
+  /**/
+}
+
+.vertical ul li a:hover {
+  color: white;
+}

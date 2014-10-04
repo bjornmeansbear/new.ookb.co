@@ -1,0 +1,96 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+/* 1. @Font-Face — load my google fonts... */
+.opensans {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.gentium {
+  font-family: 'Gentium Book Basic', Georgia, serif;
+}
+/* END @Font-Face */
+/* 2. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+/* Color Palette */
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #848478;
+  color: #2f2926;
+  /**/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /**/
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+#main-nav {
+  background: #2f2926;
+  position: fixed;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+}
+#logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+#main-nav .vertical {
+  background: #606767;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.vertical ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.vertical ul li {
+  display: block;
+  height: 20vh;
+  padding-top: 62px;
+  width: 62px;
+  position: relative;
+  border: 1px solid #2f2926;
+  border-bottom: 0;
+}
+.vertical ul li:last-child {
+  border-bottom: 1px solid #2f2926;
+}
+.vertical ul li a {
+  color: #2f2926;
+  display: block;
+  font-weight: 400;
+  padding: 20px;
+  height: 62px;
+  text-decoration: none;
+  width: 20vh;
+  /**/
+  margin-left: -62px;
+  transform: rotate(-90deg);
+  /**/
+}
+.vertical ul li a:hover {
+  color: white;
+}
