@@ -170,7 +170,6 @@ article ul.nav {
 .tab-content > .tab-pane.interior a {
   color: black;
   border-bottom: 1px solid;
-  box-shadow: inset 0 -3px 0;
   text-decoration: none !important;
 }
 .tab-content > .tab-pane.interior a:hover {
@@ -183,15 +182,14 @@ article ul.nav {
   background: white;
 }
 /*red*/
-/*brown*/
+/*orange*/
 /*dk grn*/
 /*dk blue*/
 /*purple*/
 /* red again? */
 /*uno*/
 .tab-content > .tab-pane.interior.uno a {
-  box-shadow: inset 0 -5px 0 rgba(120, 9, 14, 0.25);
-  border-color: rgba(120, 9, 14, 0.25);
+  border-color: #78090e;
 }
 /* .nav-pills>li.uno>a, */
 .tab-content > .tab-pane.uno h3,
@@ -209,27 +207,25 @@ article ul.nav {
 }
 /*dos*/
 .tab-content > .tab-pane.interior.dos a {
-  box-shadow: inset 0 -5px 0 rgba(97, 71, 51, 0.33);
-  border-color: rgba(97, 71, 51, 0.33);
+  border-color: #977804;
 }
 /* .nav-pills>li.dos>a, */
 .tab-content > .tab-pane.dos h3,
 .tab-content > .tab-pane.dos h4 {
-  color: #614733;
+  color: #977804;
 }
 .nav-pills > li.active.dos > a,
 .nav-pills > li.active.dos > a:hover,
 .nav-pills > li.active.dos > a:focus {
   color: white;
-  background-color: #614733;
+  background-color: #977804;
 }
 .tab-content > .tab-pane.dos {
-  border-color: #614733;
+  border-color: #977804;
 }
 /*tres*/
 .tab-content > .tab-pane.interior.tres a {
-  box-shadow: inset 0 -5px 0 rgba(25, 96, 54, 0.33);
-  border-color: rgba(25, 96, 54, 0.33);
+  border-color: #196036;
 }
 /* .nav-pills>li.tres>a, */
 .tab-content > .tab-pane.tres h3,
@@ -247,8 +243,7 @@ article ul.nav {
 }
 /*quatro*/
 .tab-content > .tab-pane.interior.quatro a {
-  box-shadow: inset 0 -5px 0 rgba(5, 75, 120, 0.33);
-  border-color: rgba(5, 75, 120, 0.33);
+  border-color: #054b78;
 }
 /* .nav-pills>li.quatro>a, */
 .tab-content > .tab-pane.quatro h3,
@@ -266,8 +261,7 @@ article ul.nav {
 }
 /*cinco*/
 .tab-content > .tab-pane.interior.cinco a {
-  box-shadow: inset 0 -5px 0 rgba(70, 18, 92, 0.33);
-  border-color: rgba(70, 18, 92, 0.33);
+  border-color: #46125c;
 }
 /* .nav-pills>li.cinco>a, */
 .tab-content > .tab-pane.cinco h3,
@@ -285,8 +279,7 @@ article ul.nav {
 }
 /*seis*/
 .tab-content > .tab-pane.interior.seis a {
-  box-shadow: inset 0 -5px 0 rgba(237, 28, 36, 0.5);
-  border-color: rgba(237, 28, 36, 0.5);
+  border-color: #ed1c24;
 }
 /* .nav-pills>li.seis>a, */
 .tab-content > .tab-pane.seis h3,
