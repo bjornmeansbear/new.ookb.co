@@ -4,6 +4,8 @@
 @cd-gray:     rgba(110,110,112,1);
 @cd-gray-half:rgba(110,110,112,.5);
 
+* { box-sizing: border-box; }
+
 body {
   background: white;
   color: @cd-gray;
@@ -105,8 +107,10 @@ footer .btn-block:hover {
     border-color: @cd-red;
 }
 
-#bigtabs a { color: @cd-red; }
-#bigtabs .active a { color: black; }
+#bigtabs a { color: @cd-red; border-color: lightblue; }
+#bigtabs .active a { color: black; border: none; }
+#bigtabs a:hover { color: #6cb9d2; background: #e1f1f6; }
+#bigtabs .active a:hover { color: black; background: lightblue; }
 
 /** custom tab stuff below **/
 
@@ -162,7 +166,7 @@ article ul.nav { padding-left: 15px; }
 .tab-content.youplus,
 .nav-tabs .youplus.active > a,
 .nav-tabs .youplus.active > a:hover {
-  background: #fde9e9; //super light red
+  background: lightblue;
 }
 
 .tab-pane > ul li {
@@ -175,7 +179,8 @@ article ul.nav { padding-left: 15px; }
 
 /**** override bootstrap *****/
 .nav-tabs.nav-justified>li>a {
-  border: none !important;
+  border-color: lightblue;
+  border-bottom: none !important;
   border-radius: 10px 10px 0 0;
   color: black;
 }
