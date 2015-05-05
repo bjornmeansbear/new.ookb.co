@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Dissection</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/example.css" rel="stylesheet"> 
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Masters and their Images</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <article id="student-listing">
+
+            <div class="button-bar">
+              <input class="search" placeholder="Search" />
+              <button class="sort" data-sort="fname">
+                Sort by First Name
+              </button>
+              <button class="sort" data-sort="lname">
+                Sort by Last Name
+              </button>
+              <button class="sort" data-sort="program">
+                Sort by Program
+              </button>
+            </div>
+              
+            <ul class="list">
+              <!-- dynamically filled with some sweet magix -->
+            </ul>
+
+          </article>
+        </div>
+
+      </div>
+    </div>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mustache.js"></script>
+
+    <script id="student-info" type="text/template">
+    {{#students}}
+      <li class="student">
+        <ul class="info clearfix">
+          <li class="uid hidden">{{uid}}</li>
+          <li class="fname">{{firstName}}</li>
+          <li class="lname">{{lastName}}</li>
+          <li class="program">{{program}}</li>
+          <li class="images">
+            <ul class="image-list">
+              <li class="image">TK {{image}} <button>download</button></li>
+              <li class="image">TK {{image}} <button>download</button></li>
+              <li class="image">TK {{image}} <button>download</button></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    {{/students}}
+    </script>
+
+    <script src="js/list.min.js"></script>
+    <script src="js/fordisplay.js"></script>
+
+  </body>
+</html>
