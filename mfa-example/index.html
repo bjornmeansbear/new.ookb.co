@@ -5,19 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design Dissection</title>
+    <title>Masters and their Images</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-    
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/example.css" rel="stylesheet"> 
-
 
   </head>
 
@@ -65,9 +63,9 @@
           <li class="program">{{program}}</li>
           <li class="images">
             <ul class="image-list">
-              <li class="image">TK {{image}} <button>download</button></li>
-              <li class="image">TK {{image}} <button>download</button></li>
-              <li class="image">TK {{image}} <button>download</button></li>
+              {{#files}}
+                <li class="image"><img src="http://mica2015.imgix.net/{{fileName}}?w=72&h=72&fit=crop" /> <button>download</button></li>
+              {{/files}}
             </ul>
           </li>
         </ul>

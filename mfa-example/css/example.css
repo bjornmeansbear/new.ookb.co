@@ -3,6 +3,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  vertical-align: top;
 }
 
 #student-listing ul.list {
@@ -31,4 +32,6 @@
 
 #student-listing .list .student ul.image-list li {
   border-bottom: 1px solid #eee;
+  vertical-align: top;
+  padding: .25em 0;
 }
