@@ -55,14 +55,29 @@
           <li class="fname">{{firstName}}</li>
           <li class="lname">{{lastName}}</li>
           <li class="program">{{program}}</li>
+          <li class="email">{{uid}}@mica.edu</li>
           <li class="images">
             <ul class="image-list clearfix">
               {{#files}}
                 <li class="image">
-                  <div class="block">
-                    <img src="http://mica2015.imgix.net/{{fileName}}?w=72&h=72&fit=crop" /> <a href="http://mica2015.imgix.net/{{fileName}}?dl=original" class="btn btn-default">Download</a>
-                  </div>
+                  <figure class="block">
+                    <img src="http://mica2015.imgix.net/{{fileName}}?w=72&h=72&fit=crop" />
+                    <a href="http://mica2015.imgix.net/{{fileName}}?dl=original" class="btn btn-default">Download</a>
+                    <figcaption>
+                      {{#metadata}}
+                        <ul>
+                          {{#title}}<h3>{{title}}</h3>{{/title}}
+                          {{#medium}}<li>{{medium}}</li>{{/medium}}
+                          {{#year}}<li>{{year}}</li>{{/year}}
+                          {{#size}}<li>{{size}}</li>{{/size}}
+                        </ul>
+                      {{/metadata}}
+                    </figcaption
+                  </figure>
                 </li>
+              {{/files}}
+              {{^files}}
+                <p>No images on file</p>
               {{/files}}
             </ul>
           </li>

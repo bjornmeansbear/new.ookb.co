@@ -30,7 +30,7 @@
   padding: 1em 0 2em;
 }
 
-#student-listing .list .student ul.image-list li {
+#student-listing .list .student ul.image-list > li {
   width: calc(100% / 6);
   float: left;
   vertical-align: top;
@@ -38,6 +38,7 @@
 }
 
 #student-listing .list .student ul.image-list li .block {
+  margin: 0;
   border: 1px solid #eee;
   vertical-align: top;
   padding: .25em;
@@ -45,4 +46,45 @@
 
 #student-listing .list .student ul.image-list li .block:hover {
   background: #eee;
+}
+
+#student-listing .list .student ul.image-list li .block img {
+  width: 72px;
+  height: 72px;
+}
+
+.fname, .lname {
+  font-weight: bold;
+}
+
+.image-list figure {
+  position: relative;
+  font-size: .9em;
+}
+
+figcaption {
+  background: white;
+  border: 1px solid #eee;
+  display:none;
+  padding: .33em;
+  position: absolute;
+  top:100%;
+  left:-1px;
+  right:-1px;
+  z-index: 99;
+}
+
+figure:hover figcaption {
+  display: block;
+}
+
+figcaption h3 {
+  font-size: 1em;
+  margin: 0;
+  
+}
+
+figcaption li {
+  margin: .33em 0;
+  font-style: italic;
 }
