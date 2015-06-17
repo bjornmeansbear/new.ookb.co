@@ -1,0 +1,44 @@
+body,
+header {
+  background: #e7e7e7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 100;
+  height: 100px;
+}
+
+main {
+  margin-top: calc(100px + 2em);
+}
+
+h1, h2, h1 a, h2 a, h3 a:hover, #footer a:hover, #topnav a:hover, article footer a:hover, .press-room-grid ul li.views-row .views-field-title a, .views_slideshow_singleframe_pager .activeSlide a, .pager a:hover, .breadcrumb a:hover, .page-press-room .press-room-contact span, .view-front-page-happening ul li a, .page-events .acf-view.acf-font-2 a:hover, .views-field-view-node a:hover, .sidebar-lists li a:hover, .node-type-profile #content-area h3 a, .node-type-profile h3 a, .innova-content h3, .happening-content h3, .featured-member-content h3, .page-events a h3:hover, .page-about-chapters #content-area .views-field-title a, .node-type-composer #content-area .field-field-link .field-label, .node-type-composer #content-area .field-field-learn .field-label, .node-type-composer #content-area .field-field-file-upload .field-label, .node-type-composer #content-area .field-field-link .field-item a:hover {
+    color: #D21D1F;
+}
+
+section {
+  border-bottom: 1px solid;
+  margin-bottom: 4em;
+  padding-bottom: 1em;
+}
+
+section:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+section h2.title {
+  text-align: center;
+  font-size: 1.2em;
+  text-shadow: -0.5px -2px 2px #BCBCBC;
+}
+
+a.logo {
+  display: block;
+}
