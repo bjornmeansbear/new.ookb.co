@@ -1,3 +1,6 @@
+header {
+  z-index: 99999;
+}
 header nav {
     position: fixed;
     bottom: 0;
