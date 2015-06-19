@@ -1,0 +1,65 @@
+* { line-height: 1.618; }
+
+body {
+  padding-top: 3rem;
+}
+
+header {
+  background: white;
+  font-size: 1rem;
+  height: 3rem;
+}
+
+header * {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+header .tagline { display: none; }
+
+header .logo { display: none; }
+
+header h1 { 
+  float: left; 
+  font-size: 1rem; 
+  padding: 1rem;
+  margin: 0;
+}
+
+.stripe:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+.stripe {
+  padding: 2em 0;
+}
+
+.hero {
+  background: transparent url("../img/everything-is-connected-invert.png") center center no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 7.5em 0;
+}
+
+.hero .chunk {
+  background: black;
+  text-align: left;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.hero .chunk * {
+  margin: 1.5rem;
+  padding: 0;
+}
+
+.hero .chunk h1 {
+  margin-bottom: 2rem;
+}
+
+.hero .group,
+.hero .container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
