@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>The Office of Kristian Bj&oslash;rnard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lists.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>The Office of Kristian Bjørnard</h1>
+      <nav class="clearfix white bg-black">
+        <div class="sm-col">
+          <a href="index.html" class="btn py2">Work</a>
+          <a href="notes.html" class="btn py2">Notes</a>
+          <a href="http://library.ookb.co" class="btn py2">Library</a>
+          <a href="#" class="btn py2">About</a>
+          <a href="#" class="btn py2">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <article class="jumbotron stripe nowork text-center">
+      <section class="">
+
+        <p>Publishing & Identity Design</p>
+        <p>Baltimore, MD</p>
+
+      </section>
+    </article>
+
+    <main>
+
+      <article id="work">
+        <section>
+          <ul id="work-list" class="list-reset border-bottom">
+            <script id="work-template" type="text/x-mustache-template">
+              {{#contents}}
+              <li class="individual-project border-top" style="background-image: url('http:{{images.0.cdn}}');">
+                <div class="content clearfix">
+                  <p class="h4 white m0 p0 px1 col col-md-2">{{year}} » </p>
+                  <h1 class="h3 white underlined m0 p0 col col-md-10">{{title}}</h1>
+                  <div class="info for-sorting hide">
+                    <p class="title">{{title}}</p>
+                    <p class="year">{{year}}</p>
+                    <p class="category">{{#categories}}{{.}},{{/categories}}</p>
+                    <p class="date">{{date}}</p>
+                    <div class="description">{{{content}}}</div>
+                    <p class="id">{{id}}</p>
+                  </div>
+                </div>
+              </li>
+              {{/contents}}
+            </script>
+          </ul>
+        </section>
+      </article>
+
+    </main>
+
+    <footer class="container">
+      <div class="clearfix">
+        <p class="col col-3">&copy; 2003&ndash;2015 Kristian Bj&oslash;rnard</p>
+        <p class="col col-3">All content on this site (unless otherwise noted) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+        <p class="col col-3 referencelinks">
+          <a href="http://www.thesustainabilitist.com">The Sustainabilitist</a><br />
+          &mdash;<br />
+          <a href="http://dribbble.com/bjornmeansbear">dribbble.com/bjornmeansbear</a><br />
+          <a href="http://flickr.com/photos/bjornmeansbear/">flickr.com/photos/bjornmeansbear</a><br>
+          <a href="https://github.com/bjornmeansbear/">github.com/bjornmeansbear</a><br>
+          <a href="http://instagram.com/bjornmeansbear/">instagram.com/bjornmeansbear</a><br>
+          <a href="http://issuu.com/bjornmeansbear">issuu.com/bjornmeansbear</a><br>
+          <a href="http://pinterest.com/bjornmeansbear/">pinterest.com/bjornmeansbear</a><br>
+          <a href="http://twitter.com/bjornmeansbear/">twitter.com/bjornmeansbear</a><br>
+          <a href="https://vimeo.com/bjornmeansbear">vimeo.com/bjornmeansbear</a>
+        </p>
+        <p class="col col-3">
+          Kristian Bj&oslash;rnard <br/>
+          Designer / Thinker / Sustainabilitist <br/>
+          (507) 301-8402 <br/>
+          kb@ookb.co <br/>
+        </p>
+      </div>
+    </footer>
+
+    <img src="http://kristian.bjornard.com/sites/kristian.bjornard.com/themes/ookb/logo.png" alt="OOKB Logo" title="The Office of Kristian Bjornard" />
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+
+      $.getJSON('http://test.ookb.co/index.json', function(data) {
+
+        //mustache for images
+        var template = $('#work-template').html();
+        var info = Mustache.to_html(template, data.db.work);
+        $('#work-list').html(info);
+        console.log('mustachified');
+        // done with mustache templating
+
+      });
+    </script>
+    <!-- end scripts-->
+
+  </body>
+
+</html>

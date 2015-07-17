@@ -1,0 +1,35 @@
+body {
+  background: rgba(132,132,120,1);
+  color: rgba(47,41,38,1);
+}
+
+.individual-project {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat-x;
+  margin: 0;
+  border-color: rgba(132,132,120,1);
+  border-width: 2px;
+  min-height: 1em;
+}
+
+.individual-project:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  background: rgba(47,41,38,.5);
+  visibility: hidden;
+  display: none;
+  padding: 3em;
+}
+
+.individual-project:hover .content {
+  visibility: visible;
+  display: block;
+}
+
+.underlined {
+  border-bottom: .1em solid rgba(236,64,121,.5);
+}

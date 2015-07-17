@@ -1,0 +1,93 @@
+/* -----------------------------------------------------*/
+/* --------------->>> variables.less <<<----------------*/
+/* -----------------------------------------------------*/
+
+/* 1. @Font-Face — load my google fonts... */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+
+/* 2. Load league gothic from my font server... */
+
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('http://fonts.ookb.co/ff/leaguegothic-regular-webfont.eot');
+  src:  local('League Gothic'),
+        local('LeagueGothic-Regular'),
+        url('http://fonts.ookb.co/ff/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://fonts.ookb.co/ff/leaguegothic-regular-webfont.woff') format('woff'),
+        url('http://fonts.ookb.co/ff/leaguegothic-regular-webfont.ttf') format('truetype'),
+        url('http://fonts.ookb.co/ff/leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('http://fonts.ookb.co/ff/leaguegothic-italic-webfont.eot');
+  src:  local('League Gothic Italic'),
+        local('LeagueGothic-Italic'),
+        url('http://fonts.ookb.co/ff/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://fonts.ookb.co/ff/leaguegothic-italic-webfont.woff') format('woff'),
+        url('http://fonts.ookb.co/ff/leaguegothic-italic-webfont.ttf') format('truetype'),
+        url('http://fonts.ookb.co/ff/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@open-sans-stack: 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
+@gentium-stack: 'Gentium Book Basic', Cambria, Georgia, Times, serif;
+
+.league-gothic-stack {
+  font-family: 'LeagueGothic', Calibri, Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+}
+
+/* Color Palette */
+@ookb-pink:          rgba(236,64,121,1);
+@ookb-brown:         rgba(47,41,38,1);
+@ookb-gray:          rgba(132,132,120,1);
+@ookb-darkgray:      rgba(96,103,103,1);
+@ookb-lightgray:     rgba(194,211,186,1);
+
+@ookb-red:           rgba(183,80,81,1);
+@ookb-orange:        rgba(195,115,99,1);
+@ookb-yellow:        rgba(197,192,101,1);
+@ookb-green:         rgba(140,165,115,1);
+@ookb-blue:          rgba(157,178,176,1);
+@ookb-purple:        rgba(174,139,164,1);
+
+/** other general reusable classes/hacks **/
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}
+
+.add-top(@margin) {
+  margin-top: @margin;
+}
+
+.add-bottom(@margin) {
+  margin-bottom: @margin;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+/* -----------------------------------------------------*/
+/* ------------->>> /end variables.less <<<-------------*/
+/* -----------------------------------------------------*/
+
+body {
+  background-color: @ookb-purple !important;
+}
