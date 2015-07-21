@@ -1,6 +1,13 @@
-body {
-  background: rgba(132,132,120,1);
+
+.ookb-brown {
   color: rgba(47,41,38,1);
+}
+
+.bg-ookb-gray {
+  background: rgba(132,132,120,1);
+}
+.bg-ookb-darkgray {
+  background: rgba(96,103,103,1);
 }
 
 .individual-project {
@@ -32,4 +39,101 @@ body {
 
 .underlined {
   border-bottom: .1em solid rgba(236,64,121,.5);
+}
+
+/**/
+
+.cool-border {
+  pointer-events: none;
+  z-index: 222;
+  position: fixed;
+}
+
+.cool-border.one {
+  pointer-events: none;
+  border: 1rem solid rgba(96,103,103,1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cool-border.two {
+  border: 1px solid rgba(47,41,38,1);
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/** logo stuff **/
+.logo,
+.logo-top,
+.logo-header,
+.logo-bottom,
+.logo-footer,
+.logo-big,
+.logo-small {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  height: auto;
+  max-width: 100%;
+}
+
+header .logo-top {
+  width: 170px;
+}
+
+header .logo-wrap {
+
+}
+
+/** navigation related **/
+header nav {
+  top: 3em;
+}
+.navbar li {
+  display: block;
+  float: left;
+}
+.navbar .btn {
+  border: 1px solid rgba(47,41,38,1);
+  color: rgb(47, 41, 38);
+  display: block;
+  font-weight: 400;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.navbar .btn {
+  border-right: none;
+}
+.navbar li:last-child .btn {
+  border-right: 1px solid rgba(47,41,38,1);
+}
+
+/** some positioning stuff? **/
+.z999 {
+  z-index: 999;
+}
+
+.p2em {
+  padding: 2em;
+}
+.pt6em {
+  padding-top: 6em;
+}
+.pt15em {
+  padding-top: 15em;
+}
+
+.py4em {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.pb2em {
+  padding-bottom: 2em;
 }
