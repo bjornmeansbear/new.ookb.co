@@ -1,4 +1,16 @@
 /** variables **/
+/** mini CSS modules **/
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.z999 {
+  z-index: 999;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+}
 /** grid **/
 .columns {
   box-sizing: border-box;
@@ -10,21 +22,21 @@
   line-height: 1.5em;
   /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
 }
-.columns.one,
-.columns.two,
-.columns.three,
-.columns.four,
-.columns.five,
-.columns.six,
-.columns.seven,
-.columns.eight,
-.columns.nine,
-.columns.ten,
-.columns.eleven,
-.columns.twelve,
-.columns.thirteen,
-.columns.fourteen,
-.columns.fifteen {
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen {
   width: calc(100%);
 }
 @media (min-width: 52em) {
@@ -32,56 +44,111 @@
   .columns {
     float: left;
   }
-  .columns.one {
+  .columns.right {
+    float: right;
+  }
+  .one {
     width: calc(6.66666667%);
   }
-  .columns.two {
+  .two {
     width: calc(13.33333333%);
   }
-  .columns.three {
+  .three {
     width: calc(20%);
   }
-  .columns.four {
+  .four {
     width: calc(26.66666667%);
   }
-  .columns.five {
+  .five {
     width: calc(33.33333333%);
   }
-  .columns.six {
+  .six {
     width: calc(40%);
   }
-  .columns.seven {
+  .seven {
     width: calc(46.66666667%);
   }
-  .columns.eight {
+  .half {
+    width: 50%;
+  }
+  .eight {
     width: calc(53.33333333%);
   }
-  .columns.nine {
+  .nine {
     width: calc(60%);
   }
-  .columns.ten {
+  .ten {
     width: calc(66.66666667%);
   }
-  .columns.eleven {
+  .eleven {
     width: calc(73.33333333%);
   }
-  .columns.twelve {
+  .twelve {
     width: calc(80%);
   }
-  .columns.thirteen {
+  .thirteen {
     width: calc(86.66666667%);
   }
-  .columns.fourteen {
+  .fourteen {
     width: calc(93.33333333%);
   }
-  .columns.fifteen {
+  .fifteen {
     width: calc(100%);
   }
   /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
+  .offset-by-one {
+    margin-left: calc(6.66666667%);
+  }
+  .offset-by-two {
+    margin-left: calc(13.33333333%);
+  }
+  .offset-by-three {
+    margin-left: calc(20%);
+  }
+  .offset-by-four {
+    margin-left: calc(26.66666667%);
+  }
+  .offset-by-five {
+    margin-left: calc(33.33333333%);
+  }
+  .offset-by-six {
+    margin-left: calc(40%);
+  }
+  .offset-by-seven {
+    margin-left: calc(46.66666667%);
+  }
+  .offset-by-half {
+    margin-left: 50%;
+  }
+  .offset-by-eight {
+    margin-left: calc(53.33333333%);
+  }
+  .offset-by-nine {
+    margin-left: calc(60%);
+  }
+  .offset-by-ten {
+    margin-left: calc(66.66666667%);
+  }
+  .offset-by-eleven {
+    margin-left: calc(73.33333333%);
+  }
+  .offset-by-twelve {
+    margin-left: calc(80%);
+  }
+  .offset-by-thirteen {
+    margin-left: calc(86.66666667%);
+  }
+  .offset-by-fourteen {
+    margin-left: calc(93.33333333%);
+  }
+  .offset-by-fifteen {
+    margin-left: calc(100%);
+  }
 }
 /** styling! **/
 body {
   font-family: Helvetica, Arial, sans-serif;
+  padding-top: 4em;
 }
 .simple-story h1,
 .simple-story h2,

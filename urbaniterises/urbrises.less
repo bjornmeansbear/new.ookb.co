@@ -1,7 +1,20 @@
 /** variables **/
 
 @columns: 15;
-.col(@span) { width: calc(100% / @columns * @span); }
+.col(@span)        { width: calc(100% / @columns * @span); }
+.col-offset(@span) { margin-left: calc(100% / @columns * @span); }
+
+/** mini CSS modules **/
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.z999 {
+  z-index: 999;
+}
+
+.cover { margin: 0; padding: 0; }
 
 /** grid **/
 .columns {
@@ -15,48 +28,70 @@
   /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
 }
 
-.columns.one,
-.columns.two,
-.columns.three,
-.columns.four,
-.columns.five,
-.columns.six,
-.columns.seven,
-.columns.eight,
-.columns.nine,
-.columns.ten,
-.columns.eleven,
-.columns.twelve,
-.columns.thirteen,
-.columns.fourteen,
-.columns.fifteen  { .col(15); }
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen  { .col(15); }
 
 @media (min-width: 52em) { /**52em is medium cutoff from BassCss **/
   .columns {
     float: left;
   }
+  .columns.right {
+    float: right;
+  }
 
-  .columns.one      { .col(01); }
-  .columns.two      { .col(02); }
-  .columns.three    { .col(03); }
-  .columns.four     { .col(04); }
-  .columns.five     { .col(05); }
-  .columns.six      { .col(06); }
-  .columns.seven    { .col(07); }
-  .columns.eight    { .col(08); }
-  .columns.nine     { .col(09); }
-  .columns.ten      { .col(10); }
-  .columns.eleven   { .col(11); }
-  .columns.twelve   { .col(12); }
-  .columns.thirteen { .col(13); }
-  .columns.fourteen { .col(14); }
-  .columns.fifteen  { .col(15); }
+  .one      { .col(01); }
+  .two      { .col(02); }
+  .three    { .col(03); }
+  .four     { .col(04); }
+  .five     { .col(05); }
+  .six      { .col(06); }
+  .seven    { .col(07); }
+  .half     { width: 50%; }
+  .eight    { .col(08); }
+  .nine     { .col(09); }
+  .ten      { .col(10); }
+  .eleven   { .col(11); }
+  .twelve   { .col(12); }
+  .thirteen { .col(13); }
+  .fourteen { .col(14); }
+  .fifteen  { .col(15); }
   /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
+
+  .offset-by-one      { .col-offset(01); }
+  .offset-by-two      { .col-offset(02); }
+  .offset-by-three    { .col-offset(03); }
+  .offset-by-four     { .col-offset(04); }
+  .offset-by-five     { .col-offset(05); }
+  .offset-by-six      { .col-offset(06); }
+  .offset-by-seven    { .col-offset(07); }
+  .offset-by-half     { margin-left: 50%; }
+  .offset-by-eight    { .col-offset(08); }
+  .offset-by-nine     { .col-offset(09); }
+  .offset-by-ten      { .col-offset(10); }
+  .offset-by-eleven   { .col-offset(11); }
+  .offset-by-twelve   { .col-offset(12); }
+  .offset-by-thirteen { .col-offset(13); }
+  .offset-by-fourteen { .col-offset(14); }
+  .offset-by-fifteen  { .col-offset(15); }
 }
 
 /** styling! **/
 body {
   font-family: Helvetica, Arial, sans-serif;
+  padding-top: 4em;
 }
 
 .simple-story {
