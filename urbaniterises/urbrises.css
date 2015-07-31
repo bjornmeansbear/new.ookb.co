@@ -1,0 +1,117 @@
+/** variables **/
+/** grid **/
+.columns {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
+  padding-right: .75em;
+  padding-left: .75em;
+  line-height: 1.5em;
+  /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
+}
+.columns.one,
+.columns.two,
+.columns.three,
+.columns.four,
+.columns.five,
+.columns.six,
+.columns.seven,
+.columns.eight,
+.columns.nine,
+.columns.ten,
+.columns.eleven,
+.columns.twelve,
+.columns.thirteen,
+.columns.fourteen,
+.columns.fifteen {
+  width: calc(100%);
+}
+@media (min-width: 52em) {
+  .columns {
+    float: left;
+  }
+  .columns.one {
+    width: calc(6.66666667%);
+  }
+  .columns.two {
+    width: calc(13.33333333%);
+  }
+  .columns.three {
+    width: calc(20%);
+  }
+  .columns.four {
+    width: calc(26.66666667%);
+  }
+  .columns.five {
+    width: calc(33.33333333%);
+  }
+  .columns.six {
+    width: calc(40%);
+  }
+  .columns.seven {
+    width: calc(46.66666667%);
+  }
+  .columns.eight {
+    width: calc(53.33333333%);
+  }
+  .columns.nine {
+    width: calc(60%);
+  }
+  .columns.ten {
+    width: calc(66.66666667%);
+  }
+  .columns.eleven {
+    width: calc(73.33333333%);
+  }
+  .columns.twelve {
+    width: calc(80%);
+  }
+  .columns.thirteen {
+    width: calc(86.66666667%);
+  }
+  .columns.fourteen {
+    width: calc(93.33333333%);
+  }
+  .columns.fifteen {
+    width: calc(100%);
+  }
+  /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
+}
+/** styling! **/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.simple-story h1,
+.simple-story h2,
+.simple-story h3,
+.simple-story h4,
+.simple-story h5,
+.simple-story h6,
+.simple-story p,
+.simple-story .mw48rem {
+  width: 45rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.simple-story section p,
+.simple-story section pre,
+.simple-story section ul,
+.simple-story section ol,
+.simple-story section blockquote {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  font-weight: 300;
+  white-space: normal;
+}
+.simple-story section p,
+.simple-story section pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0em;
+  text-indent: 1.5em;
+}
+.simple-story section p:first-child {
+  text-indent: 0;
+}

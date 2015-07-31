@@ -1,3 +1,94 @@
+/** variables **/
+
+@columns: 15;
+.col(@span) { width: calc(100% / @columns * @span); }
+
+/** grid **/
+.columns {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
+  padding-right: .75em;
+  padding-left: .75em;
+  line-height: 1.5em;
+  /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
+}
+
+.columns.one,
+.columns.two,
+.columns.three,
+.columns.four,
+.columns.five,
+.columns.six,
+.columns.seven,
+.columns.eight,
+.columns.nine,
+.columns.ten,
+.columns.eleven,
+.columns.twelve,
+.columns.thirteen,
+.columns.fourteen,
+.columns.fifteen  { .col(15); }
+
+
+@media (min-width: 52em) {
+  .columns {
+    float: left;
+  }
+
+  .columns.one      { .col(01); }
+  .columns.two      { .col(02); }
+  .columns.three    { .col(03); }
+  .columns.four     { .col(04); }
+  .columns.five     { .col(05); }
+  .columns.six      { .col(06); }
+  .columns.seven    { .col(07); }
+  .columns.eight    { .col(08); }
+  .columns.nine     { .col(09); }
+  .columns.ten      { .col(10); }
+  .columns.eleven   { .col(11); }
+  .columns.twelve   { .col(12); }
+  .columns.thirteen { .col(13); }
+  .columns.fourteen { .col(14); }
+  .columns.fifteen  { .col(15); }
+  /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
+}
+
+/** styling! **/
 body {
-  background: pink;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.simple-story {
+  h1,h2,h3,h4,h5,h6,p,
+  .mw48rem {
+    width: 45rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section {
+    p, pre, ul, ol, blockquote {
+      font-size: 1.125rem;
+      line-height: 1.5em;
+      font-weight: 300;
+      white-space: normal;
+    }
+
+    p, pre {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 0em;
+      text-indent: 1.5em;
+    }
+
+    p {
+      &:first-child {
+        text-indent: 0;
+      }
+    }
+  }
+
 }
