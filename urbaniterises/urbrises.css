@@ -28,6 +28,7 @@
   width: calc(100%);
 }
 @media (min-width: 52em) {
+  /**52em is medium cutoff from BassCss **/
   .columns {
     float: left;
   }
