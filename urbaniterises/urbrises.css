@@ -1,4 +1,38 @@
 /** variables **/
+.bg-yellow {
+  background-color: #ffd400;
+}
+.shadow {
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.text-shadow {
+  -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+/** Universal **/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /** mini CSS modules **/
 .mlrauto {
   margin-left: auto;
@@ -21,7 +55,6 @@
 }
 /** grid **/
 .columns {
-  box-sizing: border-box;
   position: relative;
   min-height: 1px;
   /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
@@ -156,7 +189,7 @@
 /** styling! **/
 body {
   font-family: Helvetica, Arial, sans-serif;
-  padding-top: 4em;
+  padding-top: 53px;
 }
 .simple-story h1,
 .simple-story h2,
@@ -193,4 +226,93 @@ body {
 }
 .ad {
   background: #eee;
+}
+.splash header {
+  border-bottom: 1px solid #aa1824;
+}
+.splash main section {
+  min-height: 5em;
+}
+#hero {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(45deg, #aa1824, #ffd400);
+}
+#hero .embed-container {
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+#mc_embed_signup form {
+  border: 0.66em solid #ffd400;
+}
+#mc_embed_signup form #mc_embed_signup_scroll {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(45deg, #aa1824, #ffd400);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 2em;
+  left: 2em;
+  margin-right: -2em;
+  padding: 2em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label,
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+  height: 2.5em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label {
+  width: 10%;
+  float: left;
+  position: relative;
+  top: -0.33em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+  display: block;
+  width: 90%;
+  border: 1px solid #ffffff;
+}
+#mc_embed_signup form #mc-embedded-subscribe {
+  position: absolute;
+  right: -4em;
+  bottom: -3em;
+  padding: 1.5em 2em;
+  display: block;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+footer {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 135deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(135deg, #aa1824, #ffd400);
 }

@@ -4,6 +4,65 @@
 .col(@span)        { width: calc(100% / @columns * @span); }
 .col-offset(@span) { margin-left: calc(100% / @columns * @span); }
 
+//colors
+@urb-red:       rgba(170,24,36,1);
+@urb-yellow:    rgba(255,212,0,1);
+
+@urb-white: white;
+@urb-black: black;
+
+.bg-yellow { background-color: @urb-yellow; }
+
+.gradient(@c1,@c2,@direction) {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: @c1;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, @direction, from(@c1), to(@c2));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(@direction, @c1, @c2);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(@direction, @c1, @c2);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(@direction, @c1, @c2);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(@direction, @c1, @c2);
+}
+
+.shadow {
+  -moz-box-shadow:    0 0 5px 0 rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+  box-shadow:         0 0 5px 0 rgba(0,0,0,.25);
+}
+
+.text-shadow {
+  -moz-text-shadow:    0 0 3px rgba(0,0,0,.25);
+  -webkit-text-shadow: 0 0 3px rgba(0,0,0,.25);
+  text-shadow:         0 0 3px rgba(0,0,0,.25);
+}
+
+/** Universal **/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /** mini CSS modules **/
 .mlrauto {
   margin-left: auto;
@@ -28,7 +87,6 @@
 
 /** grid **/
 .columns {
-  box-sizing: border-box;
   position: relative;
   min-height: 1px;
   /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
@@ -101,7 +159,7 @@
 /** styling! **/
 body {
   font-family: Helvetica, Arial, sans-serif;
-  padding-top: 4em;
+  padding-top: 53px;
 }
 
 .simple-story {
@@ -139,4 +197,74 @@ body {
 
 .ad {
   background: #eee;
+}
+
+.splash {
+  header {
+    border-bottom: 1px solid @urb-red;
+  }
+  main {
+    section {
+      min-height: 5em;
+    }
+  }
+}
+
+#hero {
+  .gradient(@urb-red, @urb-yellow, 45deg);
+
+  .embed-container {
+    .shadow;
+  }
+}
+
+// custom mailchimp form styling
+#mc_embed_signup {
+  form {
+    border: .66em solid @urb-yellow;
+
+    #mc_embed_signup_scroll {
+      .gradient(@urb-red, @urb-yellow, 45deg);
+      .shadow;
+      position: relative;
+      top: 2em;
+      left: 2em;
+      margin-right: -2em;
+      padding: 2em;
+
+      .mc-field-group {
+        label,
+        input {
+          height: 2.5em;
+        }
+
+        label {
+          width: 10%;
+          float: left;
+          position: relative;
+          top: -.33em;
+        }
+        input {
+          display: block;
+          width: 90%;
+          border: 1px solid @urb-white;
+        }
+
+      }
+    }
+
+    #mc-embedded-subscribe {
+      position: absolute;
+      right: -4em;
+      bottom:-3em;
+      padding: 1.5em 2em;
+      display: block;
+      .shadow;
+    }
+  }
+
+}
+
+footer {
+  .gradient(@urb-red, @urb-yellow, 135deg);
 }
