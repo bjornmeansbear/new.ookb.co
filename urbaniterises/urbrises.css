@@ -227,11 +227,8 @@ body {
 .ad {
   background: #eee;
 }
-.splash header {
+header {
   border-bottom: 1px solid #aa1824;
-}
-.splash main section {
-  min-height: 5em;
 }
 #hero {
   /* Fallback (could use .jpg/.png alternatively) */
