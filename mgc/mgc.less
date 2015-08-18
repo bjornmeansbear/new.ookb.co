@@ -547,15 +547,16 @@ header .wsite-social-item {
 }
 
 #navigation li a:hover {
-  background: @mgs-dark-green;
+  background: @mgs-light-green;
   color: @mgs-white;
+  border-bottom-color: @mgs-light-green;
   text-decoration: none;
 }
 
 #navigation li#active a {
-  background: @mgs-light-green;
+  background: white;
   color: @mgs-dark-green;
-  border-bottom-color: @mgs-light-green;
+  border-bottom-color: white;
 }
 
 /* Navigation Drop-Down Menu Customization
@@ -1057,5 +1058,49 @@ footer .wsite-social-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/** cool button **/
+
+.blog-page-nav-previous a {
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2rem;
+  padding: 1rem;
+  margin: 0;
+  height: auto;
+  border: 3px solid @mgs-light-green;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: @mgs-light-green;
+  border-radius: .25em;
+  transition: all 400ms;
+}
+
+.blog-page-nav-previous a:hover {
+  color: @mgs-dark-green;
+  border-color: @mgs-dark-green;
+  box-shadow: inset 0 0 1rem 0 rgba(0,0,0,.05);
+  text-decoration: none;
+}
+
+.blog-page-nav-previous a:active {
+  box-shadow: inset 0 0 1rem 0 rgba(0,0,0,.1),
+    inset 0 3px 4px 0 rgba(0,0,0,.2),
+    0 0 1px rgba(0,0,0,.1);
+}
+
+.blog-page-nav-previous a:focus {
+  outline: none;
+  border-color: @mgs-dark-green;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.3);
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
