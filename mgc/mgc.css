@@ -1033,6 +1033,9 @@ footer .wsite-social-item {
   box-sizing: border-box;
 }
 /** cool button **/
+#wsite-content .blog-page-nav-previous {
+  left: -0.9rem;
+}
 .blog-page-nav-previous a {
   font-size: 1rem;
   text-decoration: none;
@@ -1064,7 +1067,4 @@ footer .wsite-social-item {
   border-color: #006837;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
+/** http://vanseodesign.com/css/creating-shapes-with-css-borders/ **/
