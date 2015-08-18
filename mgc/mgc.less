@@ -543,20 +543,17 @@ header .wsite-social-item {
   transition: all 400ms;
   /**/
   box-sizing: padding-box;
-  border-bottom: 3px solid @mgs-blue-gray;
 }
 
 #navigation li a:hover {
   background: @mgs-light-green;
   color: @mgs-white;
-  border-bottom-color: @mgs-light-green;
   text-decoration: none;
 }
 
 #navigation li#active a {
   background: white;
   color: @mgs-dark-green;
-  border-bottom-color: white;
 }
 
 /* Navigation Drop-Down Menu Customization
@@ -576,17 +573,41 @@ header .wsite-social-item {
   color: @mgs-white;
 }
 
+div#content::before,
+div#content::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  display: block;
+}
+div#content::before {
+  height: 100%;
+  border: .33rem solid green;
+  left: 2rem;
+  top: 3rem;
+  z-index: -1;
+}
+div#content::after {
+  height: 2rem;
+  background: white;
+  bottom: -1.5rem;
+  z-index: 2;
+}
+
 /* Footer
 --------------------------------------------------------------------------*/
 
 #footer {
   width: 100%;
-  color: #555555;
+  color: lighten(@mgs-black, 10%);
   font-size: 14px;
   text-align: right;
-  background: #dddddd;
-  padding: 1rem 1rem 4rem;
+  background: lighten(@mgs-mustard, 50%);
+  padding: 4rem 1rem;
   margin: 0;
+  border-top: 5px solid @mgs-light-green;
+  z-index: -2;
+  overflow: hidden;
 }
 
 #footer blockquote {
@@ -694,7 +715,6 @@ footer .wsite-social-item {
 
 #bannerright {
   float: left;
-  /*	width: 324px; */
   width: 33.75%;
   height: 307px;
   padding: 0 25px 0 31px;
@@ -1022,24 +1042,34 @@ footer .wsite-social-item {
 /** ========================================= **/
 /** ========================================= **/
 
+.decoration {
+  position: absolute;
+}
+.background-imagery {
+  z-index: -1;
+}
+
 .decoration.crest {
   background: transparent url('gradstudies_logo-01.png') center center no-repeat;
   background-size: contain;
-  width: 26%;
-  height: 250px;
-  position: absolute;
+  width: 33%;
+  height: 333px;
   top: 3rem;
-  left: -14%;
+  left: -20%;
 }
 
-.background-imagery {
-  z-index: -1;
+.decoration.footer-crest {
+  background: transparent url('gradstudies_logo-01.png') center center no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 250px;
+  bottom: -5rem;
+  right: -14%;
 }
 
 .decoration.times {
   width: 21%;
   height: 250px;
-  position: absolute;
   top: -5rem;
   right: 7%;
   font: normal normal normal 14px/1 FontAwesome;
