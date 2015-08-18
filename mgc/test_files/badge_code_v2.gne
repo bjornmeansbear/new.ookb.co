@@ -1,0 +1,30 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/90949402@N04/17842295484/"><img src="http://farm9.staticflickr.com/8885/17842295484_81c19bb5bb_s.jpg" alt="A photo on Flickr" title="GradPicnic5-204" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/90949402@N04/18277240260/"><img src="http://farm1.staticflickr.com/560/18277240260_d9a3cd1398_s.jpg" alt="A photo on Flickr" title="GradPicnic5-203" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/90949402@N04/18464966105/"><img src="http://farm9.staticflickr.com/8877/18464966105_5f0f340405_s.jpg" alt="A photo on Flickr" title="GradPicnic5-202" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/90949402@N04/18277241220/"><img src="http://farm9.staticflickr.com/8889/18277241220_62f13b93a1_s.jpg" alt="A photo on Flickr" title="GradPicnic5-201" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/90949402@N04/18277150658/"><img src="http://farm9.staticflickr.com/8876/18277150658_4a191e9fa5_s.jpg" alt="A photo on Flickr" title="GradPicnic5-200" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="http://www.flickr.com/photos/90949402@N04/18466755691/"><img src="http://farm1.staticflickr.com/276/18466755691_3369bc99e5_s.jpg" alt="A photo on Flickr" title="GradPicnic5-199" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image7"><a href="http://www.flickr.com/photos/90949402@N04/18464967105/"><img src="http://farm1.staticflickr.com/332/18464967105_ed4a593e96_s.jpg" alt="A photo on Flickr" title="GradPicnic5-198" height="75" width="75"></a></div>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=4ff9f61ff1f3e3cff12c302a14d38d55&fl_ev=0&lang=en&intl=us" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);
