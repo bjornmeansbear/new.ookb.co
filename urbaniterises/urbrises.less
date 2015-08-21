@@ -291,11 +291,14 @@ header {
 
   /** okay, decent solution **/
   .uno {
-    border: .5em solid white;
+    border: .5em solid #fffcee;
     border-radius: .5em;
     cursor: pointer;
     padding: 1em;
     transition: all 500ms;
+    color: #332b00;
+    text-decoration: none;
+    display:block;
 
     &:hover {
       .urb-yellow;
@@ -303,7 +306,18 @@ header {
   }
 }
 
+// custom wufoo form styling
+#question {
+
+}
+
 // custom mailchimp form styling
+.special.offset {
+  font-size: 80%;
+  position: relative;
+  top: 6em;
+  left: -2em
+}
 #mc_embed_signup {
   form {
     border: .66em solid @urb-yellow;
@@ -350,8 +364,34 @@ header {
 
 }
 
+.card {
+  .shadow;
+
+  &.archive {
+    top: -4em;
+    right: -3em;
+  }
+  &.contact {
+    top: 3em;
+  }
+}
+
 footer {
   .gradient(@urb-red, @urb-yellow, 135deg);
 }
 
+img.left.special.layout.absolute {
+  left: -550px;
+  top: 98px;
+  width: 650px;
+  transform: rotate(-2.5deg);
+}
+
+img.right.special.layout.absolute {
+  right: -18%;
+  margin-top: -275px;
+  transform: rotate(5deg);
+  width: 40%;
+  height: auto;
+}
 

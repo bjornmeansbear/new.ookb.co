@@ -314,15 +314,24 @@ header {
   text-align: center;
 }
 #explain .uno {
-  border: .5em solid white;
+  border: .5em solid #fffcee;
   border-radius: .5em;
   cursor: pointer;
   padding: 1em;
   transition: all 500ms;
+  color: #332b00;
+  text-decoration: none;
+  display: block;
 }
 #explain .uno:hover {
   color: #ffd400;
   border-color: #ffd400;
+}
+.special.offset {
+  font-size: 80%;
+  position: relative;
+  top: 6em;
+  left: -2em;
 }
 #mc_embed_signup form {
   border: 0.66em solid #ffd400;
@@ -374,6 +383,18 @@ header {
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
+.card {
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.card.archive {
+  top: -4em;
+  right: -3em;
+}
+.card.contact {
+  top: 3em;
+}
 footer {
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #aa1824;
@@ -387,4 +408,17 @@ footer {
   background-image: -o-linear-gradient(135deg, #aa1824, #ffd400);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(135deg, #aa1824, #ffd400);
+}
+img.left.special.layout.absolute {
+  left: -550px;
+  top: 98px;
+  width: 650px;
+  transform: rotate(-2.5deg);
+}
+img.right.special.layout.absolute {
+  right: -18%;
+  margin-top: -275px;
+  transform: rotate(5deg);
+  width: 40%;
+  height: auto;
 }

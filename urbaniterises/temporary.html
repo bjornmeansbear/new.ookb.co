@@ -29,49 +29,63 @@
 
     <main>
 
-      <section id="hero" class="center px3 py4 white bg-cover bg-center ">
+      <section id="hero" class="center p3 white bg-cover bg-center ">
         <img style="max-width:150px;" src="urb-logo-trans2.png" class="mt4 pt2" />
         <h1 class="h1 h0-responsive mt2 mb0 text-shadow allcaps">Urbanite Baltimore</h1>
         <p class="h3 text-shadow mb4 pb2">Special Issue — November 2015</p>
-<!--
-        <div class="container py4" id="video">
-          <div class="embed-container">
-            <iframe src="http://player.vimeo.com/video/121860201" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
--->
       </section>
 
       <section id="explain" class="py4">
         <div class="container">
           <h1 class="fullwidth mt2 mb4 text-gradient allcaps league-gothic-stack center">Truth, Reconciliation, and Baltimore</h1>
-          <div>
+
+          <div class="container mt0 mb4" id="video">
+            <div class="embed-container">
+              <iframe src="http://player.vimeo.com/video/121860201" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="relative">
             <p class="lead3 col-7 mlrauto">
-              For nine years, <cite>Urbanite magazine</cite> told stories about the city—its people, its problems, and its potential. Its last issue was published in 2012. But in the aftermath of the civil unrest that gripped the city in the spring of 2015, several members of the staff reconvened to produce a special issue, both online and in print. At this critical moment in the city’s history, we’re convinced that Baltimore needs clear-eyed perspective on its most intractable issues: racial justice, economic opportunity, and public safety. And it needs inspired solutions for moving past them.
+              For nine years, <em>Urbanite</em> magazine told stories about the city—its people, its problems, and its potential. Its last issue was published in 2012. But in the aftermath of the civil unrest that gripped the city in the spring of 2015, several members of the staff reconvened to produce a special issue, both online and in print. At this critical moment in the city’s history, we’re convinced that Baltimore needs clear-eyed perspective on its most intractable issues: racial justice, economic opportunity, and public safety. And it needs inspired solutions for moving past them.
             </p>
-
+<!--            <img class="left special layout absolute" src="https://farm9.staticflickr.com/8702/17140386409_113f10235c_c.jpg" />-->
             <p class="lead2 mt3 col-5 offset-by-two" >
-              So we’re asking our former (and future) readers to share their best ideas on how to make Baltimore work better, for all of its residents. If you could fix ONE THING about life in Baltimore City, what you do?
+              Residents have responded to April's unrest in lots of different ways—with anger, generosity, hope, and sometimes all of the above. We’re asking our former (and future) readers to share their experiences and contribute their best ideas on how to make this city work better, What actions have inspired you? And what do you think Baltimore needs now to move forward?
             </p>
-
+<!--            <img class="right special layout absolute" src="https://farm1.staticflickr.com/428/18781205328_3f47956f4a_c.jpg" />-->
             <p class="lead1 mt1 col-5 offset-by-seven" >
               Our goal is the help change the discussion from one mired in frustration and despair to one that is both realistic and full of possibility.
             </p>
-
-            <p class="mt3 lead1 uno col-6 mlrauto center">
-              Share your thoughts and ideas here (link to solution)
-            </p>
-
-            <p class="lead2 col-6 offset-by-two mt3">
-              And look for the new <cite>Urbanite</cite> in November 2015.
-            </p>
+            <a class="mt3 lead1 uno col-6 mlrauto center scrolling" href="#question">
+Share your thoughts and ideas in the form below.
+            </a>
           </div>
         </div>
       </section>
 
       <section id="question" class="border-top border-bottom bg-gray">
         <div class="container py4">
-          <p>embedded form or link to form</p>
+          <div id="wufoo-s1jfqlsr0ymbjer" class="col-8 mlrauto">
+Fill out my <a href="https://sundaysenergy.wufoo.com/forms/s1jfqlsr0ymbjer">online form</a>.
+</div>
+<script type="text/javascript">var s1jfqlsr0ymbjer;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'sundaysenergy',
+'formHash':'s1jfqlsr0ymbjer',
+'autoResize':true,
+'height':'517',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { s1jfqlsr0ymbjer = new WufooForm();s1jfqlsr0ymbjer.initialize(options);s1jfqlsr0ymbjer.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
         </div>
       </section>
 
@@ -85,7 +99,7 @@
                 <label for="mce-EMAIL" class="icon email center"><span class="hide">Email Address</span> <i class="fa fa-envelope-o fa-3x"></i></label>
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email please, you@url.com">
               </div>
-              <p class="hide">Powered by <a href="http://eepurl.com/bv2plD" title="MailChimp - email marketing made easy and fun">MailChimp</a></p>
+              <p class="special offset black">Powered by <a href="http://eepurl.com/bv2plD" class="black" title="MailChimp - email marketing made easy and fun">MailChimp</a></p>
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -105,13 +119,15 @@
       <section id="misc" class="px2 py4">
         <div class="container">
           <div class="clearfix mxn2">
-            <div class="sm-col sm-col-6 px2 center">
+            <div class="sm-col sm-col-4 p4 m4 center card archive">
+              <i class="fa fa-book fa-5x text-gradient"></i>
               <h2 class="h1 mb0">Archive</h2>
-              <p><a href="http://issuu.com/urbanitemagazine">Almost every single old Urbanite can be found on Issuu.com</a></p>
+              <p><a href="http://issuu.com/urbanitemagazine" class="black">Past issues of Urbanite can currently be found on Issuu.com</a></p>
             </div>
-            <div class="sm-col sm-col-6 px2 center">
+            <div class="sm-col sm-col-4 p4 m4 center card contact">
+              <i class="fa fa-envelope fa-5x text-gradient"></i>
               <h2 class="h1 mb0">Contact</h2>
-              <p>Lorem ipsum contact text.</p>
+              <p>team@urbanitebaltimore.com</p>
             </div>
           </div>
         </div>
@@ -124,7 +140,8 @@
         <p class="mb4 py2">
           Contact XYZ for Sponsorship/Advertising opportunities
         </p>
-        <p class="h6 mb0 py2 border-top">&copy; 2015 Urbanite Baltimore — Thanks to the writers and artists and photographers and all sorts of other helpers making this possible</p>
+        <p class="h6 mb0 py2 border-top">&copy; 2015 Urbanite Baltimore — Thanks to all the helpers making this possible</p>
+        <p class="h6 mt0 right"><a class="white" href="http://www.ookb.co/">OOKB</a> / <a class="white" href="http://www.cape.io">CAPE</a></p>
       </div>
     </footer>
 
@@ -137,8 +154,13 @@
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
-
+      // Your JS/Jquery Here
+      $(".scrolling").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+      });
     </script>
+
     <!-- end scripts-->
 
   </body>
