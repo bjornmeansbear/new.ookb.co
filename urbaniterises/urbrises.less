@@ -5,6 +5,7 @@
 
 /* 2. Load league gothic from my font server... */
 
+// try the fonts.ookb.co site...
 @font-face {
   font-family: 'LeagueGothic';
   src: url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.eot');
@@ -31,6 +32,7 @@
   font-weight: normal;
 }
 
+// wasn't working, getting right from cape now...
 @font-face {
   font-family: 'LeagueGothic';
   src: url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.eot');
@@ -66,7 +68,13 @@
   font-weight: normal;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: @open-sans-stack;
 }
 
@@ -422,6 +430,7 @@ footer {
   }
   #explain {
     h1.league-gothic-stack {
+      font-family: @league-gothic-stack;
       font-size: 5rem;
       margin-top: -3rem;
     }
