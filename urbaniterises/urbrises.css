@@ -352,9 +352,13 @@ main section {
   text-decoration: none;
   display: block;
 }
-#explain .uno:hover {
+#explain .uno:hover,
+#explain .uno:focus,
+#explain .uno:active {
   color: #ffd400;
   border-color: #ffd400;
+  color: #000000;
+  background-color: #ffd400;
 }
 #question {
   padding: 1em;
@@ -419,6 +423,20 @@ footer {
   background-image: -o-linear-gradient(135deg, #aa1824, #ffd400);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(135deg, #aa1824, #ffd400);
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  transition: all 400ms;
+  background-color: transparent;
+}
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.125);
+  border-color: rgba(255, 255, 255, 0.125);
 }
 /**************/
 /**************/

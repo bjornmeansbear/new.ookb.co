@@ -351,8 +351,10 @@ main {
     text-decoration: none;
     display:block;
 
-    &:hover {
+    &:hover, &:focus, &:active {
       .urb-yellow;
+      color: @urb-black;
+      .bg-yellow;
     }
   }
 }
@@ -403,6 +405,20 @@ main {
 
 footer {
   .gradient(@urb-red, @urb-yellow, 135deg);
+
+  a {
+    color: @urb-white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    transition: all 400ms;
+    background-color: transparent;
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      background-color: rgba(255,255,255,.125);
+      border-color: rgba(255,255,255,.125);
+    }
+  }
 }
 
 /**************/
