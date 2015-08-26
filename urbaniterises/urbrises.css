@@ -1,0 +1,615 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic");
+/* 1. @Font-Face — load my google fonts... */
+/* 2. Load league gothic from my font server... */
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.eot');
+  src: local('League Gothic'), local('LeagueGothic-Regular'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-italic-webfont.eot');
+  src: local('League Gothic Italic'), local('LeagueGothic-Italic'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-italic-webfont.woff') format('woff'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-italic-webfont.ttf') format('truetype'), url('https://fonts.ookb.co/ff/leaguegothic/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.eot');
+  src: local('League Gothic'), local('LeagueGothic-Regular'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-italic-webfont.eot');
+  src: local('League Gothic Italic'), local('LeagueGothic-Italic'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-italic-webfont.woff') format('woff'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-italic-webfont.ttf') format('truetype'), url('http://ss.cape.io/kristian-bjornard/webfonts/ff/leaguegothic/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+.league-gothic-stack {
+  font-family: 'LeagueGothic', Calibri, Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
+}
+/** variables **/
+.urb-red {
+  color: #aa1824;
+  border-color: #aa1824;
+}
+.urb-yellow {
+  color: #ffd400;
+  border-color: #ffd400;
+}
+.bg-red {
+  background-color: #aa1824;
+}
+.bg-yellow {
+  background-color: #ffd400;
+}
+.shadow {
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.text-shadow {
+  -moz-text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.text-gradient {
+  color: #aa1824;
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.visible-md {
+  visibility: hidden;
+  display: none;
+}
+/** Universal **/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/** mini CSS modules **/
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.z999 {
+  z-index: 999;
+}
+.fsx2 {
+  font-size: 200%;
+}
+.pb2 {
+  padding-bottom: 1rem;
+}
+.allcaps,
+.uppercase {
+  text-transform: uppercase;
+}
+.fullwidth,
+.w100 {
+  width: 100%;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+}
+.lead1,
+.lead2,
+.lead3 {
+  font-size: 112.5%;
+}
+/** grid **/
+.columns {
+  position: relative;
+  min-height: 1px;
+  /** padding of .75em on each side creates nice 1.5em gutters that then will get biggere/smaller as type sizes increase/decrease **/
+  padding-right: .75em;
+  padding-left: .75em;
+  line-height: 1.5em;
+  /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen {
+  width: calc(100%);
+}
+[class*="offset-by-"] {
+  margin-left: calc(0%);
+}
+@media (min-width: 52em) {
+  /**52em is medium cutoff from BassCss **/
+  .columns {
+    float: left;
+  }
+  .columns.right {
+    float: right;
+  }
+  .one {
+    width: calc(6.66666667%);
+  }
+  .two {
+    width: calc(13.33333333%);
+  }
+  .three {
+    width: calc(20%);
+  }
+  .four {
+    width: calc(26.66666667%);
+  }
+  .five {
+    width: calc(33.33333333%);
+  }
+  .six {
+    width: calc(40%);
+  }
+  .seven {
+    width: calc(46.66666667%);
+  }
+  .half {
+    width: 50%;
+  }
+  .eight {
+    width: calc(53.33333333%);
+  }
+  .nine {
+    width: calc(60%);
+  }
+  .ten {
+    width: calc(66.66666667%);
+  }
+  .eleven {
+    width: calc(73.33333333%);
+  }
+  .twelve {
+    width: calc(80%);
+  }
+  .thirteen {
+    width: calc(86.66666667%);
+  }
+  .fourteen {
+    width: calc(93.33333333%);
+  }
+  .fifteen {
+    width: calc(100%);
+  }
+  /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
+  .offset-by-one {
+    margin-left: calc(6.66666667%);
+  }
+  .offset-by-two {
+    margin-left: calc(13.33333333%);
+  }
+  .offset-by-three {
+    margin-left: calc(20%);
+  }
+  .offset-by-four {
+    margin-left: calc(26.66666667%);
+  }
+  .offset-by-five {
+    margin-left: calc(33.33333333%);
+  }
+  .offset-by-six {
+    margin-left: calc(40%);
+  }
+  .offset-by-seven {
+    margin-left: calc(46.66666667%);
+  }
+  .offset-by-half {
+    margin-left: 50%;
+  }
+  .offset-by-eight {
+    margin-left: calc(53.33333333%);
+  }
+  .offset-by-nine {
+    margin-left: calc(60%);
+  }
+  .offset-by-ten {
+    margin-left: calc(66.66666667%);
+  }
+  .offset-by-eleven {
+    margin-left: calc(73.33333333%);
+  }
+  .offset-by-twelve {
+    margin-left: calc(80%);
+  }
+  .offset-by-thirteen {
+    margin-left: calc(86.66666667%);
+  }
+  .offset-by-fourteen {
+    margin-left: calc(93.33333333%);
+  }
+  .offset-by-fifteen {
+    margin-left: calc(100%);
+  }
+}
+/** styling! **/
+.simple-story h1,
+.simple-story h2,
+.simple-story h3,
+.simple-story h4,
+.simple-story h5,
+.simple-story h6,
+.simple-story p,
+.simple-story .mw48rem {
+  width: 45rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.simple-story section p,
+.simple-story section pre,
+.simple-story section ul,
+.simple-story section ol,
+.simple-story section blockquote {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  font-weight: 300;
+  white-space: normal;
+}
+.simple-story section p,
+.simple-story section pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0em;
+  text-indent: 1.5em;
+}
+.simple-story section p:first-child {
+  text-indent: 0;
+}
+.ad {
+  background: #eee;
+}
+header {
+  border-bottom: 1px solid #aa1824;
+}
+main section {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#hero {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(45deg, #aa1824, #ffd400);
+}
+#hero .logo-icon {
+  float: left;
+}
+.embed-container {
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.5em;
+}
+#explain {
+  padding: 1em;
+  /** okay, decent solution **/
+}
+#explain h1.league-gothic-stack {
+  font-size: 3rem;
+  text-align: center;
+}
+#explain .uno {
+  border: .5em solid #fffcee;
+  border-radius: .5em;
+  cursor: pointer;
+  padding: 1em;
+  transition: all 500ms;
+  color: #332b00;
+  text-decoration: none;
+  display: block;
+}
+#explain .uno:hover,
+#explain .uno:focus,
+#explain .uno:active {
+  color: #ffd400;
+  border-color: #ffd400;
+  color: #000000;
+  background-color: #ffd400;
+}
+#question {
+  padding: 1em;
+}
+#mc_embed_signup {
+  padding: .75em;
+}
+#mc_embed_signup form {
+  border: 0.66em solid #ffd400;
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(45deg, #aa1824, #ffd400);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+#mc_embed_signup form #mc_embed_signup_scroll {
+  padding: 1em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label,
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+  height: 2.5em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label {
+  width: 20%;
+  float: left;
+  position: relative;
+  top: -0.33em;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+  display: block;
+  width: 80%;
+  border: 1px solid #ffffff;
+}
+#mc_embed_signup form #mc-embedded-subscribe {
+  padding: 1em 2em;
+  display: block;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  margin: .25em auto;
+}
+footer {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 135deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(135deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(135deg, #aa1824, #ffd400);
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  transition: all 400ms;
+  background-color: transparent;
+}
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.125);
+  border-color: rgba(255, 255, 255, 0.125);
+}
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/** wider styles **/
+@media (min-width: 52em) {
+  .visible-md {
+    visibility: visible;
+    display: initial;
+  }
+  .lead1 {
+    font-size: 112.5%;
+  }
+  .lead2 {
+    font-size: 125%;
+  }
+  .lead3 {
+    font-size: 150%;
+  }
+  #hero img.logo-icon {
+    margin-top: -2em;
+  }
+  #hero h1 {
+    margin-top: 2em;
+  }
+  #explain h1.league-gothic-stack {
+    font-family: 'LeagueGothic', Calibri, Helvetica, Arial, Sans-serif;
+    font-size: 5rem;
+    margin-top: -3rem;
+  }
+  #explain .lead1,
+  #explain .lead2,
+  #explain .lead3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #explain .lead3 {
+    margin-top: 2em;
+  }
+  main section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .special.offset {
+    font-size: 80%;
+    position: relative;
+    top: 5em;
+    left: -2em;
+  }
+  #mc_embed_signup {
+    margin-top: 2em;
+  }
+  #mc_embed_signup form {
+    border: 0.66em solid #ffd400;
+    background: transparent;
+    box-shadow: none;
+  }
+  #mc_embed_signup form #mc_embed_signup_scroll {
+    /* Fallback (could use .jpg/.png alternatively) */
+    background-color: #aa1824;
+    /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+    background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+    /* Firefox 3.6 - 15 */
+    background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+    /* Opera 11.1 - 12 */
+    background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(45deg, #aa1824, #ffd400);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2em;
+    left: 2em;
+    margin-right: -2em;
+    padding: 2em;
+  }
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label,
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+    height: 2.5em;
+  }
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label {
+    width: 10%;
+  }
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+    width: 90%;
+  }
+  #mc_embed_signup form #mc-embedded-subscribe {
+    position: absolute;
+    right: -4em;
+    bottom: -4em;
+    padding: 1.5em 2em;
+    display: block;
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  #misc {
+    margin-top: 2em;
+  }
+  #misc .card {
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    margin: 4em;
+    padding: 4em;
+  }
+  #misc .card.archive {
+    right: -3em;
+  }
+  #misc .card.contact {
+    margin-top: 13em;
+    padding-bottom: 3em;
+  }
+  footer {
+    /* Fallback (could use .jpg/.png alternatively) */
+    background-color: #aa1824;
+    /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+    background-image: -webkit-gradient(linear, 135deg, from(#aa1824), to(#ffd400));
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: -webkit-linear-gradient(135deg, #aa1824, #ffd400);
+    /* Firefox 3.6 - 15 */
+    background-image: -moz-linear-gradient(135deg, #aa1824, #ffd400);
+    /* Opera 11.1 - 12 */
+    background-image: -o-linear-gradient(135deg, #aa1824, #ffd400);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(135deg, #aa1824, #ffd400);
+  }
+  img.left.special.layout.absolute {
+    left: -550px;
+    top: 98px;
+    width: 650px;
+    transform: rotate(-2.5deg);
+  }
+  img.right.special.layout.absolute {
+    right: -18%;
+    margin-top: -275px;
+    transform: rotate(5deg);
+    width: 40%;
+    height: auto;
+  }
+}
+/**** some temporary mobile #hero fixes ****/
+@media (max-width: 52em) {
+  #hero {
+    text-align: left;
+    padding: 1em;
+  }
+  #hero img.logo-icon {
+    max-width: 72px;
+    margin-right: 1em;
+    margin-top: 0;
+  }
+  #hero h1 {
+    font-size: 1.5em;
+  }
+  #hero p.h3 {
+    font-size: 1em;
+  }
+  #signup {
+    padding-top: 3em;
+  }
+  #mc_embed_signup {
+    margin-bottom: 3em;
+  }
+  #misc {
+    padding-bottom: 3em;
+  }
+  #explain h1 {
+    line-height: 2.75rem;
+  }
+}

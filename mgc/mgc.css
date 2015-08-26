@@ -163,7 +163,7 @@ blockquote {
   min-height: 600px;
   background: #ffffff;
   margin: 0;
-  padding: 4rem 0;
+  padding: 2rem 2rem 4rem;
 }
 #content.noborder {
   border-top: none;
@@ -230,6 +230,7 @@ header .phone-number .wsite-text {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 #header-right .wsite-social-item {
   width: 25%;
@@ -652,6 +653,8 @@ div#content::after {
   height: 2rem;
   background: white;
   bottom: -1.5rem;
+  left: 0;
+  right: 0;
   z-index: 2;
 }
 /* Footer
@@ -668,6 +671,7 @@ div#content::after {
   z-index: -2;
   overflow: hidden;
 }
+/** **/
 #footer blockquote {
   border-left: 4px solid #ccc;
 }
@@ -1012,6 +1016,9 @@ footer .wsite-social-item {
 .blog-post .blog-separator {
   display: none;
 }
+#content #blogTable {
+  margin: 0 -2rem;
+}
 #content #blogTable tr:first-child td:first-child {
   padding: 0;
 }
@@ -1024,7 +1031,7 @@ footer .wsite-social-item {
   z-index: -1;
 }
 .decoration.crest {
-  background: transparent url('gradstudies_logo-01.png') center center no-repeat;
+  background: transparent url('gradstudies_logo-lightgreen.png') center center no-repeat;
   background-size: contain;
   width: 33%;
   height: 333px;
@@ -1032,7 +1039,7 @@ footer .wsite-social-item {
   left: -20%;
 }
 .decoration.footer-crest {
-  background: transparent url('gradstudies_logo-01.png') center center no-repeat;
+  background: transparent url('gradstudies_logo-lightgreen.png') center center no-repeat;
   background-size: contain;
   width: 25%;
   height: 250px;
@@ -1043,13 +1050,14 @@ footer .wsite-social-item {
   width: 21%;
   height: 250px;
   top: -5rem;
-  right: 7%;
+  right: -5%;
   font: normal normal normal 14px/1 FontAwesome;
   text-align: center;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #c2b713;
+  opacity: .4;
 }
 .decoration.times::before {
   font-size: 15rem;
