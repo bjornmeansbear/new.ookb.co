@@ -143,41 +143,42 @@
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script type="text/jsx">
       // attempting to reactify this idea...
-var MessageBox = React.createClass({
-  render: function() {
+      var MessageBox = React.createClass({
+        render: function() {
 
-    content = this.props.content
-    user_name = this.props.user_name
-    timestamp = this.props.timestamp
+          content = this.props.content
+          user_name = this.props.user_name
+          timestamp = this.props.timestamp
 
-    return (
-      <div>
-       <h2>Tidbits:</h2>
-       <div className="author"><em>{user_name}</em> thought you might like this:</div>
-       <div className="blurb" dangerouslySetInnerHTML={{__html:content}} />
-      </div>
-    );
-  }
-});
+          return (
+            <div>
+             <h2>Tidbits:</h2>
+             <div className="author"><em>{user_name}</em> thought you might like this:</div>
+             <div className="blurb" dangerouslySetInnerHTML={{__html:content}} />
+            </div>
+          );
+        }
+      });
 
-var handleData = function(err, res) {
-  React.render(
-    React.createElement(MessageBox, res.body),
-    document.getElementById('blurbette')
-  );
-};
+      var handleData = function(err, res) {
+        React.render(
+          React.createElement(MessageBox, res.body),
+          document.getElementById('blurbette')
+        );
+      };
 
 
-superagent
-  .get('http://urbanite.ezle.io/api/content/slack/T04QF0B0K/webtidbits/')
-  .query({
-    desc: true,
-    withFields: 'fileData',
-    limit:1
-  })
-  .query('pluck=user_name&pluck=content&pluck=timestamp')
-  .accept('json')
-  .end(handleData);    </script>
+      superagent
+        .get('http://urbanite.ezle.io/api/content/slack/T04QF0B0K/webtidbits/')
+        .query({
+          desc: true,
+          withFields: 'fileData',
+          limit:1
+        })
+        .query('pluck=user_name&pluck=content&pluck=timestamp')
+        .accept('json')
+        .end(handleData);
+    </script>
 
   </body>
 

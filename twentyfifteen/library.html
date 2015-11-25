@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>The Office of Kristian Bj&oslash;rnard</title>
+    <title>The bookshelves of The Office of Kristian Bj&oslash;rnard</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,18 +15,21 @@
     <link rel="stylesheet" href="lists.css">
   </head>
 
-  <body>
+  <body class="pt15em pb2em ookb-brown bg-ookb-gray">
 
-    <header>
-      <h1>The Office of Kristian Bjørnard</h1>
-      <nav class="clearfix white bg-black">
-        <div class="sm-col">
-          <a href="index.html" class="btn py2">Work</a>
-          <a href="notes.html" class="btn py2">Notes</a>
-          <a href="http://library.ookb.co" class="btn py2">Library</a>
-          <a href="#" class="btn py2">About</a>
-          <a href="#" class="btn py2">Contact</a>
-        </div>
+    <header class="fixed top-0 left-0 right-0 p2em py4em z999 clearfix">
+      <a class="logo-wrap left" href="index.html">
+        <img class="logo-top" src="http://kristian.bjornard.com/sites/kristian.bjornard.com/themes/ookb/logo.png" alt="OOKB Logo" title="The Office of Kristian Bjornard" />
+      </a>
+      <h1 class="hide">The Office of Kristian Bjørnard</h1>
+      <nav class="relative ookb-brown bg-ookb-darkgray right">
+        <ul class="list-reset navbar clearfix m0">
+          <li><a href="index.html" class="btn py2">Work</a></li>
+          <li><a href="notes.html" class="btn py2">Notes</a></li>
+          <li><a href="library.html" class="btn py2">Library</a></li>
+          <li><a href="#" class="btn py2">About</a></li>
+          <li><a href="#" class="btn py2">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -43,18 +46,15 @@
 
       <article id="work">
         <section>
-          <ul id="work-list" class="list-reset border-bottom">
-            <script id="work-template" type="text/x-mustache-template">
+          <ul id="book-list" class="list-reset border-bottom">
+            <script id="book-template" type="text/x-mustache-template">
               {{#posts}}
-              <li class="individual-project border-top" style="background-image: url({{image_permalink}});">
-                <div class="content clearfix">
-                  <h1 class="h3 white underlined m0 p0 col col-md-10">{{slug}}</h1>
-                  <div class="info for-sorting hide">
-                    <p class="date">{{date}}</p>
-                    <div class="description">{{{content}}}</div>
-                    <p class="id">{{id}}</p>
+              <li class="individual-project border-top" style="background-image: url({{#photos}}{{original_size.url}}{{/photos}});">
+                <a href="{{link_url}}">
+                  <div class="content clearfix">
+                    <h1 class="h3 white underlined m0 p0 col col-md-10">{{summary}}</h1>
                   </div>
-                </div>
+                </a>
               </li>
               {{/posts}}
             </script>
@@ -101,12 +101,11 @@
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
 
-      $.getJSON('http://api.tumblr.com/v2/blog/library.ookb.co/posts?api_key=5w6VtoFqTweNvsdoz00DZtN0hEsAHvtFkUr6pB3V9JiNTeYyjh', function(data) {
-
+      $.getJSON('http://api.tumblr.com/v2/blog/library.ookb.co/posts?api_key=5w6VtoFqTweNvsdoz00DZtN0hEsAHvtFkUr6pB3V9JiNTeYyjh&limit=50&callback=?', function(data) {
         //mustache for images
-        var template = $('#work-template').html();
+        var template = $('#book-template').html();
         var info = Mustache.to_html(template, data.response);
-        $('#work-list').html(info);
+        $('#book-list').html(info);
         console.log('mustachified');
         // done with mustache templating
 

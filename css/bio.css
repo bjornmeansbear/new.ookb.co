@@ -1,0 +1,105 @@
+/* END @Font-Face */
+
+/* 1. General Layout / Design Stuff */
+/* =================================================================== */
+/* =================================================================== */
+
+/* Color Palette */
+/*
+pink          rgba(236,64,121,1)
+brown         rgba(47,41,38,1)
+gray          rgba(132,132,120,1)
+dark gray     rgba(96,103,103,1)
+light gray    rgba(194,211,186,1)
+
+red           rgba(183,80,81,1)
+orange        rgba(195,115,99,1)
+yellow        rgba(197,192,101,1)
+green         rgba(140,165,115,1)
+blue          rgba(157,178,176,1)
+purple        rgba(174,139,164,1)
+*/
+
+html {
+  background: rgba(96,103,103,1);
+  color: rgba(47,41,38,1) !important;
+  min-height: 101%;
+  /**/
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /**/
+}
+
+body {
+  background: rgba(132,132,120,1);
+  border: 2px solid rgba(47,41,38,1);
+  color: rgba(47,41,38,1) !important;
+  margin: 20px;
+  min-height: 101% !important;
+  padding: 0;
+}
+
+/* 2. TYPOGRAPHY */
+/* =================================================================== */
+/* =================================================================== */
+* {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,span,ul,ol,dl,a {
+  font-size: 1em;
+  line-height: inherit;
+}
+
+em, cite { font-style: italic; }
+h1,h2,strong { font-weight: 700;}
+.stricken, del {
+  text-decoration: line-through;
+}
+
+/* Links and More */
+/* =================================================================== */
+a {
+  background: rgba(236,64,121,0);
+  border-bottom: 1px solid rgba(96,103,103,1);
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  /**/
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover {
+  background: rgba(236,64,121,1);
+  border-bottom: none;
+  color: white;
+  text-decoration: none;
+  }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+::selection {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-shadow: none;
+}
+
+/* Quote Style Tweak */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 3px solid rgba(96,103,103,1);
+}
+
+/* =================================================================== */
+/* =================================================================== */
+/* LAYOUT */
+/* =================================================================== */
+/* =================================================================== */
+
