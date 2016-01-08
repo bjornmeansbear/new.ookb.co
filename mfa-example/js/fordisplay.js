@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $.getJSON('http://www.micagradshow.com/index.json', function(data) {
+  $.getJSON('http://2015.micagradshow.com/index.json', function(data) {
 
     //mustache for images
     var template = $('#student-info').html();
@@ -13,6 +13,6 @@ $(document).ready(function() {
 
     var studentList = new List('student-listing', options);
 
-  }); 
+  });
 
 });

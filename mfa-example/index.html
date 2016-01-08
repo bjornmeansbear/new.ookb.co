@@ -9,30 +9,44 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/example.css" rel="stylesheet"> 
+    <link href="css/example.css" rel="stylesheet">
 
   </head>
 
   <body>
     <div class="container">
-      <h1>Masters and their Images</h1>
+      <h1>MICA Grad Show — Image Browser</h1>
       <div class="row">
+        <div class="col-sm-12">
+          <article id="year-toggle" style="margin-bottom: 1rem; border-bottom: 1px solid gray; padding-bottom: 1rem; border-top: 1px solid gray; padding-top: 1rem;">
+
+            <div class="button-bar">
+              <button class="btn btn-default sort active" data-json-url="http://2015.micagradshow.com/index.json">
+                2015
+              </button>
+              <button class="btn btn-default sort disabled" data-json-url="http://2016.micagradshow.com/index.json">
+                2016
+              </button>
+            </div>
+
+          </article>
+        </div>
         <div class="col-sm-12">
           <article id="student-listing">
 
             <div class="button-bar">
               <input class="search" placeholder="Search" />
-              <button class="sort" data-sort="fname">
+              <button class="btn btn-default sort" data-sort="fname">
                 Sort by First Name
               </button>
-              <button class="sort" data-sort="lname">
+              <button class="btn btn-default sort" data-sort="lname">
                 Sort by Last Name
               </button>
-              <button class="sort" data-sort="program">
+              <button class="btn btn-default sort" data-sort="program">
                 Sort by Program
               </button>
             </div>
-              
+
             <ul class="list">
               <!-- dynamically filled with some sweet magix -->
             </ul>
@@ -41,7 +55,7 @@
         </div>
 
       </div>
-    </div>  
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
