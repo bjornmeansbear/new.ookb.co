@@ -1,0 +1,87 @@
+.fixed {
+  position: fixed;
+  top:    0;
+  right:  0;
+  bottom: 0;
+  left:   0;
+}
+
+h1 {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3vw;
+  margin: 0;
+  position: fixed;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.one   { z-index:  10; }
+.two   { z-index:  20; }
+.three { z-index:  30; }
+.four  { z-index:  40; }
+.five  { z-index:  50; }
+.six   { z-index:  60; }
+.seven { z-index:  70; }
+.eight { z-index:  80; }
+.nine  { z-index:  90; }
+.ten   { z-index: 100; }
+
+.transparency.ten-percent      { opacity: .1; }
+.transparency.twenty-percent   { opacity: .2; }
+.transparency.thirty-percent   { opacity: .3; }
+.transparency.fourty-percent   { opacity: .4; }
+.transparency.fifty-percent    { opacity: .5; }
+.transparency.sixty-percent    { opacity: .6; }
+.transparency.seventy-percent  { opacity: .7; }
+.transparency.eighty-percent   { opacity: .8; }
+.transparency.ninety-percent   { opacity: .9; }
+
+/** Background images and other background properties **/
+/** if you need some images: https://unsplash.it/images or http://www.unsplash.com **/
+/** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/
+
+.one {
+  background-image: url('http://envelop.eu/modulefiles/designs/ulrike-wilhelm/large/preview1/weird-wurst.jpg');
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+}
+
+.two {
+  background-image: url('http://www.ociproducts.com/images/drop-in_sink.png');
+  background-repeat: repeat-x;
+  background-position: 400px;
+  background-size:300px;
+    opacity: .7;
+}
+
+.three {
+  background-image: url('https://media.giphy.com/media/vfB7MHvJlW5QQ/giphy.gif');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+    opacity: 1;
+}
+
+.four {
+  background-image: url('http://1.bp.blogspot.com/-sgRdkb1Eu0M/UioQc6yWCXI/AAAAAAAACkE/3lkhQhiFAcA/s1600/minion_icon_image_picfishblogspotcom+%252814%2529.png');
+  background-repeat:no-repeat;
+  background-position: right top;
+}
+
+.five {
+  background-image: url('http://media.giphy.com/media/fTlEe3Ok6HBVm/giphy.gif');
+  background-repeat:repeat-y;
+  background-position: center;
+}
+
+.six {
+  background-image:url('http://49.media.tumblr.com/d581fbd4ebaef8f1a91723334d8ec2d8/tumblr_n8vbnp2KqR1te9khoo1_400.gif');
+  background-repeat:repeat-y;
+  background-position: center;
+}
+/
