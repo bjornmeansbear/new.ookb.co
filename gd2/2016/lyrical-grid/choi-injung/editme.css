@@ -1,0 +1,76 @@
+/** Style Away. **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.the.outer.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.a.block {
+  background-color: #00ffff
+  background: rgba(80,90,100,.15);
+  float: left;
+  height: 0;
+}
+
+.one.hundred.percent.wide {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.fifty.percent.wide {
+  width: 50%;
+  padding-bottom: 50%;
+}
+.seventy.five.percent.wide {
+  width: 75%;
+  padding-bottom: 75%;
+}
+.seventy.percent.wide {
+  width: 70%;
+  padding-bottom: 70%;
+}
+.sixty.percent.wide {
+  width: 60%;
+  padding-bottom: 60%;
+}
+.fourty.percent.wide {
+  width: 40%;
+  padding-bottom: 40%;
+}
+.thirty.percent.wide {
+  width: 30%;
+  padding-bottom: 30%;
+}
+.twenty.five.percent.wide {
+  width: 25%;
+  padding-bottom: 25%;
+}
+.twenty.percent.wide {
+  width: 20%;
+  padding-bottom: 20%;
+}
+.fifteen.percent.wide {
+  width: 15%;
+  padding-bottom: 15%;
+}
+.ten.percent.wide {
+  width: 10%;
+  padding-bottom: 10%;
+}
+.oh.percent.wide {
+  width: 5%;
+  padding-bottom: 5%;
+}
+.block img {
+  width: 100%;
+  height: auto;
+}

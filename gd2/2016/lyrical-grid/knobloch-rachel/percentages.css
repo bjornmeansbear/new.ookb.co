@@ -1,0 +1,174 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.the.outer.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; 
+    background-color: aliceblue;
+}
+
+.a.block {
+  float: left;
+  height: 0;
+}
+
+.one.hundred.percent.wide {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.fifty.percent.wide {
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.twenty.five.percent.wide {
+  width: 25%;
+  padding-bottom: 25%;
+}
+
+.twenty.percent.wide {
+  width: 20%;
+  padding-bottom: 20%;
+}
+
+.fifteen.percent.wide {
+  width: 15%;
+  padding-bottom: 15%;
+}
+
+.seventeen.percent.wide {
+  width: 17%;
+  padding-bottom: 17%;
+    
+}
+
+.ten.percent.wide {
+  width: 10%;
+  padding-bottom: 10%;
+}
+
+.seven.percent.wide {
+  width: 7%;
+  padding-bottom: 7%;
+    
+}
+
+.four.percent.wide {
+  width: 4%;
+  padding-bottom: 4%;
+}
+
+.block img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* The animation code */
+@keyframes example {
+    from {background-color: blue;}
+    to {background-color: pink;}
+}
+
+/* The element to apply the animation to */
+.seven.percent.wide {
+    width: 7%;
+    height: 7%;
+    background-color: repeat;
+    animation-name: example;
+    animation-duration: 7s;
+    background-repeat: repeat-x;
+}
+
+
+
+
+/* The animation code */
+@keyframes example2 {
+    0%   {background-color: skyblue; left:0px; top:0px;}
+    25%  {background-color: pink; left:200px; top:0px;}
+    50%  {background-color: lightgoldenrodyellow; left:200px; top:200px;}
+    75%  {background-color: dodgerblue; left:0px; top:200px;}
+    100% {background-color: deeppink; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.seven.percent.wide {
+    width: 7%;
+    height: 7%;
+    position: relative;
+    background-color: repeat;
+    animation-name: example2;
+    animation-duration: 7s;
+}
+
+
+.circle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 27;
+    animation-direction: alternate;
+}
+
+
+.square {
+    margin: 37%;
+    width: 50%; 
+    height: 50%;    
+    background: #f00;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform:rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+
+
+
+
