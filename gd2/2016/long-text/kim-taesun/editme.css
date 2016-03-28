@@ -1,0 +1,35 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+article {
+   margin: auto; /* this will center the page */
+   max-width:1000px; /*  use your width here */
+}
+
+body{ border: 10px double black; margin: 3em; padding: 10em; }
+
+h1{
+  font-family: arial,sans-serif;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 3em;
+  z-index: 2;
+  color:white;
+}
+
+h2{font-family: 'Raleway'; text-align: center; color: #173E4F;text-indent: 50px; background-position: #F7FCFE;}
+
+p{font-family: 'Raleway', sans-serif;font-weight: 300;color: black; font-size: 1em; text-align: justify;-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2}
+blockquote{font-family: 'Work Sans'; font-size: 0.75em; color:	#ff9921; margin-bottom: 3em;}
+.one{ font-family: 'Raleway', sans-serif;color: black; font-size:1em; font-weight: 600; text-align: center;}
+.preface{-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;}
+.prefacee{-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;}
+    .colorbox{position:absolute; left:58px; top:58px; width:1148px; height:450px; background-color:#ff9921; z-index: -99999999; color:#ff9921;}
