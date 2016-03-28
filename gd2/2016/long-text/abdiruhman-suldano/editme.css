@@ -1,0 +1,277 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+
+body {
+
+  background: #F7F9FA;
+
+  font-family:  'Caslon 540 LT Std', Baskerville, 'Baskerville Old Face',
+  'Hoefler Text', 'Times New Roman', serif;
+  padding-bottom: 5em;
+  font-weight: 50;
+  /* background: #EDD8D1;*/
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+} */
+
+/* title */
+h1 {
+  font-family:  'Caslon 540 Lt std', Baskerville,
+  'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+
+  font-size: 3.7em;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-indent: -.2em;
+  text-align: center;
+
+
+}
+
+article {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+/*walter b*/
+article header {
+  font-family:  'Caslon 540 LT Std', Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+
+  font-style: italic;
+  border-bottom: .002em solid black;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+article section {
+  border-top: .5px solid black;
+  margin-top: 2rem;
+  padding-top: 1rem;
+
+
+}
+
+article section.bloop {
+  margin-top: 2rem;
+  padding-top: 1rem;
+font-size: .6em;
+margin-bottom: -4rem;
+
+}
+
+section .columns p {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    column-count: 2;
+    column-fill: balance;
+
+}
+/* numerals */
+article section h2 {
+  margin-top: 0;
+  text-indent: 12em;
+  font-family: "Apercu", Helvetica, Arial, sans-serif;
+  font-style: italic;
+
+
+}
+/*preface/ epilogue */
+article section h3 {
+  margin-top: 0;
+  /*color: #84CFE8;*/
+  text-indent: 14em;
+  font-family: "Apercu", Helvetica, Arial, sans-serif;
+  font-style: italic;
+
+
+
+}
+/*pull quotes*/
+blockquote {
+  font-size: 1em;
+  color: #84CFE8;
+  font-family: "Apercu", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+}
+
+
+}
+/*pull quotes*/
+blockquote.2 {
+  font-size: .01em;
+  color: #84CFE8;
+  font-family: "Apercu", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+}
+
+/* blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+ blockquote p + p {
+  margin: 0;
+} */
+
+section blockquote {
+  font-size: 1.75em;
+  margin-left: 1em;
+  margin-right: 2em;
+  padding-left: 1em;
+}
+
+
+
+img.transparent {
+    opacity: 1;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+div.spacer {
+  padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+  div.spacer1 {
+    padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 50px;
+      padding-left: 10px;
+    }
+
+
+
+  div.spacer2 {
+    padding-top: .1px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 80px;
+    }
+
+
+div {
+text-align: justify;
+}
+
+div.photo {
+position: absolute;
+
+box-shadow: .2em .2em 5px #84CFE8;
+margin-left: -10em
+width: inherit;
+z-index: -99999999999999;
+-webkit-transform: translate(-50%,-50%);
+-moz-transform: translate(-40%,-40%);
+transform: translate(-4.7%,-15%)
+
+}
+
+article section.2 {
+  margin-top: 3rem;
+  padding-top: 1rem;
+
+}
+
+div.contents {
+
+top: 20em;
+position: fixed;
+line-height: 29px;
+
+
+}
+
+nav {
+  font-family:  'Caslon 540 LT Std', Baskerville,
+  'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  line-height: 2;
+  margin-left: 4
+  text-indent: -.2em;
+  text-align: center;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+      height: 2em;
+    width: 2em;
+}
+
+nav ul {
+
+  list-style: none;
+
+
+}
+
+nav:hover ul {
+  display: block;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: line-through;
+
+}
+a:hover{
+  color: #84CFE8;
+
+}
+a:active{
+  color: yellow;
+}
+
+
+
+
+figure {
+  position:  absolute; ;
+  background: #F7F9FA;
+  box-shadow: .5em .5em 10px blue;
+  width: auto;
+   z-index: 99999999999999;
+   -webkit-transform: translate(-20%,-10%);
+   -moz-transform: translate(-20%,-50%);
+   transform: translate(-50%,-50%);
+}
+
+
+
+figure:nth-child(2) {
+  right: 10%;
+  top: 45%;
+  z-index:5;
+}

@@ -1,0 +1,610 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+.nav.bar {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  position: fixed;
+  z-index: 998;
+}
+
+nav {
+font-family: 'Share', sans-serif;
+line-height: 1em;
+position: fixed;
+background-color: black;
+color: white;
+height: 20px;
+width: 150px;
+transition: 400ms;
+z-index: 999;
+}
+
+nav:hover {
+  height: 100%;
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  position: fixed;
+  background-color: black;
+  transition: 400ms;
+  display: none;
+  z-index: 9999;
+}
+
+a {
+  font-family: 'Share', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: white;
+}
+
+a:hover {
+      font-size: italice;
+      color: grey;
+      text-decoration: line-through;
+    }
+
+nav:hover ul {
+  display: block;
+}
+
+body{
+  background-color: #white;
+  width: 100%;
+  margin: 0;
+
+}
+
+  header.imageone {
+  background-image:  url('img/new-york-bw-nyc-empire.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  margin-bottom: 7em;
+  }
+
+  .animated.fadeInDown.title {
+  font-family: 'Share', sans-serif;
+  color: white;
+  font-size: 5em;
+  line-height: 1.2em;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 13%;
+  padding-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  letter-spacing: 10px;
+}
+
+p.by {
+  font-family: 'Share', sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  color: white;
+}
+
+header.imagetwo {
+ background-image:  url('img/textured_paper_9010.jpg');
+ background-size: cover;
+ margin-top: -6%;
+ height: 800px;
+ width: 400px;
+ margin-left: : -10%;
+ z-index: 0;
+}
+
+p.author {
+  font-family: 'Share', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 2rem;
+  z-index: 600;
+  text-align: right;
+  margin right: -10%;
+}
+
+blockquote.top.quote {
+  font-family: 'Inconsolata', courier, monospace;
+  color: black;
+  font-size: 1.25em;
+  transition: all 400ms;
+  line-height: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+  z-index: 600;
+  margin-top: -23%;
+  margin-bottom: 20%;
+}
+
+.chapter {
+  font-family: 'Share', sans-serif;
+  color: black;
+  font-size: 2.2em;
+  line-height: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 5em;
+  margin-left: 25%;
+  z-index: 600;
+}
+
+p {
+  font-family: 'News Cycle', sans-serif;
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+  z-index: 600;
+}
+
+blockquote {
+  font-family: 'Inconsolata', courier, monospace;
+  color: black;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+  z-index: 600;
+}
+
+.chapter.preface {
+  margin-left: 15%;
+}
+
+p.preface {
+  margin-left: 15%;
+  margin-right: 40%;
+}
+
+header.imagethree {
+ background-image:  url('img/il_570xN.755362656_beus.jpg');
+ position: absolute;
+ background-size: cover;
+ height: 800px;
+ width: 400px;
+ margin-left: 70%;
+ margin-top: -30%;
+ z-index: 5;
+}
+
+header.imagefour {
+ background-image:  url('img/13921.jpg');
+ background-size: cover;
+ height: 450px;
+ width: 100%;
+ margin-top: 10%;
+ z-index: 0;
+}
+
+ blockquote.one {
+   color: white;
+   margin-left: 25%;
+   margin-right: 0%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   background-color: black;
+   padding: 5% 10% 5% 20%;
+ }
+
+ header.imagefive {
+  background-image: url('img/Wood-Grain-and-Knot-Black-and-White.jpg');
+  background-size: cover;
+  position: absolute;
+  margin-top: 10%;
+  height: 1000px;
+  width: 100%;
+  z-index: -5;
+ }
+
+ p.two {
+   margin: 0;
+   z-index: 600;
+ }
+
+.chapter.two {
+  margin-top: 0;
+  margin: 0;
+}
+
+ section.two {
+   float: left;
+   background-color: white;
+   border-style: solid;
+   border-width: 3em;
+   border-color: white;
+   margin-top: 20%;
+   margin-left: 10%;
+   width: 700px;
+ }
+
+ section.abel {
+   float: right;
+   width: 700px;
+   background-color: black;
+   border-style: solid;
+   border-width: 2em;
+   border-color: black;
+   margin-top: 68%;
+ }
+
+ p.white {
+   color: white;
+   margin: 0%;
+ }
+
+ blockquote.white {
+   color: white;
+   margin: 5%;
+ }
+
+ header.abel {
+   background-image: url('img/220px-GANCE_Abel-24x30b-.jpg');
+   height: 274px;
+   width: 220px;
+   float: right;
+ }
+
+ header.imagesix {
+  background-image:  url('img/Early_marx_brothers_with_parents.jpg');
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  margin-top: 10%;
+  z-index: 0;
+ }
+
+ header.imageseven {
+  background-image:  url('img/2758482_orig.jpg');
+  background-size: cover;
+  height: 400px;
+  width: 700px;
+  z-index: 0;
+  margin: 5% 30% 20% 30%;
+ }
+
+ header.imageeight {
+  background-image:  url('img/hg-noisycanvas-texture.jpg');
+  background-size: cover;
+  margin-right: 10%;
+  margin-top: -5%;
+  height: 1500px;
+  width: 400px;
+  float: left;
+  z-index: 0;
+ }
+
+ header.imagenine {
+  background-image: url('img/gray-canvas-fabric-texture.jpg');
+  background-size: cover;
+  position: absolute;
+  margin-top: -30%;
+  height: 1300px;
+  width: 100%;
+  z-index: -5;
+ }
+
+ p.five {
+   margin: 0;
+   z-index: 600;
+ }
+
+.chapter.five {
+  margin-top: 0;
+  margin: 0;
+}
+
+ section.five {
+   float: left;
+   background-color: white;
+   border-style: solid;
+   border-width: 3em;
+   border-color: white;
+   float: right;
+   margin-top: -20%;
+   margin-right: 10%;
+   width: 700px;
+ }
+
+ header.imageten {
+  background-image:  url('img/Battle_strike_1934.jpg');
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  margin-top: 10%;
+  z-index: 0;
+ }
+
+.chapter.six {
+   margin: 0;
+}
+ p.six {
+   margin: 0;
+ }
+
+ section.six {
+   margin-top: 5em;
+   margin-left: 15%;
+   float: left;
+   width: 700px;
+ }
+
+ header.imageeleven {
+  background-image: url('img/8446a52daa4039d52fc8a6fe3fdbdb45.jpg');
+  background-size: cover;
+  float: right;
+  margin-top: 16%;
+  margin-right: 15%;
+  height: 300px;
+  width: 500px;
+  z-index: -5;
+ }
+
+ header.imagetwelve {
+  background-image:  url('img/free_texture_friday_248-1024x768.jpg');
+  background-size: cover;
+  margin-right: 10%;
+  margin-top: 15%;
+  height: 900px;
+  width: 400px;
+  float: left;
+  z-index: 0;
+ }
+
+ section.seven {
+   margin-top: -50%;
+   float: right;
+ }
+
+p.eight {
+  margin: 0;
+}
+
+.chapter.eight {
+  margin: 0;
+}
+ section.eight {
+   margin-left: 15%;
+   margin-top: 20%;
+   float: left;
+   width: 800px;
+ }
+
+ header.imagethirteen {
+  background-image:  url('img/benjamin.jpg');
+  background-size: cover;
+  margin-top: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 900px;
+  width: 400px;
+  float: right;
+  z-index: 0;
+  }
+
+  header.imagefourteen {
+   background-image: url('img/09-06-2013_sponge02.jpg');
+   background-size: cover;
+   position: absolute;
+   margin-top: -10%;
+   margin-bottom: 20%;
+   height: 1000px;
+   width: 100%;
+   z-index: -5;
+  }
+
+  p.nine {
+    margin: 0;
+    z-index: 600;
+  }
+
+ .chapter.nine {
+   margin-top: 0;
+   margin: 0;
+ }
+
+  section.nine {
+    background-color: white;
+    border-style: solid;
+    border-width: 3em;
+    border-color: white;
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 700px;
+  }
+
+  header.imagefifteen {
+   background-image:  url('img/vintage-historic-new-york-city-black-white-in-1927-58.jpg');
+   background-size: cover;
+   height: 450px;
+   width: 100%;
+   margin-top: 10%;
+   z-index: 0;
+  }
+
+  header.imagesixteen {
+   background-image:  url('img/The Kaiser WIlhelm Strase, Hamburg, Germany, 1906.gif');
+   background-size: cover;
+   margin-right: 10%;
+   margin-top: 15%;
+   height: 1200px;
+   width: 400px;
+   float: left;
+   z-index: 0;
+  }
+
+  section.eleven {
+    margin-top: -70%;
+    float: right;
+  }
+
+  header.imageseventeen {
+   background-image:  url('img/tumblr_n34bt9JP1Z1sirgnko1_1280.jpg');
+   background-size: cover;
+   height: 450px;
+   width: 100%;
+   margin-top: -10%;
+   z-index: 0;
+  }
+
+  .chapter.twelve {
+     margin: 0;
+  }
+   p.twelve {
+     margin: 0;
+   }
+
+  section.twelve {
+    margin-top: 5em;
+    margin-left: 17%;
+    margin-bottom: 40%;
+    float: left;
+    width: 700px;
+  }
+
+  header.imageeighteen {
+   background-image: url('img/1355814906.jpg');
+   background-size: cover;
+   float: right;
+   margin-top: 16%;
+   margin-right: 17%;
+   height: 500px;
+   width: 300px;
+   z-index: -5;
+  }
+
+  header.imagenineteen {
+   background-image: url('img/inox-brosse.jpg');
+   background-size: cover;
+   position: absolute;
+   margin-top: -30%;
+   height: 1000px;
+   width: 100%;
+   z-index: -5;
+  }
+
+  p.thirteen {
+    margin: 0;
+    z-index: 600;
+  }
+
+ .chapter.thirteen {
+   margin-top: 0;
+   margin: 0;
+ }
+
+  section.thirteen {
+    float: left;
+    background-color: white;
+    border-style: solid;
+    border-width: 3em;
+    border-color: white;
+    float: right;
+    margin-top: -20%;
+    margin-right: 10%;
+    width: 700px;
+    margin-bottom: 20%;
+  }
+
+  header.imagetwenty {
+   background-image:  url('img/66kmjm.jpg');
+   background-size: cover;
+   margin-right: 10%;
+   margin-top: -10%;
+   height: 1000px;
+   width: 400px;
+   float: left;
+   z-index: 0;
+  }
+
+  section.fourteen {
+    margin-top: -53%;
+    float: right;
+  }
+
+  header.imagetwentyone {
+   background-image:  url('img/Building of the Berlin Wall.jpg');
+   background-size: cover;
+   height: 450px;
+   width: 100%;
+   margin-top: 10%;
+   z-index: 0;
+  }
+
+  header.imagetwentytwo {
+   background-image:  url('img/0208interior.jpg');
+   background-size: cover;
+   height: 340px;
+   width: 500px;
+   margin: 5% 35% 5% 35%;
+   z-index: 0;
+  }
+
+  header.imagetwentythree {
+   background-image: url('img/CSC_0247[1].jpg');
+   background-size: cover;
+   position: absolute;
+   margin-top: 10%;
+   height: 1000px;
+   width: 100%;
+   z-index: -5;
+  }
+
+  p.epilogue {
+    margin: 0;
+    z-index: 600;
+  }
+
+ .chapter.epilogue {
+   margin-top: 0;
+   margin: 0;
+ }
+
+  section.epilogue {
+    background-color: white;
+    border-style: solid;
+    border-width: 3em;
+    border-color: white;
+    margin-top: 20%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+  }
+
+  blockquote.epilogue {
+    color: white;
+    margin-left: 0;
+    margin-right: 20%;
+    margin-top: -20%;
+    margin-bottom: -15%;
+    background-color: black;
+    padding: 5% 15% 5% 10%;
+  }
+
+
+footer {
+  font-family: 'Share', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0% 25% 0 25% ;
+}

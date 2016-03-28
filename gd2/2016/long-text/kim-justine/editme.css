@@ -1,0 +1,78 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+
+body{background-color:#FFF98F; color:white; border: 7px double black; margin:6em;
+		background: #FFF98F; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient#FFFBC0, #FFA8BB); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFBC0, #FFA8BB); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFBC0, #FFA8BB); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FFFBC0, #FFA8BB); /* Standard syntax (must be last) */}
+h1{text-align: center;color:#FFA8BB;font-size: 5em; transition: all 200ms;}
+h1:hover{color: #8C5C69;}
+.walter{text-align: center; color:black;}
+h2{text-align:center;
+	color:black;
+	border: 5px double black;
+	padding:0.5em;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:2em;
+	margin-bottom: 1.5em;
+	transition: all 100ms;
+}
+h2:hover{background:#FFFBC0;}
+header{font-family: 'Patua One', cursive;}
+section{font-family: 'Patua One', cursive;}
+blockquote{font-family: 'Crete Round', serif;color: black;margin-bottom: 5em;border: 7px double black; padding:1em;transition:all 100ms;}
+blockquote:hover{background: #FFA8BB; }
+p{color:black;font-family: 'Josefin Slab', serif; line-height: 1.5em;
+	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+			-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 60px; /* Firefox */
+    column-gap: 60px;
+	     margin-bottom: 4.5em;}
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;}
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08);}
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.you{position:fixed; left:970px;  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+	-moz-column-count: 1; /* Firefox */
+	column-count: 1; transition: all 100ms;}
+	.you:hover{background: #9AE4FF;}
+
+.ben{position:relative;  width: 500px; border:5px double black; padding:1em; left:60px;}
+
+.link{color:#323232;}
+
+
+
+nav { font-family: 'Josefin Slab', serif; line-height: 1.5em;position: fixed; top:1em; left:0.6em; background:#FFA8BB; height:2em; width:2em;}
+nav ul{list-style:none;  margin:0; padding:1em; display: none; width:50px;transition:all 400ms;background: #FFA8BB; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient#FFFBC0, #FFA8BB); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#FFFBC0, #FFA8BB); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#FFFBC0, #FFA8BB); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#FFFBC0, #FFA8BB); /* Standard syntax (must be last) */}
+nav:hover ul{ display:block; padding: 1em;}
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: line-through;}
+a:hover{ color:white;}
+a:active{ color:#FFA8BB; text-decoration: none;}
