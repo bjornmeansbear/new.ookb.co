@@ -1,0 +1,159 @@
+<!-- doctype html -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Responsive Gridded Images</title>
+
+        <link href="gridded.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+
+                <ul>
+                    <li><a href="#one">First object</a></li>
+                    <li><a href="#two">Second Thing</a></li>
+                    <li><a href="#three">A Third Item</a></li>
+                </ul>
+
+                <button class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </nav>
+        </header>
+
+        <main>
+            <article id="one">
+              <h1>Our Awesome Site</h1>
+              <p>
+                Tilde cold-pressed selvage Austin. Vinyl four loko biodiesel, 90's scenester Williamsburg irony brunch pop-up vegan keffiyeh cronut. Fashion axe fap Vice cray church-key typewriter. Cliche before they sold out fap roof party deep v. Umami Shoreditch bitters, taxidermy Marfa scenester Helvetica readymade forage beard Pitchfork 8-bit chambray. Pinterest meditation ethical, forage banjo Intelligentsia drinking vinegar wayfarers health goth mlkshk Banksy umami. Four dollar toast trust fund vinyl church-key.
+              </p>
+            </article>
+            <ul class="imagelist" id="two">
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=110">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=100">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=90">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=80">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=70">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=60">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=50">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=10">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=0">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=20">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=30">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+                <li class="thumb">
+                    <img src="https://unsplash.it/300/200?image=40">
+                    <div class="caption">
+                        <h2>Image Title</h2>
+                        <p>Some Image text. Lorem Ipsum Dolor sit amet.</p>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <footer id="three">
+          <small>This demo was about responsive grids, floats, and some menu tweaking stuff that has to do with trying to make your site “mobile friendly.” We introduced Javascript today... We'll do more with it in the next two weeks.</small>
+          <p>Nov. 25, 2014</p>
+        </footer>
+
+        <!-- Javascript is included down here to make pages load faster -->
+        <script src="jquery-2.1.1.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('button.toggle').click(function() {
+                    $('header ul').slideToggle();
+                });
+            });
+
+            $(window).resize(function() {
+                ww = $(window).width();
+
+                if (ww > 768) {
+                    $('header ul').show();
+                } else {
+                    $('header ul').hide();
+                };
+
+            });
+        </script>
+
+    </body>
+
+</html>
+
