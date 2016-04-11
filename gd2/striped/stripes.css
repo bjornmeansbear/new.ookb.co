@@ -1,0 +1,50 @@
+* {
+  position: relative;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.stripe {
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 75em;
+}
+
+.mlrauto {
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+/* Color Palette */
+
+.bg-pink            { background-color: rgba(236,064,121,1); }
+.bg-brown           { background-color: rgba(047,041,038,1); }
+.bg-gray            { background-color: rgba(132,132,120,1); }
+.bg-darkgray        { background-color: rgba(096,103,103,1); }
+.bg-lightgray       { background-color: rgba(194,211,186,1); }
+.bg-red             { background-color: rgba(183,080,081,1); }
+.bg-orange          { background-color: rgba(195,115,099,1); }
+.bg-yellow          { background-color: rgba(197,192,101,1); }
+.bg-green           { background-color: rgba(140,165,115,1); }
+.bg-blue            { background-color: rgba(157,178,176,1); }
+.bg-purple          { background-color: rgba(174,139,164,1); }
+.bg-black           { background-color: rgba(000,000,000,1); }
+
+.white              { color: white; }
+.black              { color: black; }
