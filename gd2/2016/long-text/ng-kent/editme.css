@@ -1,0 +1,93 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Kanit:800,800italic,500,500italic,200,200italic|Source+Serif+Pro:400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,400italic,700,700italic);
+
+body {
+  font-family: 'Droid Serif', georgia, serif;
+  line-height: 1.7em;
+  padding-bottom: 5em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Kanit';
+}
+
+.subtitle {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	line-height: 1.7em;
+	font-size: 1.5em;
+}
+
+article {
+  font-family: georgia;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: #050710;
+  color: yellow;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  max-width: 50em;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+  text-indent: -.08em;
+}
+
+article section {
+  font-family: 'Droid Serif';
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 17px;
+  line-height: 1.8em;
+}
+
+article section h2 {
+  margin-top: 0;
+  letter-spacing: .5em;
+  text-indent: .5em;
+  padding: 10px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: .9em;
+  color: gray;
+  font-family: 'Droid Serif';
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+
+section blockquote {
+  font-size: .9em;
+  border-left: .25em solid;
+  margin-left: 1em;
+  margin-right: 2em;
+  padding-left: 1em;
+}

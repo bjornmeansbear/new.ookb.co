@@ -1,0 +1,195 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+
+
+::selection {
+    background: #000000;
+    color:lightgrey;
+}
+body {
+    background-color: #E8E8E8;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: 'Bebas', sans-serif;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    margin: 30% 5% 0 5%;
+    line-height: 150%;
+}
+h1:hover { color: #1700bc }
+
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Bebas', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 500px;
+}
+h2:hover { color: #1700bc }
+
+
+    /* another way to write font:
+        font: bold italic 1em/1.3333 Helvetica, Arial, sans-serif; */
+blockquote {
+    margin:2% 25% 2% 25%;
+    font-family: 'minion pro', sans-serif;
+    font-style: italic;
+    color: #826e09;
+}
+blockquote.gold {
+    font-family: sans-serif;
+    font-style: normal;
+    color: #826e09;
+    line-height: 1.5;
+    font-size: 20px;   
+}
+
+blockquote.goldside {
+    font-family: sans-serif;
+    font-style: normal;
+    color: #826e09;
+    line-height: 1.5;
+    font-size: 20px; 
+    margin: 0 7% 0 7%;
+}
+
+
+leftquote {
+    float: left;
+    margin: 0% 570px 0 4%;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #826e09;
+    line-height: 1.5;
+    font-size: 20px;    
+}
+
+hr.s1 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin:0% 40% 0% 40%;
+}
+
+/*
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	color: #8c8b8b;
+	font-size: 18px;
+*/
+}
+figcaption {
+    float: right;
+    width="350";
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60%;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    font-family: 'minion pro', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 20px 40px 0px 40px;
+    color: #685206;
+    font-size: 15px;
+}
+.left{
+    margin-right: 350px;
+}
+.right{
+    margin-left: 350px;
+}
+
+a { color: #3f360f; background: #eaeaea; text-decoration: none; }
+a:hover { color: }
+
+cite {
+     font-family: 'minion pro', serif;
+    font-style: italic
+}
+
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut;
+}
+
+nav {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    width: 100px;
+}
+
+nav ul {
+    display: none;
+    list-style:circle;
+    margin: 0;
+    padding: 1em;
+    background: #ebebeb;
+    width: auto;
+}
+
+nav:hover ul {
+    display: block;
+    width: 50px;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-size: 11px;
+    line-height: 17px;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+    background: black;
+}
+a:active {
+    color: white;
+    background: yellow;
+}
+nav:hover div.hoverX {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    font-family: sans-serif;
+    height: 18px;
+    width: 18px;
+}
+x {
+    color: black;
+    text-decoration:none;
+    font-family: 'Futura', sans-serif;
+    font-size: 20px;
+}
+/* for rotating: class="animated infinite rotateIn360"

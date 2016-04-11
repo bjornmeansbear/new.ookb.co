@@ -1,0 +1,42 @@
+.fixed {
+  position: fixed;;
+  top:    0;
+  right:  0;
+  bottom: 0;
+  left:   0;
+}
+
+.transparency.ten-percent      { opacity: .1; }
+.transparency.twenty-percent   { opacity: .2; }
+.transparency.thirty-percent   { opacity: .3; }
+.transparency.fourty-percent   { opacity: .4; }
+.transparency.fifty-percent    { opacity: .5; }
+.transparency.sixty-percent    { opacity: .6; }
+.transparency.seventy-percent  { opacity: .7; }
+.transparency.eighty-percent   { opacity: .8; }
+.transparency.ninety-percent   { opacity: .9; }
+
+.mountain {
+  background-image: url('mountain.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: .8;
+  }
+
+  .blue {
+    background-image: url('blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: .8;
+    }
+
+
+
+
+
+
+
+
+}/** Style Away. **/

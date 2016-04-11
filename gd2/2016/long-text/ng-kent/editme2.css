@@ -1,0 +1,226 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,500italic,500,400italic);
+
+body {
+	background: #ffaf00;
+	font-size: 62.5%;
+	font-family: ubuntu, sans-serif;
+	margin: 0;
+}
+
+.swords {
+	width: 80%;
+	color: #003492;
+	background:#ffffff;
+	position: relative;
+	padding-left: 2%;
+	float: right;
+	clear: right;
+}
+
+.words {
+	width: 80%;
+	color: #003492;
+	background:-webkit-linear-gradient(#ffffff 25%, rgba(245,245,255,1) 90%);
+	background-attachment: fixed;
+	position: relative;
+	padding-left: 2%;
+	float: right;
+	clear: right;
+}
+
+header {
+	font-family: georgia, serif;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3.2em;
+	font-weight: 700;
+	padding-top: 1em;
+	margin-bottom: 0;
+	line-height: 1.6em;
+	font-variant: small-caps;
+}
+
+.subtitle {
+	font-size: 1.8em;
+	font-style: italic;
+	line-height: 1.7em;
+	margin-top: 0;
+}
+
+article {
+	font-family: ubuntu, sans-serif;
+	font-size: 1.2em;
+	line-height: 2em;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article h2 {
+	font-size: 1.6em;
+	line-height: 2.4em;
+}
+
+article section {
+	border-top: 2px solid #003492;
+	margin-top: 4em;
+	padding-top: 3em;
+}
+
+article section img {
+	width: 10em;
+	max-width: 100%;
+	height: auto;
+	max-height: 20em;
+	float: left;
+	margin-right: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+blockquote {
+	font-size: 1em;
+	line-height: 1.6em;
+	font-family: ubuntu, sans-serif;
+	color: #ffaf00;
+	font-style: italic;
+	padding: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	text-indent: -.3em;
+	background: #f5f5ff;
+}
+
+blockquote p {
+	text-indent: 0;
+	font-size: 80%;
+	margin-bottom: 0;
+}
+
+blockquote p+p {
+	margin: 0;
+}
+
+section blockquote {
+	font-size: 1em;
+	border-left: .25em solid;
+	margin-left: 1em;
+	margin-right: 2em;
+	padding-left: 1em;
+}
+
+.topbutton {
+	width: 5em;
+	height: auto;
+	float: right;
+}
+
+.sidebar {
+	position: fixed;
+	max-width: 10em;
+	padding-top: 2.5em;
+	margin-left: 5%;
+	font-family: ubuntu, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5em;
+	transition: .3s ease;
+}
+
+.sidebar img {
+	width: inherit;
+	height: auto;
+	max-width: 10em;
+	border-radius: 5em;
+	-webkit-border-radius: 5em;
+	margin-bottom: 2em;
+	transition: .6s ease-in-out;
+	transition-delay: .1s;
+}
+
+.sidebar img:hover {
+	-webkit-transform: rotateZ(360deg);
+	-ms-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
+	transition: .4s ease-out;
+}
+
+.sidebar a:link {
+	color: #ffd780;
+	text-decoration: none;
+}
+
+.sidebar a:visited {
+	color: #ffd780;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	color: #ffffff;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.sidebar a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	background: red;
+	height: 2em;
+	width: 2em;
+	max-width: 10em;
+	padding-top: 4em;
+	margin-left: 5%;
+	font-family: ubuntu, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+nav:hover ul {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	display: none;
+}
+
+nav a:link {
+	color: #ffd780;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #ffd780;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ffffff;
+	font-style: italic;
+	text-decoration: none;
+}
+
+nav a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.absolute    { position: absolute; }
+.offset-left { left: -100px; }
