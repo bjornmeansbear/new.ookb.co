@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="random">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KoruTest</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="card text-center">
+        <h2 class="category">Category</h2>
+        <h1 class="cardtext">CardText</h1>
+        <h3 class="number">00</h3>
+      </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+
+      $.getJSON('koru.json', function(data) {
+
+        var koru = data.promptcards[Math.floor(Math.random()*data.promptcards.length)];
+        console.log(koru);
+        $(".card .category").text(koru.category);
+        $(".card .cardtext").text(koru.card);
+        $(".card .number").text(koru.number);
+
+      });
+
+    </script>
+
+  </body>
+</html>

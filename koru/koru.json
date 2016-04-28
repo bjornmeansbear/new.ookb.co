@@ -1,0 +1,165 @@
+{
+    "promptcards": [
+        {
+            "number": "1",
+            "background": "#FFCD2F",
+            "card": "Do you squeeze the end or middle of the toothpaste tube to get it out?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "2",
+            "background": "#FFCD2F",
+            "card": "Do you fold your clothes right out of the dryer?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "3",
+            "background": "#FFCD2F",
+            "card": "Do you split your oreos in half before eating them?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "4",
+            "background": "#FFCD2F",
+            "card": "Where is the furthest place you’ve traveled?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "5",
+            "background": "#FFCD2F",
+            "card": "How many siblings do you have?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "6",
+            "background": "#FFCD2F",
+            "card": "How many kids do or did you want?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "7",
+            "background": "#FFCD2F",
+            "card": "Who is your biggest role model?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "8",
+            "background": "#FFCD2F",
+            "card": "Do you typically overpack or underpack for a trip?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "9",
+            "background": "#FFCD2F",
+            "card": "Exactly how many photos do you have stored on your phone right now?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "10",
+            "background": "#FFCD2F",
+            "card": "Do you get uncomfortable when people talk about religion or politics?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "11",
+            "background": "#FFCD2F",
+            "card": "What’s your biggest pet peeve?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "12",
+            "background": "#FFCD2F",
+            "card": "Do you plan ahead or wait until the last minute to get things done?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "13",
+            "background": "#FFCD2F",
+            "card": "What’s the worst thing you’ve ever eaten?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "14",
+            "background": "#FFCD2F",
+            "card": "If you could treat yourself right now, what would you do?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "15",
+            "background": "#FFCD2F",
+            "card": "What’s something that you should throw away but can’t?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "16",
+            "background": "#FFCD2F",
+            "card": "Do you have any unusual morning or night rituals?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "17",
+            "background": "#FFCD2F",
+            "card": "What’s something you’re naturally good at?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "18",
+            "background": "#FFCD2F",
+            "card": "How do you usually deal with stress?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "19",
+            "background": "#FFCD2F",
+            "card": "What’s one thing you’ve procrastinated on doing today?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "20",
+            "background": "#FFCD2F",
+            "card": "Are you more likely to panic or assess the situation in times of trouble?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "21",
+            "background": "#FFCD2F",
+            "card": "If you could change one thing about yourself, what would it be?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "22",
+            "background": "#FFCD2F",
+            "card": "What are you the most grateful for in life?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        },
+        {
+            "number": "23",
+            "background": "#FFCD2F",
+            "card": "What’s one thing you’ve always dreamt of doing?",
+            "category": "Anima",
+            "icons": "img/icons1.png"
+        }
+    ]
+}
