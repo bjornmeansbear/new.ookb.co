@@ -52,7 +52,7 @@ h2 {
 
 .boxed:hover {
   max-width: 500px;
-  max-height: 300px;    
+  max-height: 300px;
   color: white;   
   text-decoration: none;    
   /*background: darkblue;*/
@@ -78,7 +78,7 @@ h2 {
     color: white;
     word-wrap: break-word;
 }
-  
+
 
 a {
     text-decoration: none;
@@ -95,15 +95,14 @@ ul {
     line-height: 10rem;
     font-size: 10px;
     text-align: center;
-    
-<!-- columns -->
+
+/*<!-- columns -->*/
     
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    
+
     -webkit-column-gap: 0; /* Chrome, Safari, Opera */
     -moz-column-gap: 0; /* Firefox */
     column-gap: 0;
 }
-
