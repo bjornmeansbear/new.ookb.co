@@ -1,0 +1,343 @@
+.bg-red{
+  background-color: #ED2024;
+  color: #ED2024;
+}
+.bg-blue{
+  background-color: #6FCCDD;
+  color: #6FCCDD;
+}
+.bg-green{
+  background-color: #69BD45;
+  color: #69BD45;
+}
+.bg-yellow{
+  background-color: #F6EB14;
+  color: #F6EB14;
+}
+.bg-purple{
+  background-color: #B9529F;
+  color:#B9529F;
+}
+.bg-black{
+  background-color: black;
+  color: black;
+}
+li{
+  list-style: none;
+}
+div{
+  text-decoration: none;
+}
+a.bg-yellowtext:visited{
+  text-decoration: none;
+  color: #F6EB14;
+}
+a.bg-redtext:visited{
+  text-decoration: none;
+  color: #ED2024;
+}
+a.bg-bluetext:visited{
+  text-decoration: none;
+  color: #6FCCDD;
+}
+a.bg-greentext:visited{
+  text-decoration: none;
+  color: #69BD45;
+}
+a.bg-purpletext:visited{
+  text-decoration: none;
+  color: #B9529F;
+}
+a.bg-yellowtext{
+  text-decoration: none;
+  color: #F6EB14;
+}
+a.bg-redtext{
+  text-decoration: none;
+  color: #ED2024;
+}
+a.bg-bluetext{
+  text-decoration: none;
+  color: #6FCCDD;
+}
+a.bg-greentext{
+  text-decoration: none;
+  color: #69BD45;
+}
+a.bg-purpletext{
+  text-decoration: none;
+  color: #B9529F;
+}
+body{
+  margin: 0;
+}
+ul{
+  margin:0;
+  padding:0;
+  height: 100%;
+  position: relative;
+}
+.title_page{
+  text-align: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  color: black;
+  }
+  .section_number{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .section_title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    margin-left: .4em;
+    color: black;
+  }
+  .one-of-three{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: red;
+    margin-left: 8em;
+    margin-top: 2em;
+    width: 80%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .one-of-two{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: red;
+    margin-left: 8em;
+    margin-top: 4em;
+    width: 80%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+  }
+.menu_text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+.static:hover{
+  background-image: url(static.png);
+  background-size: cover;
+  background-position: 70%;
+}
+.swing:hover{
+  background-image: url(swing.jpg);
+  background-size: cover;
+  background-position: 70%;
+}
+.bridge:hover{
+  background-image: url(bridge.jpg);
+  background-size: cover;
+  background-position: 60%;
+}
+.growth:hover{
+  background-image: url(growth.jpg);
+  background-size: cover;
+  background-position: 60%;
+}
+.mica:hover{
+  background-image: url(mica.jpeg);
+  background-size: cover;
+  background-position: 60%;
+}
+.menu_stripe{
+  padding-left: .75em;
+  padding-right: .75em;
+  height: 100vh;
+  float:left;
+  box-sizing: border-box;
+}
+.menu_stripe2{
+  padding-left: .75em;
+  padding-right: .75em;
+  height: 100%;
+  float:left;
+  bottom:0;
+  box-sizing: border-box;
+}
+nav.onesix.column{
+  height: 100%;
+  position: relative;
+  float:left;
+}
+.one{ width: calc(100% / 5 * 1)}
+.two{ width: calc(100% / 5 * 2)}
+.three{ width: calc(100% / 5 * 3)}
+.four{ width: calc(100% / 5 * 4)}
+.five{ width: calc(100% / 5 * 5)}
+
+.onesix{ width: calc(100% / 6 * 1)}
+.twosix{ width: calc(100% / 6 * 2)}
+.threesix{ width: calc(100% / 6 * 3)}
+.foursix{ width: calc(100% / 6 * 4)}
+.fivesix{ width: calc(100% / 6 * 5)}
+.sixsix{ width: calc(100% / 6 * 6)}
+
+.magic-bus{
+  background-image: url(magic_school_bus.jpg);
+  background-size: 100%;
+  background-position: 0% 60%;
+}
+.magic-bus:hover{
+  background-image: url(magic_school_bus.jpg);
+  background-size: 100%;
+  background-position: 0% 60%;
+  opacity: .5;
+  color: white;
+  font-weight: 900;
+}
+
+.courage-dog{
+  background-image: url(courage.jpg);
+  background-size: 100%;
+  background-position: 0% 40%;
+}
+.courage-dog:hover{
+  background-image: url(courage.jpg);
+  background-size: 100%;
+  background-position: 0% 40%;
+  opacity: .5;
+  color: white;
+  font-weight: 900;
+}
+.winx{
+  background-image: url(winx.jpg);
+  background-size: 100%;
+  background-position: 0% 40%;
+}
+.winx:hover{
+  background-image: url(winx.jpg);
+  background-size: 100%;
+  background-position: 0% 40%;
+  opacity: .5;
+  color: white;
+  font-weight: 900;
+}
+.inuyasha{
+  background-image: url(inuyasha.jpg);
+  background-size: 100%;
+  background-position: 40%;
+}
+.inuyasha:hover{
+  background-image: url(inuyasha.jpg);
+  color: white;
+  font-weight: 900;
+  background-size: 100%;
+  background-position: 40%;
+  opacity:.5;
+}
+.nanny{
+  background-image: url(nanny.jpg);
+  background-size: 100%;
+  background-position: 0% 20%;
+}
+.nanny:hover{
+  background-image: url(nanny.jpg);
+  background-size: 100%;
+  background-position: 0% 20%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+.eureka{
+  background-image: url(eureka.jpg);
+  background-size: 100%;
+  background-position: 0% 25%;
+}
+.eureka:hover{
+  background-image: url(eureka.jpg);
+  background-size: 100%;
+  background-position: 0% 25%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+.mentalist{
+  background-image: url(mentalist.jpg);
+  background-size: 100%;
+  background-position: 0% 30%;
+}
+.mentalist:hover{
+  background-image: url(mentalist.jpg);
+  background-size: 100%;
+  background-position: 0% 30%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+.criminal-minds{
+  background-image: url(criminal_minds.jpg);
+  background-size: 100%;
+  background-position: 0% 10%;
+}
+.criminal-minds:hover{
+  background-image: url(criminal_minds.jpg);
+  background-size: 100%;
+  background-position: 0% 10%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+.doctor-who{
+  background-image: url(doctor_who.png);
+  background-size: 100%;
+  background-position: 0% 30%;
+}
+.doctor-who:hover{
+  background-image: url(doctor_who.png);
+  background-size: 100%;
+  background-position: 0% 30%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+.leverage{
+  background-image: url(leverage.jpg);
+  background-size: 100%;
+  background-position: 0% 10%;
+}
+.leverage:hover{
+  background-image: url(leverage.jpg);
+  background-size: 100%;
+  background-position: 0% 10%;
+  opacity:.5;
+  color: white;
+  font-weight: 900;
+}
+
+main{
+  width: 600%;
+  margin: 0;
+  position: absolute;
+}
+footer{
+  width: 600%;
+  height: 100px;
+  margin: auto;
+  bottom: 0;
+  z-index: 9999;
+  position: absolute;
+}
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}

@@ -1,0 +1,73 @@
+main{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  position: absolute;
+  background-color: #ED2024;
+  color: #ED2024;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  bottom: 0;
+  z-index: 9999;
+  position: absolute;
+  background-color: black;
+  color: white;
+}
+li{
+  list-style: none;
+  float:left;
+}
+ul{
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-top: 2em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+#doctor_who:hover + #inform1{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60%;
+  width: 60%;
+  margin-top: -700px;
+  margin-left:-150px;
+  position: fixed;
+  color: white;
+  padding-top:10%;
+  padding-left:10%;
+  padding-right:10%;
+  display:block;
+}
+#doctor_who{
+  transition: 300ms;
+}
+#leverage:hover + #inform1{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60%;
+  width: 60%;
+  margin-top: -700px;
+  margin-left:-150px;
+  position: fixed;
+  color: white;
+  padding-top:10%;
+  padding-left:10%;
+  padding-right:10%;
+  display:block;
+}
+#leverage{
+  transition: 300ms;
+}
+
+.appear:hover{
+  color: red;
+  font-weight: 900;
+}
+.information{
+  display:none;
+}
+
+.one{ width: calc(100% / 2 * 1)}
+.two{ width: calc(100% / 2 * 2)}
