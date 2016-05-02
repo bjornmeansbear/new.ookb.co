@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,500,400italic);
+
+/** font family: 'Roboto', sans-serif; **/
+
+.header{
+    background-color:black;
+    width:70%;
+    height:7em;
+    float:left;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+}
+
+.footer{
+    background-color:black;
+    width:70%;
+    height:7em;
+    float:left;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+}
+
+body{
+    background-color: #515151;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all 500ms;
+}
+
+h3{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+a:link{
+    text-decoration: none;
+    color:#e2e2e2;
+}
+
+a:visited{
+    color: #e2e2e2;
+}
+
+a:hover{
+    background-color:black;
+    color: white;
+}
+
+.container{
+    margin:auto;
+    width: 70%;
+    background: white;
+}
+
+.picture{
+    margin:auto;
+    width: 100%;
+    padding-top: 9em;
+    padding-bottom: 20em;
+}
+
+img{
+    margin:0;
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.text{
+    margin: auto;
+    width:80%;
+    line-height: 2em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.title{
+    font-family: courier new, courier, monospace;
+    color: #e2e2e2;
+    letter-spacing: .6rem;
+    font-weight: 100;
+    text-align: center;
+    font-size:3em;
+    padding: 0.6em;
+
+}
+
+.essm{
+    padding-top: 0.1em;
+}
+
+.clearfix::after,
+.group::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
+/** column, columns **/
+
+.column, .columns{
+    float:left;
+    height:auto;
+    background: white;
+    padding:1em;
+    box-sizing: border-box;
+}
+.one{
+    width: calc(100% / 4 * 1);
+}
+.two{
+    width: calc(100% / 4 * 2);
+}
+.three{
+    width: calc(100% / 4 * 3);
+}
+.four{
+    width: calc(100% / 4 * 4);
+}
+
+@media (max-width:800px){
+    .title{
+        font-family: courier new, courier, monospace;
+        color: #e2e2e2;
+        letter-spacing: .3rem;
+        font-weight: 100;
+        text-align: center;
+        font-size:2.3em;
+        padding: 0.6em;
+    }
+    .picture{
+        margin:auto;
+        width: 100%;
+        padding-top: 15em;
+        padding-bottom: 15em;
+        overflow: hidden;
+    }
+}

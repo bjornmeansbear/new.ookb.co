@@ -1,0 +1,187 @@
+
+header{
+  margin: 0.75em;
+}
+
+nav ul{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.5em;
+  position: fixed;
+  top: 9em;
+  left:3em;
+  display:block;
+  list-style:none;
+  display: inline;
+  line-height: 3em;
+  border-left: 3px solid #FFCBD8;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: ;}
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 2px;}
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+
+.bum{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:95px;
+  left:18em;
+  top:6em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.kim{
+  background-image: url(kim.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:15em;
+  opacity:0.7;
+}
+
+.kim:hover{
+      opacity: 100;
+}
+
+.love{
+  background-image: url(love.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:30em;
+  opacity:0.7;
+}
+
+.love:hover{
+      opacity: 100;
+}
+
+.bridge{
+  background-image: url(bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:45em;
+  opacity:0.7;
+}
+
+.bridge:hover{
+      opacity: 100;
+}
+
+
+.cheeze{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:55px;
+  left:18em;
+  top:25em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+
+.girl{
+  background-image: url(girl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:15em;
+  opacity:0.7;
+}
+
+.girl:hover{
+      opacity: 100;
+}
+
+.music{
+  background-image: url(music.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:30em;
+  opacity:0.7;
+}
+
+.music:hover{
+      opacity: 100;
+}
+
+.song{
+  background-image: url(song.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:45em;
+  opacity:0.7;
+}
+
+.song:hover{
+      opacity: 100;
+}
+
+
+.soo{
+  position: absolute;
+  top:12em;
+  left:60em;
+  opacity:0.7;
+}
+
+.soo:hover{
+  opacity:100;
+}
+
+.mad{
+  position: absolute;
+  top:30.5em;
+  left:60em;
+  opacity:0.7;
+}
+
+.mad:hover{
+  opacity:100;
+}
+
+
+.footer {
+  font-family: 'Graduate', cursive;
+  font-weight:;
+  font-size: 0.2em;
+  position: absolute;
+  right: 0;
+  bottom: -5em;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Temp. Title</title>
+	<link rel="stylesheet" href="taeStyle.css">
+</head>
+
+<body style="background:#EF4836;">
+	<div>
+		<table width="100%" height="100%">
+			<tr>
+				<td width="50%">
+					<img id="movie1" onmouseover="hideImg(1);" onmouseout="showImg(1);" src="http://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/54516c22e4b06ce387464ef5/1414622251352/cool-teaser-poster-for-alex-garlands-sci-fi-film-ex-machina1" alt="movie1">
+					<p id="desc1" style="display:none;">
+						EX MACHINA<br><br>
+						A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a breath-taking humanoid A.I.
+
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie2" onmouseover="hideImg(2);" onmouseout="showImg(2);" src="http://www.mbc.net/default/mediaObject/Photos/2013/september/20-9-2013/mbc2/NO-STRINGS-ATTACHED_1024/original/9a273c80fa1725ffd0bd0976651e5e03c4c1c660/NO-STRINGS-ATTACHED_1024.jpg" alt="movie2">
+					<p id="desc2" style="display:none;">
+						NO STRINGS ATTACHED<br><br>
+						A guy and girl try to keep their relationship strictly physical, but it's not long before they learn that they want something more.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img id="movie3" onmouseover="hideImg(3);" onmouseout="showImg(3);" src="http://ezramagazine.com/wp-content/uploads/2014/06/the-fault-in-our-stars-2014_091757413.jpg" alt="movie3">
+					<p id="desc3" style="display:none;">
+						THE FAULT IN OUR STARS<br><br>
+						Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie4" onmouseover="hideImg(4);" onmouseout="showImg(4);" src="http://ecx.images-amazon.com/images/I/81%2BFvEBp0iL._SL1423_.jpg" alt="movie4">
+					<p id="desc4" style="display:none;">
+						ABOUT TIME<br><br>
+						At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+
+<script>
+	function hideImg(movieIdx)
+	{
+		document.getElementById("movie"+movieIdx).style.display = "none";
+		document.getElementById("desc"+movieIdx).style.display = "";
+	}
+
+	function showImg(movieIdx)
+	{
+		document.getElementById("desc"+movieIdx).style.display = "none";
+		document.getElementById("movie"+movieIdx).style.display = "";
+	}
+</script>
+
+</html>

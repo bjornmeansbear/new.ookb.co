@@ -1,0 +1,225 @@
+
+header{
+  margin: 0.75em;
+}
+
+nav ul{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.5em;
+  position: fixed;
+  top: 9em;
+  left:3em;
+  display:block;
+  list-style:none;
+  display: inline;
+  line-height: 3em;
+  border-left: 3px solid #FFCBD8;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: ;}
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 2px;}
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+
+.after{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:90px;
+  left:18em;
+  top:6em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.dark{
+  background-image: url(after.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:15em;
+  opacity:0.7;
+}
+
+.dark:hover{
+      opacity: 100;
+}
+
+.book{
+  background-image: url(book.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:30em;
+  opacity:0.7;
+}
+
+.book:hover{
+      opacity: 100;
+}
+
+.line{
+  background-image: url(line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:45em;
+  opacity:0.7;
+}
+
+.line:hover{
+      opacity: 100;
+}
+
+.colorless{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:400px;
+  left:18em;
+  top:25em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.quote{
+  background-image: url(quote.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:15em;
+  opacity:0.7;
+}
+
+.quote:hover{
+      opacity: 100;
+}
+
+
+.red{
+  background-image: url(red.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:30em;
+  opacity:0.7;
+}
+
+.red:hover{
+      opacity: 100;
+}
+
+.cover{
+  background-image: url(cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:45em;
+  opacity:0.7;
+}
+
+.cover:hover{
+      opacity: 100;
+}
+
+.man{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:400px;
+  left:18em;
+  top:44em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.old{
+  background-image: url(old.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:15em;
+  opacity:0.7;
+}
+
+.old:hover{
+      opacity: 100;
+}
+
+
+.novel{
+  background-image: url(novel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:30em;
+  opacity:0.7;
+}
+
+.novel:hover{
+      opacity: 100;
+}
+
+
+.shot{
+  background-image: url(shot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:45em;
+  opacity:0.7;
+}
+
+.shot:hover{
+      opacity: 100;
+}
+
+
+.footer {
+  font-family: 'Graduate', cursive;
+  font-weight:;
+  font-size: 0.2em;
+  position: absolute;
+  right: 0;
+  bottom: -40em;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Temp. Title</title>
+	<link rel="stylesheet" href="taeStyle.css">
+</head>
+
+<body style="background:#95A5A6;">
+	<div>
+		<table width="100%" height="100%">
+			<tr>
+				<td width="50%">
+					<img id="movie1" onmouseover="hideImg(1);" onmouseout="showImg(1);" src="https://eng224response.files.wordpress.com/2014/09/the-matrix-copy.jpg" alt="movie1">
+					<p id="desc1" style="display:none;">
+						DARK NIGHT RISES<br><br>
+						Eight years after the Joker's reign of anarchy, the Dark Knight, with the help of the enigmatic Selina, is forced from his imposed exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie2" onmouseover="hideImg(2);" onmouseout="showImg(2);" src="https://www.wired.com/images_blogs/underwire/2012/07/TDK_P3_1280.jpg" alt="movie2">
+					<p id="desc2" style="display:none;">
+						MATRIX<br><br>
+						A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img id="movie3" onmouseover="hideImg(3);" onmouseout="showImg(3);" src="http://filmconcertslive.com/wordpress/wp-content/uploads/2015/02/raiders-of-the-lost-ark-poster.jpg" alt="movie3">
+					<p id="desc3" style="display:none;">
+						THE RAIDERS OF THE LOST ARC<br><br>
+						Archaeologist and adventurer Indiana Jones is hired by the US government to find the Ark of the Covenant before the Nazis.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie4" onmouseover="hideImg(4);" onmouseout="showImg(4);" src="http://pop-verse.com/wp-content/uploads/2014/03/arnold-schwarzenegger-terminator.jpg" alt="movie4">
+					<p id="desc4" style="display:none;">
+						THE TERMINATOR<br><br>
+						A human-looking indestructible cyborg is sent from 2029 to 1984 to assassinate a waitress, whose unborn son will lead humanity in a war against the machines, while a soldier from that war is sent to protect her at all costs.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+
+<script>
+	function hideImg(movieIdx)
+	{
+		document.getElementById("movie"+movieIdx).style.display = "none";
+		document.getElementById("desc"+movieIdx).style.display = "";
+	}
+
+	function showImg(movieIdx)
+	{
+		document.getElementById("desc"+movieIdx).style.display = "none";
+		document.getElementById("movie"+movieIdx).style.display = "";
+	}
+</script>
+
+</html>

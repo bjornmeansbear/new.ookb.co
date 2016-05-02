@@ -1,0 +1,124 @@
+
+header{
+  margin: 0.75em;
+}
+
+nav ul{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.5em;
+  position: fixed;
+  top: 9em;
+  left:3em;
+  display:block;
+  list-style:none;
+  display: inline;
+  line-height: 3em;
+  border-left: 3px solid #FFCBD8;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: ;}
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 2px;}
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+.movie{
+      background: url(spirited.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:5em;
+      left:15em;
+      opacity:0.8;
+}
+
+.movie:hover{
+      background:url(movie.gif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      width:400px;
+      height:300px;
+      opacity: 0.5;
+}
+
+.novel{
+      background: url(color.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:5.7em;
+      left:44em;
+      opacity:0.8;
+}
+
+.novel:hover {
+      background:url(novel.gif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      width:400px;
+      height:300px;
+      opacity: 0.5;
+}
+
+.music{
+      background: url(cheeze.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:27.7em;
+      left:44em;
+      opacity:0.8;
+}
+
+.music:hover {
+      background:url(song.gif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      width:400px;
+      height:300px;
+      opacity: 0.5;
+}
+
+.photography{
+      background: url(mini.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:27.7em;
+      left:15em;
+      opacity:0.8;
+}
+
+.photography:hover {
+      background:url(photo.gif);
+      background-repeat: no-repeat;
+      background-size:cover;
+      width:400px;
+      height:300px;
+      opacity: 0.5;
+}
+
+.footer {
+  font-family: 'Graduate', cursive;
+  font-weight:;
+  font-size: 0.2em;
+  position: absolute;
+  right: 0;
+  bottom: -30em;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}

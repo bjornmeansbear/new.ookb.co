@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
+
+* {
+  position: relative;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  display: block;
+  margin: 0;
+}
+a {
+  color: gray;
+  text-decoration: none;
+
+}
+.this{
+  color: #f1d164;
+  text-decoration: none;
+}
+.line {
+  border-bottom: 0.3em double #f1d164;
+  height: 13px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+.menu {
+  display: block;
+  list-style: none;
+}
+li {
+float: left;
+}
+.menu a {
+    display: block;
+    padding: 1em 4em 1em 4em;
+      font-family: 'Comfortaa', helvetica, arial, sans-serif;
+  }
+.menu li:hover  {
+  border-top: 2px dotted #f1d164;
+  border-bottom: 2px dotted #f1d164;
+}
+.menu a:hover {
+  color: #f1d164;
+}
+.photo {
+  display: block;
+  margin: 120px auto;
+  width: 1000px;
+  background-color: red;
+}
+.box {
+  float: left;
+  display:block;
+  height: 330px;
+  width: 270px;
+  background-color: #F6EFE7;
+  margin: 0 50px 0 50px;
+  border-right: 30px;
+  border-radius: 50px;
+}
+.left {
+ top: 60px;
+ left: 140px;
+}
+.right {
+  top: 60px;
+  left: 100px;
+}
+
+.box p{
+  position: absolute;
+  display: block;
+  width: 220px;
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  color: gray;
+}
+
+.left p {
+  top: 40%;
+  left: 25%;
+  z-index: 3;
+}
+.right p {
+  top: 40%;
+  left: 35%;
+  z-index: 3;
+}
+.left:hover a {
+color: black;
+text-decoration: underline;
+}
+.right:hover a {
+color: black;
+text-decoration: underline;
+}
+
+img {
+  display:none;
+  max-width:100%;
+max-height:100%;
+border-radius: 50px;
+filter: grayscale(100%);
+z-index: 2;
+
+}
+.left:hover img {
+	transition: .5s ease-in-out;
+  display:block;
+  filter: grayscale(100%);
+  opacity: .15;
+}
+.right:hover img {
+	transition: .5s ease-in-out;
+  display:block;
+  filter: grayscale(100%);
+  opacity: .15;
+}

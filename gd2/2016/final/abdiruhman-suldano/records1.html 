@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <style>
+
+
+body {
+background-color: #cdc9d6
+
+}
+
+figcaption {
+  position: absolute;
+  bottom:0;
+  left:5;
+  width: 100%;
+  color: blue;
+  height: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+figure {
+  position: fixed;
+  left: 10%;
+  top:10%;
+    z-index:4000;
+}
+
+figure:nth-child(2) {
+  left: 25%;
+  top: 10%;
+  z-index:6;
+}
+
+figure:nth-child(3) {
+  left: 35%;
+  top: 10%;
+  z-index:1;
+}
+
+figure:nth-child(4) {
+  left: 50%;
+  top: 10%;
+  z-index:1;
+}
+
+figure:nth-child(5) {
+  left: 60%;
+  top: 10%;
+  z-index:1;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+  <figure>
+  <img src="erykah.png"/></a>
+<figcaption><p> mamas gun</figcaption>
+  </figure>
+
+
+  <figure>
+  <img src="am.png"/></a>
+  <a href="hiiragi.html"></a>
+  <figcaption><p>am</figcaption>
+
+  </figure>
+
+  <figure>
+  <img src="boxes.png"/></a>
+  <figcaption><p> tomorrows modern boxes</figcaption>
+
+  </figure>
+
+  <figure>
+  <img src="toro.png"/></a>
+  <figcaption><p> causers of this</figcaption>
+
+  </figure>
+
+
+    <figure>
+    <img src="flylo.png"/></a>
+    <figcaption><p> cosmogramma</figcaption>
+
+    </figure>
+
+
+
+    <a href="final.html"><p2>esc</p2></a>
+
+
+  <body>
+  <html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Personal Chronology of Books</title>
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+</head>
+
+<style>
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: transparent;
+}
+
+body {
+  font-family: 'open sans', helvetica, arial, sans-serif;
+  padding-top: 1em;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 4em;
+  font-family: 'play', helvetica, arial, sans-serif;
+}
+
+.tags {
+  width: 400px;
+  height: 600px;
+  float: left;
+}
+
+.circle-container {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em;
+    border: dashed 1px;
+    border-color: white;
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em;
+}
+
+img {
+  background-size: auto;
+  background-position: center;
+}
+
+.circle-container img { display: block; width: 100%; }
+.deg0 img { transform: translate(15em); }
+.deg30 img { transform: rotate(30deg) translate(15em) rotate(-30deg); }
+.deg60 img { transform: rotate(60deg) translate(15em) rotate(-60deg); }
+.deg90  img { transform: rotate(90deg) translate(15em) rotate(-90deg); }
+.deg120 img { transform: rotate(120deg) translate(15em) rotate(-120deg); }
+.deg150 img { transform: rotate(150deg) translate(15em) rotate(-150deg); }
+.deg180 img { transform: translate(-15em); }
+.deg210 img { transform: rotate(210deg) translate(15em) rotate(-210deg); }
+.deg240 img { transform: rotate(240deg) translate(15em) rotate(-240deg); }
+.deg270 img { transform: rotate(270deg) translate(15em) rotate(-270deg); }
+.deg300 img { transform: rotate(300deg) translate(15em) rotate(-300deg); }
+.deg330 img { transform: rotate(330deg) translate(15em) rotate(-330deg); }
+}
+
+p {
+  color: white;
+  text-align: center;
+  display:none;
+}
+
+.title {
+  color: white;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: calc(50% - 1em);
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  width: 500%;
+}
+
+a:hover .title {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .tags {display: none;}
+  }
+
+@media (min-width: 770px) {
+  .tags {display: block;}
+}
+
+.tags a {
+  background-color: none;
+  transition: all 400ms;
+}
+
+.tags a:hover {
+  background-color: white;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main-menu .clearfix {
+  display: none;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: none;
+}
+
+.main-menu {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+  .main-menu a {
+    display:block;
+    padding: 1em;
+  }
+
+li {
+  list-style: none;
+}
+
+</style>
+
+<body>
+
+<h1>Personal Chronology of Books</h1>
+<h2><center>(2006-2016)</center></h2>
+
+<header>
+
+  <nav class="bg-gray">
+    <button class="hamburger bg-gray">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="main-menu clearfix">
+      <li><a href='adventure.html#Adventure' class='Adventure'>Adventure</a></li>
+      <li><a href='art.html#Art' class='Art'>Art</a></li>
+      <li><a href='autobiography.html#Autobiography' class='Autobiography'>Autobiography</a></li>
+      <li><a href='crime.html#Crime' class='Crime'>Crime</a></li>
+    <li><a href='fantasy.html#Fantasy' class='Fantasy'>Fantasy</a></li>
+    <li><a href='history.html#History' class='History'>History</a></li>
+    <li><a href='movies.html#Movies' class='Movies'>Movies</a></li>
+    <li><a href='nonfiction.html#Nonfiction' class='Nonfiction'>Nonfiction</a></li>
+    <li><a href='politics.html#Politics' class='Politics'>Politics</a></li>
+    <li><a href='sequential_arts.html#Sequential Arts' class='Sequential Arts'>Sequential Arts</a></li>
+    <li><a href='science_fiction.html#Science Fiction' class='Science Fiction'>Science Fiction</a></li>
+
+    </ul>
+  </nav>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script>
+      $('header button.hamburger').click(function() {
+        $('.main-menu').slideToggle(400);
+      });
+
+      var ww = $(window).width();
+
+      $(window).resize(function() {
+
+      if ( ww >= 769 ) {
+        $('.main-menu').show();
+      } else {
+        $('.main-menu').hide();
+      };
+
+    });
+
+    </script>
+
+</header>
+
+<div class="tags">Tags:
+  <p><a href='adventure.html#Adventure' class='Adventure'>Adventure</a></p>
+  <p><a href='art.html#Art' class='Art'>Art</a></p>
+  <p><a href='autobiography.html#Autobiography' class='Autobiography'>Autobiography</a></p>
+  <p><a href='crime.html#Crime' class='Crime'>Crime</a></p>
+<p><a href='fantasy.html#Fantasy' class='Fantasy'>Fantasy</a></p>
+<p><a href='history.html#History' class='History'>History</a></p>
+<p><a href='movies.html#Movies' class='Movies'>Movies</a></p>
+<p><a href='nonfiction.html#Nonfiction' class='Nonfiction'>Nonfiction</a></p>
+<p><a href='politics.html#Politics' class='Politics'>Politics</a></p>
+<p><a href='sequential_arts.html#Sequential Arts' class='Sequential Arts'>Sequential Arts</a></p>
+<p><a href='science_fiction.html#Science Fiction' class='Science Fiction'>Science Fiction</a></p>
+
+</div>
+
+  <div class='circle-container'>
+    <div class='center'></div>
+    <a href='book_four.html#book_4' class='deg0'><img src='images/book_4.jpg'><p class="title">Watchmen</p></a>
+    <a href='book_five.html#book_5' class='deg30'><img src='images/book_5.jpg'><p class="title">Persepolis: The Story of A Childhood</p></a>
+    <a href='book_six.html#book_6' class='deg60'><img src='images/book_6.jpg'><p class="title">The Last Mimzy Stories</p></a>
+    <a href='book_seven.html#book_7' class='deg90'><img src='images/book_7.jpg'><p class="title">The Ultimate Hitchhiker's Guide to the Galaxy</p></a>
+    <a href='book_eight.html#book_8' class='deg120'><img src='images/book_8.jpg'><p class="title">1984</p></a>
+    <a href='book_nine.html#book_9' class='deg150'><img src='images/book_9.jpg'><p class="title">A Clockwork Orange</p></a>
+    <a href='book_ten.html#book_10' class='deg180'><img src='images/in_cold_blood.jpg'><p class="title">In Cold Blood</p></a>
+    <a href='book_eleven.html#book_11' class='deg210'><img src='images/book_11.jpg'><p class="title">Bosch</p></a>
+    <a href='book_twelve.html#book_12' class='deg240'><img src='images/book_12.jpg'><p class="title">Do Androids Dream of Electric Sheep?</p></a>
+    <a href='book_one.html#book_1' class='deg270'><img src='images/book_1.jpg'><p class="title">A Wrinkle in Time</p></a>
+    <a href='book_two.html#book_2' class='deg300'><img src='images/book_2.jpg'><p class="title">Many Waters</p></a>
+    <a href='book_three.html#book_3' class='deg330'><img src='images/book_3.jpg'><p class="title">V for Vendetta</p></a>
+</div>
+
+</body>
+
+</html>

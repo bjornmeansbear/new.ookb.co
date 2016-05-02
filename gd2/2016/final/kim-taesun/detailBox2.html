@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Temp. Title</title>
+	<link rel="stylesheet" href="taeStyle.css">
+</head>
+
+<body style="background:#4B77BE;">
+	<div>
+		<table width="100%" height="100%">
+			<tr>
+				<td width="50%">
+					<img id="movie1" onmouseover="hideImg(1);" onmouseout="showImg(1);" src="http://vignette1.wikia.nocookie.net/pixar/images/f/f6/Up_Poster_2.jpg/revision/latest?cb=20100818083313" alt="movie1">
+					<p id="desc1" style="display:none;">
+						UP<br><br>
+						Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie2" onmouseover="hideImg(2);" onmouseout="showImg(2);" src="http://static.imovies.vn/IMovie/mv_6899/poster_6899.jpg" alt="movie2">
+					<p id="desc2" style="display:none;">
+						SPIRITED AWAY<br><br>
+						During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img id="movie3" onmouseover="hideImg(3);" onmouseout="showImg(3);" src="http://www.macxdvd.com/mac-dvd-video-converter-how-to/article-image/big-hero-6-dvd.jpg" alt="movie3">
+					<p id="desc3" style="display:none;">
+						BIG HERO 6<br><br>
+						The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie4" onmouseover="hideImg(4);" onmouseout="showImg(4);" src="http://ia.media-imdb.com/images/M/MV5BMTczOTA3MzY2N15BMl5BanBnXkFtZTcwOTYwNjE2MQ@@._V1_SX640_SY720_.jpg" alt="movie4">
+					<p id="desc4" style="display:none;">
+						WALL-E<br><br>
+						In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+
+<script>
+	function hideImg(movieIdx)
+	{
+		document.getElementById("movie"+movieIdx).style.display = "none";
+		document.getElementById("desc"+movieIdx).style.display = "";
+	}
+
+	function showImg(movieIdx)
+	{
+		document.getElementById("desc"+movieIdx).style.display = "none";
+		document.getElementById("movie"+movieIdx).style.display = "";
+	}
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Temp. Title</title>
+	<link rel="stylesheet" href="taeStyle.css">
+</head>
+
+<body style="background:#F89406;">
+	<div>
+		<table width="100%" height="100%">
+			<tr>
+				<td width="50%">
+					<img id="movie1" onmouseover="hideImg(1);" onmouseout="showImg(1);" src="http://images.entertainment.ie/images_content/rectangle/620x372/iamalimn620372.jpg" alt="movie1">
+					<p id="desc1" style="display:none;">
+						I AM ALI<br><br>
+						Unprecedented access to Muhammad Ali's personal archive of "audio journals" as well as interviews and testimonials from his inner circle of family and friends are used to tell the legend's life story.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie2" onmouseover="hideImg(2);" onmouseout="showImg(2);" src="http://www.ihouse-nyc.org/s/707/images/editor/strategic_planning/egvqb2nvmti_o_inside-job-documentary-trailer-hd.jpg" alt="movie2">
+					<p id="desc2" style="display:none;">
+						INSIDE JOB<br><br>
+						Takes a closer look at what brought about the financial meltdown.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img id="movie3" onmouseover="hideImg(3);" onmouseout="showImg(3);" src="http://images4.static-bluray.com/movies/covers/9317_front.jpg" alt="movie3">
+					<p id="desc3" style="display:none;">
+						HOOP DREAMS<br><br>
+						A film following the lives of two inner-city Chicago boys who struggle to become college basketball players on the road to going professional.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie4" onmouseover="hideImg(4);" onmouseout="showImg(4);" src="https://thecinemamonster.files.wordpress.com/2013/06/127_hours_quad_poster.jpg" alt="movie4">
+					<p id="desc4" style="display:none;">
+						CITIZEN FOUR<br><br>
+						A documentarian and a reporter travel to Hong Kong for the first of many meetings with Edward Snowden.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+
+<script>
+	function hideImg(movieIdx)
+	{
+		document.getElementById("movie"+movieIdx).style.display = "none";
+		document.getElementById("desc"+movieIdx).style.display = "";
+	}
+
+	function showImg(movieIdx)
+	{
+		document.getElementById("desc"+movieIdx).style.display = "none";
+		document.getElementById("movie"+movieIdx).style.display = "";
+	}
+</script>
+
+</html>

@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+* {
+  position: relative;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  display: block;
+  margin: 0;
+}
+a {
+  color: gray;
+  text-decoration: none;
+  font-family: 'Comfortaa', helvetica, arial, sans-serif;
+}
+.this{
+  color: #f1d164;
+  text-decoration: none;
+  font-family: 'Comfortaa', helvetica, arial, sans-serif;
+}
+.line {
+  border-bottom: 0.3em double #f1d164;
+  height: 13px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+.menu {
+  display: block;
+  list-style: none;
+}
+li {
+float: left;
+}
+.menu a {
+    display: block;
+    padding: 1em 4em 1em 4em;
+  }
+.menu li:hover {
+  border-top: 2px dotted #f1d164;
+  border-bottom: 2px dotted #f1d164;
+  color: #f1d164;
+}
+.menu a:hover {
+  color: #f1d164;
+}
+.photo {
+  display: block;
+  margin: 120px auto;
+  width: 1000px;
+  
+}
+.img-ef {
+  float: left;
+  padding: 40px 10px 0 10px;
+}
+.r0 {
+  width: 230px;
+}
+.r0 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-ef:hover .r0 {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}

@@ -1,0 +1,172 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 7000px;
+  color: black;
+  background-image: url(bgtexture.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+h2{
+  font-family: 'Open Sans Condensed', sans-serif;  list-style: none;
+  font-weight: normal;
+  position: absolute;
+  font-size: 20px;
+  width: 130px;
+  left: 8710px;
+  top: 45%;
+  z-index: 99;
+}
+
+.chronote img{
+  margin: 35px;
+  margin-top: 2em;
+  width: 350px;
+}
+
+.bar{
+  position: fixed;
+  opacity: .7;
+  right: 2em;
+  bottom: 1em;
+}
+
+.front{
+  position: fixed;
+  right: 6.7em;
+  bottom: 1.5em;
+}
+.back{
+  position: fixed;
+  right: 2.9em;
+  bottom: 1.5em;
+}
+
+nav ul{
+  margin-left: 4em;
+  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;  list-style: none;
+  font-weight: normal;
+  line-height: 2.7em;
+}
+
+/*a #front{
+  position: fixed;
+  right: 6.7em;
+  bottom: 1.5em;
+}*/
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.whiteline{
+  background-image: url(whiteline.png);
+  background-repeat: repeat-x;
+  height: 10px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 8000px;
+}
+
+.button{
+  background-image: url(button.png);
+  position: absolute;
+  top: 48.3%;
+  left:50%;
+  height: 35px;
+  width: 35px;
+  background-size: contain;
+}
+
+.button:hover {
+  background-image: url(buttonhover.png);
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-size: contain;
+}
+
+.button .popup {
+  display: none;
+}
+
+.button:hover .popup {
+  display: block;
+  border-left: 1px dashed black;
+  height: 130px;
+  left: 50%;
+  top: -400%;
+  position: absolute;
+}
+
+h1{
+  font-family: 'Open Sans Condensed', sans-serif;  list-style: none;
+  font-weight: normal;
+  font-size: 20px;
+  position: absolute;
+  background-color: rgba(253,230,165,1);
+  color: black;
+  text-align: center;
+  padding: .5em;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+#birth h1 {
+  top: -60%;
+  left: -75px;
+  width: 150px;
+  height: 50px;
+}
+
+#musical h1{
+  top: -80%;
+  left: -85px;
+  width: 170px;
+}
+#imagination h1{
+  top:-80%;
+  left: -95px;
+  width: 200px;
+}
+#building h1{
+  top: -80%;
+  left: -150px;
+  width: 300px;
+}
+
+.tile {
+  position: absolute;
+  top:48.3%;
+  width: 100vw;
+}
+
+#birth {
+  left:48%;
+}
+
+#musical {
+  left: 2000px;
+}
+
+#imagination {
+  left: 4000px;
+}
+#building {
+  left: 7000px;
+}

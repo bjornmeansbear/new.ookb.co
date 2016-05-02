@@ -1,0 +1,275 @@
+* {
+  position: relative;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h1.title {
+  font-family: sans-serif;
+  width:100%;
+	font-size: 6em;
+  padding-left: .5em;
+  background-color: beige;
+}
+
+p.words {
+  font-family:fantasy;
+	font-size: 1.5em;
+  padding-left: 8em;
+  background-color: beige;
+}
+
+header {
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+li.bedroom1 {
+  background-color: lightgreen;
+}
+
+
+li.living2 {
+  background-color: lightblue;
+}
+
+
+li.bathroom3 {
+  background-color: orange;
+}
+
+
+
+
+.main-menu a {
+    display: block;
+    padding: 1em;
+    font-family:sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+@media (min-width: 769px) {
+
+    header nav .main-menu {
+     display: block;
+   }
+    main{
+      margin-top: 100px;
+    }
+    .main-menu li {
+        float: left;
+    }
+  }
+}
+
+
+
+.bg-pink {
+  background-color: pink;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+
+.mlrauto {
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+
+p.bedroom {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: lightgreen;
+  float: left;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+}
+
+p.living {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: lightblue;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 4em;
+  padding-bottom: .5em;
+}
+
+
+p.bathroom {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: orange;
+  float:  right;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 4em;
+
+}
+
+
+.ArtOne {
+  background-color: orange;
+  float: right;
+  padding-left: 10em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family:sans-serif;
+	font-size: 1em;
+  font-style: italic;
+
+}
+
+
+.ArtTwo {
+  background-color: lightgreen;
+  float: left;
+  padding-left: 2em;
+  padding-right: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family:sans-serif;
+	font-size: 1em;
+  font-style: italic;
+}
+
+.ArtThree {
+  background-color: lightblue;
+  float: right;
+  padding-left: 10em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family:sans-serif;
+	font-size: 1em;
+  font-style: italic;
+}
+
+.ArtFour {
+  background-color: lightblue;
+  float: left;
+  padding-left: 2em;
+  padding-right: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family:sans-serif;
+	font-size: 1em;
+  font-style: italic;
+}
+
+.ArtFive {
+  background-color: lightgreen;
+  float: right;
+  padding-left: 10em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family:sans-serif;
+	font-size: 1em;
+  font-style: italic;
+}
+
+.greenphoto {
+  float: right;
+  padding-right: 3em;
+  padding-top: 1em;
+}
+
+.orangephoto {
+  float: left;
+  padding-left: 3em;
+}
+
+.bluephoto {
+  float: left;
+  padding-top: 2em;
+  padding-left: 3em;
+}
+
+.blue2photo {
+  float: right;
+  padding-right: 3em;
+  padding-top: 1em;
+}
+
+.greyphoto {
+  float: left;
+  padding-top: 2em;
+  padding-left: 3em;
+}
+
+
+
+
+
+/* Color Palette */
+
+.bg-pink            { background-color: rgba(236,064,121,1); }
+.bg-brown           { background-color: rgba(047,041,038,1); }
+.bg-gray            { background-color: rgba(132,132,120,1); }
+.bg-darkgray        { background-color: rgba(096,103,103,1); }
+.bg-lightgray       { background-color: rgba(194,211,186,1); }
+.bg-red             { background-color: rgba(183,080,081,1); }
+.bg-orange          { background-color: rgba(195,115,099,1); }
+.bg-yellow          { background-color: rgba(197,192,101,1); }
+.bg-green           { background-color: rgba(140,165,115,1); }
+.bg-blue            { background-color: rgba(157,178,176,1); }
+.bg-purple          { background-color: rgba(174,139,164,1); }
+.bg-black           { background-color: rgba(000,000,000,1); }
+
+.white              { color: white; }
+.black              { color: black; }
+
+/** Adding a page grid **/
+
+.group {
+  margin-left:-.75em;
+  margin-right:-.75em;
+}
+
+.clearfix::after,
+.group::after {
+  content:'';
+  clear:both;
+  display:block;
+}
+
+.column,
+.columns {
+    float: left;
+    padding-left: .75em;
+    padding-right:.75em;
+    box-sizing: border-box;
+}
+
+/*set our widths for on to five column wide columns */
+.one    { width: calc(100% / 7 * 1); }
+.two    { width: calc(100% / 7 * 2); }
+.three  { width: calc(100% / 7 * 3); }
+.four   {width: calc(100% / 7 * 4); }
+.five   {width: calc(100% / 7 * 5); }
+.six    {width: calc(100% / 7 * 6); }
+.seven  {width: calc(100% / 7 * 7); }
+
+/* set offsetting classes for pushing columns over and leaving some columns blank */
+.offset-by-one     { margin-left: calc(100% / 7 * 1); }
+.offset-by-two     { margin-left: calc(100% / 7 * 2); }
+.offset-by-three   { margin-left: calc(100% / 7 * 3); }
+.offset-by-four    { margin-left: calc(100% / 7 * 4); }
+.offset-by-five    { margin-left: calc(100% / 7 * 5); }
+.offset-by-six     { margin-left: calc(100% / 7 * 6); }
+.offset-by-seven   { margin-left: calc(100% / 7 * 7); }

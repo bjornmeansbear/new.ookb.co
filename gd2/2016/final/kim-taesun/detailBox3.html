@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Temp. Title</title>
+	<link rel="stylesheet" href="taeStyle.css">
+</head>
+
+<body style="background:#36D7B7;">
+	<div>
+		<table width="100%" height="100%">
+			<tr>
+				<td width="50%">
+					<img id="movie1" onmouseover="hideImg(1);" onmouseout="showImg(1);" src="http://images-cdn.moviepilot.com/images/c_fill,h_1230,w_1034/t_mp_quality/gassg8kt46iewucaoklo/producer-judd-apatow-speaks-on-superbad-2-567721.jpg" alt="movie1">
+					<p id="desc1" style="display:none;">
+						SUPERBAD<br><br>
+						Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie2" onmouseover="hideImg(2);" onmouseout="showImg(2);" src="http://www.joblo.com/images_wallpapers/351/7df02f034c8d895bdad8569d34662b81.jpg" alt="movie2">
+					<p id="desc2" style="display:none;">
+						ELF<br><br>
+						After inadvertently wreaking havoc on the elf community due to his ungainly size, a man raised as an elf at the North Pole is sent to the U.S. in search of his true identity.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img id="movie3" onmouseover="hideImg(3);" onmouseout="showImg(3);" src="http://danglingmouse.com/wp-content/uploads/2014/10/cool-job-titles-05.jpg" alt="movie3">
+					<p id="desc3" style="display:none;">
+						ACE VENTURA<br><br>
+						A goofy detective specializing in animals goes in search of a missing dolphin mascot of a football team.
+					</p>
+				</td>
+				<td width="50%">
+					<img id="movie4" onmouseover="hideImg(4);" onmouseout="showImg(4);" src="http://images2.fanpop.com/images/photos/5400000/Step-Brothers-step-brothers-5458999-1200-1024.jpg" alt="movie4">
+					<p id="desc4" style="display:none;">
+						Step brothers<br><br>
+						Two aimless middle-aged losers still living at home are forced against their will to become room-mates when their parents marry.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+
+<script>
+	function hideImg(movieIdx)
+	{
+		document.getElementById("movie"+movieIdx).style.display = "none";
+		document.getElementById("desc"+movieIdx).style.display = "";
+	}
+
+	function showImg(movieIdx)
+	{
+		document.getElementById("desc"+movieIdx).style.display = "none";
+		document.getElementById("movie"+movieIdx).style.display = "";
+	}
+</script>
+
+</html>

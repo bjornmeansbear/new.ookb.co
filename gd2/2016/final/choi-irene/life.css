@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+
+* {
+  position: relative;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  display: block;
+  margin: 0;
+}
+a {
+  color: gray;
+  text-decoration: none;
+
+}
+.this{
+  color: #f1d164;
+  text-decoration: none;
+  font-family: 'Comfortaa', helvetica, arial, sans-serif;
+}
+.line {
+  border-bottom: 0.3em double #f1d164;
+  height: 13px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+.menu {
+  display: block;
+  list-style: none;
+}
+li {
+float: left;
+}
+.menu a {
+    display: block;
+    padding: 1em 4em 1em 4em;
+      font-family: 'Comfortaa', helvetica, arial, sans-serif;
+  }
+.menu li:hover  {
+  border-top: 2px dotted #f1d164;
+  border-bottom: 2px dotted #f1d164;
+}
+.menu a:hover {
+  color: #f1d164;
+}
+.photo {
+  display: block;
+  margin: 120px auto;
+  width: 1000px;
+
+}
+.frame {
+  position: relative;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background-color: #CFCBBA;
+  top : 80px;
+  margin-left: 200px;
+  margin-bottom: 150px;
+}
+.dis {
+  position: relative;
+  left: 200px;
+  width: 400px;
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  margin: auto;
+  top:-250px;
+}
+.block {
+  margin:30px;
+  height: 230px;
+}

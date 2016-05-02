@@ -1,0 +1,437 @@
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+img.gradient {
+  position: fixed;
+  width: auto;
+  height: 100vh;
+  float: left;
+  z-index: 0;
+}
+
+div.gradient {
+  background-image: url('images/halftone%20gradient%20prv%20blue.png');
+  height: 100vh;
+  position: absolute;
+  width: 15%;
+  float: left;
+  z-index: 0;
+}
+
+section.sidebar {
+    position: fixed;
+    margin-top: 8%;
+    margin-left: 2%;
+    width: 10%;
+    left:0;
+    right:0;
+    z-index: 99999;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', Helvetica, san-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin-bottom: 20%;
+}
+
+p.hoverone,
+p.hovertwo,
+p.hoverthree,
+p.hoverfour,
+p.hoverfive,
+p.hoversix,
+p.hoverseven {
+  font-family: 'Open Sans', Helvetica, san-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  background-color: black;
+  margin-bottom: -1%;
+  padding: .3em;
+  transition: 200ms;
+}
+
+p.hoverone:hover,
+p.hovertwo:hover,
+p.hoverthree:hover,
+p.hoverfour:hover,
+p.hoverfive:hover,
+p.hoversix:hover,
+p.hoverseven:hover {
+  color: #3FA9F5;
+  background-color: white;
+}
+
+/**hover**/
+
+.hoverone img,
+.hoverthree img {
+  position: fixed;
+  height: 100%;
+  width: auto;
+  z-index: 999999999;
+  display: none;
+  top: 0;
+  left: 14.94%;
+  transition: 300ms;
+}
+
+.hovertwo img,
+.hoverfour img,
+.hoverfive img,
+.hoversix img,
+.hoverseven img {
+  position: fixed;
+  height: 100%;
+  width: auto;
+  z-index: 999999999;
+  display: none;
+  opacity: 0;
+  top: 0;
+  left: 15%;
+  transition: 400ms;
+}
+
+.hoverone:hover img,
+.hovertwo:hover img,
+.hoverthree:hover img,
+.hoverfour:hover img,
+.hoverfive:hover img,
+.hoversix:hover img,
+.hoverseven:hover img {
+  opacity: 1;
+  display: block;
+}
+
+/**hover end**/
+
+img.spread {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  margin-left: 15%;
+  float: left;
+  z-index: 0;
+}
+
+a.sidebar {
+  font-family: 'Open Sans', Helvetica, san-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8%;
+  padding: .3em;
+  transition: 200ms;
+}
+
+a.sidebar:hover {
+  color: #3FA9F5;
+  background-color: white;
+}
+
+/**DETAIL PAGES**/
+section.info {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 48%;
+  margin-bottom: 10%;
+  width: 20%;
+  z-index: 999999;
+}
+
+h2 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  background-color: #3FA9F5;
+  padding: .2em;
+  margin-top: 15%;
+
+}
+
+a.back {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  position: fixed;
+  text-decoration: none;
+  color: black;
+  padding: .2em;
+  margin-left: 4.5%;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  margin-bottom: 2%;
+  transition: 400ms;
+}
+
+a.back:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600
+}
+
+.karekano {
+  background-image: url('images/karekano_v10_195.jpg');
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.fruitsbasket {
+  background-image: url('images/fruitsbasket26.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.honeyandclover {
+  background-image: url('images/honeyandcloverost010by.jpg');
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.gakuenalice {
+  background-image: url('images/Gakuen_Alice_Chapter_079_jp.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.nglife {
+  background-image: url('images/tumblr_nt4p5qnv1X1rs9bmwo1_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.shigatsu {
+  background-image: url('images/shigatsu-wa-kimi-no-uso-5505585.jpg');
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.koe {
+  background-image: url('images/tumblr_nlk3jubehw1ql4ed4o1_1280.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.gash {
+  background-image: url('images/okonjiki_no_gash_v029_c274-283_omake_-_026.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.orange {
+  background-image: url('images/orange-el-manga-de-ichigo-takano-ya-tiene-mas-de-un-millon-de-copias-en-circulacion%20black.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.karin {
+  background-image: url('images/koge03.jpg');
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  float: left;
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.karekano:hover,
+.fruitsbasket:hover,
+.honeyandclover:hover,
+.gakuenalice:hover,
+.nglife:hover,
+.shigatsu:hover,
+.koe:hover,
+.gash:hover,
+.orange:hover,
+.karin:hover {
+  opacity: .3;
+}
+
+.white {
+  position: fixed;
+  background-color: white;
+  width: 85%;
+  height: 100%;
+  margin-left: 15%;
+  z-index: 1;
+}
+
+/**image mapping**/
+.map {
+  background-color: transparent;
+  position: absolute;
+  z-index: 99999999999999999999999999999;
+}
+
+.map.one {
+  width: 9%;
+  height: 30%;
+  margin-left: 19%;
+  margin-top: 2%;
+}
+
+.map.two {
+  width: 9%;
+  height: 30%;
+  margin-left: 28.2%;
+  margin-top: 2%;
+}
+
+.map.three {
+  width: 10%;
+  height: 30%;
+  margin-left: 38%;
+  margin-top: 2%;
+}
+
+.map.four {
+  width: 31%;
+  height: 38%;
+  margin-left: 19%;
+  margin-top: 17%;
+}
+
+.map.five {
+  width: 12.5%;
+  height: 21%;
+  margin-left: 19%;
+  margin-top: 36%;
+}
+
+.map.six {
+  width: 15.5%;
+  height: 18%;
+  margin-left: 32%;
+  margin-top: 37.5%;
+}
+
+.map.seven {
+  width: 30%;
+  height: 19%;
+  margin-left: 52%;
+  margin-top: 2%;
+}
+
+.map.eight {
+  width: 28.5%;
+  height: 40%;
+  margin-left: 52.5%;
+  margin-top: 12%;
+}
+
+.map.nine {
+  width: 17%;
+  height: 28%;
+  margin-left: 52.5%;
+  margin-top: 32.5%;
+}
+
+.map.ten {
+  width: 9%;
+  height: 28%;
+  margin-left: 70%;
+  margin-top: 32.5%;
+}

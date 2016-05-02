@@ -1,0 +1,344 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-image: url(detailsbg.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+h1{
+  margin: auto;
+  font-family: 'Pompiere', cursive;
+  /*font-weight: 600;*/
+  font-size: 35px;
+  background-color: rgba(252,230,166,1);
+  width: 17%;
+  height: 5%;
+  border-radius: 40px;
+  padding:.3em;
+  text-align: center;
+  position: absolute;
+  top: 43%;
+  left: 40%;
+}
+
+hr{
+  background-color: rgba(252,230,166,1);
+  height: 3px;
+  position: absolute;
+  border: 0;
+
+}
+
+.yellowbutton{
+  background-image: url(yellowbutton.png);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+}
+
+.yellowbutton:hover {
+  background-image: url(greenbutton.png);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+}
+
+.yellowbutton .popup {
+  display: none;
+  padding: 1em;
+  background-color: rgba(255,255,255,.4);
+}
+
+.yellowbutton:hover .popup{
+  display: block;
+  position: absolute;
+}
+
+.popup p{
+  font-family: whitney, helvetica, sans-serif;  list-style: none;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#thesoundofmusic hr{
+  transform: rotate(-57deg);
+  width: 230px;
+  top: 29%;
+  left: 54.5%;
+}
+
+#thesoundofmusic .yellowbutton{
+  top: 15%;
+  left:65%;
+}
+
+#thesoundofmusic .popup{
+  height: 328px;
+  width: 200px;
+  top: 50%;
+  left: 140%;
+  z-index: 50;
+}
+
+#thesoundofmusic img{
+  height: 300px;
+}
+
+#nutcracker hr{
+  transform: rotate(50deg);
+  width: 100px;
+  top: 37.2%;
+  left: 35.7%;
+}
+
+#nutcracker .yellowbutton{
+  top: 30%;
+  left:35%;
+}
+
+#nutcracker .popup{
+  height: 230px;
+  width: 300px;
+  top: 50%;
+  left: -1380%;
+  z-index: 55;
+}
+
+#nutcracker img{
+  height: 200px;
+}
+
+#swanlake hr{
+  transform: rotate(-67deg);
+  width: 90px;
+  top: 56%;
+  left: 40.7%;
+}
+
+#swanlake .yellowbutton{
+  top: 63%;
+  left:41%;
+}
+
+#swanlake .popup{
+  height: 230px;
+  width: 300px;
+  top: -1000%;
+  left: -1380%;
+  z-index: 54;
+}
+
+#swanlake img{
+  height: 200px;
+}
+
+#little hr{
+  transform: rotate(64deg);
+  width: 140px;
+  top: 58.5%;
+  left: 54%;
+}
+
+#little .yellowbutton{
+  top: 68%;
+  left:60%;
+}
+
+#little .popup{
+  height: 280px;
+  width: 167px;
+  top: -1200%;
+  left: 140%;
+
+}
+
+#little img{
+  height: 250px;
+}
+
+#tchai hr{
+  transform: rotate(-39deg);
+  width: 139px;
+  top: 37.5%;
+  left: 27%;
+}
+
+#tchai .yellowbutton{
+  top: 44%;
+  left:26%;
+}
+
+#tchai .popup{
+  height: 249px;
+  width: 167px;
+  top: -1080%;
+  left: -850%;
+  z-index: 53;
+}
+
+#tchai img{
+  height: 220px;
+}
+
+#orch hr{
+  transform: rotate(262deg);
+  width: 195px;
+  top: 59%;
+  left: 22%;
+}
+
+#orch .yellowbutton{
+  top: 73%;
+  left:28%;
+}
+
+#orch .popup{
+  height: 253px;
+  width: 332px;
+  top: -1093%;
+  left: -1500%;
+  z-index: 52;
+}
+
+#orch img{
+  height: 220px;
+}
+
+#orch2 hr{
+  transform: rotate(-23deg);
+  width: 180px;
+  top: 68.7%;
+  left: 29.9%;
+}
+
+#piano hr{
+  transform: rotate(33deg);
+  width: 157px;
+  top: 67%;
+  left: 19%;
+}
+
+#piano .yellowbutton{
+  top: 60%;
+  left:18%;
+}
+
+#piano .popup{
+  height: 190px;
+  width: 243px;
+  top: -840%;
+  left: -1150%;
+
+}
+
+#piano img{
+  height: 160px;
+}
+
+#violin hr{
+  transform: rotate(-53deg);
+  width: 167px;
+  top: 70%;
+  left: 9.6%;
+}
+
+#violin .yellowbutton{
+  top: 80%;
+  left:10%;
+}
+
+#violin .popup{
+  height: 190px;
+  width: 243px;
+  top: -850%;
+  left: 160%;
+
+}
+
+#violin img{
+  height: 160px;
+}
+
+#mas hr{
+  transform: rotate(68deg);
+  width: 210px;
+  top: 29.6%;
+  left: 17.7%;
+}
+
+#mas .yellowbutton{
+  top: 15%;
+  left:20%;
+}
+
+#mas .popup{
+  height: 195px;
+  width: 284px;
+  top: 55%;
+  left: -1300%;
+
+}
+
+#mas img{
+  height: 160px;
+}
+
+#julie hr{
+  transform: rotate(13.8deg);
+  width: 376px;
+  top: 21%;
+  left: 67.1%;
+}
+
+#julie .yellowbutton{
+  top: 27%;
+  left:90%;
+}
+
+#julie .popup{
+  height: 195px;
+  width: 242px;
+  top: 55%;
+  left: -1150%;
+  z-index: 51;
+}
+
+#julie img{
+  height: 160px;
+}
+
+#prin hr{
+  transform: rotate(-43deg);
+  width: 175px;
+  top: 36.5%;
+  left: 80.5%;
+}
+
+#prin .yellowbutton{
+  top: 45%;
+  left:80%;
+}
+
+#prin .popup{
+  height: 280px;
+  width: 175px;
+  top: 55%;
+  left: -870%;
+
+}
+
+#prin img{
+  height: 250px;
+}

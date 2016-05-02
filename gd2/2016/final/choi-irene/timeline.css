@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+* {
+  position: relative;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  display: block;
+  margin: 0;
+}
+a {
+  color: gray;
+  text-decoration: none;
+  font-family: 'Comfortaa', helvetica, arial, sans-serif;
+}
+.this{
+  color: #f1d164;
+  text-decoration: none;
+
+}
+.line {
+  border-bottom: 0.3em double #f1d164;
+  height: 13px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+.menu {
+  display: block;
+  list-style: none;
+}
+li {
+float: left;
+}
+.menu a {
+    display: block;
+    padding: 1em 4em 1em 4em;
+  }
+.menu li:hover {
+  border-top: 2px dotted #f1d164;
+  border-bottom: 2px dotted #f1d164;
+  color: #f1d164;
+}
+.menu a:hover {
+  color: #f1d164;
+}
+.photo {
+  display: block;
+  margin: 160px auto;
+  width: 1000px;
+}
+.box {
+  height : 400px;
+  background-color: #F6EFE7;
+  width:auto;
+    border-radius: 50px;
+}
+.time {
+  top:200px;
+  display: block;
+  height: 13px;
+  background-color: #f1d164 ;
+  border-radius: 50px;
+  opacity: .5;
+}
+.date {
+  position: absolute;
+  width:50px;
+  height:50px;
+  border-radius: 50px;
+  background-color: white;
+  border: 8px solid #ADAA9C;
+  top: -20px;
+}
+
+.date p {
+  font-family: 'Fjalla One', helvetica, arial, sans-serif;
+  display: none;
+  width: 100px;
+  top: -130px;
+}
+.date:hover {
+  transition: .2s ease-in-out;
+  background-color:  #f1d164 ;
+}
+.date:hover p {
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+.one { left: 130px; }
+.two { left: 230px; }
+.three { left: 330px; }
+.four { left: 430px; }
+.five { left: 530px; }
+.six { left: 630px; }
+.seven { left: 730px; }
+.eight { left: 830px; }
+
+.daten {
+  position: absolute;
+  width:50px;
+  height:30px;
+  top: 50px;
+  margin-left: 9px;
+  font-family: 'Comfortaa', helvetica, arial, sans-serif;
+}

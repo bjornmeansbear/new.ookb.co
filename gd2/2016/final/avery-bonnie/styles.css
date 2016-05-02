@@ -1,0 +1,199 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Play", helvetica, arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: navy;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  color: white;
+  background-size: cover;
+  background-image: url("images/website_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.group {
+background-color: lightblue;
+  margin-left: -.75em;
+  margin-right: -.75em;
+}
+
+
+.column,
+.columns {
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-bottom: 1.5em;
+  background-color: transparent;
+  float:left;
+}
+
+.one      { width: calc(100% / 3 * 1); }
+.two      { width: calc(100% / 3 * 2); }
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: yellow;
+}
+
+
+a:hover {
+  color: red;
+}
+
+li {
+  list-style-type: disc;
+}
+
+.back {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+background-color: rgb(50, 50, 50);
+padding: 5px;
+color: white;
+}
+
+.back:hover {
+    background-color: white;
+    color: red;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bg-gray {
+  background-color: transparent;
+  font-size: .5em;
+}
+
+header nav {
+  background-color: gray;
+  padding-bottom:100px;
+}
+
+header {
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header button.hamburger {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 .5em 0;
+  color: yellow;
+}
+
+button.hamburger span {
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: dimgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header nav .main-menu {
+
+}
+
+  .main-menu a {
+    display:block;
+    padding: 1em;
+  }
+
+  ul.main-menu.clearfix {
+    padding-bottom: 0px;
+  }
+
+@media (max-width: 620px) {
+
+  header nav {
+    display: none;
+  }
+
+}
+
+@media (min-width: 769px) {
+
+.tags {display: none;}
+
+header nav {
+  padding: 0;
+}
+
+  button.hamburger {
+  }
+
+  header nav .main-menu {
+    display:none;
+
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+
+  .main-menu li {
+    float: left;
+    font-size: .5em;
+  }
+}
+
+@media (min-width: 770px) {
+header nav {
+  display: none;
+}
+
+  button.hamburger {
+      display: none;
+  }
+
+  header nav .main-menu {
+    display:none;
+
+  }
+
+  main {
+      display: none;
+  }
+
+
+  .main-menu li {
+      display: none;
+  }
+}

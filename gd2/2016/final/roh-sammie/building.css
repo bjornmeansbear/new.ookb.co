@@ -1,0 +1,296 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-image: url(detailsbg.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+h1{
+  margin: auto;
+  font-family: 'Pompiere', cursive;
+  /*font-weight: 600;*/
+  font-size: 35px;
+  background-color: rgba(252,230,166,1);
+  width: 27%;
+  height: 5%;
+  border-radius: 40px;
+  padding:.3em;
+  text-align: center;
+  position: absolute;
+  top: 43%;
+  left: 35.5%;
+}
+
+hr{
+  background-color: rgba(252,230,166,1);
+  height: 3px;
+  position: absolute;
+  border: 0;
+
+}
+
+.yellowbutton{
+  background-image: url(yellowbutton.png);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+}
+
+.yellowbutton:hover {
+  background-image: url(greenbutton.png);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+}
+
+.yellowbutton .popup {
+  display: none;
+  padding: 1em;
+  background-color: rgba(255,255,255,.4);
+}
+
+.yellowbutton:hover .popup{
+  display: block;
+  position: absolute;
+}
+
+.popup p{
+  font-family: whitney, helvetica, sans-serif;  list-style: none;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#about hr{
+  transform: rotate(-70deg);
+  width: 120px;
+  top: 34.5%;
+  left: 46.5%;
+}
+
+#about .yellowbutton{
+  top: 25%;
+  left:51%;
+}
+
+#about .popup{
+  height: 330px;
+  width: 203px;
+  top: 50%;
+  left: 140%;
+  z-index: 58;
+}
+
+#about img{
+  height: 300px;
+}
+
+#rachel hr{
+  transform: rotate(-32deg);
+  width: 230px;
+  top: 16.5%;
+  left: 52%;
+}
+
+#rachel .yellowbutton{
+  top: 8%;
+  left:65%;
+}
+
+#rachel .popup{
+  height: 230px;
+  width: 310px;
+  top: 50%;
+  left: 130%;
+  z-index: 56;
+}
+
+#rachel img{
+  height: 200px;
+}
+
+#notebook hr{
+  transform: rotate(34.9deg);
+  width: 395px;
+  top: 22.9%;
+  left: 65%;
+}
+
+#notebook .yellowbutton{
+  top: 38%;
+  left:87%;
+}
+
+#notebook .popup{
+  height: 330px;
+  width: 200px;
+  top: 50%;
+  left: -970%;
+  z-index: 57;
+}
+
+#notebook img{
+  height: 300px;
+}
+
+#notebook2 hr{
+  transform: rotate(-7.5deg);
+  width: 370px;
+  top: 41.5%;
+  left: 64.4%;
+}
+
+#pianist hr{
+  transform: rotate(59.5deg);
+  width: 225px;
+  top: 61.5%;
+  left: 60%;
+}
+
+#pianist .yellowbutton{
+  top: 75%;
+  left:70%;
+}
+
+#pianist .popup{
+  height: 300px;
+  width: 190px;
+  top: -1280%;
+  left: 155%;
+
+}
+
+#pianist img{
+  height: 270px;
+}
+
+#bible hr{
+  transform: rotate(-73deg);
+  width: 95px;
+  top: 55.5%;
+  left: 35%;
+}
+
+#bible .yellowbutton{
+  top: 63%;
+  left:36%;
+}
+
+#bible .popup{
+  height: 230px;
+  width: 270px;
+  top: 50%;
+  left: -1260%;
+  z-index: 52;
+}
+
+#bible img{
+  height: 200px;
+}
+
+#keeping hr{
+  transform: rotate(55deg);
+  width: 218px;
+  top: 75.8%;
+  left: 34.7%;
+}
+
+#keeping .yellowbutton{
+  top: 88%;
+  left:45%;
+}
+
+#keeping .popup{
+  height: 346px;
+  width: 190px;
+  top: -1475%;
+  left: 150%;
+
+}
+
+#keeping img{
+  height: 300px;
+}
+
+#give hr{
+  transform: rotate(-36deg);
+  width: 275px;
+  top: 74%;
+  left: 20.6%;
+}
+
+#give .yellowbutton{
+  top: 85%;
+  left:20%;
+}
+
+#give .popup{
+  height: 300px;
+  width: 215px;
+  top: -1280%;
+  left: -1050%;
+  z-index: 53;
+}
+
+#give img{
+  height: 300px;
+}
+
+#mrblue hr{
+  transform: rotate(-10deg);
+  width: 460px;
+  top: 50%;
+  left: 8%;
+}
+
+#mrblue .yellowbutton{
+  top: 55%;
+  left:6%;
+}
+
+#mrblue .popup{
+  height: 300px;
+  width: 250px;
+  top: 50%;
+  left: 165%;
+
+}
+
+#mrblue img{
+  height: 250px;
+}
+
+#tpg hr{
+  transform: rotate(23deg);
+  width: 340px;
+  top: 34.7%;
+  left: 16.5%;
+}
+
+#tpg .yellowbutton{
+  top: 25%;
+  left:15%;
+}
+
+#tpg .popup{
+  height: 240px;
+  width: 357px;
+  top: 50%;
+  left: 140%;
+
+}
+
+#tpg img{
+  height: 200px;
+}

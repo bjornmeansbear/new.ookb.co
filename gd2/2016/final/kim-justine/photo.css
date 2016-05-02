@@ -1,0 +1,198 @@
+
+header{
+  margin: 0.75em;
+}
+
+nav ul{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.5em;
+  position: fixed;
+  top: 9em;
+  left:3em;
+  display:block;
+  list-style:none;
+  display: inline;
+  line-height: 3em;
+  border-left: 3px solid #FFCBD8;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: ;}
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 2px;}
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+
+.tanaka{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:120px;
+  left:18em;
+  top:6em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.mini{
+  background-image: url(mini.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:15em;
+  opacity:0.7;
+}
+
+.mini:hover{
+      opacity: 100;
+}
+
+.chip{
+  background-image: url(chip.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:30em;
+  opacity:0.7;
+}
+
+.chip:hover{
+      opacity: 100;
+}
+
+.crack{
+  background-image: url(crack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:45em;
+  opacity:0.7;
+}
+
+.crack:hover{
+      opacity: 100;
+}
+
+.sprink{
+  background-image: url(sprink.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:21em;
+  left:15em;
+  opacity:0.7;
+}
+
+.sprink:hover{
+      opacity: 100;
+}
+
+.space{
+  background-image: url(space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:21em;
+  left:30em;
+  opacity:0.7;
+}
+
+.space:hover{
+      opacity: 100;
+}
+
+.boat{
+  background-image: url(boat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:21em;
+  left:45em;
+  opacity:0.7;
+}
+
+.boat:hover{
+      opacity: 100;
+}
+
+.omlet{
+  background-image: url(omlet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:33em;
+  left:15em;
+  opacity:0.7;
+}
+
+.omlet:hover{
+      opacity: 100;
+}
+
+.ice{
+  background-image: url(ice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:33em;
+  left:30em;
+  opacity:0.7;
+}
+
+.ice:hover{
+      opacity: 100;
+}
+
+
+.straw{
+  background-image: url(straw.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:33em;
+  left:45em;
+  opacity:0.7;
+}
+
+.straw:hover{
+      opacity: 100;
+}
+
+.footer {
+  font-family: 'Graduate', cursive;
+  font-weight:;
+  font-size: 0.2em;
+  position: absolute;
+  right: 0;
+  bottom: -15em;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}

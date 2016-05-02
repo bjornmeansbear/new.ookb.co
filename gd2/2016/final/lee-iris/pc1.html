@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+    
+    <title>IRIS</title>
+    <link href="pc1.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.lettering.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!----Arrow Button/Icon Call--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+</head>
+    
+<body>
+            
+    <div class="image1">
+        <img src="SleepingAwake/_DSC1508.png" height="460px"/>
+        <img class="hidden" src="SleepingAwake/_DSC1510.png" height="460px"/>
+    </div>
+    
+    <a href= "pc2.html">
+        <h1 class="title1"> Big! Thoughts</h1>
+    </a>    
+    
+        <img class="thought1" src="282.gif">
+    
+        <img class="thought2" src="159.gif">
+    
+        <img class="thought3" src="6.gif">
+        
+        <img class="thought4" src="5.gif">
+        
+        <img class="thought5" src="35.gif">
+    
+        <img class="thought6" src="377.gif">
+    
+        <img class="thought7" src="350.gif">
+        
+        <img class="thought8" src="91.gif">
+        
+        <img class="thought9" src="249.gif">
+        
+        <img class="thought10" src="301.gif">
+    
+<!---------------------------
+    <div id="infinity">
+        <h2 class="noligs">Infinity</h2>
+    </div>
+    <div class="box">
+        <p></p>
+    </div>
+
+    
+    
+    <div id="blackholes">
+        <h2>Black Holes</h2>
+        <p>As a child, I was very enamored by space, as I imagine many others would agree with. I first found out about black holes in a picture book that simplified it to a big sink hole in the galaxy. My child brain found it difficult to imagine what this would look like, but it amounted to an existential dread that I could not deal with, as I had little psychological defenses to such ideas. It didn't help that my sister was addicted to Muse at the time, and I would constantly listen to Matt Bellamy croon about supermassive black holes, which I would also soon come to learn about. (No thanks to Matt, as his lyrics have no scientific backing or relevance to the actual concept of a supermassive black hole.)</p>
+    </div>
+    
+    
+    <div id="god">
+        <h2>On the topic of God</h2>
+        <p>God has always been a big factor in my life</p>
+    
+    </div>
+    
+    <div id="science">
+    <h2>Science</h2>
+    </div>
+    
+    <div id="movies">
+    <h2>Movies</h2>
+    </div>
+    
+    <div id="books">
+    <h2>Books</h2>
+    </div>
+    
+    <div id="songs">
+    <h2>Songs</h2>
+    </div>
+    
+    <div id="night">
+    <h2>Things that keep me up at Night</h2>
+    </div>
+    
+    <div id="poetry">
+    <h2>Poetry</h2>
+    </div>
+    
+    <div id="money">
+    <h2>Money</h2>
+    </div>
+--------------------------->
+      
+<!-- JAVASCRIPT!!!!!!!!------------------------------>
+<script>
+    var theToggle = document.getElementById('toggle');
+
+// based on Todd Motto functions
+// http://toddmotto.com/labs/reusable-js/
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+</script>
+    
+</main>
+</body>
+</html>

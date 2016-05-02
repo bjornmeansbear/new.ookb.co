@@ -1,0 +1,287 @@
+
+header{
+  margin: 0.75em;
+}
+
+nav ul{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.5em;
+  position: fixed;
+  top: 9em;
+  left:3em;
+  display:block;
+  list-style:none;
+  display: inline;
+  line-height: 3em;
+  border-left: 3px solid #FFCBD8;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: ;}
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 2px;}
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+
+.spirited{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:100px;
+  left:18em;
+  top:6em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.noface{
+  background-image: url(noface.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:15em;
+  opacity:0.7;
+}
+
+.noface:hover{
+      opacity: 100;
+}
+
+.garden{
+  background-image: url(garden.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:30em;
+  opacity:0.7;
+}
+
+.garden:hover{
+      opacity: 100;
+}
+
+.final{
+  background-image: url(final.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:9em;
+  left:45em;
+  opacity:0.7;
+}
+
+.final:hover{
+      opacity: 100;
+}
+
+
+.howl{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:160px;
+  left:18em;
+  top:25em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+
+.fly{
+  background-image: url(fly.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:15em;
+  opacity:0.7;
+}
+
+.fly:hover{
+      opacity: 100;
+}
+
+.crow{
+  background-image: url(crow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:30em;
+  opacity:0.7;
+}
+
+.crow:hover{
+      opacity: 100;
+}
+
+.boy{
+  background-image: url(boy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:27em;
+  left:45em;
+  opacity:0.7;
+}
+
+.boy:hover{
+      opacity: 100;
+}
+
+.zoo{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:65px;
+  left:18em;
+  top:45em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.donut{
+  background-image: url(donut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:15em;
+  opacity:0.7;
+}
+
+.donut:hover{
+      opacity: 100;
+}
+
+.rabbit{
+  background-image: url(rabbit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:30em;
+  opacity:0.7;
+}
+
+.rabbit:hover{
+      opacity: 100;
+}
+
+.sloth{
+  background-image: url(sloth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:45.5em;
+  left:45em;
+  opacity:0.7;
+}
+
+.sloth:hover{
+      opacity: 100;
+}
+
+
+.time{
+  font-family: 'Graduate', cursive;
+  font-weight: 700;
+  font-size: 0.8em;
+  position:relative;
+  width:90px;
+  left:18em;
+  top:65em;
+  border-bottom: 2px solid #FFCBD8;
+  padding-bottom: -1em;
+}
+
+.rain{
+  background-image: url(rain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:64em;
+  left:15em;
+  opacity:0.7;
+}
+
+.rain:hover{
+      opacity: 100;
+}
+
+.about{
+  background-image: url(about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:64em;
+  left:30em;
+  opacity:0.7;
+}
+
+.about:hover{
+      opacity: 100;
+}
+
+
+.dad{
+  background-image: url(dad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height:150px;
+  top:64em;
+  left:45em;
+  opacity:0.7;
+}
+
+.dad:hover{
+      opacity: 100;
+}
+
+
+
+.footer {
+  font-family: 'Graduate', cursive;
+  font-weight:;
+  font-size: 0.2em;
+  position: absolute;
+  right: 0;
+  bottom: -75em;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
