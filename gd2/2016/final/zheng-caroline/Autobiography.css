@@ -1,16 +1,27 @@
-
 body {
   margin: 0;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  min-width: 100%;
+}
+
 img.gradient {
   position: fixed;
   width: auto;
   height: 100vh;
-  float: left;
   z-index: 0;
 }
 
@@ -19,22 +30,19 @@ div.gradient {
   height: 100vh;
   position: absolute;
   width: 15%;
-  float: left;
   z-index: 0;
 }
 
-section.sidebar {
-    position: fixed;
-    margin-top: 8%;
-    margin-left: 2%;
-    width: 10%;
-    left:0;
-    right:0;
-    z-index: 99999;
+.sidebar {
+  position: fixed;
+  top: 8%;
+  left: 2.5%;
+  width: 10%;
+  z-index: 99999;
 }
 
 h1 {
-  font-family: 'Roboto Condensed', Helvetica, san-serif;
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 2.5em;
   margin-bottom: 20%;
@@ -47,7 +55,7 @@ p.hoverfour,
 p.hoverfive,
 p.hoversix,
 p.hoverseven {
-  font-family: 'Open Sans', Helvetica, san-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em;
   color: white;
@@ -71,17 +79,7 @@ p.hoverseven:hover {
 /**hover**/
 
 .hoverone img,
-.hoverthree img {
-  position: fixed;
-  height: 100%;
-  width: auto;
-  z-index: 999999999;
-  display: none;
-  top: 0;
-  left: 14.94%;
-  transition: 300ms;
-}
-
+.hoverthree img,
 .hovertwo img,
 .hoverfour img,
 .hoverfive img,
@@ -92,10 +90,8 @@ p.hoverseven:hover {
   width: auto;
   z-index: 999999999;
   display: none;
-  opacity: 0;
   top: 0;
   left: 15%;
-  transition: 400ms;
 }
 
 .hoverone:hover img,
@@ -105,25 +101,22 @@ p.hoverseven:hover {
 .hoverfive:hover img,
 .hoversix:hover img,
 .hoverseven:hover img {
-  opacity: 1;
   display: block;
 }
 
-/**hover end**/
-
-img.spread {
+.spread {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   height: 100%;
   width: auto;
-  margin-left: 15%;
-  float: left;
   z-index: 0;
+  left: 15%;
+  top:0;
 }
 
 a.sidebar {
-  font-family: 'Open Sans', Helvetica, san-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1em;
   color: white;
@@ -141,7 +134,7 @@ a.sidebar:hover {
 }
 
 /**DETAIL PAGES**/
-section.info {
+.info {
   position: absolute;
   margin-top: 7%;
   margin-left: 48%;
@@ -164,7 +157,6 @@ h3 {
   background-color: #3FA9F5;
   padding: .2em;
   margin-top: 15%;
-
 }
 
 a.back {
@@ -175,11 +167,9 @@ a.back {
   text-decoration: none;
   color: black;
   padding: .2em;
-  margin-left: 4.5%;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  margin-bottom: 2%;
+  bottom:2%;
+  left:4.5%;
+  right:0;
   transition: 400ms;
 }
 
@@ -195,15 +185,14 @@ p {
 
 .karekano {
   background-image: url('images/karekano_v10_195.jpg');
-  background-position: 0px -150px;
+  background-position: 0 -150px;
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -215,24 +204,22 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
 
 .honeyandclover {
   background-image: url('images/honeyandcloverost010by.jpg');
-  background-position: 0px -100px;
+  background-position: 0 -100px;
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -244,9 +231,8 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -258,24 +244,22 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
 
 .shigatsu {
   background-image: url('images/shigatsu-wa-kimi-no-uso-5505585.jpg');
-  background-position: 0px -150px;
+  background-position: 0 -150px;
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -287,9 +271,8 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -301,9 +284,8 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
-  z-index: 2;
+  left: 15%;
+top:0;  z-index: 2;
   opacity: 1;
   transition: 200ms;
 }
@@ -315,8 +297,8 @@ p {
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
+  left: 15%;
+  top:0;
   z-index: 2;
   opacity: 1;
   transition: 200ms;
@@ -324,14 +306,14 @@ p {
 
 .karin {
   background-image: url('images/koge03.jpg');
-  background-position: 0px -150px;
+  background-position: 0 -150px;
   background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
-  float: left;
+  left: 15%;
+  top:0;
   z-index: 2;
   opacity: 1;
   transition: 200ms;
@@ -355,7 +337,8 @@ p {
   background-color: white;
   width: 85%;
   height: 100%;
-  margin-left: 15%;
+  left: 15%;
+  top:0;
   z-index: 1;
 }
 
@@ -369,15 +352,15 @@ p {
 .map.one {
   width: 9%;
   height: 30%;
-  margin-left: 19%;
-  margin-top: 2%;
+  left: 19%;
+  top: 2%;
 }
 
 .map.two {
   width: 9%;
   height: 30%;
-  margin-left: 28.2%;
-  margin-top: 2%;
+  left: 28.2%;
+  top: 2%;
 }
 
 .map.three {
