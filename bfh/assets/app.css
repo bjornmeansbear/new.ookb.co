@@ -1,0 +1,1667 @@
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
+/* ------------------------------------------------------*/
+/* ---------->>> everything gets imported! <<<-----------*/
+/* ------------------------------------------------------*/
+/* ============================ RESET ============================ */
+/* ===== Eric Meyer Reset ===== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.33;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ===== CUSTOM RESET ===== */
+object {
+  outline: none;
+  display: block;
+  overflow: hidden;
+}
+/* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
+textarea {
+  overflow: auto;
+}
+/* fix IE */
+iframe {
+  border: 0;
+}
+/* fix line-height [https://gist.github.com/413930] */
+sup,
+sub {
+  line-height: 0;
+  font-size: .75em;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* -----------------------------------------------------*/
+/* --------------->>> variables.less <<<----------------*/
+/* -----------------------------------------------------*/
+/* @font-face declarations */
+@font-face {
+  font-family: 'DemingEP';
+  src: url('ff/deming_ep-webfont.eot');
+  src: local('Deming EP'), local('DemingEP'), url('ff/deming_ep-webfont.eot?#iefix') format('embedded-opentype'), url('ff/deming_ep-webfont.woff2') format('woff2'), url('ff/deming_ep-webfont.woff') format('woff'), url('ff/deming_ep-webfont.ttf') format('truetype'), url('ff/deming_ep-webfont.svg#deming_epregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('ff/leaguegothic-regular-webfont.eot');
+  src: local('League Gothic'), local('LeagueGothic-Regular'), url('ff/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('ff/leaguegothic-regular-webfont.woff') format('woff'), url('ff/leaguegothic-regular-webfont.ttf') format('truetype'), url('ff/leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('ff/leaguegothic-italic-webfont.eot');
+  src: local('League Gothic Italic'), local('LeagueGothic-Italic'), url('ff/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('ff/leaguegothic-italic-webfont.woff') format('woff'), url('ff/leaguegothic-italic-webfont.ttf') format('truetype'), url('ff/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+/**/
+/**/
+/**/
+.deming-stack {
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.league-gothic-stack {
+  font-family: 'LeagueGothic', Calibri, Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+}
+/** other general reusable classes/hacks **/
+.hide-text {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.show-text {
+  text-indent: 0%;
+  white-space: normal;
+  overflow: visible;
+}
+li.close,
+li.close button,
+button.close {
+  height: 22px;
+  width: 22px;
+}
+li.close button,
+button.close {
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url('img/bfh-close.png') center center no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.add-top {
+  margin-top: 1.5rem;
+}
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* super simple CF from the very end of here: http://css-tricks.com/snippets/css/clear-fix/ — only works in IE8+, so not so super back compatible — but we're looking to the future! */
+.clearfix::after,
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.text-center,
+.center-text {
+  text-align: center;
+}
+.text-left,
+.left-align-text {
+  text-align: left;
+}
+.text-right,
+.right-align-text {
+  text-align: right;
+}
+/* columnar stuff */
+.container {
+  margin: 0 auto;
+  padding: 0 1rem 2rem 1rem;
+  width: 100%;
+}
+.column,
+.columns {
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+.group {
+  margin: 0 0 2rem 0;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.halfwidth,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.fullwidth {
+  width: calc(100%);
+}
+.visible-lg {
+  display: none;
+  visibility: hidden;
+}
+@media (min-width: 30rem) {
+  .container {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    min-width: 30rem;
+    width: 80%;
+  }
+}
+@media (min-width: 50rem) {
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .clear,
+  .clearBoth {
+    display: block;
+    clear: both;
+  }
+  .clearLeft {
+    display: block;
+    clear: left;
+  }
+  .clearRight {
+    display: block;
+    clear: right;
+  }
+  .container {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    max-width: 75rem;
+  }
+  /* columnar stuff */
+  .column,
+  .columns {
+    float: left;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+  }
+  .group {
+    margin: 0 -1rem 2rem -1rem;
+  }
+  /* default 12 column grid */
+  .one {
+    width: calc(8.33333333%);
+  }
+  .two {
+    width: calc(16.66666667%);
+  }
+  .three {
+    width: calc(25%);
+  }
+  .four {
+    width: calc(33.33333333%);
+  }
+  .five {
+    width: calc(41.66666667%);
+  }
+  .six,
+  .halfwidth {
+    width: calc(50%);
+  }
+  .seven {
+    width: calc(58.33333333%);
+  }
+  .eight {
+    width: calc(66.66666667%);
+  }
+  .nine {
+    width: calc(75%);
+  }
+  .ten {
+    width: calc(83.33333333%);
+  }
+  .eleven {
+    width: calc(91.66666667%);
+  }
+  .twelve,
+  .fullwidth {
+    width: calc(100%);
+  }
+  /* some standard offsets */
+  .offset-by-one {
+    margin-left: calc(8.33333333%);
+  }
+  .offset-by-two {
+    margin-left: calc(16.66666667%);
+  }
+  .offset-by-three {
+    margin-left: calc(25%);
+  }
+  .offset-by-four {
+    margin-left: calc(33.33333333%);
+  }
+  .offset-by-five {
+    margin-left: calc(41.66666667%);
+  }
+  .offset-by-six,
+  .offset-by-hal {
+    margin-left: calc(50%);
+  }
+  .offset-by-seven {
+    margin-left: calc(58.33333333%);
+  }
+  .offset-by-eight {
+    margin-left: calc(66.66666667%);
+  }
+  .offset-by-nine {
+    margin-left: calc(75%);
+  }
+  .offset-by-ten {
+    margin-left: calc(83.33333333%);
+  }
+  .offset-by-eleven {
+    margin-left: calc(91.66666667%);
+  }
+  .offset-by-twelve {
+    margin-left: calc(100%);
+  }
+  .visible-lg {
+    display: block;
+    visibility: visible;
+  }
+}
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 100% so that all the REM measurements throughout this doc are
+are based on 16px sizing. So basically 1rem = 16px :) — should a better solution be devised? */
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 400;
+  /* do I want a better, wider ranging font-stack? */
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #231f20;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
+}
+/* Base Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.white { color:white; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
+}
+h1 {
+  font-size: 3.0rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.0rem;
+}
+h4 {
+  font-size: 1.75rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1.33rem;
+}
+/* Larger than phablet */
+/* these aren't currently being changed... though perhaps they need to be */
+@media (min-width: 30rem) {
+  h1 {
+    font-size: 3.0rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.0rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.33rem;
+  }
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: normal;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: normal;
+}
+ul {
+  margin-bottom: 1em;
+  line-height: normal;
+}
+small,
+.small {
+  font-size: .9rem;
+}
+/* Centering in the unknown */
+/* from http://css-tricks.com/centering-in-the-unknown/
+  ---------------------------------------------------------*/
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+}
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+/* The element to be centered, can
+   also be of any width and height */
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+/* -----------------------------------------------------*/
+/* ------------------->>> bfh.less <<<-------------------*/
+/* -----------------------------------------------------*/
+/* Custom Baltimore Food Hub
+========================================================================================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gentium Basic', Cambria, Georgia, Times, serif;
+  color: #4e4e4e;
+  /**/
+  background: #4e4e4e;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Typograhy, etc.
+====================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.lead {
+  font-size: 1.6rem;
+}
+a {
+  color: #617e95;
+  transition: all 400ms;
+}
+/* topbar with sitename and links */
+header {
+  background: #f7f8f8;
+  border-bottom: 2px solid #4e4e4e;
+  height: 2.33rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  vertical-align: middle;
+}
+header h1 {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  line-height: 2.33rem;
+  text-decoration: none;
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+header h1 a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #4e4e4e;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  display: block;
+  color: #4e4e4e;
+  font-family: helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.33rem;
+  line-height: calc(2.33rem - 2px);
+  padding-left: .75rem;
+  padding-right: .75rem;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background: #66665d;
+  color: #f7f8f8;
+}
+header nav ul li a:active {
+  background: #66665d;
+  color: #4e4e4e;
+  box-shadow: inset 1px 2px 3px rgba(35, 31, 32, 0.25);
+}
+header nav ul li.active a,
+header nav ul li a.active {
+  color: #66665d;
+}
+header nav ul li.active a:hover {
+  color: #f7f8f8;
+}
+/* Toggly-small screen menu things
+  =================================*/
+nav button.toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 1.75rem;
+  left: .75rem;
+  height: 2.25rem;
+  width: 5rem;
+  z-index: 399;
+  text-align: center;
+  /**/
+  background: #f7f8f8;
+  border: 2px solid #4e4e4e;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  header {
+    background: transparent;
+    border: none;
+    height: 0;
+  }
+  header h1 {
+    display: none;
+  }
+  header nav {
+    float: none;
+  }
+  nav.show-menu ul {
+    background: #f7f8f8;
+    border-top: 1px solid #4e4e4e;
+    padding-bottom: 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  nav.show-menu ul li {
+    display: list-item;
+    text-align: left;
+    border-bottom: 1px solid #4e4e4e;
+  }
+}
+/**/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Main sections
+  -----------------------------------------------------*/
+.container,
+.group {
+  margin-bottom: 0;
+}
+main > article {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  main > article {
+    padding-top: 5rem;
+  }
+}
+section > h3 {
+  border-top: 2px solid;
+  font-size: .9rem;
+  letter-spacing: 3px;
+  line-height: 1rem;
+  margin: 0 0 1.5rem 0;
+  padding-top: .4rem;
+  text-transform: uppercase;
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+article h2 {
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-top: 0.5rem !important;
+}
+/* Leasing stripe
+  ==============================================*/
+#map,
+#leasing {
+  background: #f7f8f8;
+}
+#leasing {
+  border-top: 2px solid #4e4e4e;
+}
+#leasing .download a {
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #4e4e4e;
+  border: 3px solid;
+  border-radius: .4em;
+  display: block;
+  font-size: 1.6em;
+  padding: .4em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+#leasing .download a:hover {
+  background: rgba(110, 203, 152, 0.2);
+  border-color: #6ecb98;
+  color: #6ecb98;
+}
+#leasing .lead {
+  margin-top: 4px;
+}
+@media (min-width: 50rem) and (max-width: 1150px) {
+  #leasing .four.offset-by-four {
+    width: calc(50%);
+    margin-left: calc(25%);
+  }
+}
+/* Footer
+  -----------------------------------------------------*/
+footer {
+  background: #4e4e4e url('img/footer-circletorandom.png') center center no-repeat;
+  background-size: cover;
+  border-top: 2px solid #4e4e4e;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+footer a {
+  color: #617e95;
+}
+footer span.plain {
+  font-family: Times, Georgia, serif;
+}
+footer .overlay {
+  background: #f7f8f8;
+  border: 1px solid #4e4e4e;
+  color: #4e4e4e;
+  padding: 1em;
+  /** trying to get some things to break nicely when columns get skinny **/
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+footer .overlay li {
+  margin: 0 0 .25em 0;
+}
+footer .logo {
+  margin-bottom: .5em;
+}
+footer .logo img {
+  max-width: 100px;
+}
+footer .footer-credits {
+  background: rgba(78, 78, 78, 0.75);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .footer-credits p {
+  color: #686868;
+  margin: 0;
+  font-size: .66rem;
+  letter-spacing: 1px;
+  padding: .5em;
+  text-transform: uppercase;
+  font-family: helvetica, arial, sans-serif;
+}
+footer .footer-credits p a {
+  color: #818181;
+}
+footer .social .overlay {
+  padding-bottom: .75rem;
+}
+footer .social .overlay > div {
+  float: left;
+  margin-right: .66rem;
+}
+/** mailchimp styling **/
+.indicates-required {
+  font-size: .9em;
+  font-style: italic;
+}
+.asterisk,
+.indicates-required {
+  color: #7b4039;
+}
+.mc-field-group input {
+  display: block;
+  width: 100%;
+}
+/** Styles for the map **/
+#map {
+  position: relative;
+  border-top: 2px solid #4e4e4e;
+  max-width: 100%;
+  color: #4e4e4e;
+}
+#map h2,
+#map p.small {
+  margin: 1rem auto;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+}
+#map h2 {
+  margin-bottom: 0;
+  padding-top: 2rem;
+}
+#map p.small {
+  margin-top: 0;
+  padding-bottom: 1rem;
+}
+@media (min-width: 30rem) {
+  #map h2,
+  #map p.small {
+    width: 80%;
+  }
+}
+@media (min-width: 50rem) {
+  #map h2,
+  #map p.small {
+    position: absolute;
+    left: 10%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+  #map h2 {
+    top: 3rem;
+    padding: 0;
+  }
+  #map p.small {
+    top: 5.333rem;
+  }
+}
+#map .map-group {
+  position: relative;
+}
+@media (max-width: 50rem) {
+  #map .map-group {
+    width: 124%;
+    margin-left: -21%;
+    border-top: 2px solid;
+  }
+}
+/*********************/
+/*********************/
+/*********************/
+/** buildings **/
+#map .building {
+  border: none;
+  color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  font-size: 1.11111rem;
+  outline: none;
+  /**/
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  z-index: 99;
+}
+#map .building,
+#map .building::before,
+#map .building::after {
+  background: transparent;
+}
+#map .building:hover,
+#map .building:active,
+#map .building:hover::before,
+#map .building:hover::after,
+#map .building:active::before,
+#map .building:active::after {
+  background: transparent;
+}
+#map .building span {
+  display: inline-block;
+  padding: .25em;
+  box-shadow: none;
+  background: transparent;
+  font-weight: bold;
+}
+#map .building:hover span {
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.33);
+}
+@media (min-width: 50rem) {
+  #map .building:hover,
+  #map .building:active,
+  #map .building:hover::before,
+  #map .building:hover::after,
+  #map .building:active::before,
+  #map .building:active::after {
+    color: #f7f8f8;
+  }
+}
+#map img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/** position and "design" the building overlays with CSS **/
+/** Flex 1 **/
+#map .building.bld0 {
+  top: 36%;
+  left: 50%;
+  height: 19%;
+  width: 16%;
+}
+#map .building.bld0:hover span {
+  background: rgba(154, 56, 32, 0.66);
+}
+/** Flex 2 **/
+#map .building.bld1 {
+  top: 42%;
+  left: 71.25%;
+  height: 16.5%;
+  width: 12%;
+}
+#map .building.bld1:hover span {
+  background: rgba(237, 170, 0, 0.66);
+}
+/** Coworking **/
+#map .building.bld2 {
+  top: 38%;
+  left: 87%;
+  height: 22.5%;
+  width: 11.8%;
+}
+#map .building.bld2:hover span {
+  background: rgba(110, 203, 152, 0.66);
+}
+/** Kitchen Incubator **/
+#map .building.bld3 {
+  top: 43.5%;
+  left: 11%;
+  height: 17%;
+  width: 31%;
+}
+#map .building.bld3:hover span {
+  background: rgba(97, 126, 149, 0.66);
+}
+/*foodtrucks*/
+#map .building.bld4 {
+  top: 55.5%;
+  left: 45%;
+  height: 22%;
+  width: 21%;
+}
+#map .building.bld4:hover span {
+  max-width: 75%;
+  background: rgba(153, 164, 174, 0.66);
+}
+/*urban farming */
+#map .building.bld5 {
+  top: 60.7%;
+  left: 28%;
+  height: 15.2%;
+  width: 17%;
+}
+#map .building.bld5:hover span {
+  background: rgba(92, 73, 37, 0.66);
+}
+@media (max-width: 50rem) {
+  #map .building:hover span {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+/*********************/
+/*********************/
+/*********************/
+/* popup */
+.building-info {
+  border: 1px solid;
+  margin: -8% 0 0;
+  padding: 1em;
+  z-index: 199;
+  /**/
+}
+.building-info li {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+.building-info a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.building-info.bld0 {
+  background-color: #fcf2f0;
+  border-color: #9a3820;
+  color: #46190e;
+}
+.building-info.bld1 {
+  background-color: #fff7e3;
+  border-color: #edaa00;
+  color: #543c00;
+}
+.building-info.bld2 {
+  background-color: #f5fbf8;
+  border-color: #6ecb98;
+  color: #256743;
+}
+.building-info.bld3 {
+  background-color: #edf1f3;
+  border-color: #617e95;
+  color: #374754;
+}
+.building-info.bld4 {
+  background-color: #ffffff;
+  border-color: #99a4ae;
+  color: #525d67;
+}
+.building-info.bld5 {
+  background-color: #f1eadc;
+  border-color: #5c4925;
+  color: #2d2312;
+}
+@media (min-width: 30rem) {
+  .building-info li {
+    width: 80%;
+  }
+}
+.building-info li.close {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  z-index: 209;
+  height: 22px;
+  width: 22px;
+}
+.building-info li.bld-number {
+  color: #231f20;
+  font-family: 'DemingEP', Calibri, Helvetica, Arial, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .75em;
+  letter-spacing: 2px;
+}
+.building-info h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+li.list-item {
+  list-style: circle inside;
+}
+.building-info li.leased {
+  border: 1px solid;
+  padding: .33em;
+  border-radius: .33em;
+  margin-bottom: 1em;
+}
+.building-info li.leased p {
+  margin: 0;
+}
+@media (min-width: 50rem) {
+  .building-info {
+    font-size: 1.25rem;
+    margin: 0;
+    position: absolute;
+    min-height: 100%;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+    transition: all 400ms;
+    overflow: auto;
+  }
+  .building-info li {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .building-info {
+    width: 50%;
+    min-height: initial;
+    height: auto;
+    top: initial;
+    right: initial;
+    bottom: initial;
+    left: initial;
+    transition: all 400ms;
+    border: 1px solid #4e4e4e;
+    overflow: visible;
+  }
+  .building-info::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /**/
+    background: inherit;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 30px;
+    width: 30px;
+    top: calc(50% - 15px);
+  }
+  /* custom place all the building popups? */
+  .building-info.bld0 {
+    top: 3%;
+    left: 5%;
+  }
+  .building-info.bld0::after {
+    right: -16px;
+    border-top: 1px solid #9a3820;
+    border-right: 1px solid #9a3820;
+  }
+  .building-info.bld1 {
+    top: 12%;
+    left: 25%;
+  }
+  .building-info.bld1::after {
+    right: -16px;
+    border-top: 1px solid #edaa00;
+    border-right: 1px solid #edaa00;
+  }
+  .building-info.bld2 {
+    top: 0;
+    left: 42%;
+  }
+  .building-info.bld2::after {
+    right: -16px;
+    border-top: 1px solid #6ecb98;
+    border-right: 1px solid #6ecb98;
+  }
+  .building-info.bld3 {
+    top: 0;
+    left: 39%;
+  }
+  .building-info.bld3::after {
+    left: -16px;
+    border-bottom: 1px solid #617e95;
+    border-left: 1px solid #617e95;
+  }
+  .building-info.bld4 {
+    top: 18%;
+    left: 1%;
+  }
+  .building-info.bld4::after {
+    right: -16px;
+    border-top: 1px solid #99a4ae;
+    border-right: 1px solid #99a4ae;
+    top: 67%;
+  }
+  .building-info.bld5 {
+    top: 12%;
+    left: 44%;
+  }
+  .building-info.bld5::after {
+    left: -16px;
+    border-bottom: 1px solid #5c4925;
+    border-left: 1px solid #5c4925;
+    top: 64%;
+  }
+}
+@media (min-width: 1200px) {
+  .building-info {
+    width: 40%;
+    height: auto;
+  }
+  /* custom place all the building popups? */
+  .building-info.bld0 {
+    left: 11%;
+    top: 18%;
+  }
+  .building-info.bld1 {
+    left: 32%;
+    top: 25%;
+  }
+  .building-info.bld2 {
+    left: 47%;
+    top: 5%;
+  }
+  .building-info.bld3 {
+    left: 38%;
+    top: 5%;
+    width: 45%;
+  }
+  .building-info.bld3::after {
+    top: 40%;
+  }
+  .building-info.bld4 {
+    left: 10%;
+    top: 43%;
+  }
+  .building-info.bld4::after {
+    top: calc(50% - 15px);
+  }
+  .building-info.bld5 {
+    left: 44%;
+    top: 44%;
+  }
+  .building-info.bld5::after {
+    top: calc(50% - 15px);
+  }
+}
+@media (min-width: 1400px) {
+  .building-info {
+    width: 36%;
+  }
+  /* custom place all the building popups? */
+  .building-info.bld0 {
+    left: 15%;
+    top: 20%;
+  }
+  .building-info.bld1 {
+    left: 36%;
+    top: 30%;
+  }
+  .building-info.bld2 {
+    left: 51%;
+    top: 11%;
+  }
+  .building-info.bld3 {
+    left: 38%;
+    top: 10%;
+    width: 40%;
+  }
+  .building-info.bld4 {
+    left: 12%;
+  }
+}
+/* -----------------------------------------------------*/
+/* ---------------->>> HERO.less <<<-----------------*/
+/* -----------------------------------------------------*/
+/* Hero
+  ==============================================*/
+#hero h1 {
+  display: none;
+}
+#hero {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#hero .logowrap {
+  background: transparent;
+  text-align: center;
+  padding: 3rem;
+}
+#hero .logowrap img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
+#hero .top {
+  position: relative;
+}
+#hero .circle,
+#hero .circewrap {
+  background: transparent;
+  display: none;
+}
+#hero .bottom {
+  background-color: #4e4e4e;
+  border-top: 2px solid #4e4e4e;
+  margin: 0;
+  padding: 0;
+}
+#hero .bottom .container {
+  padding: 2rem;
+}
+#hero .bottom h2 {
+  font-family: 'LeagueGothic', Calibri, Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #f7f8f8;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+/* only do the animated rings and full screen images when of a certain width... */
+@media (min-width: 768px) and (orientation: landscape) {
+  #hero {
+    padding-top: 95vh;
+  }
+  #hero .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  #hero .bottom {
+    margin: 0;
+  }
+  #hero .bottom .container {
+    padding: 3rem 2.25rem 5rem 2.25rem;
+  }
+  #hero .bottom h2 {
+    font-size: 3rem;
+    line-height: 1;
+    max-width: 47rem;
+    margin: 0 auto;
+  }
+  #hero .logowrap img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+  }
+  #hero .logowrap,
+  #hero .logowrap a,
+  #hero .circle {
+    border-radius: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+  #hero .logowrap,
+  #hero .circle {
+    top: 50vh;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+  }
+  #hero .logowrap {
+    z-index: 0;
+  }
+  #hero .circlewrap {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .333333;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+  }
+  #hero .circle {
+    border: 3px solid #f7f8f8;
+    text-indent: -300%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    z-index: 0;
+  }
+  #hero .circle:nth-child(1) {
+    -webkit-animation: whiteRings 12s 0s linear infinite;
+    -moz-animation: whiteRings 12s 0s linear infinite;
+    animation: whiteRings 12s 0s linear infinite;
+  }
+  #hero .circle:nth-child(2) {
+    -webkit-animation: whiteRings 12s .5s linear infinite;
+    -moz-animation: whiteRings 12s .5s linear infinite;
+    animation: whiteRings 12s .5s linear infinite;
+  }
+  #hero .circle:nth-child(3) {
+    -webkit-animation: whiteRings 12s 1s linear infinite;
+    -moz-animation: whiteRings 12s 1s linear infinite;
+    animation: whiteRings 12s 1s linear infinite;
+  }
+  #hero .circle:nth-child(4) {
+    -webkit-animation: whiteRings 12s 1.5s linear infinite;
+    -moz-animation: whiteRings 12s 1.5s linear infinite;
+    animation: whiteRings 12s 1.5s linear infinite;
+  }
+  #hero .circle:nth-child(5) {
+    -webkit-animation: whiteRings 12s 2s linear infinite;
+    -moz-animation: whiteRings 12s 2s linear infinite;
+    animation: whiteRings 12s 2s linear infinite;
+  }
+  #hero .circle:nth-child(6) {
+    -webkit-animation: whiteRings 12s 2.5s linear infinite;
+    -moz-animation: whiteRings 12s 2.5s linear infinite;
+    animation: whiteRings 12s 2.5s linear infinite;
+  }
+  #hero .circle:nth-child(7) {
+    -webkit-animation: whiteRings 12s 3s linear infinite;
+    -moz-animation: whiteRings 12s 3s linear infinite;
+    animation: whiteRings 12s 3s linear infinite;
+  }
+  #hero .circle:nth-child(8) {
+    -webkit-animation: whiteRings 12s 3.5s linear infinite;
+    -moz-animation: whiteRings 12s 3.5s linear infinite;
+    animation: whiteRings 12s 3.5s linear infinite;
+  }
+  #hero .circle:nth-child(9) {
+    -webkit-animation: whiteRings 12s 4s linear infinite;
+    -moz-animation: whiteRings 12s 4s linear infinite;
+    animation: whiteRings 12s 4s linear infinite;
+  }
+  #hero .circle:nth-child(10) {
+    -webkit-animation: whiteRings 12s 4.5s linear infinite;
+    -moz-animation: whiteRings 12s 4.5s linear infinite;
+    animation: whiteRings 12s 4.5s linear infinite;
+  }
+  #hero .circle:nth-child(11) {
+    -webkit-animation: whiteRings 12s 5s linear infinite;
+    -moz-animation: whiteRings 12s 5s linear infinite;
+    animation: whiteRings 12s 5s linear infinite;
+  }
+  #hero .circle:nth-child(12) {
+    -webkit-animation: whiteRings 12s 5.5s linear infinite;
+    -moz-animation: whiteRings 12s 5.5s linear infinite;
+    animation: whiteRings 12s 5.5s linear infinite;
+  }
+  #hero .circle:nth-child(13) {
+    -webkit-animation: whiteRings 12s 6s linear infinite;
+    -moz-animation: whiteRings 12s 6s linear infinite;
+    animation: whiteRings 12s 6s linear infinite;
+  }
+  #hero .circle:nth-child(14) {
+    -webkit-animation: whiteRings 12s 6.5s linear infinite;
+    -moz-animation: whiteRings 12s 6.5s linear infinite;
+    animation: whiteRings 12s 6.5s linear infinite;
+  }
+  #hero .circle:nth-child(15) {
+    -webkit-animation: whiteRings 12s 7s linear infinite;
+    -moz-animation: whiteRings 12s 7s linear infinite;
+    animation: whiteRings 12s 7s linear infinite;
+  }
+  #hero .circle:nth-child(16) {
+    -webkit-animation: whiteRings 12s 7.5s linear infinite;
+    -moz-animation: whiteRings 12s 7.5s linear infinite;
+    animation: whiteRings 12s 7.5s linear infinite;
+  }
+  #hero .circle:nth-child(17) {
+    -webkit-animation: whiteRings 12s 8s linear infinite;
+    -moz-animation: whiteRings 12s 8s linear infinite;
+    animation: whiteRings 12s 8s linear infinite;
+  }
+  #hero .circle:nth-child(18) {
+    -webkit-animation: whiteRings 12s 8.5s linear infinite;
+    -moz-animation: whiteRings 12s 8.5s linear infinite;
+    animation: whiteRings 12s 8.5s linear infinite;
+  }
+  #hero .circle:nth-child(19) {
+    -webkit-animation: whiteRings 12s 9s linear infinite;
+    -moz-animation: whiteRings 12s 9s linear infinite;
+    animation: whiteRings 12s 9s linear infinite;
+  }
+  #hero .circle:nth-child(20) {
+    -webkit-animation: whiteRings 12s 9.5s linear infinite;
+    -moz-animation: whiteRings 12s 9.5s linear infinite;
+    animation: whiteRings 12s 9.5s linear infinite;
+  }
+  #hero .circle:nth-child(21) {
+    -webkit-animation: whiteRings 12s 10s linear infinite;
+    -moz-animation: whiteRings 12s 10s linear infinite;
+    animation: whiteRings 12s 10s linear infinite;
+  }
+  #hero .circle:nth-child(22) {
+    -webkit-animation: whiteRings 12s 10.5s linear infinite;
+    -moz-animation: whiteRings 12s 10.5s linear infinite;
+    animation: whiteRings 12s 10.5s linear infinite;
+  }
+  #hero .circle:nth-child(23) {
+    -webkit-animation: whiteRings 12s 11s linear infinite;
+    -moz-animation: whiteRings 12s 11s linear infinite;
+    animation: whiteRings 12s 11s linear infinite;
+  }
+  #hero .circle:nth-child(24) {
+    -webkit-animation: whiteRings 12s 11.5s linear infinite;
+    -moz-animation: whiteRings 12s 11.5s linear infinite;
+    animation: whiteRings 12s 11.5s linear infinite;
+  }
+  @-moz-keyframes whiteRings {
+    0% {
+      width: 300px;
+      height: 300px;
+      margin-top: -150px;
+      margin-left: -150px;
+      border-radius: 100%;
+    }
+    100% {
+      margin-top: -1300px;
+      margin-left: -1300px;
+      width: 2600px;
+      height: 2600px;
+      border-radius: 0%;
+    }
+  }
+  @-webkit-keyframes whiteRings {
+    0% {
+      width: 300px;
+      height: 300px;
+      margin-top: -150px;
+      margin-left: -150px;
+      border-radius: 100%;
+    }
+    100% {
+      margin-top: -1300px;
+      margin-left: -1300px;
+      width: 2600px;
+      height: 2600px;
+      border-radius: 0%;
+    }
+  }
+  @keyframes whiteRings {
+    0% {
+      width: 300px;
+      height: 300px;
+      margin-top: -150px;
+      margin-left: -150px;
+      border-radius: 100%;
+    }
+    100% {
+      margin-top: -1300px;
+      margin-left: -1300px;
+      width: 2600px;
+      height: 2600px;
+      border-radius: 0%;
+    }
+  }
+}
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+#slideshow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+#slideshow > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#slideshow div.slide {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  /**/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  #slideshow {
+    top: 2.25rem;
+    right: 0;
+    bottom: initial;
+    left: 0;
+    height: 95vh;
+    min-height: 0%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    z-index: -2;
+    text-align: center;
+  }
+}
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/** slide left **/
+.carousel-left-enter {
+  opacity: 0.01;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  -ms-transition: opacity 500ms ease-in;
+  -o-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+.carousel-left-enter.carousel-left-enter-active {
+  opacity: 1;
+}
+.carousel-left-leave {
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  -ms-transition: opacity 500ms ease-in;
+  -o-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+.carousel-left-leave.carousel-left-leave-active {
+  opacity: 0.01;
+}
