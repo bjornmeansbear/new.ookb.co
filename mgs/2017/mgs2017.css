@@ -189,6 +189,19 @@ p a {
 }
 .logo a {
   border: none;
+  border-color: transparent;
+}
+footer a {
+  border-color: transparent;
+}
+footer a:hover {
+  border-bottom: 1px solid #fffdf4;
+}
+.social a:hover,
+.logo a:hover {
+  border: none;
+  border-color: transparent;
+  color:#fffdf4;
 }
 body > .wrapper {
   background-color: #fffdf4;
