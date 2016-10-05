@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Continuous Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+      <script src="https://use.fontawesome.com/b5e9d8f8da.js"></script>
+      <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" type="text/css" rel="stylesheet" />
+      <link href="http://codepen.io/bjornmeansbear/pen/mERbxE.css" type="text/css" rel="stylesheet" />
+  </head>
+  
+  <body >
+
+      <div class="wrapper mt4 mb4">
+  <div id="ssSearch">
+    <div class="search-wrapper col-10 mx-auto">
+      <label><i class="fa fa-search" aria-hidden="true"></i>
+      </label>
+      <input class="search">
+    </div>
+
+    <ol id="summerSaleList" class="list col-10 m2 mx-auto">
+      <script id="ssItem" type="text/x-mustache-template">
+        {{#dataFeedElement}} 
+          <li class="clearfix">
+            <h3 class="itemNum col col-4">{{item.id}}</h3>
+            <p class="pattern col col-4">{{item.name}}</p>
+            <p class="color col col-4">{{item.color}}</p>
+          </li>
+        {{/dataFeedElement}}
+      </script>
+    </ol>
+  </div>
+
+</div>
+      
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+      
+      <script>
+      
+$.getJSON('http://order-track.cape.io/items/parse/rg?disc=true', function(data) {
+
+  //mustache for images
+  var template = $('#ssItem').html();
+  console.log('success');
+  var info = Mustache.to_html(template, data);
+  $('#summerSaleList').html(info);
+  console.log('mustachified');
+  // done with mustache templating
+
+  var options = {
+    valueNames: [ 'itemNum', 'pattern', 'name' ]
+  };
+
+  var listy = new List('ssSearch', options);
+
+});
+      </script>
+      
+  </body>
+</html>
+
+<!-- this site was programmed by OOKB & is powered by CAPE (ookb.co & cape.io) -->
