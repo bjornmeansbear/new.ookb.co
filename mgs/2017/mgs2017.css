@@ -66,6 +66,7 @@ body {
   margin: 0;
   padding: 0;
 }
+.fs1 { font-size: 1rem; }
 .m0 {
   margin: 0;
 }
@@ -134,6 +135,8 @@ body {
 .wide {
   width: 100%;
 }
+.relative { position: relative; }
+.absolute { position: absolute; }
 img {
   width: 100%;
   height: auto;
@@ -320,7 +323,7 @@ footer .fifth.column:first-of-type {
   footer .fifth.column:first-of-type {
     width: 30%;
     max-width: 350px;
-    margin-top: -2rem;
+    margin-top: -0.8%;
   }
   header .logo {
     max-width: 30rem;
