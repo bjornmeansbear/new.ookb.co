@@ -43,6 +43,7 @@ body {
 .bg-yellow-p5 {
   background-color: #322b00;
 }
+.bg-black,
 .bg-yellow-p6 {
   background-color: #000000;
 }
@@ -60,6 +61,10 @@ body {
 }
 .bg-yellow-m5 {
   background-color: #fffdf4;
+}
+.bg-white,
+.bg-yellow-m6 {
+  background-color: #ffffff;
 }
 .list-reset {
   list-style: none;
@@ -207,7 +212,6 @@ footer a:hover {
   color:#fffdf4;
 }
 body > .wrapper {
-  background-color: #fffdf4;
   margin-left: 10%;
 }
 body > footer {
