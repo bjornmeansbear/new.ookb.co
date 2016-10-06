@@ -62,8 +62,10 @@ body {
 .bg-yellow-m5 {
   background-color: #fffdf4;
 }
-.bg-white,
 .bg-yellow-m6 {
+  background-color: #fffffc;
+}
+.bg-white {
   background-color: #ffffff;
 }
 .list-reset {
