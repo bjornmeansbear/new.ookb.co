@@ -250,20 +250,11 @@ header .logo .st2 {
 .xtras .squiggle .st0 {
   fill: none;
   stroke: #322b00;
-  stroke-width: 1.25;
+  stroke-width: .8;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
-
-
-
-
-
-
-
-
 
 .tagline {
   font-size: 1.3em;
@@ -316,10 +307,14 @@ footer .fifth.column:first-of-type {
 }
 @media (min-width: 50rem) {
   header .logo {
-    max-width: 25rem;
+    max-width: 20rem;
     margin-top: 10rem;
     margin-left: 45%;
     margin-right: 0;
+  }
+  main .container {
+    max-width: 23rem;
+    font-size: 1.25rem;
   }
   main {
     margin-top: -12rem;
@@ -329,14 +324,17 @@ footer .fifth.column:first-of-type {
   footer .fifth.column:first-of-type {
     width: 30%;
     max-width: 350px;
-    /** tweak this **/
     margin-top: -0.8%;
   }
   header .logo {
-    max-width: 30rem;
+    max-width: 28rem;
     margin-top: 10rem;
     margin-left: 45%;
     margin-right: 0;
+  }
+  main .container {
+    max-width: 26rem;
+    font-size: 1.25rem;
   }
   .tagline {
     margin-top:2rem;
@@ -347,13 +345,17 @@ footer .fifth.column:first-of-type {
     width: 40em;
   }
 }
-@media (min-width: 80rem) {
+@media (min-width: 90rem) {
   header .logo {
     max-width: 32rem;
     margin-left: 40%;
   }
+  main .container {
+    max-width: 29rem;
+    font-size: 1.25rem;
+  }
 }
-@media (min-width: 85rem) {
+@media (min-width: 100rem) {
   header .logo {
     max-width: 36rem;
     margin-left: 33%;
