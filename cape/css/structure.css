@@ -24,10 +24,10 @@ body {
   padding: 0;
   width: 100%;
 }
-/* 
-   super simple CF from the very end of here: 
-   http://css-tricks.com/snippets/css/clear-fix/ — only works in IE8+, 
-   so not so super back compatible — but we're looking to the future! 
+/*
+   super simple CF from the very end of here:
+   http://css-tricks.com/snippets/css/clear-fix/ — only works in IE8+,
+   so not so super back compatible — but we're looking to the future!
 */
 .clearfix::after,
 .group::after,
@@ -133,10 +133,10 @@ body {
     margin: 0 -1rem 2rem -1rem;
   }
   /* default 12 column grid */
-  /* 
-     too add or remove, simply add the additional columns, 
-     and then replace "12" in all the calculations below with whatever 
-     number of columns you wish to use. 5, 8, 16, 101, whatever. 
+  /*
+     too add or remove, simply add the additional columns,
+     and then replace "12" in all the calculations below with whatever
+     number of columns you wish to use. 5, 8, 16, 101, whatever.
      We're working on a clever-er way to make this work.
      You'll need to add classes up above too if you make more columns.
   */
@@ -256,7 +256,6 @@ h6 {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-weight: bold;
-  line-height: normal;
 }
 h1 {
   font-size: 3.0rem;
@@ -383,20 +382,20 @@ table tr td:last-child {
   position: relative;
   /** padding-bottom = calc(100% * height / width); of the children elements... works best if everything is the same height [like if its a slideshow] **/
   padding-bottom: calc(315 / 480 * 100%); /** this might need to be set dynamically based on embedded content ratio **/
-  height: 0; 
+  height: 0;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 2em;
 }
 
-.embed-wrapper iframe, 
-.embed-wrapper object, 
+.embed-wrapper iframe,
+.embed-wrapper object,
 .embed-wrapper embed {
   border: 0 !important;
-  position: absolute; 
-  top: 0; 
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
