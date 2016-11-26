@@ -55,7 +55,7 @@ main {
 }
 
 h2.tagline {
-  line-height: 1;
+  line-height: 1em;
   max-width: 487px;
 }
 
