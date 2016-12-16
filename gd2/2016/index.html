@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Background Hijinks</title>
+
+    <style>
+
+      * {
+       font-family: helvetica, arial, sans-serif;
+        transition: all 400ms;
+      }
+      body { font-size: 111%; background: #cc66ff; margin: 0; padding: 0; }
+      .wrapper {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3em 6em 10em;
+        background: white;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.33);
+        min-height: 100vh;
+      }
+      h1 {
+        color: #330066;
+        font-size: 3em;
+        margin-top: 0;
+      }
+      .list-reset, .list-reset li, li a {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        color: #330066;
+        text-decoration: none;
+      }
+      .list-reset li {
+        margin: 0 -.3em;
+        border-top: 1px solid #9933cc ;
+      }
+      .list-reset li:first-child {
+        border-top: 3px solid #9933cc ;
+      }
+      .list-reset li:last-child {
+        border-bottom: 3px solid #9933cc ;
+      }
+      .list-reset li a {
+        display: block;
+        padding: .3em;
+      }
+      .list-reset li a:hover {
+        background: #330066;
+        color: white;
+      }
+
+    </style>
+
+    <!-- funny I used a bad way of including CSS -->
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Some Projects</h1>
+      <ul class="list-reset">
+        <li><a href="background-hijinks/">Background Hijinks</a></li>
+        <li><a href="lyrical-grid/">A Lyrical Grid</a></li>
+        <li><a href="long-text/">A Long Text</a></li>
+        <li><a href="final/">Final (A Chronology)</a></li>
+      </ul>
+    </div>
+  </body>
+
+</html>
