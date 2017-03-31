@@ -42,6 +42,7 @@ img, a img {
 }
 .m0 { margin: 0;}
 .m1 { margin: 1rem; }
+.mb2 { margin-bottom: 2rem; }
 .text-center { text-align: center; }
 img {
   max-width: 100%;
@@ -63,7 +64,9 @@ fieldset span.subfield {
   width: 25%;
   padding: .25rem;
 }
-
+span.subfield:hover {
+  box-shadow: 0 0 .5rem 0 rgba(154,134,105,1);
+}
 .choice {
   position: relative;
   display: inline-block;
@@ -99,13 +102,13 @@ fieldset span.subfield {
 
 /* Focus */
 .choice input:focus ~ .control-indicator {
-  box-shadow: 0 0 0 .075rem rgba(255,255,255,.9), 0 0 0 .2rem rgba(194,218,194,.6);
+  box-shadow: 0 0 0 .075rem rgba(255,255,255,.9), 0 0 0 .2rem rgba(154,134,105,.4);
 }
 
 /* Checked state */
 .choice input:checked ~ .control-indicator {
   color: rgba(255,255,255,.9);
-  background-color: rgba(194,218,194,.6);
+  background-color: rgba(154,134,105,.4);
 }
 
 .choice input:checked ~ .control-indicator::after {
@@ -121,7 +124,7 @@ fieldset span.subfield {
 /* Active */
 .choice input:active ~ .control-indicator {
   color: rgba(255,255,255,.9);
-  background-color: rgba(194,218,194,.8);
+  background-color: rgba(154,134,105,.8);
 }
 
 header h1 {
