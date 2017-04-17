@@ -1,0 +1,122 @@
+/** DEVOO Styles standards **/
+
+@olive-green:  rgba(141,133,076,1);
+@green:        rgba(102,198,104,1);
+@light-green:  rgba(196,200,113,1);
+@medium-green: rgba(085,106,046,1);
+@dark-green:   rgba(018,039,021,1);
+@yellow:       rgba(210,198,104,1);
+@white:        white;
+@black:        black;
+
+.olive-green   { color: @olive-green; }
+.green         { color: @green; }
+.light-green   { color: @light-green; }
+.medium-green  { color: @medium-green; }
+.dark-green    { color: @dark-green; }
+.yellow        { color: @yellow; }
+.white         { color: @white; }
+.black         { color: @black; }
+
+.bg-olive-green   { background-color: @olive-green; }
+.bg-green         { background-color: @green; }
+.bg-light-green   { background-color: @light-green; }
+.bg-medium-green  { background-color: @medium-green; }
+.bg-dark-green    { background-color: @dark-green; }
+.bg-yellow        { background-color: @yellow; }
+.bg-white         { background-color: @white; }
+.bg-black         { background-color: @black; }
+
+.border-olive-green   { border-color: @olive-green; }
+.border-green         { border-color: @green; }
+.border-light-green   { border-color: @light-green; }
+.border-medium-green  { border-color: @medium-green; }
+.border-dark-green    { border-color: @dark-green; }
+.border-yellow        { border-color: @yellow; }
+.border-white         { border-color: @white; }
+.border-black         { border-color: @black; }
+
+.olive-green-hover:hover   { color: @olive-green; }
+.green-hover:hover         { color: @green; }
+.light-green-hover:hover   { color: @light-green; }
+.medium-green-hover:hover  { color: @medium-green; }
+.dark-green-hover:hover    { color: @dark-green; }
+.yellow-hover:hover        { color: @yellow; }
+.white-hover:hover         { color: @white; }
+.black-hover:hover         { color: @black; }
+
+.bg-olive-green-hover:hover   { background-color: @olive-green; }
+.bg-green-hover:hover         { background-color: @green; }
+.bg-light-green-hover:hover   { background-color: @light-green; }
+.bg-medium-green-hover:hover  { background-color: @medium-green; }
+.bg-dark-green-hover:hover    { background-color: @dark-green; }
+.bg-yellow-hover:hover        { background-color: @yellow; }
+.bg-white-hover:hover         { background-color: @white; }
+.bg-black-hover:hover         { background-color: @black; }
+
+.border-olive-green-hover:hover   { border-color: @olive-green; }
+.border-green-hover:hover         { border-color: @green; }
+.border-light-green-hover:hover   { border-color: @light-green; }
+.border-medium-green-hover:hover  { border-color: @medium-green; }
+.border-dark-green-hover:hover    { border-color: @dark-green; }
+.border-yellow-hover:hover        { border-color: @yellow; }
+.border-white-hover:hover         { border-color: @white; }
+.border-black-hover:hover         { border-color: @black; }
+
+[class*="-hover"], button, #recipeList a { transition: all 400ms; }
+
+.box-shadow(@blur) {
+  box-shadow: 0 0 @blur 0 rgba(018,039,021,.5);
+}
+
+body {
+  margin:0;
+  padding: 2em;
+  .bg-olive-green;
+}
+
+.card {
+  display:none;
+  .dark-green;
+  .bg-white;
+  .box-shadow(.8em);
+}
+
+.card h1 {
+  .green;
+}
+
+.description p:first-child {
+  margin-top: 0;
+}
+
+#recipeList a {
+  .dark-green;
+  text-decoration: none;
+}
+
+#recipeList .active a {
+  .bg-yellow;
+  border-radius: 1em;
+  line-height: 2em;
+  display: inline-block;
+  padding: 0 1em;
+  .white;
+  margin: .25em -1em;
+}
+
+.ingredients li:last-child {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex .w-40, .flex .w-60 {
+    width: 100%;
+    padding: 0;
+  }
+
+}

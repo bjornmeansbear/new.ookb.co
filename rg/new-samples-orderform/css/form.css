@@ -520,16 +520,16 @@ form li.buttons {
     width: auto !important;
     position: relative;
     clear: both;
-    padding: .66rem 0 .66rem 0
+    /*padding: .66rem 0 .66rem 0*/
 }
 
 form li.buttons input {
     font-size: 100%;
-    margin-right: .25rem
+    /*margin-right: .25rem*/
 }
 
 input.btTxt {
-    padding: 0 .33rem;
+    /*padding: 0 .33rem;*/
     width: auto;
     overflow: visible
 }
@@ -731,10 +731,10 @@ form li.focused .instruct, form li:hover .instruct {
 
 form li.section {
     clear: both;
-    margin: 0;
+    /*margin: 0;
     padding: .33rem 0 0 0;
     width: auto !important;
-    position: static
+    position: static*/
 }
 
 form li.section h3 {
@@ -746,10 +746,10 @@ form li.section h3 {
     padding: .66rem 0 0 0;
 }
 
-form li.first {
+/*form li.first {
     padding: 0
 }
-
+*/
 form li.first h3 {
     padding: .5rem 0 0 0;
     border-top: none !important

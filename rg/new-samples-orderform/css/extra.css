@@ -1,0 +1,325 @@
+/** kb added **/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.relative { position: relative; }
+.m0 { margin: 0;}
+.m1 { margin: 1rem; }
+.m2 { margin: 2rem; }
+.m3 { margin: 3rem; }
+.m4 { margin: 4rem; }
+.mt0 { margin-top: 0; }
+.mt1 { margin-top: 1rem; }
+.mt2 { margin-top: 2rem; }
+.mt3 { margin-top: 3rem; }
+.mt4 { margin-top: 4rem; }
+.mb0 { margin-bottom: 0; }
+.mb1 { margin-bottom: 1rem; }
+.mb2 { margin-bottom: 2rem; }
+.mb3 { margin-bottom: 3rem; }
+.mb4 { margin-bottom: 4rem; }
+.p0 { padding: 0; }
+.p1 { padding: 1rem; }
+.p2 { padding: 2rem; }
+.p3 { padding: 3rem; }
+.p4 { padding: 4rem; }
+.text-center { text-align: center; }
+.fa.smaller { font-size: 75%; }
+.ba1 { border-width: 1px; border-style: solid; }
+.bt1 { border-top-width: 1px; border-top-style: solid; }
+.bb1 { border-bottom-width: 1px; border-bottom-style: solid; }
+.br1 { border-right-width: 1px; border-right-style: solid; }
+.bl1 { border-left-width: 1px; border-left-style: solid; }
+
+html,
+body,
+#container {
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  /*margin-bottom: 0;*/
+  font-size: .8em;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: .3333em;
+  transition: all 350ms;
+}
+
+.btn-default {
+  background-color: #9a8669;
+  color: #fcfbf8;
+  border-color: #9a8669;
+}
+
+.btn-default:hover, .btn-default.active {
+  background-color: #9a8669;
+  color: #fcfbf8;
+  box-shadow: inset 0 0 2em rgba(0,0,0,.33);
+}
+
+.btn-default:active {
+  box-shadow: 0 0 1em 0 rgba(154,134,105,.4);
+  box-shadow: inset 0 0 4em rgba(0,0,0,.5);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#container {
+  padding-bottom: 6rem;
+}
+
+#thanks #container {
+  max-width: 36rem;
+}
+
+a {
+  color: #848484;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9a8669;
+  border-bottom: 1px solid #848484;
+  padding-bottom: .1em;
+}
+
+a.btn-default:hover {
+    background-color: #9a8669;
+    color: #fcfbf8;
+    box-shadow: inset 0 0 2em rgba(0,0,0,.33);
+    padding: .5em 1em;
+}
+
+legend,
+legend.desc {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+li fieldset {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #9a8669;
+  padding-bottom: 1rem;
+}
+fieldset .flex {
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: -.6rem;
+  margin-right: -.6rem;
+}
+fieldset span.subfield {
+  display:block;
+  width: 50%;
+  padding: .25rem;
+}
+span.subfield:hover {
+  box-shadow: 0 0 .5rem 0 rgba(154,134,105,1);
+}
+
+@media (min-width: 600px) {
+  fieldset span.subfield {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 800px) {
+  fieldset span.subfield {
+    width: calc(100% / 4);
+  }
+}
+
+.choice {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  margin:0;
+  padding:.1rem;
+}
+.choice input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+}
+.choice .control-indicator {
+  position: absolute;
+  top: 0;
+  right:0;
+  left: 0;
+  bottom:0;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 250ms;
+  font: normal normal normal 100px/1 DL;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus */
+.choice input:focus ~ .control-indicator {
+  box-shadow: 0 0 0 .075rem rgba(255,255,255,.9), 0 0 0 .2rem rgba(154,134,105,.4);
+}
+
+/* Checked state */
+.choice input:checked ~ .control-indicator {
+  color: rgba(255,255,255,.9);
+  background-color: rgba(154,134,105,.4);
+}
+
+.choice input:checked ~ .control-indicator::after {
+  content: '\f088';
+  display: block;
+  font-size: 100px;
+  color: rgba(252, 251, 248, 1);
+  line-height: 200px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Active */
+.choice input:active ~ .control-indicator {
+  color: rgba(255,255,255,.9);
+  background-color: rgba(154,134,105,.8);
+}
+
+header h1 {
+  width: 350px;
+  height: 60px;
+  margin: 34px auto 30px;
+  -webkit-box-shadow: 0 0 9px 0 rgba(132,132,132,0.25);
+  -moz-box-shadow: 0 0 9px 0 rgba(132,132,132,0.25);
+  -ms-box-shadow: 0 0 9px 0 rgba(132,132,132,0.25);
+  -o-box-shadow: 0 0 9px 0 rgba(132,132,132,0.25);
+  box-shadow: 0 0 9px 0 rgba(132,132,132,0.25);
+  transition: all 300ms ease;
+}
+header h1:hover {
+  background: #fcfbf8;
+  -webkit-box-shadow: 0 0 9px 0 rgba(132,132,132,0.5);
+  -moz-box-shadow: 0 0 9px 0 rgba(132,132,132,0.5);
+  -ms-box-shadow: 0 0 9px 0 rgba(132,132,132,0.5);
+  -o-box-shadow: 0 0 9px 0 rgba(132,132,132,0.5);
+  box-shadow: 0 0 9px 0 rgba(132,132,132,0.5);
+}
+
+header h1 a {
+  display: block;
+  background: url("http://www.rogersandgoffigon.com/images/rglogo.png") center center no-repeat;
+  background-size: contain;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+}
+header h1 a:hover {
+  border: none;
+}
+
+.addressFields {
+  padding: 1.25rem 0 2rem;
+  border-bottom: 1px solid rgba(114,90,56,0.2);
+}
+
+.addressFields label {
+  text-transform: uppercase;
+}
+
+.addressFields div label,
+.addressFields span label {
+  margin: 0;
+  padding-top: 0;
+  font-size: .7em;
+  line-height: 1.4;
+  color: darkgray;
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: .15em;
+}
+
+.addressFields input {
+  font-size: .9rem;
+  padding: .75rem;
+  line-height: 2.4rem;
+  height: 2.4rem;
+  background-color: transparent;
+  background-image: none;
+  color: #848484;
+  border: 1px solid currentColor;
+  display: block;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 0;
+}
+
+.addressFields input:hover {
+  box-shadow: inset 0 0 5em rgba(114,90,56,0.1);
+}
+
+.addressFields input:focus {
+  border-color: #725a38;
+  background-color: white;
+  outline: 0;
+  -webkit-box-shadow: 0 0 6px rgba(114,90,56,0.6);
+  box-shadow: 0 0 6px rgba(114,90,56,0.6);
+}
+
+.addressFields input:focus ~ label {
+  color: rgba(114,90,56,1);
+}
+
+.addressFields .flipFlop input {
+  margin-top: 1em;
+}
+.addressFields .flipFlop label {
+  position: absolute;
+  top:0;
+}
+
+
+.submit.btn {
+  margin-top: 2em;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: .9em;
+  line-height: 2em;
+  letter-spacing: .1em;
+}
+
+li.first {
+  padding-top: 1.5rem;
+  border-color: #9a8669;
+}

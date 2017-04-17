@@ -1,0 +1,198 @@
+/** DEVOO Styles standards **/
+.olive-green {
+  color: #8d854c;
+}
+.green {
+  color: #66c668;
+}
+.light-green {
+  color: #c4c871;
+}
+.medium-green {
+  color: #556a2e;
+}
+.dark-green {
+  color: #122715;
+}
+.yellow {
+  color: #d2c668;
+}
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+.bg-olive-green {
+  background-color: #8d854c;
+}
+.bg-green {
+  background-color: #66c668;
+}
+.bg-light-green {
+  background-color: #c4c871;
+}
+.bg-medium-green {
+  background-color: #556a2e;
+}
+.bg-dark-green {
+  background-color: #122715;
+}
+.bg-yellow {
+  background-color: #d2c668;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black;
+}
+.border-olive-green {
+  border-color: #8d854c;
+}
+.border-green {
+  border-color: #66c668;
+}
+.border-light-green {
+  border-color: #c4c871;
+}
+.border-medium-green {
+  border-color: #556a2e;
+}
+.border-dark-green {
+  border-color: #122715;
+}
+.border-yellow {
+  border-color: #d2c668;
+}
+.border-white {
+  border-color: white;
+}
+.border-black {
+  border-color: black;
+}
+.olive-green-hover:hover {
+  color: #8d854c;
+}
+.green-hover:hover {
+  color: #66c668;
+}
+.light-green-hover:hover {
+  color: #c4c871;
+}
+.medium-green-hover:hover {
+  color: #556a2e;
+}
+.dark-green-hover:hover {
+  color: #122715;
+}
+.yellow-hover:hover {
+  color: #d2c668;
+}
+.white-hover:hover {
+  color: white;
+}
+.black-hover:hover {
+  color: black;
+}
+.bg-olive-green-hover:hover {
+  background-color: #8d854c;
+}
+.bg-green-hover:hover {
+  background-color: #66c668;
+}
+.bg-light-green-hover:hover {
+  background-color: #c4c871;
+}
+.bg-medium-green-hover:hover {
+  background-color: #556a2e;
+}
+.bg-dark-green-hover:hover {
+  background-color: #122715;
+}
+.bg-yellow-hover:hover {
+  background-color: #d2c668;
+}
+.bg-white-hover:hover {
+  background-color: white;
+}
+.bg-black-hover:hover {
+  background-color: black;
+}
+.border-olive-green-hover:hover {
+  border-color: #8d854c;
+}
+.border-green-hover:hover {
+  border-color: #66c668;
+}
+.border-light-green-hover:hover {
+  border-color: #c4c871;
+}
+.border-medium-green-hover:hover {
+  border-color: #556a2e;
+}
+.border-dark-green-hover:hover {
+  border-color: #122715;
+}
+.border-yellow-hover:hover {
+  border-color: #d2c668;
+}
+.border-white-hover:hover {
+  border-color: white;
+}
+.border-black-hover:hover {
+  border-color: black;
+}
+[class*="-hover"],
+button,
+#recipeList a {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+body {
+  margin: 0;
+  padding: 2em;
+  background-color: #8d854c;
+}
+.card {
+  display: none;
+  color: #122715;
+  background-color: white;
+  box-shadow: 0 0 0.8em 0 rgba(18, 39, 21, 0.5);
+}
+.card h1 {
+  color: #66c668;
+}
+.description p:first-child {
+  margin-top: 0;
+}
+#recipeList a {
+  color: #122715;
+  text-decoration: none;
+}
+#recipeList .active a {
+  background-color: #d2c668;
+  border-radius: 1em;
+  line-height: 2em;
+  display: inline-block;
+  padding: 0 1em;
+  color: white;
+  margin: 0.25em -1em;
+}
+.ingredients li:last-child {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+@media (max-width: 600px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex .w-40,
+  .flex .w-60 {
+    width: 100%;
+    padding: 0;
+  }
+}
