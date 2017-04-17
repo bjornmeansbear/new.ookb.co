@@ -152,7 +152,7 @@ button,
 body {
   margin: 0;
   padding: 2em;
-  background-color: #8d854c;
+  /*background-color: #8d854c;*/
 }
 .card {
   display: none;
