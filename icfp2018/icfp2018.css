@@ -1,0 +1,62 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.stripe {
+  height: 111vh;
+  background-position: center center;
+  background-repeat: repeat;
+  border-bottom: 4px solid black;
+}
+.stripe:first-of-type {
+  border-top: 4px solid black;
+}
+
+.pattern1 {
+  background-image: url('201801041651-Topographica-09.png');
+}
+.pattern2 {
+  background-image: url('option2.png');
+}
+.pattern3 {
+  background-image: url('option3.png');
+}
+.pattern4 {
+  background-image: url('option4.png');
+}
+
+.pattern5 {
+  background-image: url('option5.png');
+}
+.pattern6 {
+  background-image: url('option6.png');
+}
+.pattern7 {
+  background-image: url('option7.png');
+}
+.pattern8 {
+  background-image: url('option8.png');
+}
+.pattern9 {
+  background-image: url('option9.png');
+}
+
+.fake {
+  position: fixed;
+  top:0;
+  bottom:0;
+  left: 25%;
+  right:25%;
+  background: white;
+  z-index: 99;
+  box-shadow: 0 0 .5em .5em rgba(0,0,0,.15);
+}
+
+.stripe p {
+  background: black;
+  color:white;
+  font-family: sans-serif;
+  padding: .5em;
+  display: inline-block;
+}
