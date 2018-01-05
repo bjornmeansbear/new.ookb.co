@@ -62,6 +62,7 @@ h1 { margin: 1em; text-align: center; }
   background-image: url('rnd2/201801041651-Topographica-15.png');
 }
 
+/* okay, added? */
 .fake {
   position: fixed;
   top:0;
