@@ -66,11 +66,16 @@ h1 { margin: 1em; text-align: center; }
   position: fixed;
   top:0;
   bottom:0;
-  left: 25%;
-  right:25%;
+  left: 15%;
+  right:15%;
   background: white;
   z-index: 99;
   box-shadow: 0 0 .5em .5em rgba(0,0,0,.15);
+}
+
+.fake img {
+  width: 100%;
+  height: auto;
 }
 
 .stripe p {
