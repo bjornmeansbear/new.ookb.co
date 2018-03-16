@@ -1,0 +1,50 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 2em;
+}
+
+h1,
+h4 {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 2px solid;
+  font-style: italic
+}
+
+hr {
+  height: 0;
+  border: none;
+  page-break-before: always;
+}
+  .html hr {
+    margin: 2em 0;
+    height: 1px;
+    background: #000;
+  }
+
+img {
+  margin: 1em 0;
+  max-width: 100%;
+}
+  a img {
+    border: 2px solid;
+  }
+  
