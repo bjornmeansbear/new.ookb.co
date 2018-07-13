@@ -1,0 +1,65 @@
+/* Color Palette */
+/*
+pink          rgba(236,064,121,1) / #EC4079 / https://palx.jxnblk.com/ec4079
+brown         rgba(047,041,038,1) / #2F2926 / https://palx.jxnblk.com/2F2926
+gray          rgba(132,132,120,1) / #848478
+dark gray     rgba(096,103,103,1) / #606767
+light gray    rgba(194,211,186,1) / #C2D3BA
+
+red           rgba(183,080,081,1) / #B75051
+orange        rgba(195,115,099,1) / #C37363
+yellow        rgba(197,192,101,1) / #C5C065
+green         rgba(140,165,115,1) / #8CA573
+blue          rgba(157,178,176,1) / #9DB2B0
+purple        rgba(174,139,164,1) / #AE8BA4
+*/
+
+*, *::after, *::before {
+  box-sizing: inherit
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /**/
+  border: .25em solid #606767;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /**/
+  background-color: #848478;
+  color: #2F2926;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/** header **/
+header * {
+  font-size: 1em;
+  margin: 0;
+  padding: 1em;
+}
+header { display: flex; }
+
+/** general grid/card layouts **/
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.column {
+  width: 50%;
+  height: 100%;
+}
+
+.block {
+  height: 50%;
+  padding: 2em;
+}
+
