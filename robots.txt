@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /gunshow/
+Disallow: /drupalcamp/
+Disallow: /devoo/
+Disallow: /font/
+Disallow: /icfp2018/
+Disallow: /bcan/
+Disallow: /bfh/
+Disallow: /acf/
+Disallow: /broad/
+Disallow: /mgs/
+Disallow: /rg/

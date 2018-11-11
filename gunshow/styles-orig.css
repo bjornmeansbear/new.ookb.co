@@ -1,0 +1,136 @@
+/** **/
+*, *::after, *::before {
+  box-sizing: inherit
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* all purpose */
+.hidden, .hidden-sm { display: none; }
+.visible-sm { display: block; }
+
+@media (min-width: 768px) {
+  .hidden-sm { display: block; }
+  .visible-sm { display: none; }
+}
+
+.siteWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(0,0,0,1);
+  color: white;
+  padding: .1em;
+  height: 10em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  flex: auto;
+}
+
+header .logotype {
+  height: 80%;
+  width: auto;
+  padding-left: 1em;
+}
+
+@media (min-width: 768px) {
+  header .logotype {
+    width: 90%;
+    height: auto;
+  }
+}
+
+header .logotype .st0 {
+  fill: white;
+}
+
+footer {
+  background-color: rgba(150,150,150,1);
+}
+
+main {
+  background-image: url('gunShowMainPage.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+main > div.flexed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main section.flexed {
+  margin: 1rem;
+  font-family: 'League Gothic', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+main section.flexed .lowercase {
+  text-transform: lowercase;
+}
+
+section.flexed .name,
+section.flexed.quote {
+  font-size: 2em;
+  line-height: 1.75rem;
+}
+
+section.quote, section.documentary {
+  width: 30%;
+}
+section.quote p, section.documentary p {
+  font-size: 1.5em;
+}
+section.quote p {
+  line-height: 90%;
+  margin-top: 1rem;
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  .siteWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  header {
+    height: 100%;
+    width: 15em;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  header h1 {
+    transform: rotate(-90deg)
+  }
+  main {
+    height: 100%;
+    width: calc(100% - 15em);
+    padding: 1em;
+  }
+}
