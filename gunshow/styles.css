@@ -217,3 +217,7 @@ section.quote p {
   max-width: none;
   transform: translateX(-50%);
 }
+.bio h1 {
+  font-family: 'League Gothic', sans-serif;
+  text-transform: uppercase;
+}
